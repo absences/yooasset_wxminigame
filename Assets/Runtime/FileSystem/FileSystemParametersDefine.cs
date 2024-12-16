@@ -1,7 +1,7 @@
 ﻿
 namespace YooAsset
 {
-    internal class FileSystemParametersDefine
+    public class FileSystemParametersDefine
     {
         public const string FILE_VERIFY_LEVEL = "FILE_VERIFY_LEVEL";
         public const string REMOTE_SERVICES = "REMOTE_SERVICES";
@@ -11,5 +11,7 @@ namespace YooAsset
         public const string DISABLE_UNITY_WEB_CACHE = "DISABLE_UNITY_WEB_CACHE";
         public const string RESUME_DOWNLOAD_MINMUM_SIZE = "RESUME_DOWNLOAD_MINMUM_SIZE";
         public const string RESUME_DOWNLOAD_RESPONSE_CODES = "RESUME_DOWNLOAD_RESPONSE_CODES";
+        public const string ASYNC_SIMULATE_MIN_FRAME = "ASYNC_SIMULATE_MIN_FRAME";
+        public const string ASYNC_SIMULATE_MAX_FRAME = "ASYNC_SIMULATE_MAX_FRAME";
     }
 }

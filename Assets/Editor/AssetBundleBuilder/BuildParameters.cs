@@ -46,6 +46,10 @@ namespace YooAsset.Editor
         /// </summary>
         public string PackageVersion;
 
+        /// <summary>
+        /// 构建的包裹备注
+        /// </summary>
+        public string PackageNote;
 
         /// <summary>
         /// 是否启用共享资源打包
@@ -158,6 +162,12 @@ namespace YooAsset.Editor
             if (EditorTools.CreateDirectory(pipelineOutputDirectory))
             {
                 BuildLogger.Log($"Create pipeline output directory: {pipelineOutputDirectory}");
+            }
+
+            // 设置默认备注信息
+            if (string.IsNullOrEmpty(PackageNote))
+            {
+                PackageNote = DateTime.Now.ToString();
             }
         }
 

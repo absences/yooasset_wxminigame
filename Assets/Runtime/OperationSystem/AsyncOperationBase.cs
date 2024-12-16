@@ -147,7 +147,7 @@ namespace YooAsset
 
                 // 当执行次数用完时
                 _whileFrame--;
-                if (_whileFrame == 0)
+                if (_whileFrame <= 0)
                 {
                     Status = EOperationStatus.Failed;
                     Error = $"Operation {this.GetType().Name} failed to wait for async complete !";

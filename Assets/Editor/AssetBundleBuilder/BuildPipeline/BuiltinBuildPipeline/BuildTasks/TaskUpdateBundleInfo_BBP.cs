@@ -18,7 +18,7 @@ namespace YooAsset.Editor
             var buildParametersContext = context.GetContextObject<BuildParametersContext>();
             var parameters = buildParametersContext.Parameters;
             var buildMode = parameters.BuildMode;
-            if (buildMode == EBuildMode.DryRunBuild || buildMode == EBuildMode.SimulateBuild)
+            if (buildMode == EBuildMode.SimulateBuild)
             {
                 return "00000000000000000000000000000000"; //32位
             }
@@ -42,7 +42,7 @@ namespace YooAsset.Editor
             var buildParametersContext = context.GetContextObject<BuildParametersContext>();
             var parameters = buildParametersContext.Parameters;
             var buildMode = parameters.BuildMode;
-            if (buildMode == EBuildMode.DryRunBuild || buildMode == EBuildMode.SimulateBuild)
+            if (buildMode == EBuildMode.SimulateBuild)
             {
                 return 0;
             }
@@ -64,7 +64,7 @@ namespace YooAsset.Editor
         {
             string filePath = bundleInfo.PackageSourceFilePath;
             var buildMode = buildParametersContext.Parameters.BuildMode;
-            if (buildMode == EBuildMode.DryRunBuild || buildMode == EBuildMode.SimulateBuild)
+            if (buildMode == EBuildMode.SimulateBuild)
                 return GetFilePathTempHash(filePath);
             else
                 return HashUtility.FileMD5(filePath);
@@ -73,7 +73,7 @@ namespace YooAsset.Editor
         {
             string filePath = bundleInfo.PackageSourceFilePath;
             var buildMode = buildParametersContext.Parameters.BuildMode;
-            if (buildMode == EBuildMode.DryRunBuild || buildMode == EBuildMode.SimulateBuild)
+            if ( buildMode == EBuildMode.SimulateBuild)
                 return "00000000"; //8位
             else
                 return HashUtility.FileCRC32(filePath);
@@ -82,7 +82,7 @@ namespace YooAsset.Editor
         {
             string filePath = bundleInfo.PackageSourceFilePath;
             var buildMode = buildParametersContext.Parameters.BuildMode;
-            if (buildMode == EBuildMode.DryRunBuild || buildMode == EBuildMode.SimulateBuild)
+            if (buildMode == EBuildMode.SimulateBuild)
                 return GetBundleTempSize(bundleInfo);
             else
                 return FileUtility.GetFileSize(filePath);

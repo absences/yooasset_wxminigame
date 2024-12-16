@@ -35,14 +35,12 @@ namespace YooAsset.Editor
                 throw new Exception(message);
             }
 
-            if (buildMode == EBuildMode.ForceRebuild || buildMode == EBuildMode.IncrementalBuild)
+            // 检测输出目录
+            string unityOutputManifestFilePath = $"{pipelineOutputDirectory}/{YooAssetSettings.OutputFolderName}";
+            if (System.IO.File.Exists(unityOutputManifestFilePath) == false)
             {
-                string unityOutputManifestFilePath = $"{pipelineOutputDirectory}/{YooAssetSettings.OutputFolderName}";
-                if (System.IO.File.Exists(unityOutputManifestFilePath) == false)
-                {
-                    string message = BuildLogger.GetErrorMessage(ErrorCode.UnityEngineBuildFatal, $"Not found output {nameof(AssetBundleManifest)} file : {unityOutputManifestFilePath}");
-                    throw new Exception(message);
-                }
+                string message = BuildLogger.GetErrorMessage(ErrorCode.UnityEngineBuildFatal, $"Not found output {nameof(AssetBundleManifest)} file : {unityOutputManifestFilePath}");
+                throw new Exception(message);
             }
 
             BuildLogger.Log("UnityEngine build success !");

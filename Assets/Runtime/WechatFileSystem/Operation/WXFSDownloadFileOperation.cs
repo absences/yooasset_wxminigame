@@ -8,6 +8,7 @@ internal class WXFSDownloadFileOperation : DefaultDownloadFileOperation
 {
     private WechatFileSystem _fileSystem;
     private ESteps _steps = ESteps.None;
+
     internal WXFSDownloadFileOperation(WechatFileSystem fileSystem, PackageBundle bundle, DownloadParam param) : base(bundle, param)
     {
         _fileSystem = fileSystem;
@@ -44,7 +45,7 @@ internal class WXFSDownloadFileOperation : DefaultDownloadFileOperation
                 CheckRequestTimeout();
                 return;
             }
-            Debug.Log(_webRequest.result);
+
             // 检查网络错误
             if (CheckRequestResult())
             {
@@ -83,8 +84,6 @@ internal class WXFSDownloadFileOperation : DefaultDownloadFileOperation
 
     private void CreateWebRequest()
     {
-        Debug.Log("wx get ab " + _requestURL);
-
         _webRequest = WXAssetBundle.GetAssetBundle(_requestURL);
         _webRequest.SetRequestHeader("wechatminigame-preload", "1");
         _webRequest.disposeDownloadHandlerOnDispose = true;

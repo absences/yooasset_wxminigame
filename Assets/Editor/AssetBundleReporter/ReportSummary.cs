@@ -53,6 +53,11 @@ namespace YooAsset.Editor
         /// </summary>
         public string BuildPackageVersion;
 
+        /// <summary>
+        /// 构建包裹备注
+        /// </summary>
+        public string BuildPackageNote;
+
         // 收集器配置
         public bool UniqueBundleName;
         public bool EnableAddressable;

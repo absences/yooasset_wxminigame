@@ -165,13 +165,27 @@ namespace YooAsset
         }
 
         /// <summary>
-        /// 创建默认的Web文件系统参数
+        /// 创建默认的WebServer文件系统参数
         /// </summary>
         /// <param name="disableUnityWebCache">禁用Unity的网络缓存</param>
-        public static FileSystemParameters CreateDefaultWebFileSystemParameters(bool disableUnityWebCache = false)
+        public static FileSystemParameters CreateDefaultWebServerFileSystemParameters(bool disableUnityWebCache = false)
         {
-            string fileSystemClass = typeof(DefaultWebFileSystem).FullName;
+            string fileSystemClass = typeof(DefaultWebServerFileSystem).FullName;
             var fileSystemParams = new FileSystemParameters(fileSystemClass, null);
+            fileSystemParams.AddParameter(FileSystemParametersDefine.DISABLE_UNITY_WEB_CACHE, disableUnityWebCache);
+            return fileSystemParams;
+        }
+
+        /// <summary>
+        /// 创建默认的WebRemote文件系统参数
+        /// </summary>
+        /// <param name="remoteServices">远端资源地址查询服务类</param>
+        /// <param name="disableUnityWebCache">禁用Unity的网络缓存</param>
+        public static FileSystemParameters CreateDefaultWebRemoteFileSystemParameters(IRemoteServices remoteServices, bool disableUnityWebCache = false)
+        {
+            string fileSystemClass = typeof(DefaultWebServerFileSystem).FullName;
+            var fileSystemParams = new FileSystemParameters(fileSystemClass, null);
+            fileSystemParams.AddParameter(FileSystemParametersDefine.REMOTE_SERVICES, remoteServices);
             fileSystemParams.AddParameter(FileSystemParametersDefine.DISABLE_UNITY_WEB_CACHE, disableUnityWebCache);
             return fileSystemParams;
         }
@@ -206,7 +220,6 @@ namespace YooAsset
     public class HostPlayModeParameters : InitializeParameters
     {
         public FileSystemParameters BuildinFileSystemParameters;
-        public FileSystemParameters DeliveryFileSystemParameters;
         public FileSystemParameters CacheFileSystemParameters;
     }
 
@@ -215,6 +228,7 @@ namespace YooAsset
     /// </summary>
     public class WebPlayModeParameters : InitializeParameters
     {
-        public FileSystemParameters WebFileSystemParameters;
+        public FileSystemParameters WebServerFileSystemParameters;
+        public FileSystemParameters WebRemoteFileSystemParameters;
     }
 }

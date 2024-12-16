@@ -69,6 +69,9 @@ namespace YooAsset
                 if (_loadBundleOp == null)
                     _loadBundleOp = BundleFileInfo.LoadBundleFile();
 
+                if (IsWaitForAsyncComplete)
+                    _loadBundleOp.WaitForAsyncComplete();
+
                 DownloadProgress = _loadBundleOp.DownloadProgress;
                 DownloadedBytes = _loadBundleOp.DownloadedBytes;
                 if (_loadBundleOp.IsDone == false)
@@ -76,9 +79,18 @@ namespace YooAsset
 
                 if (_loadBundleOp.Status == EOperationStatus.Succeed)
                 {
-                    _steps = ESteps.Done;
-                    Result = _loadBundleOp.Result;
-                    Status = EOperationStatus.Succeed;
+                    if (_loadBundleOp.Result == null)
+                    {
+                        _steps = ESteps.Done;
+                        Status = EOperationStatus.Failed;
+                        Error = $"The bundle loader result is null ! {BundleFileInfo.Bundle.BundleName}";
+                    }
+                    else
+                    {
+                        _steps = ESteps.Done;
+                        Result = _loadBundleOp.Result;
+                        Status = EOperationStatus.Succeed;
+                    }
                 }
                 else
                 {
@@ -92,9 +104,6 @@ namespace YooAsset
         {
             while (true)
             {
-                if (_loadBundleOp != null)
-                    _loadBundleOp.WaitForAsyncComplete();
-
                 if (ExecuteWhileDone())
                 {
                     _steps = ESteps.Done;

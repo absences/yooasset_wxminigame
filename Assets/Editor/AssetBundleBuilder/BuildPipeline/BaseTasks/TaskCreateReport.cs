@@ -31,6 +31,7 @@ namespace YooAsset.Editor
                 buildReport.Summary.BuildMode = buildParameters.BuildMode;
                 buildReport.Summary.BuildPackageName = buildParameters.PackageName;
                 buildReport.Summary.BuildPackageVersion = buildParameters.PackageVersion;
+                buildReport.Summary.BuildPackageNote = buildParameters.PackageNote;
 
                 // 收集器配置
                 buildReport.Summary.UniqueBundleName = buildMapContext.Command.UniqueBundleName;

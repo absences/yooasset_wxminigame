@@ -39,5 +39,6 @@ namespace YooAsset.Editor
         // TaskCreateManifest
         NotFoundUnityBundleInBuildResult = 600,
         FoundStrayBundle = 601,
+        BundleHashConflict = 602,
     }
 }

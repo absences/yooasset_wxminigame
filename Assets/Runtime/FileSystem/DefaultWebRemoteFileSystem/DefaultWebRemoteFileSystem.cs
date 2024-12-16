@@ -1,0 +1,156 @@
+﻿using System;
+using System.IO;
+using System.Collections.Generic;
+using UnityEngine;
+
+namespace YooAsset
+{
+    /// <summary>
+    /// Web文件系统
+    /// </summary>
+    internal class DefaultWebRemoteFileSystem : IFileSystem
+    {
+        /// <summary>
+        /// 包裹名称
+        /// </summary>
+        public string PackageName { private set; get; }
+
+        /// <summary>
+        /// 文件根目录
+        /// </summary>
+        public string FileRoot
+        {
+            get
+            {
+                return string.Empty;
+            }
+        }
+
+        /// <summary>
+        /// 文件数量
+        /// </summary>
+        public int FileCount
+        {
+            get
+            {
+                return 0;
+            }
+        }
+
+        #region 自定义参数
+        /// <summary>
+        /// 禁用Unity的网络缓存
+        /// </summary>
+        public bool DisableUnityWebCache { private set; get; } = false;
+
+        /// <summary>
+        /// 自定义参数：跨域下载服务接口
+        /// </summary>
+        public IRemoteServices RemoteServices { private set; get; } = null;
+        #endregion
+
+
+        public DefaultWebRemoteFileSystem()
+        {
+        }
+        public virtual FSInitializeFileSystemOperation InitializeFileSystemAsync()
+        {
+            var operation = new DWRFSInitializeOperation(this);
+            OperationSystem.StartOperation(PackageName, operation);
+            return operation;
+        }
+        public virtual FSLoadPackageManifestOperation LoadPackageManifestAsync(string packageVersion, int timeout)
+        {
+            var operation = new DWRFSLoadPackageManifestOperation(this, packageVersion, timeout);
+            OperationSystem.StartOperation(PackageName, operation);
+            return operation;
+        }
+        public virtual FSRequestPackageVersionOperation RequestPackageVersionAsync(bool appendTimeTicks, int timeout)
+        {
+            var operation = new DWRFSRequestPackageVersionOperation(this, appendTimeTicks, timeout);
+            OperationSystem.StartOperation(PackageName, operation);
+            return operation;
+        }
+        public virtual FSClearCacheBundleFilesOperation ClearCacheBundleFilesAsync(PackageManifest manifest, string clearMode, object clearParam)
+        {
+            var operation = new FSClearCacheBundleFilesCompleteOperation(null);
+            OperationSystem.StartOperation(PackageName, operation);
+            return operation;
+        }
+        public virtual FSDownloadFileOperation DownloadFileAsync(PackageBundle bundle, DownloadParam param)
+        {
+            throw new System.NotImplementedException();
+        }
+        public virtual FSLoadBundleOperation LoadBundleFile(PackageBundle bundle)
+        {
+            var operation = new DWRFSLoadAssetBundleOperation(this, bundle);
+            OperationSystem.StartOperation(PackageName, operation);
+            return operation;
+        }
+        public virtual void UnloadBundleFile(PackageBundle bundle, object result)
+        {
+            AssetBundle assetBundle = result as AssetBundle;
+            if (assetBundle == null)
+                return;
+
+            if (assetBundle != null)
+                assetBundle.Unload(true);
+        }
+
+        public virtual void SetParameter(string name, object value)
+        {
+            if (name == FileSystemParametersDefine.DISABLE_UNITY_WEB_CACHE)
+            {
+                DisableUnityWebCache = (bool)value;
+            }
+            else if (name == FileSystemParametersDefine.REMOTE_SERVICES)
+            {
+                RemoteServices = (IRemoteServices)value;
+            }
+            else
+            {
+                YooLogger.Warning($"Invalid parameter : {name}");
+            }
+        }
+        public virtual void OnCreate(string packageName, string rootDirectory)
+        {
+            PackageName = packageName;
+        }
+        public virtual void OnUpdate()
+        {
+        }
+
+        public virtual bool Belong(PackageBundle bundle)
+        {
+            return true;
+        }
+        public virtual bool Exists(PackageBundle bundle)
+        {
+            return true;
+        }
+        public virtual bool NeedDownload(PackageBundle bundle)
+        {
+            return false;
+        }
+        public virtual bool NeedUnpack(PackageBundle bundle)
+        {
+            return false;
+        }
+        public virtual bool NeedImport(PackageBundle bundle)
+        {
+            return false;
+        }
+
+        public virtual byte[] ReadFileData(PackageBundle bundle)
+        {
+            throw new System.NotImplementedException();
+        }
+        public virtual string ReadFileText(PackageBundle bundle)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        #region 内部方法
+        #endregion
+    }
+}

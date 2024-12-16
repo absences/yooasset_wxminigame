@@ -25,6 +25,9 @@ namespace YooAsset.Editor
             var buildParameters = buildParametersContext.Parameters;
             string packageOutputDirectory = buildParametersContext.GetPackageOutputDirectory();
 
+            // 检测资源包哈希冲突
+            CheckBundleHashConflict(buildMapContext);
+
             // 创建新补丁清单
             PackageManifest manifest = new PackageManifest();
             manifest.FileVersion = YooAssetSettings.ManifestFileVersion;
@@ -35,6 +38,7 @@ namespace YooAsset.Editor
             manifest.BuildPipeline = buildParameters.BuildPipeline;
             manifest.PackageName = buildParameters.PackageName;
             manifest.PackageVersion = buildParameters.PackageVersion;
+            manifest.PackageNote = buildParameters.PackageNote;
             manifest.BundleList = GetAllPackageBundle(buildMapContext);
             manifest.AssetList = GetAllPackageAsset(buildMapContext);
 
@@ -84,6 +88,28 @@ namespace YooAsset.Editor
                 string filePath = $"{packageOutputDirectory}/{fileName}";
                 FileUtility.WriteAllText(filePath, buildParameters.PackageVersion);
                 BuildLogger.Log($"Create package manifest version file: {filePath}");
+            }
+        }
+
+        /// <summary>
+        /// 检测资源包哈希冲突
+        /// </summary>
+        private void CheckBundleHashConflict(BuildMapContext buildMapContext)
+        {
+            // 说明：在特殊情况下，例如某些文件加密算法会导致加密后的文件哈希值冲突！
+            // 说明：二进制完全相同的原生文件也会冲突！
+            HashSet<string> guids = new HashSet<string>();
+            foreach (var bundleInfo in buildMapContext.Collection)
+            {
+                if (guids.Contains(bundleInfo.PackageFileHash))
+                {
+                    string message = BuildLogger.GetErrorMessage(ErrorCode.BundleHashConflict, $"Bundle hash conflict : {bundleInfo.BundleName}");
+                    throw new Exception(message);
+                }
+                else
+                {
+                    guids.Add(bundleInfo.PackageFileHash);
+                }
             }
         }
 

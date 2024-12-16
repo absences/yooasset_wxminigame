@@ -24,11 +24,6 @@ namespace YooAsset.Editor
             }
 
             // 检测不被支持的构建模式
-            if (buildParameters.BuildMode == EBuildMode.DryRunBuild)
-            {
-                string message = BuildLogger.GetErrorMessage(ErrorCode.BuildPipelineNotSupportBuildMode, $"{nameof(EBuildPipeline.RawFileBuildPipeline)} not support {nameof(EBuildMode.DryRunBuild)} build mode !");
-                throw new Exception(message);
-            }
             if (buildParameters.BuildMode == EBuildMode.IncrementalBuild)
             {
                 string message = BuildLogger.GetErrorMessage(ErrorCode.BuildPipelineNotSupportBuildMode, $"{nameof(EBuildPipeline.RawFileBuildPipeline)} not support {nameof(EBuildMode.IncrementalBuild)} build mode !");

@@ -9,7 +9,6 @@ public static class WechatFileSystemCreater
 {
     public static FileSystemParameters CreateWechatFileSystemParameters(IRemoteServices remoteServices)
     {
-        // string fileSystemClass = $"{nameof(WechatFileSystem)},YooAsset.RuntimeExtension";
         string fileSystemClass = typeof(WechatFileSystem).FullName;
         var fileSystemParams = new FileSystemParameters(fileSystemClass, null);
         fileSystemParams.AddParameter("REMOTE_SERVICES", remoteServices);
@@ -116,23 +115,33 @@ internal class WechatFileSystem : IFileSystem
         OperationSystem.StartOperation(PackageName, operation);
         return operation;
     }
-    public virtual FSClearAllBundleFilesOperation ClearAllBundleFilesAsync()
+    public virtual FSClearCacheBundleFilesOperation ClearCacheBundleFilesAsync(PackageManifest manifest, string clearMode, object clearParam)
     {
-        var operation = new WXFSClearAllBundleFilesOperation(this);
-        OperationSystem.StartOperation(PackageName, operation);
-        return operation;
+        if (clearMode == EFileClearMode.ClearAllBundleFiles.ToString())
+        {
+            var operation = new WXFSClearAllBundleFilesOperation(this);
+            OperationSystem.StartOperation(PackageName, operation);
+            return operation;
+        }
+        else if(clearMode== EFileClearMode.ClearUnusedBundleFiles.ToString())
+        {
+            var operation = new WXFSClearUnusedBundleFilesAsync(this, manifest);
+            OperationSystem.StartOperation(PackageName, operation);
+            return operation;
+        }
+
+        //todo clear by tag
+        return null;
     }
-    public virtual FSClearUnusedBundleFilesOperation ClearUnusedBundleFilesAsync(PackageManifest manifest)
-    {
-        var operation = new WXFSClearUnusedBundleFilesAsync(this, manifest);
-        OperationSystem.StartOperation(PackageName, operation);
-        return operation;
-    }
+    //public virtual FSClearUnusedBundleFilesOperation ClearUnusedBundleFilesAsync(PackageManifest manifest)
+    //{
+    //    var operation = new WXFSClearUnusedBundleFilesAsync(this, manifest);
+    //    OperationSystem.StartOperation(PackageName, operation);
+    //    return operation;
+    //}
     public virtual FSDownloadFileOperation DownloadFileAsync(PackageBundle bundle, DownloadParam param)
     {
         param.MainURL = RemoteServices.GetRemoteMainURL(bundle.FileName);
-        Debug.Log("download" + param.MainURL);
-
         param.FallbackURL = RemoteServices.GetRemoteFallbackURL(bundle.FileName);
         var operation = new WXFSDownloadFileOperation(this, bundle, param);
         OperationSystem.StartOperation(PackageName, operation);
@@ -140,8 +149,6 @@ internal class WechatFileSystem : IFileSystem
     }
     public virtual FSLoadBundleOperation LoadBundleFile(PackageBundle bundle)
     {
-        Debug.Log("load  " + bundle.FileName);
-
         var operation = new WXFSLoadBundleOperation(this, bundle);
         OperationSystem.StartOperation(PackageName, operation);
         return operation;
@@ -177,6 +184,7 @@ internal class WechatFileSystem : IFileSystem
 
         _wxFileSystemMgr = WX.GetFileSystemManager();
         _fileCacheRoot = WX.env.USER_DATA_PATH; //注意：如果有子目录，请修改此处！
+        //_fileCacheRoot = PathUtility.Combine(WX.PluginCachePath, $"StreamingAssets/WebGL");
     }
     public virtual void OnUpdate()
     {

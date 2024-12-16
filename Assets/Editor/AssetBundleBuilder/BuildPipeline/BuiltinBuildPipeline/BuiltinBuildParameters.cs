@@ -34,12 +34,6 @@ namespace YooAsset.Editor
             BuildAssetBundleOptions opt = BuildAssetBundleOptions.None;
             opt |= BuildAssetBundleOptions.StrictMode; //Do not allow the build to succeed if any errors are reporting during it.
 
-            if (BuildMode == EBuildMode.DryRunBuild)
-            {
-                opt |= BuildAssetBundleOptions.DryRunBuild;
-                return opt;
-            }
-
             if (CompressOption == ECompressOption.Uncompressed)
                 opt |= BuildAssetBundleOptions.UncompressedAssetBundle;
             else if (CompressOption == ECompressOption.LZ4)

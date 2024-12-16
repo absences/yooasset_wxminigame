@@ -65,6 +65,7 @@ namespace YooAsset.Editor
             _items.Add(new ItemWrapper("Build Mode", $"{buildReport.Summary.BuildMode}"));
             _items.Add(new ItemWrapper("Package Name", buildReport.Summary.BuildPackageName));
             _items.Add(new ItemWrapper("Package Version", buildReport.Summary.BuildPackageVersion));
+            _items.Add(new ItemWrapper("Package Note", buildReport.Summary.BuildPackageNote));
 
             _items.Add(new ItemWrapper(string.Empty, string.Empty));
             _items.Add(new ItemWrapper("Collect Settings", string.Empty));

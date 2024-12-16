@@ -236,21 +236,25 @@ namespace YooAsset
         }
 
         /// <summary>
-        /// 清理文件系统所有的资源文件
+        /// 清理缓存文件
         /// </summary>
-        public ClearAllBundleFilesOperation ClearAllBundleFilesAsync()
+        /// <param name="clearMode">清理方式</param>
+        /// <param name="clearParam">执行参数</param>
+        public ClearCacheBundleFilesOperation ClearCacheBundleFilesAsync(EFileClearMode clearMode, object clearParam = null)
         {
             DebugCheckInitialize();
-            return _playModeImpl.ClearAllBundleFilesAsync();
+            return _playModeImpl.ClearCacheBundleFilesAsync(clearMode.ToString(), clearParam);
         }
 
         /// <summary>
-        /// 清理文件系统未使用的资源文件
+        /// 清理缓存文件
         /// </summary>
-        public ClearUnusedBundleFilesOperation ClearUnusedBundleFilesAsync()
+        /// <param name="clearMode">清理方式</param>
+        /// <param name="clearParam">执行参数</param>
+        public ClearCacheBundleFilesOperation ClearCacheBundleFilesAsync(string clearMode, object clearParam = null)
         {
             DebugCheckInitialize();
-            return _playModeImpl.ClearUnusedBundleFilesAsync();
+            return _playModeImpl.ClearCacheBundleFilesAsync(clearMode, clearParam);
         }
 
         /// <summary>
@@ -260,6 +264,15 @@ namespace YooAsset
         {
             DebugCheckInitialize();
             return _playModeImpl.ActiveManifest.PackageVersion;
+        }
+
+        /// <summary>
+        /// 获取本地包裹的备注信息
+        /// </summary>
+        public string GetPackageNote()
+        {
+            DebugCheckInitialize();
+            return _playModeImpl.ActiveManifest.PackageNote;
         }
 
         #region 资源回收
@@ -331,6 +344,15 @@ namespace YooAsset
         }
 
         /// <summary>
+        /// 获取所有的资源信息
+        /// </summary>
+        public AssetInfo[] GetAllAssetInfos()
+        {
+            DebugCheckInitialize();
+            return _playModeImpl.ActiveManifest.GetAllAssetInfos();
+        }
+
+        /// <summary>
         /// 获取资源信息列表
         /// </summary>
         /// <param name="tag">资源标签</param>
@@ -338,7 +360,7 @@ namespace YooAsset
         {
             DebugCheckInitialize();
             string[] tags = new string[] { tag };
-            return _playModeImpl.ActiveManifest.GetAssetsInfoByTags(tags);
+            return _playModeImpl.ActiveManifest.GetAssetInfosByTags(tags);
         }
 
         /// <summary>
@@ -348,7 +370,7 @@ namespace YooAsset
         public AssetInfo[] GetAssetInfos(string[] tags)
         {
             DebugCheckInitialize();
-            return _playModeImpl.ActiveManifest.GetAssetsInfoByTags(tags);
+            return _playModeImpl.ActiveManifest.GetAssetInfosByTags(tags);
         }
 
         /// <summary>

@@ -96,6 +96,7 @@ namespace YooAsset
             {
                 if (LoadDependBundleFileOp != null)
                     LoadDependBundleFileOp.WaitForAsyncComplete();
+
                 if (LoadBundleFileOp != null)
                     LoadBundleFileOp.WaitForAsyncComplete();
 

@@ -83,6 +83,7 @@ namespace YooAsset
                     Manifest.BuildPipeline = _buffer.ReadUTF8();
                     Manifest.PackageName = _buffer.ReadUTF8();
                     Manifest.PackageVersion = _buffer.ReadUTF8();
+                    Manifest.PackageNote = _buffer.ReadUTF8();
 
                     // 检测配置
                     if (Manifest.EnableAddressable && Manifest.LocationToLower)

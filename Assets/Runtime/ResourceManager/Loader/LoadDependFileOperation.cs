@@ -36,6 +36,14 @@ namespace YooAsset
 
             if (_steps == ESteps.CheckDepend)
             {
+                if (IsWaitForAsyncComplete)
+                {
+                    foreach (var loader in Depends)
+                    {
+                        loader.WaitForAsyncComplete();
+                    }
+                }
+
                 foreach (var loader in Depends)
                 {
                     if (loader.IsDone == false)
@@ -73,11 +81,6 @@ namespace YooAsset
         {
             while (true)
             {
-                foreach (var loader in Depends)
-                {
-                    loader.WaitForAsyncComplete();
-                }
-
                 if (ExecuteWhileDone())
                 {
                     _steps = ESteps.Done;

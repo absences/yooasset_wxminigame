@@ -10,36 +10,6 @@ namespace YooAsset
     /// </summary>
     internal class DefaultBuildinFileSystem : IFileSystem
     {
-        private class UnpackRemoteServices : IRemoteServices
-        {
-            private readonly string _buildinPackageRoot;
-            protected readonly Dictionary<string, string> _mapping = new Dictionary<string, string>(10000);
-
-            public UnpackRemoteServices(string buildinPackRoot)
-            {
-                _buildinPackageRoot = buildinPackRoot;
-            }
-            string IRemoteServices.GetRemoteMainURL(string fileName)
-            {
-                return GetFileLoadURL(fileName);
-            }
-            string IRemoteServices.GetRemoteFallbackURL(string fileName)
-            {
-                return GetFileLoadURL(fileName);
-            }
-
-            private string GetFileLoadURL(string fileName)
-            {
-                if (_mapping.TryGetValue(fileName, out string url) == false)
-                {
-                    string filePath = PathUtility.Combine(_buildinPackageRoot, fileName);
-                    url = DownloadSystemHelper.ConvertToWWWPath(filePath);
-                    _mapping.Add(fileName, url);
-                }
-                return url;
-            }
-        }
-
         public class FileWrapper
         {
             public string FileName { private set; get; }
@@ -127,13 +97,9 @@ namespace YooAsset
             OperationSystem.StartOperation(PackageName, operation);
             return operation;
         }
-        public virtual FSClearAllBundleFilesOperation ClearAllBundleFilesAsync()
+        public virtual FSClearCacheBundleFilesOperation ClearCacheBundleFilesAsync(PackageManifest manifest, string clearMode, object clearParam)
         {
-            return _unpackFileSystem.ClearAllBundleFilesAsync();
-        }
-        public virtual FSClearUnusedBundleFilesOperation ClearUnusedBundleFilesAsync(PackageManifest manifest)
-        {
-            return _unpackFileSystem.ClearUnusedBundleFilesAsync(manifest);
+            return _unpackFileSystem.ClearCacheBundleFilesAsync(manifest, clearMode, clearParam);
         }
         public virtual FSDownloadFileOperation DownloadFileAsync(PackageBundle bundle, DownloadParam param)
         {
@@ -220,7 +186,7 @@ namespace YooAsset
             _packageRoot = PathUtility.Combine(rootDirectory, packageName);
 
             // 创建解压文件系统
-            var remoteServices = new UnpackRemoteServices(_packageRoot);
+            var remoteServices = new DefaultUnpackRemoteServices(_packageRoot);
             _unpackFileSystem = new DefaultUnpackFileSystem();
             _unpackFileSystem.SetParameter(FileSystemParametersDefine.REMOTE_SERVICES, remoteServices);
             _unpackFileSystem.SetParameter(FileSystemParametersDefine.FILE_VERIFY_LEVEL, FileVerifyLevel);
@@ -231,6 +197,7 @@ namespace YooAsset
         }
         public virtual void OnUpdate()
         {
+            _unpackFileSystem.OnUpdate();
         }
 
         public virtual bool Belong(PackageBundle bundle)

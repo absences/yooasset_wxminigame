@@ -58,6 +58,9 @@ namespace YooAsset
                     _downloadFileOp = _fileSystem.DownloadFileAsync(_bundle, downloadParam);
                 }
 
+                if (IsWaitForAsyncComplete)
+                    _downloadFileOp.WaitForAsyncComplete();
+
                 DownloadProgress = _downloadFileOp.DownloadProgress;
                 DownloadedBytes = _downloadFileOp.DownloadedBytes;
                 if (_downloadFileOp.IsDone == false)
@@ -198,9 +201,6 @@ namespace YooAsset
         {
             while (true)
             {
-                if (_downloadFileOp != null)
-                    _downloadFileOp.WaitForAsyncComplete();
-
                 if (ExecuteWhileDone())
                 {
                     if (_downloadFileOp != null && _downloadFileOp.Status == EOperationStatus.Failed)
@@ -274,6 +274,9 @@ namespace YooAsset
                     _downloadFileOp = _fileSystem.DownloadFileAsync(_bundle, downloadParam);
                 }
 
+                if (IsWaitForAsyncComplete)
+                    _downloadFileOp.WaitForAsyncComplete();
+
                 DownloadProgress = _downloadFileOp.DownloadProgress;
                 DownloadedBytes = _downloadFileOp.DownloadedBytes;
                 if (_downloadFileOp.IsDone == false)
@@ -313,9 +316,6 @@ namespace YooAsset
         {
             while (true)
             {
-                if (_downloadFileOp != null)
-                    _downloadFileOp.WaitForAsyncComplete();
-
                 if (ExecuteWhileDone())
                 {
                     if (_downloadFileOp != null && _downloadFileOp.Status == EOperationStatus.Failed)

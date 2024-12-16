@@ -35,14 +35,9 @@ namespace YooAsset
         FSRequestPackageVersionOperation RequestPackageVersionAsync(bool appendTimeTicks, int timeout);
 
         /// <summary>
-        /// 清空所有的文件
+        /// 清理缓存文件
         /// </summary>
-        FSClearAllBundleFilesOperation ClearAllBundleFilesAsync();
-
-        /// <summary>
-        /// 清空未使用的文件
-        /// </summary>
-        FSClearUnusedBundleFilesOperation ClearUnusedBundleFilesAsync(PackageManifest manifest);
+        FSClearCacheBundleFilesOperation ClearCacheBundleFilesAsync(PackageManifest manifest, string clearMode, object clearParam);
 
         /// <summary>
         /// 下载远端文件

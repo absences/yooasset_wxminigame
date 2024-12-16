@@ -15,6 +15,7 @@ public class GameEnter : MonoBehaviour
     }
 
     private ResourcePackage DefaultPackage;
+
     async UniTask InitResource()
     {
         YooAssets.Initialize(null);
@@ -29,8 +30,7 @@ public class GameEnter : MonoBehaviour
 #if UNITY_WEBGL
         initializeParameters = new WebPlayModeParameters()
         {
-            WebFileSystemParameters = WechatFileSystemCreater.CreateWechatFileSystemParameters(new RemoveServer(CDN)),
-
+            WebRemoteFileSystemParameters = WechatFileSystemCreater.CreateWechatFileSystemParameters(new RemoveServer(CDN)),
         };
 #endif
         //initializeParameters = new EditorSimulateModeParameters()

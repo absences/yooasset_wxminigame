@@ -17,11 +17,6 @@ namespace YooAsset.Editor
             buildParametersContext.CheckBuildParameters();
 
             // 检测不被支持的构建模式
-            if (buildParameters.BuildMode == EBuildMode.DryRunBuild)
-            {
-                string message = BuildLogger.GetErrorMessage(ErrorCode.BuildPipelineNotSupportBuildMode, $"{nameof(EBuildPipeline.ScriptableBuildPipeline)} not support {nameof(EBuildMode.DryRunBuild)} build mode !");
-                throw new Exception(message);
-            }
             if (buildParameters.BuildMode == EBuildMode.ForceRebuild)
             {
                 string message = BuildLogger.GetErrorMessage(ErrorCode.BuildPipelineNotSupportBuildMode, $"{nameof(EBuildPipeline.ScriptableBuildPipeline)} not support {nameof(EBuildMode.ForceRebuild)} build mode !");

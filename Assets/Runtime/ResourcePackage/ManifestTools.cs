@@ -42,6 +42,7 @@ namespace YooAsset
                 buffer.WriteUTF8(manifest.BuildPipeline);
                 buffer.WriteUTF8(manifest.PackageName);
                 buffer.WriteUTF8(manifest.PackageVersion);
+                buffer.WriteUTF8(manifest.PackageNote);
 
                 // 写入资源列表
                 buffer.WriteInt32(manifest.AssetList.Count);
@@ -113,6 +114,7 @@ namespace YooAsset
                 manifest.BuildPipeline = buffer.ReadUTF8();
                 manifest.PackageName = buffer.ReadUTF8();
                 manifest.PackageVersion = buffer.ReadUTF8();
+                manifest.PackageNote = buffer.ReadUTF8();
 
                 // 检测配置
                 if (manifest.EnableAddressable && manifest.LocationToLower)

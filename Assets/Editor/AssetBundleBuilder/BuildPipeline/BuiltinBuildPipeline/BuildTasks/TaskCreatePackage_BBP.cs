@@ -10,7 +10,7 @@ namespace YooAsset.Editor
             var buildParameters = context.GetContextObject<BuildParametersContext>();
             var buildMapContext = context.GetContextObject<BuildMapContext>();
             var buildMode = buildParameters.Parameters.BuildMode;
-            if (buildMode != EBuildMode.SimulateBuild && buildMode != EBuildMode.DryRunBuild)
+            if (buildMode != EBuildMode.SimulateBuild)
             {
                 CreatePackageCatalog(buildParameters, buildMapContext);
             }

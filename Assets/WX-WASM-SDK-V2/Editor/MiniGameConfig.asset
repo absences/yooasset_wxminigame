@@ -15,8 +15,8 @@ MonoBehaviour:
   ProjectConf:
     projectName: yoogame
     Appid: 
-    CDN: https://qq.tencent.com
-    assetLoadType: 0
+    CDN: 
+    assetLoadType: 1
     compressDataPackage: 0
     VideoUrl: 
     DST: C:\Users\x8261\Desktop\Yood\
@@ -53,7 +53,7 @@ MonoBehaviour:
     profilingFuncs: 1
     Webgl2: 0
     fbslim: 0
-    DeleteStreamingAssets: 1
+    DeleteStreamingAssets: 0
     ProfilingMemory: 0
     CleanBuild: 0
     CustomNodePath: 
