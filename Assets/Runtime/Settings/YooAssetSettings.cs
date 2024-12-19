@@ -6,11 +6,6 @@ namespace YooAsset
     internal class YooAssetSettings : ScriptableObject
     {
         /// <summary>
-        /// 清单文件名称
-        /// </summary>
-        public string ManifestFileName = "PackageManifest";
-
-        /// <summary>
         /// 默认的YooAsset文件夹名称
         /// </summary>
         public string DefaultYooFolderName = "yoo";
@@ -36,10 +31,5 @@ namespace YooAsset
         /// 构建输出文件夹名称
         /// </summary>
         public const string OutputFolderName = "OutputCache";
-
-        /// <summary>
-        /// 构建输出的报告文件
-        /// </summary>
-        public const string ReportFileName = "BuildReport";
     }
 }

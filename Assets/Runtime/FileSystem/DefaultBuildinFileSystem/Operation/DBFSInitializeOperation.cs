@@ -65,7 +65,8 @@ namespace YooAsset
 #if UNITY_EDITOR
                     // 兼容性初始化
                     // 说明：内置文件系统在编辑器下运行时需要动态生成
-                    string packageRoot = _fileSystem.GetStreamingAssetsPackageRoot();
+                    string buildinRoot = YooAssetSettingsData.GetYooEditorBuildinRoot();
+                    string packageRoot = PathUtility.Combine(buildinRoot, _fileSystem.PackageName);
                     DefaultBuildinFileSystemBuild.CreateBuildinCatalogFile(_fileSystem.PackageName, packageRoot);
 #endif
 

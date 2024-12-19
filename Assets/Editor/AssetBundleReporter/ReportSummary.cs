@@ -34,11 +34,6 @@ namespace YooAsset.Editor
         public BuildTarget BuildTarget;
 
         /// <summary>
-        /// 构建模式
-        /// </summary>
-        public EBuildMode BuildMode;
-
-        /// <summary>
         /// 构建管线
         /// </summary>
         public string BuildPipeline;
@@ -67,6 +62,8 @@ namespace YooAsset.Editor
         public string IgnoreRuleName;
 
         // 构建参数
+        public bool ClearBuildCacheFiles;
+        public bool UseAssetDependencyDB;
         public bool EnableSharePackRule;
         public string EncryptionClassName;
         public EFileNameStyle FileNameStyle;

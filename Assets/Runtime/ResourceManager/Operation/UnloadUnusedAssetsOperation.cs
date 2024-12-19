@@ -58,7 +58,8 @@ namespace YooAsset
                 }
 
                 // 注意：调用底层接口释放所有资源
-                Resources.UnloadUnusedAssets();
+                if (removeList.Count > 0)
+                    Resources.UnloadUnusedAssets();
 
                 _steps = ESteps.Done;
                 Status = EOperationStatus.Succeed;

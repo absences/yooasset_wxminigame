@@ -9,7 +9,7 @@ public static class WechatFileSystemCreater
 {
     public static FileSystemParameters CreateWechatFileSystemParameters(IRemoteServices remoteServices)
     {
-        string fileSystemClass = typeof(WechatFileSystem).FullName;
+        string fileSystemClass = $"{nameof(WechatFileSystem)},YooAsset.RuntimeExtension";
         var fileSystemParams = new FileSystemParameters(fileSystemClass, null);
         fileSystemParams.AddParameter("REMOTE_SERVICES", remoteServices);
         return fileSystemParams;
@@ -123,22 +123,20 @@ internal class WechatFileSystem : IFileSystem
             OperationSystem.StartOperation(PackageName, operation);
             return operation;
         }
-        else if(clearMode== EFileClearMode.ClearUnusedBundleFiles.ToString())
+        else if (clearMode == EFileClearMode.ClearUnusedBundleFiles.ToString())
         {
             var operation = new WXFSClearUnusedBundleFilesAsync(this, manifest);
             OperationSystem.StartOperation(PackageName, operation);
             return operation;
         }
-
-        //todo clear by tag
-        return null;
+        else
+        {
+            string error = $"Invalid clear mode : {clearMode}";
+            var operation = new FSClearCacheBundleFilesCompleteOperation(error);
+            OperationSystem.StartOperation(PackageName, operation);
+            return operation;
+        }
     }
-    //public virtual FSClearUnusedBundleFilesOperation ClearUnusedBundleFilesAsync(PackageManifest manifest)
-    //{
-    //    var operation = new WXFSClearUnusedBundleFilesAsync(this, manifest);
-    //    OperationSystem.StartOperation(PackageName, operation);
-    //    return operation;
-    //}
     public virtual FSDownloadFileOperation DownloadFileAsync(PackageBundle bundle, DownloadParam param)
     {
         param.MainURL = RemoteServices.GetRemoteMainURL(bundle.FileName);
@@ -183,8 +181,9 @@ internal class WechatFileSystem : IFileSystem
         }
 
         _wxFileSystemMgr = WX.GetFileSystemManager();
-        _fileCacheRoot = WX.env.USER_DATA_PATH; //注意：如果有子目录，请修改此处！
-        //_fileCacheRoot = PathUtility.Combine(WX.PluginCachePath, $"StreamingAssets/WebGL");
+       _fileCacheRoot = $"{WX.env.USER_DATA_PATH}/__GAME_FILE_CACHE";
+       //_fileCacheRoot = $"{WX.env.USER_DATA_PATH}/__GAME_FILE_CACHE/子目录"; //注意：如果有子目录，请修改此处！
+       //_fileCacheRoot = PathUtility.Combine(WX.PluginCachePath, $"StreamingAssets/WebGL");
     }
     public virtual void OnUpdate()
     {

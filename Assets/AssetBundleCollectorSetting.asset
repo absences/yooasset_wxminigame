@@ -18,7 +18,7 @@ MonoBehaviour:
   Packages:
   - PackageName: DefaultPackage
     PackageDesc: 
-    EnableAddressable: 0
+    EnableAddressable: 1
     LocationToLower: 0
     IncludeAssetGUID: 0
     AutoCollectShaders: 1
@@ -31,6 +31,14 @@ MonoBehaviour:
       Collectors:
       - CollectPath: Assets/GameObject.prefab
         CollectorGUID: 2fde08aa5b94d9e48a1c91b025329e67
+        CollectorType: 0
+        AddressRuleName: AddressByFileName
+        PackRuleName: PackDirectory
+        FilterRuleName: CollectAll
+        AssetTags: 
+        UserData: 
+      - CollectPath: Assets/DS/UISprite/EquipIcon_9.png
+        CollectorGUID: 88f2959800d6a4385a402f557d6fabd3
         CollectorType: 0
         AddressRuleName: AddressByFileName
         PackRuleName: PackDirectory

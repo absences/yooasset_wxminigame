@@ -258,7 +258,7 @@ namespace YooAsset
         }
 
         /// <summary>
-        /// 获取本地包裹的版本信息
+        /// 获取当前激活包裹的版本信息
         /// </summary>
         public string GetPackageVersion()
         {
@@ -267,12 +267,21 @@ namespace YooAsset
         }
 
         /// <summary>
-        /// 获取本地包裹的备注信息
+        /// 获取当前激活包裹的备注信息
         /// </summary>
         public string GetPackageNote()
         {
             DebugCheckInitialize();
             return _playModeImpl.ActiveManifest.PackageNote;
+        }
+
+        /// <summary>
+        /// 获取当前激活包裹的详细信息
+        /// </summary>
+        public PackageDetails GetPackageDetails()
+        {
+            DebugCheckInitialize();
+            return _playModeImpl.ActiveManifest.GetPackageDetails();
         }
 
         #region 资源回收

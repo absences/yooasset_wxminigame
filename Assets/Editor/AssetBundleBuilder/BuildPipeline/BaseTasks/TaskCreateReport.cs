@@ -28,7 +28,6 @@ namespace YooAsset.Editor
                 buildReport.Summary.BuildSeconds = BuildRunner.TotalSeconds;
                 buildReport.Summary.BuildTarget = buildParameters.BuildTarget;
                 buildReport.Summary.BuildPipeline = buildParameters.BuildPipeline;
-                buildReport.Summary.BuildMode = buildParameters.BuildMode;
                 buildReport.Summary.BuildPackageName = buildParameters.PackageName;
                 buildReport.Summary.BuildPackageVersion = buildParameters.PackageVersion;
                 buildReport.Summary.BuildPackageNote = buildParameters.PackageNote;
@@ -42,6 +41,8 @@ namespace YooAsset.Editor
                 buildReport.Summary.AutoCollectShaders = buildMapContext.Command.AutoCollectShaders;
 
                 // 构建参数
+                buildReport.Summary.ClearBuildCacheFiles = buildParameters.ClearBuildCacheFiles;
+                buildReport.Summary.UseAssetDependencyDB = buildParameters.UseAssetDependencyDB;
                 buildReport.Summary.EnableSharePackRule = buildParameters.EnableSharePackRule;
                 buildReport.Summary.EncryptionClassName = buildParameters.EncryptionServices == null ? "null" : buildParameters.EncryptionServices.GetType().FullName;
                 if (buildParameters.BuildPipeline == nameof(BuiltinBuildPipeline))
@@ -131,6 +132,7 @@ namespace YooAsset.Editor
                 string dependBundleName = manifest.BundleList[index].BundleName;
                 dependBundles.Add(dependBundleName);
             }
+            dependBundles.Sort();
             return dependBundles;
         }
 
@@ -160,6 +162,7 @@ namespace YooAsset.Editor
                     result.Add(dependAssetInfo.AssetInfo.AssetPath);
                 }
             }
+            result.Sort();
             return result;
         }
 
@@ -169,7 +172,9 @@ namespace YooAsset.Editor
         private List<string> GetAllBuiltinAssets(BuildMapContext buildMapContext, string bundleName)
         {
             var bundleInfo = buildMapContext.GetBundleInfo(bundleName);
-            return bundleInfo.GetAllBuiltinAssetPaths();
+            List<string> result = bundleInfo.GetAllBuiltinAssetPaths();
+            result.Sort();
+            return result;
         }
 
         private int GetMainAssetCount(PackageManifest manifest)

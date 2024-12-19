@@ -30,7 +30,7 @@ namespace YooAsset
 
             if (_steps == ESteps.LoadCatalog)
             {
-                string catalogFilePath = _fileSystem.GetBuildinCatalogFileLoadPath();
+                string catalogFilePath = _fileSystem.GetCatalogFileLoadPath();
                 var catalog = Resources.Load<DefaultBuildinFileCatalog>(catalogFilePath);
                 if (catalog == null)
                 {

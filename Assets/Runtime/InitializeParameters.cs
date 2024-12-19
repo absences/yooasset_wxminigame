@@ -4,27 +4,6 @@ using System.Collections.Generic;
 namespace YooAsset
 {
     /// <summary>
-    /// 默认的构建管线
-    /// </summary>
-    public enum EDefaultBuildPipeline
-    {
-        /// <summary>
-        /// 内置构建管线
-        /// </summary>
-        BuiltinBuildPipeline,
-
-        /// <summary>
-        /// 可编程构建管线
-        /// </summary>
-        ScriptableBuildPipeline,
-
-        /// <summary>
-        /// 原生文件构建管线
-        /// </summary>
-        RawFileBuildPipeline,
-    }
-
-    /// <summary>
     /// 运行模式
     /// </summary>
     public enum EPlayMode
@@ -89,7 +68,7 @@ namespace YooAsset
         /// 创建默认的编辑器文件系统参数
         /// <param name="simulateBuildResult">模拟构建结果</param>
         /// </summary>
-        public static FileSystemParameters CreateDefaultEditorFileSystemParameters(SimulateBuildResult simulateBuildResult)
+        public static FileSystemParameters CreateDefaultEditorFileSystemParameters(EditorSimulateBuildResult simulateBuildResult)
         {
             string fileSystemClass = typeof(DefaultEditorFileSystem).FullName;
             var fileSystemParams = new FileSystemParameters(fileSystemClass, simulateBuildResult.PackageRootDirectory);

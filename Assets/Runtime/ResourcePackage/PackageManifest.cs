@@ -106,6 +106,26 @@ namespace YooAsset
 
 
         /// <summary>
+        /// 获取包裹的详细信息
+        /// </summary>
+        public PackageDetails GetPackageDetails()
+        {
+            PackageDetails details = new PackageDetails();
+            details.FileVersion = FileVersion;
+            details.EnableAddressable = EnableAddressable;
+            details.LocationToLower = LocationToLower;
+            details.IncludeAssetGUID = IncludeAssetGUID;
+            details.OutputNameStyle = OutputNameStyle;
+            details.BuildPipeline = BuildPipeline;
+            details.PackageName = PackageName;
+            details.PackageVersion = PackageVersion;
+            details.PackageNote = PackageNote;
+            details.AssetTotalCount = AssetList.Count;
+            details.BundleTotalCount = BundleList.Count;
+            return details;
+        }
+
+        /// <summary>
         /// 尝试映射为资源路径
         /// </summary>
         public string TryMappingToAssetPath(string location)

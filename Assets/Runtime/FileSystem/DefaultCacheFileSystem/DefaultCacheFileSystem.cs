@@ -17,8 +17,7 @@ namespace YooAsset
         protected readonly Dictionary<string, string> _dataFilePaths = new Dictionary<string, string>(10000);
         protected readonly Dictionary<string, string> _infoFilePaths = new Dictionary<string, string>(10000);
         protected readonly Dictionary<string, string> _tempFilePaths = new Dictionary<string, string>(10000);
-        protected readonly Dictionary<string, DefaultDownloadFileOperation> _downloaders = new Dictionary<string, DefaultDownloadFileOperation>(1000);
-        protected readonly List<string> _removeList = new List<string>(1000);
+        protected DefaultCacheDownloadCenter _downloadCenter;
 
         protected string _packageRoot;
         protected string _cacheFileRoot;
@@ -74,6 +73,16 @@ namespace YooAsset
         public bool RawFileBuildPipeline { private set; get; } = false;
 
         /// <summary>
+        /// 自定义参数：最大并发连接数
+        /// </summary>
+        public int DownloadMaxConcurrency { private set; get; } = int.MaxValue;
+
+        /// <summary>
+        /// 自定义参数：每帧发起的最大请求数
+        /// </summary>
+        public int DownloadMaxRequestPerFrame { private set; get; } = int.MaxValue;
+
+        /// <summary>
         /// 自定义参数：启用断点续传的最小尺寸
         /// </summary>
         public long ResumeDownloadMinimumSize { private set; get; } = long.MaxValue;
@@ -113,19 +122,19 @@ namespace YooAsset
         }
         public virtual FSClearCacheBundleFilesOperation ClearCacheBundleFilesAsync(PackageManifest manifest, string clearMode, object clearParam)
         {
-            if(clearMode == EFileClearMode.ClearAllBundleFiles.ToString())
+            if (clearMode == EFileClearMode.ClearAllBundleFiles.ToString())
             {
                 var operation = new ClearAllCacheFilesOperation(this);
                 OperationSystem.StartOperation(PackageName, operation);
                 return operation;
             }
-            else if(clearMode == EFileClearMode.ClearUnusedBundleFiles.ToString())
+            else if (clearMode == EFileClearMode.ClearUnusedBundleFiles.ToString())
             {
                 var operation = new ClearUnusedCacheFilesOperation(this, manifest);
                 OperationSystem.StartOperation(PackageName, operation);
                 return operation;
             }
-            else if(clearMode == EFileClearMode.ClearBundleFilesByTags.ToString())
+            else if (clearMode == EFileClearMode.ClearBundleFilesByTags.ToString())
             {
                 var operation = new ClearCacheFilesByTagsOperaiton(this, manifest, clearParam);
                 OperationSystem.StartOperation(PackageName, operation);
@@ -141,44 +150,7 @@ namespace YooAsset
         }
         public virtual FSDownloadFileOperation DownloadFileAsync(PackageBundle bundle, DownloadParam param)
         {
-            // 查询旧的下载器
-            if (_downloaders.TryGetValue(bundle.BundleGUID, out var oldDownloader))
-            {
-                oldDownloader.Reference();
-                return oldDownloader;
-            }
-
-            // 创建新的下载器
-            {
-                if (string.IsNullOrEmpty(param.ImportFilePath))
-                {
-                    param.MainURL = RemoteServices.GetRemoteMainURL(bundle.FileName);
-                    param.FallbackURL = RemoteServices.GetRemoteFallbackURL(bundle.FileName);
-                }
-                else
-                {
-                    // 注意：把本地文件路径指定为远端下载地址
-                    param.MainURL = DownloadSystemHelper.ConvertToWWWPath(param.ImportFilePath);
-                    param.FallbackURL = param.MainURL;
-                }
-
-                if (bundle.FileSize >= ResumeDownloadMinimumSize)
-                {
-                    var newDownloader = new DownloadResumeFileOperation(this, this, bundle, param, ResumeDownloadResponseCodes);
-                    newDownloader.Reference();
-                    _downloaders.Add(bundle.BundleGUID, newDownloader);
-                    OperationSystem.StartOperation(PackageName, newDownloader);
-                    return newDownloader;
-                }
-                else
-                {
-                    var newDownloader = new DownloadNormalFileOperation(this, this, bundle, param);
-                    newDownloader.Reference();
-                    _downloaders.Add(bundle.BundleGUID, newDownloader);
-                    OperationSystem.StartOperation(PackageName, newDownloader);
-                    return newDownloader;
-                }
-            }
+            return _downloadCenter.DownloadFileAsync(bundle, param);
         }
         public virtual FSLoadBundleOperation LoadBundleFile(PackageBundle bundle)
         {
@@ -233,6 +205,14 @@ namespace YooAsset
             {
                 RawFileBuildPipeline = (bool)value;
             }
+            else if (name == FileSystemParametersDefine.DOWNLOAD_MAX_CONCURRENCY)
+            {
+                DownloadMaxConcurrency = (int)value;
+            }
+            else if (name == FileSystemParametersDefine.DOWNLOAD_MAX_REQUEST_PER_FRAME)
+            {
+                DownloadMaxRequestPerFrame = (int)value;
+            }
             else if (name == FileSystemParametersDefine.RESUME_DOWNLOAD_MINMUM_SIZE)
             {
                 ResumeDownloadMinimumSize = (long)value;
@@ -255,37 +235,17 @@ namespace YooAsset
             PackageName = packageName;
 
             if (string.IsNullOrEmpty(rootDirectory))
-                rootDirectory = CacheHelper.GetDefaultCacheRoot();
+                rootDirectory = GetDefaultCacheRoot();
 
             _packageRoot = PathUtility.Combine(rootDirectory, packageName);
             _cacheFileRoot = PathUtility.Combine(_packageRoot, DefaultCacheFileSystemDefine.SaveFilesFolderName);
             _tempFileRoot = PathUtility.Combine(_packageRoot, DefaultCacheFileSystemDefine.TempFilesFolderName);
             _manifestFileRoot = PathUtility.Combine(_packageRoot, DefaultCacheFileSystemDefine.ManifestFilesFolderName);
+            _downloadCenter = new DefaultCacheDownloadCenter(this);
         }
         public virtual void OnUpdate()
         {
-            _removeList.Clear();
-
-            foreach (var valuePair in _downloaders)
-            {
-                var downloader = valuePair.Value;
-
-                // 注意：主动终止引用计数为零的下载任务
-                if (downloader.RefCount <= 0)
-                {
-                    _removeList.Add(valuePair.Key);
-                    downloader.SetAbort();
-                    continue;
-                }
-
-                if (downloader.IsDone)
-                    _removeList.Add(valuePair.Key);
-            }
-
-            foreach (var key in _removeList)
-            {
-                _downloaders.Remove(key);
-            }
+            _downloadCenter.Update();
         }
 
         public virtual bool Belong(PackageBundle bundle)
@@ -520,6 +480,16 @@ namespace YooAsset
         #endregion
 
         #region 内部方法
+        public string GetDefaultCacheRoot()
+        {
+#if UNITY_EDITOR
+            return YooAssetSettingsData.GetYooEditorCacheRoot();
+#elif UNITY_STANDALONE
+            return YooAssetSettingsData.GetYooStandaloneCacheRoot();
+#else
+            return YooAssetSettingsData.GetYooMobileCacheRoot();
+#endif
+        }
         public string GetCacheFileLoadPath(PackageBundle bundle)
         {
             return GetDataFilePath(bundle);

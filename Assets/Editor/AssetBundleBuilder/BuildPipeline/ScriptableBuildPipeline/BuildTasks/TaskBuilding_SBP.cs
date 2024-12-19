@@ -21,11 +21,6 @@ namespace YooAsset.Editor
             var buildMapContext = context.GetContextObject<BuildMapContext>();
             var scriptableBuildParameters = buildParametersContext.Parameters as ScriptableBuildParameters;
 
-            // 模拟构建模式下跳过引擎构建
-            var buildMode = buildParametersContext.Parameters.BuildMode;
-            if (buildMode == EBuildMode.SimulateBuild)
-                return;
-
             // 构建内容
             var buildContent = new BundleBuildContent(buildMapContext.GetPipelineBuilds());
 

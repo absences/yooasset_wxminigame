@@ -163,8 +163,7 @@ namespace YooAsset
         #region 内部方法
         protected string GetDefaultWebRoot()
         {
-            string path = PathUtility.Combine(UnityEngine.Application.streamingAssetsPath, YooAssetSettingsData.Setting.DefaultYooFolderName);
-            return path;
+            return YooAssetSettingsData.GetYooWebBuildinRoot();
         }
         public string GetWebFileLoadPath(PackageBundle bundle)
         {
@@ -174,11 +173,6 @@ namespace YooAsset
                 _webFilePaths.Add(bundle.BundleGUID, filePath);
             }
             return filePath;
-        }
-        public string GetCatalogFileLoadPath()
-        {
-            string fileName = Path.GetFileNameWithoutExtension(DefaultBuildinFileSystemDefine.BuildinCatalogFileName);
-            return PathUtility.Combine(YooAssetSettingsData.Setting.DefaultYooFolderName, PackageName, fileName);
         }
         public string GetWebPackageVersionFilePath()
         {
@@ -195,10 +189,10 @@ namespace YooAsset
             string fileName = YooAssetSettingsData.GetManifestBinaryFileName(PackageName, packageVersion);
             return PathUtility.Combine(FileRoot, fileName);
         }
-        public string GetStreamingAssetsPackageRoot()
+        public string GetCatalogFileLoadPath()
         {
-            string rootPath = PathUtility.Combine(Application.dataPath, "StreamingAssets", YooAssetSettingsData.Setting.DefaultYooFolderName);
-            return PathUtility.Combine(rootPath, PackageName);
+            string fileName = Path.GetFileNameWithoutExtension(DefaultBuildinFileSystemDefine.BuildinCatalogFileName);
+            return YooAssetSettingsData.GetYooResourcesLoadPath(PackageName, fileName);
         }
 
         /// <summary>

@@ -39,7 +39,7 @@ namespace YooAsset.Editor
             else if (CompressOption == ECompressOption.LZ4)
                 opt |= BuildAssetBundleOptions.ChunkBasedCompression;
 
-            if (BuildMode == EBuildMode.ForceRebuild)
+            if (ClearBuildCacheFiles)
                 opt |= BuildAssetBundleOptions.ForceRebuildAssetBundle; //Force rebuild the asset bundles
             if (DisableWriteTypeTree)
                 opt |= BuildAssetBundleOptions.DisableWriteTypeTree; //Do not include type information within the asset bundle (don't write type tree).

@@ -181,7 +181,7 @@ namespace YooAsset
             PackageName = packageName;
 
             if (string.IsNullOrEmpty(rootDirectory))
-                rootDirectory = GetDefaultRoot();
+                rootDirectory = GetDefaultBuildinRoot();
 
             _packageRoot = PathUtility.Combine(rootDirectory, packageName);
 
@@ -292,9 +292,9 @@ namespace YooAsset
         }
 
         #region 内部方法
-        protected string GetDefaultRoot()
+        protected string GetDefaultBuildinRoot()
         {
-            return PathUtility.Combine(Application.streamingAssetsPath, YooAssetSettingsData.Setting.DefaultYooFolderName);
+            return YooAssetSettingsData.GetYooMobileBuildinRoot();
         }
         public string GetBuildinFileLoadPath(PackageBundle bundle)
         {
@@ -305,30 +305,25 @@ namespace YooAsset
             }
             return filePath;
         }
-        public string GetBuildinCatalogFileLoadPath()
-        {
-            string fileName = Path.GetFileNameWithoutExtension(DefaultBuildinFileSystemDefine.BuildinCatalogFileName);
-            return PathUtility.Combine(YooAssetSettingsData.Setting.DefaultYooFolderName, PackageName, fileName);
-        }
         public string GetBuildinPackageVersionFilePath()
         {
             string fileName = YooAssetSettingsData.GetPackageVersionFileName(PackageName);
-            return PathUtility.Combine(FileRoot, fileName);
+            return PathUtility.Combine(_packageRoot, fileName);
         }
         public string GetBuildinPackageHashFilePath(string packageVersion)
         {
             string fileName = YooAssetSettingsData.GetPackageHashFileName(PackageName, packageVersion);
-            return PathUtility.Combine(FileRoot, fileName);
+            return PathUtility.Combine(_packageRoot, fileName);
         }
         public string GetBuildinPackageManifestFilePath(string packageVersion)
         {
             string fileName = YooAssetSettingsData.GetManifestBinaryFileName(PackageName, packageVersion);
-            return PathUtility.Combine(FileRoot, fileName);
+            return PathUtility.Combine(_packageRoot, fileName);
         }
-        public string GetStreamingAssetsPackageRoot()
+        public string GetCatalogFileLoadPath()
         {
-            string rootPath = PathUtility.Combine(Application.dataPath, "StreamingAssets", YooAssetSettingsData.Setting.DefaultYooFolderName);
-            return PathUtility.Combine(rootPath, PackageName);
+            string fileName = Path.GetFileNameWithoutExtension(DefaultBuildinFileSystemDefine.BuildinCatalogFileName);
+            return YooAssetSettingsData.GetYooResourcesLoadPath(PackageName, fileName);
         }
 
         /// <summary>
