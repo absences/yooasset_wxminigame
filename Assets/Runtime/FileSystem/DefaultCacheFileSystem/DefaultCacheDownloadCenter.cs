@@ -84,7 +84,6 @@ namespace YooAsset
             }
 
             // 设置请求URL
-            bool importFile = false;
             if (string.IsNullOrEmpty(param.ImportFilePath))
             {
                 param.MainURL = _fileSystem.RemoteServices.GetRemoteMainURL(bundle.FileName);
@@ -95,7 +94,6 @@ namespace YooAsset
                 // 注意：把本地文件路径指定为远端下载地址
                 param.MainURL = DownloadSystemHelper.ConvertToWWWPath(param.ImportFilePath);
                 param.FallbackURL = param.MainURL;
-                importFile = true;
             }
 
             // 创建新的下载器
@@ -111,12 +109,6 @@ namespace YooAsset
                 newDownloader = new DownloadNormalFileOperation(_fileSystem, _fileSystem, bundle, param);
                 newDownloader.Reference();
                 _downloaders.Add(bundle.BundleGUID, newDownloader);
-            }
-
-            // 注意：导入文件不要限制并发！导入文件涉及到异步转同步，限制并发会导致主线程卡死风险！
-            if (importFile)
-            {
-                OperationSystem.StartOperation(_fileSystem.PackageName, newDownloader);
             }
             return newDownloader;
         }

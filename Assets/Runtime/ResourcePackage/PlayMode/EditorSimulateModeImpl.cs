@@ -106,7 +106,6 @@ namespace YooAsset
             if (EditorFileSystem.Belong(packageBundle))
             {
                 BundleInfo bundleInfo = new BundleInfo(EditorFileSystem, packageBundle);
-                bundleInfo.IncludeAssetsInEditor = ActiveManifest.GetBundleIncludeAssets(assetInfo.AssetPath);
                 return bundleInfo;
             }
 

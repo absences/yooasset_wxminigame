@@ -39,6 +39,11 @@ namespace YooAsset.Editor
         public string BuildPipeline;
 
         /// <summary>
+        /// 构建的资源包类型
+        /// </summary>
+        public int BuildBundleType;
+
+        /// <summary>
         /// 构建包裹名称
         /// </summary>
         public string BuildPackageName;

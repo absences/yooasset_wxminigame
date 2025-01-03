@@ -51,7 +51,7 @@ namespace YooAsset
                 foreach (var wrapper in catalog.Wrappers)
                 {
                     var fileWrapper = new DefaultBuildinFileSystem.FileWrapper(wrapper.FileName);
-                    _fileSystem.RecordFile(wrapper.BundleGUID, fileWrapper);
+                    _fileSystem.RecordCatalogFile(wrapper.BundleGUID, fileWrapper);
                 }
 
                 YooLogger.Log($"Package '{_fileSystem.PackageName}' buildin catalog files count : {catalog.Wrappers.Count}");

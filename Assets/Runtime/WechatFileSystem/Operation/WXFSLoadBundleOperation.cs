@@ -49,9 +49,19 @@ internal class WXFSLoadBundleOperation : FSLoadBundleOperation
 
             if (CheckRequestResult())
             {
-                _steps = ESteps.Done;
-                Result = (_webRequest.downloadHandler as DownloadHandlerWXAssetBundle).assetBundle;
-                Status = EOperationStatus.Succeed;
+                var assetBundle = (_webRequest.downloadHandler as DownloadHandlerWXAssetBundle).assetBundle;
+                if (assetBundle == null)
+                {
+                    _steps = ESteps.Done;
+                    Error = $"{nameof(DownloadHandlerWXAssetBundle)} loaded asset bundle is null !";
+                    Status = EOperationStatus.Failed;
+                }
+                else
+                {
+                    _steps = ESteps.Done;
+                    Result = new WXAssetBundleResult(_fileSystem, _bundle, assetBundle);
+                    Status = EOperationStatus.Succeed;
+                }
             }
             else
             {
@@ -66,7 +76,7 @@ internal class WXFSLoadBundleOperation : FSLoadBundleOperation
         {
             _steps = ESteps.Done;
             Status = EOperationStatus.Failed;
-            Error = "WebGL platform not support sync load method !";
+            Error = "Wechat platform not support sync load method !";
             UnityEngine.Debug.LogError(Error);
         }
     }

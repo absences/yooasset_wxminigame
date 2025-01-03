@@ -52,7 +52,7 @@ namespace YooAsset
                 // 销毁文件加载器
                 foreach (var loader in removeList)
                 {
-                    string bundleName = loader.BundleFileInfo.Bundle.BundleName;
+                    string bundleName = loader.LoadBundleInfo.Bundle.BundleName;
                     loader.DestroyLoader();
                     _resManager._loaderDic.Remove(bundleName);
                 }

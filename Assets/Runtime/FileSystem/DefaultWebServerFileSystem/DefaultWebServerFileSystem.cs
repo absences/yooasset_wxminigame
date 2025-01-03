@@ -92,18 +92,19 @@ namespace YooAsset
         }
         public virtual FSLoadBundleOperation LoadBundleFile(PackageBundle bundle)
         {
-            var operation = new DWSFSLoadAssetBundleOperation(this, bundle);
-            OperationSystem.StartOperation(PackageName, operation);
-            return operation;
-        }
-        public virtual void UnloadBundleFile(PackageBundle bundle, object result)
-        {
-            AssetBundle assetBundle = result as AssetBundle;
-            if (assetBundle == null)
-                return;
-
-            if (assetBundle != null)
-                assetBundle.Unload(true);
+            if (bundle.BundleType == (int)EBuildBundleType.AssetBundle)
+            {
+                var operation = new DWSFSLoadAssetBundleOperation(this, bundle);
+                OperationSystem.StartOperation(PackageName, operation);
+                return operation;
+            }
+            else
+            {
+                string error = $"{nameof(DefaultWebServerFileSystem)} not support load bundle type : {bundle.BundleType}";
+                var operation = new FSLoadBundleCompleteOperation(error);
+                OperationSystem.StartOperation(PackageName, operation);
+                return operation;
+            }
         }
 
         public virtual void SetParameter(string name, object value)
@@ -117,14 +118,14 @@ namespace YooAsset
                 YooLogger.Warning($"Invalid parameter : {name}");
             }
         }
-        public virtual void OnCreate(string packageName, string rootDirectory)
+        public virtual void OnCreate(string packageName, string packageRoot)
         {
             PackageName = packageName;
 
-            if (string.IsNullOrEmpty(rootDirectory))
-                rootDirectory = GetDefaultWebRoot();
-
-            _webPackageRoot = PathUtility.Combine(rootDirectory, packageName);
+            if (string.IsNullOrEmpty(packageRoot))
+                _webPackageRoot = GetDefaultWebPackageRoot(packageName);
+            else
+                _webPackageRoot = packageRoot;
         }
         public virtual void OnUpdate()
         {
@@ -132,11 +133,11 @@ namespace YooAsset
 
         public virtual bool Belong(PackageBundle bundle)
         {
-            return true;
+            return _wrappers.ContainsKey(bundle.BundleGUID);
         }
         public virtual bool Exists(PackageBundle bundle)
         {
-            return true;
+            return _wrappers.ContainsKey(bundle.BundleGUID);
         }
         public virtual bool NeedDownload(PackageBundle bundle)
         {
@@ -151,19 +152,24 @@ namespace YooAsset
             return false;
         }
 
-        public virtual byte[] ReadFileData(PackageBundle bundle)
+        public virtual string GetBundleFilePath(PackageBundle bundle)
         {
             throw new System.NotImplementedException();
         }
-        public virtual string ReadFileText(PackageBundle bundle)
+        public virtual byte[] ReadBundleFileData(PackageBundle bundle)
+        {
+            throw new System.NotImplementedException();
+        }
+        public virtual string ReadBundleFileText(PackageBundle bundle)
         {
             throw new System.NotImplementedException();
         }
 
         #region 内部方法
-        protected string GetDefaultWebRoot()
+        protected string GetDefaultWebPackageRoot(string packageName)
         {
-            return YooAssetSettingsData.GetYooWebBuildinRoot();
+            string rootDirectory = YooAssetSettingsData.GetYooWebBuildinRoot();
+            return PathUtility.Combine(rootDirectory, packageName);
         }
         public string GetWebFileLoadPath(PackageBundle bundle)
         {
@@ -196,9 +202,9 @@ namespace YooAsset
         }
 
         /// <summary>
-        /// 记录文件信息
+        /// 记录内置文件信息
         /// </summary>
-        public bool RecordFile(string bundleGUID, FileWrapper wrapper)
+        public bool RecordCatalogFile(string bundleGUID, FileWrapper wrapper)
         {
             if (_wrappers.ContainsKey(bundleGUID))
             {

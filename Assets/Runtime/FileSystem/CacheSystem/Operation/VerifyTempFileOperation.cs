@@ -40,7 +40,8 @@ namespace YooAsset
 
             if (_steps == ESteps.VerifyFile)
             {
-                if (BeginVerifyFileWithThread(_element))
+                bool succeed = ThreadPool.QueueUserWorkItem(new WaitCallback(VerifyInThread), _element);
+                if (succeed)
                 {
                     _steps = ESteps.Waiting;
                 }
@@ -70,17 +71,13 @@ namespace YooAsset
         {
             while (true)
             {
-                // 注意：等待子线程验证文件完毕
+                //TODO 等待子线程验证文件完毕，该操作会挂起主线程
                 InternalOnUpdate();
                 if (IsDone)
                     break;
             }
         }
 
-        private bool BeginVerifyFileWithThread(TempFileElement element)
-        {
-            return ThreadPool.QueueUserWorkItem(new WaitCallback(VerifyInThread), element);
-        }
         private void VerifyInThread(object obj)
         {
             TempFileElement element = (TempFileElement)obj;

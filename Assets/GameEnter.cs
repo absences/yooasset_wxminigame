@@ -30,7 +30,8 @@ public class GameEnter : MonoBehaviour
 #if UNITY_WEBGL
         initializeParameters = new WebPlayModeParameters()
         {
-            WebRemoteFileSystemParameters = WechatFileSystemCreater.CreateWechatFileSystemParameters(new RemoveServer(CDN)),
+            WebRemoteFileSystemParameters = 
+            WechatFileSystemCreater.CreateWechatFileSystemParameters(new RemoveServer(CDN)),
         };
 #endif
         //initializeParameters = new EditorSimulateModeParameters()
@@ -72,20 +73,26 @@ public class GameEnter : MonoBehaviour
         await request.SendWebRequest();
 
         Debug.Log(request.result);
+
+
         var _wxFileSystemMgr = WX.GetFileSystemManager();
 
+       // UniTaskCompletionSource<byte[]> task = new UniTaskCompletionSource<byte[]>();
         _wxFileSystemMgr.ReadFile(new ReadFileParam()
         {
             filePath = WX.env.USER_DATA_PATH + "/StreamingAssets/aa.png",
             success = (success) =>
             {
-
                 Debug.Log("load success");
+            },
+            fail = (fail) =>
+            {
+
             }
         });
     }
 
-    public string CDN = "https://qq.tencent.com/";
+    public string CDN = "qq.com/";
 
     class RemoveServer : IRemoteServices
     {
@@ -119,10 +126,4 @@ public class GameEnter : MonoBehaviour
             return CDN + fileName;
         }
     }
-
-
-    //class YooAssetsLogger : ILogger
-    //{
-
-    //}
 }

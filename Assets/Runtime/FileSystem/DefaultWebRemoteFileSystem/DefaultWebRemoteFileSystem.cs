@@ -83,18 +83,19 @@ namespace YooAsset
         }
         public virtual FSLoadBundleOperation LoadBundleFile(PackageBundle bundle)
         {
-            var operation = new DWRFSLoadAssetBundleOperation(this, bundle);
-            OperationSystem.StartOperation(PackageName, operation);
-            return operation;
-        }
-        public virtual void UnloadBundleFile(PackageBundle bundle, object result)
-        {
-            AssetBundle assetBundle = result as AssetBundle;
-            if (assetBundle == null)
-                return;
-
-            if (assetBundle != null)
-                assetBundle.Unload(true);
+            if (bundle.BundleType == (int)EBuildBundleType.AssetBundle)
+            {
+                var operation = new DWRFSLoadAssetBundleOperation(this, bundle);
+                OperationSystem.StartOperation(PackageName, operation);
+                return operation;
+            }
+            else
+            {
+                string error = $"{nameof(DefaultWebRemoteFileSystem)} not support load bundle type : {bundle.BundleType}";
+                var operation = new FSLoadBundleCompleteOperation(error);
+                OperationSystem.StartOperation(PackageName, operation);
+                return operation;
+            }
         }
 
         public virtual void SetParameter(string name, object value)
@@ -112,7 +113,7 @@ namespace YooAsset
                 YooLogger.Warning($"Invalid parameter : {name}");
             }
         }
-        public virtual void OnCreate(string packageName, string rootDirectory)
+        public virtual void OnCreate(string packageName, string packageRoot)
         {
             PackageName = packageName;
         }
@@ -141,11 +142,15 @@ namespace YooAsset
             return false;
         }
 
-        public virtual byte[] ReadFileData(PackageBundle bundle)
+        public virtual string GetBundleFilePath(PackageBundle bundle)
         {
             throw new System.NotImplementedException();
         }
-        public virtual string ReadFileText(PackageBundle bundle)
+        public virtual byte[] ReadBundleFileData(PackageBundle bundle)
+        {
+            throw new System.NotImplementedException();
+        }
+        public virtual string ReadBundleFileText(PackageBundle bundle)
         {
             throw new System.NotImplementedException();
         }

@@ -81,12 +81,19 @@ namespace YooAsset
         }
         public virtual FSLoadBundleOperation LoadBundleFile(PackageBundle bundle)
         {
-            var operation = new DEFSLoadBundleOperation(this, bundle);
-            OperationSystem.StartOperation(PackageName, operation);
-            return operation;
-        }
-        public virtual void UnloadBundleFile(PackageBundle bundle, object result)
-        {
+            if (bundle.BundleType == (int)EBuildBundleType.VirtualBundle)
+            {
+                var operation = new DEFSLoadBundleOperation(this, bundle);
+                OperationSystem.StartOperation(PackageName, operation);
+                return operation;
+            }
+            else
+            {
+                string error = $"{nameof(DefaultEditorFileSystem)} not support load bundle type : {bundle.BundleType}";
+                var operation = new FSLoadBundleCompleteOperation(error);
+                OperationSystem.StartOperation(PackageName, operation);
+                return operation;
+            }
         }
 
         public virtual void SetParameter(string name, object value)
@@ -104,15 +111,14 @@ namespace YooAsset
                 YooLogger.Warning($"Invalid parameter : {name}");
             }
         }
-        public virtual void OnCreate(string packageName, string rootDirectory)
+        public virtual void OnCreate(string packageName, string packageRoot)
         {
             PackageName = packageName;
 
-            if (string.IsNullOrEmpty(rootDirectory))
+            if (string.IsNullOrEmpty(packageRoot))
                 throw new Exception($"{nameof(DefaultEditorFileSystem)} root directory is null or empty !");
 
-            // 注意：基础目录即为包裹目录
-            _packageRoot = rootDirectory;
+            _packageRoot = packageRoot;
         }
         public virtual void OnUpdate()
         {
@@ -139,13 +145,29 @@ namespace YooAsset
             return false;
         }
 
-        public virtual byte[] ReadFileData(PackageBundle bundle)
+        public virtual string GetBundleFilePath(PackageBundle bundle)
         {
-            throw new System.NotImplementedException();
+            if (bundle.IncludeMainAssets.Count == 0)
+                return string.Empty;
+
+            var pacakgeAsset = bundle.IncludeMainAssets[0];
+            return pacakgeAsset.AssetPath;
         }
-        public virtual string ReadFileText(PackageBundle bundle)
+        public virtual byte[] ReadBundleFileData(PackageBundle bundle)
         {
-            throw new System.NotImplementedException();
+            if (bundle.IncludeMainAssets.Count == 0)
+                return null;
+
+            var pacakgeAsset = bundle.IncludeMainAssets[0];
+            return FileUtility.ReadAllBytes(pacakgeAsset.AssetPath);
+        }
+        public virtual string ReadBundleFileText(PackageBundle bundle)
+        {
+            if (bundle.IncludeMainAssets.Count == 0)
+                return null;
+
+            var pacakgeAsset = bundle.IncludeMainAssets[0];
+            return FileUtility.ReadAllText(pacakgeAsset.AssetPath);
         }
 
         #region 内部方法

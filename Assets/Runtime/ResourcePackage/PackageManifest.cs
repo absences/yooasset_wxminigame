@@ -38,6 +38,11 @@ namespace YooAsset
         public int OutputNameStyle;
 
         /// <summary>
+        /// 构建资源包类型
+        /// </summary>
+        public int BuildBundleType;
+
+        /// <summary>
         /// 构建管线名称
         /// </summary>
         public string BuildPipeline;
@@ -67,6 +72,23 @@ namespace YooAsset
         /// </summary>
         public List<PackageBundle> BundleList = new List<PackageBundle>();
 
+        /// <summary>
+        /// 资源映射集合（提供AssetPath获取PackageAsset）
+        /// </summary>
+        [NonSerialized]
+        public Dictionary<string, PackageAsset> AssetDic;
+
+        /// <summary>
+        /// 资源路径映射集合（提供Location获取AssetPath）
+        /// </summary>
+        [NonSerialized]
+        public Dictionary<string, string> AssetPathMapping1;
+
+        /// <summary>
+        /// 资源路径映射集合（提供AssetGUID获取AssetPath）
+        /// </summary>
+        [NonSerialized]
+        public Dictionary<string, string> AssetPathMapping2;
 
         /// <summary>
         /// 资源包集合（提供BundleName获取PackageBundle）
@@ -86,24 +108,6 @@ namespace YooAsset
         [NonSerialized]
         public Dictionary<string, PackageBundle> BundleDic3;
 
-        /// <summary>
-        /// 资源映射集合（提供AssetPath获取PackageAsset）
-        /// </summary>
-        [NonSerialized]
-        public Dictionary<string, PackageAsset> AssetDic;
-
-        /// <summary>
-        /// 资源路径映射集合（提供Location获取AssetPath）
-        /// </summary>
-        [NonSerialized]
-        public Dictionary<string, string> AssetPathMapping1;
-
-        /// <summary>
-        /// 资源路径映射集合（提供AssetGUID获取AssetPath）
-        /// </summary>
-        [NonSerialized]
-        public Dictionary<string, string> AssetPathMapping2;
-
 
         /// <summary>
         /// 获取包裹的详细信息
@@ -116,6 +120,7 @@ namespace YooAsset
             details.LocationToLower = LocationToLower;
             details.IncludeAssetGUID = IncludeAssetGUID;
             details.OutputNameStyle = OutputNameStyle;
+            details.BuildBundleType = BuildBundleType;
             details.BuildPipeline = BuildPipeline;
             details.PackageName = PackageName;
             details.PackageVersion = PackageVersion;
@@ -355,25 +360,6 @@ namespace YooAsset
                 YooLogger.Warning($"Failed to mapping assetGUID to asset path : {assetGUID}");
                 return string.Empty;
             }
-        }
-
-        /// <summary>
-        /// 获取资源包内的主资源列表
-        /// </summary>
-        public string[] GetBundleIncludeAssets(string assetPath)
-        {
-            List<string> assetList = new List<string>();
-            if (TryGetPackageAsset(assetPath, out PackageAsset result))
-            {
-                foreach (var packageAsset in AssetList)
-                {
-                    if (packageAsset.BundleID == result.BundleID)
-                    {
-                        assetList.Add(packageAsset.AssetPath);
-                    }
-                }
-            }
-            return assetList.ToArray();
         }
 
         #region 调试方法

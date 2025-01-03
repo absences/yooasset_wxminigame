@@ -165,15 +165,15 @@ function bindGloblException() {
         GameGlobal.logmanager.info('game starting', bootinfo);
         console.info('game starting', bootinfo);
     }
-    const appBaseInfo = wx.getAppBaseInfo();
-    const deviceInfo = wx.getDeviceInfo();
+    const appBaseInfo = wx.getAppBaseInfo ? wx.getAppBaseInfo() : wx.getSystemInfoSync();
+    const deviceInfo = wx.getDeviceInfo ? wx.getDeviceInfo() : wx.getSystemInfoSync();
     printSystemInfo(appBaseInfo, deviceInfo);
 }
 bindGloblException();
 // eslint-disable-next-line no-multi-assign
 GameGlobal.onCrash = GameGlobal.unityNamespace.onCrash = function () {
     GameGlobal.manager.showAbort();
-    const windowInfo = wx.getWindowInfo();
+    const windowInfo = wx.getWindowInfo ? wx.getWindowInfo() : wx.getSystemInfoSync();
     wx.createFeedbackButton({
         type: 'text',
         text: '提交反馈',

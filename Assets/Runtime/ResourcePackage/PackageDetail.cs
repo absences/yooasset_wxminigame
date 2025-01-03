@@ -29,6 +29,11 @@ namespace YooAsset
         public int OutputNameStyle;
 
         /// <summary>
+        /// 构建资源包类型
+        /// </summary>
+        public int BuildBundleType;
+
+        /// <summary>
         /// 构建管线名称
         /// </summary>
         public string BuildPipeline;

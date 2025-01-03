@@ -9,6 +9,7 @@ namespace YooAsset
         private readonly IFileSystem _fileSystem;
         private readonly ICacheSystem _cacheSystem;
         private VerifyTempFileOperation _verifyOperation;
+        private bool _isReuqestLocalFile;
         private string _tempFilePath;
         private ESteps _steps = ESteps.None;
 
@@ -19,6 +20,7 @@ namespace YooAsset
         }
         internal override void InternalOnStart()
         {
+            _isReuqestLocalFile = DownloadSystemHelper.IsRequestLocalFile(Param.MainURL);
             _tempFilePath = _cacheSystem.GetTempFilePath(Bundle);
             _steps = ESteps.CheckExists;
         }
@@ -131,6 +133,15 @@ namespace YooAsset
             // 重新尝试下载
             if (_steps == ESteps.TryAgain)
             {
+                //TODO 拷贝本地文件失败后不再尝试！
+                if (_isReuqestLocalFile)
+                {
+                    Status = EOperationStatus.Failed;
+                    _steps = ESteps.Done;
+                    YooLogger.Error(Error);
+                    return;
+                }
+
                 if (FailedTryAgain <= 0)
                 {
                     Status = EOperationStatus.Failed;
@@ -155,12 +166,16 @@ namespace YooAsset
         }
         internal override void InternalWaitForAsyncComplete()
         {
-            bool isReuqestLocalFile = IsRequestLocalFile();
+            //TODO 防止下载器挂起陷入无限死循环！
+            if (_steps == ESteps.None)
+            {
+                InternalOnStart();
+            }
 
             while (true)
             {
-                // 注意：如果是导入或解压本地文件，执行等待完毕
-                if (isReuqestLocalFile)
+                //TODO 如果是导入或解压本地文件，执行等待完毕
+                if (_isReuqestLocalFile)
                 {
                     InternalOnUpdate();
                     if (IsDone)

@@ -50,9 +50,19 @@ namespace YooAsset
 
                 if (_downloadhanlderAssetBundleOp.Status == EOperationStatus.Succeed)
                 {
-                    _steps = ESteps.Done;
-                    Result = _downloadhanlderAssetBundleOp.Result;
-                    Status = EOperationStatus.Succeed;
+                    var assetBundle = _downloadhanlderAssetBundleOp.Result;
+                    if (assetBundle == null)
+                    {
+                        _steps = ESteps.Done;
+                        Status = EOperationStatus.Failed;
+                        Error = $"{nameof(DownloadHandlerAssetBundleOperation)} loaded asset bundle is null !";
+                    }
+                    else
+                    {
+                        _steps = ESteps.Done;
+                        Result = new AssetBundleResult(_fileSystem, _bundle, assetBundle, null);
+                        Status = EOperationStatus.Succeed;
+                    }
                 }
                 else
                 {

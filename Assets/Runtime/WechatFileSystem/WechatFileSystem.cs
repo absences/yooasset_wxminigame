@@ -9,7 +9,7 @@ public static class WechatFileSystemCreater
 {
     public static FileSystemParameters CreateWechatFileSystemParameters(IRemoteServices remoteServices)
     {
-        string fileSystemClass = $"{nameof(WechatFileSystem)},YooAsset.RuntimeExtension";
+        string fileSystemClass = typeof(WechatFileSystem).FullName;
         var fileSystemParams = new FileSystemParameters(fileSystemClass, null);
         fileSystemParams.AddParameter("REMOTE_SERVICES", remoteServices);
         return fileSystemParams;
@@ -147,15 +147,19 @@ internal class WechatFileSystem : IFileSystem
     }
     public virtual FSLoadBundleOperation LoadBundleFile(PackageBundle bundle)
     {
-        var operation = new WXFSLoadBundleOperation(this, bundle);
-        OperationSystem.StartOperation(PackageName, operation);
-        return operation;
-    }
-    public virtual void UnloadBundleFile(PackageBundle bundle, object result)
-    {
-        AssetBundle assetBundle = result as AssetBundle;
-        if (assetBundle != null)
-            assetBundle.WXUnload(true);
+        if (bundle.BundleType == (int)EBuildBundleType.AssetBundle)
+        {
+            var operation = new WXFSLoadBundleOperation(this, bundle);
+            OperationSystem.StartOperation(PackageName, operation);
+            return operation;
+        }
+        else
+        {
+            string error = $"{nameof(WechatFileSystem)} not support load bundle type : {bundle.BundleType}";
+            var operation = new FSLoadBundleCompleteOperation(error);
+            OperationSystem.StartOperation(PackageName, operation);
+            return operation;
+        }
     }
 
     public virtual void SetParameter(string name, object value)
@@ -181,9 +185,9 @@ internal class WechatFileSystem : IFileSystem
         }
 
         _wxFileSystemMgr = WX.GetFileSystemManager();
-       _fileCacheRoot = $"{WX.env.USER_DATA_PATH}/__GAME_FILE_CACHE";
-       //_fileCacheRoot = $"{WX.env.USER_DATA_PATH}/__GAME_FILE_CACHE/子目录"; //注意：如果有子目录，请修改此处！
-       //_fileCacheRoot = PathUtility.Combine(WX.PluginCachePath, $"StreamingAssets/WebGL");
+        _fileCacheRoot = $"{WX.env.USER_DATA_PATH}/__GAME_FILE_CACHE";
+        //_fileCacheRoot = $"{WX.env.USER_DATA_PATH}/__GAME_FILE_CACHE/子目录"; //注意：如果有子目录，请修改此处！
+        //_fileCacheRoot = PathUtility.Combine(WX.PluginCachePath, $"StreamingAssets/WebGL");
     }
     public virtual void OnUpdate()
     {
@@ -214,7 +218,11 @@ internal class WechatFileSystem : IFileSystem
         return false;
     }
 
-    public virtual byte[] ReadFileData(PackageBundle bundle)
+    public virtual string GetBundleFilePath(PackageBundle bundle)
+    {
+        return GetCacheFileLoadPath(bundle);
+    }
+    public virtual byte[] ReadBundleFileData(PackageBundle bundle)
     {
         string filePath = GetCacheFileLoadPath(bundle);
         if (CheckCacheFileExist(filePath))
@@ -222,7 +230,7 @@ internal class WechatFileSystem : IFileSystem
         else
             return Array.Empty<byte>();
     }
-    public virtual string ReadFileText(PackageBundle bundle)
+    public virtual string ReadBundleFileText(PackageBundle bundle)
     {
         string filePath = GetCacheFileLoadPath(bundle);
         if (CheckCacheFileExist(filePath))

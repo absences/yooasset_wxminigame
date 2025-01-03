@@ -12,7 +12,7 @@ namespace YooAsset.Editor
 
     public abstract class TaskCreateManifest
     {
-        private readonly Dictionary<string, int> _cachedBundleID = new Dictionary<string, int>(10000);
+        private readonly Dictionary<string, int> _cachedBundleIndexIDs = new Dictionary<string, int>(10000);
         private readonly Dictionary<int, HashSet<string>> _cacheBundleTags = new Dictionary<int, HashSet<string>>(10000);
 
         /// <summary>
@@ -35,12 +35,16 @@ namespace YooAsset.Editor
             manifest.LocationToLower = buildMapContext.Command.LocationToLower;
             manifest.IncludeAssetGUID = buildMapContext.Command.IncludeAssetGUID;
             manifest.OutputNameStyle = (int)buildParameters.FileNameStyle;
+            manifest.BuildBundleType = buildParameters.BuildBundleType;
             manifest.BuildPipeline = buildParameters.BuildPipeline;
             manifest.PackageName = buildParameters.PackageName;
             manifest.PackageVersion = buildParameters.PackageVersion;
             manifest.PackageNote = buildParameters.PackageNote;
-            manifest.BundleList = GetAllPackageBundle(buildMapContext);
-            manifest.AssetList = GetAllPackageAsset(buildMapContext);
+            manifest.AssetList = CreatePackageAssetList(buildMapContext);
+            manifest.BundleList = CreatePackageBundleList(buildMapContext);
+
+            // 处理资源清单的ID数据
+            ProcessPacakgeIDs(manifest);
 
             // 处理资源包的依赖列表
             if (processBundleDepends)
@@ -118,9 +122,9 @@ namespace YooAsset.Editor
         protected abstract string[] GetBundleDepends(BuildContext context, string bundleName);
 
         /// <summary>
-        /// 获取主资源对象列表
+        /// 创建资源对象列表
         /// </summary>
-        private List<PackageAsset> GetAllPackageAsset(BuildMapContext buildMapContext)
+        private List<PackageAsset> CreatePackageAssetList(BuildMapContext buildMapContext)
         {
             List<PackageAsset> result = new List<PackageAsset>(1000);
             foreach (var bundleInfo in buildMapContext.Collection)
@@ -133,7 +137,7 @@ namespace YooAsset.Editor
                     packageAsset.AssetPath = assetInfo.AssetInfo.AssetPath;
                     packageAsset.AssetGUID = buildMapContext.Command.IncludeAssetGUID ? assetInfo.AssetInfo.AssetGUID : string.Empty;
                     packageAsset.AssetTags = assetInfo.AssetTags.ToArray();
-                    packageAsset.BundleID = GetCachedBundleID(assetInfo.BundleName);
+                    packageAsset.BundleNameInEditor = assetInfo.BundleName;
                     result.Add(packageAsset);
                 }
             }
@@ -144,9 +148,9 @@ namespace YooAsset.Editor
         }
 
         /// <summary>
-        /// 获取资源包列表
+        /// 创建资源包列表
         /// </summary>
-        private List<PackageBundle> GetAllPackageBundle(BuildMapContext buildMapContext)
+        private List<PackageBundle> CreatePackageBundleList(BuildMapContext buildMapContext)
         {
             List<PackageBundle> result = new List<PackageBundle>(1000);
             foreach (var bundleInfo in buildMapContext.Collection)
@@ -154,18 +158,29 @@ namespace YooAsset.Editor
                 var packageBundle = bundleInfo.CreatePackageBundle();
                 result.Add(packageBundle);
             }
-            
+
             // 按照BundleName排序
             result.Sort((a, b) => a.BundleName.CompareTo(b.BundleName));
+            return result;
+        }
 
-            // 注意：缓存资源包索引
-            for (int index = 0; index < result.Count; index++)
+        /// <summary>
+        /// 处理资源清单的ID数据
+        /// </summary>
+        private void ProcessPacakgeIDs(PackageManifest manifest)
+        {
+            // 注意：优先缓存资源包索引
+            for (int index = 0; index < manifest.BundleList.Count; index++)
             {
-                string bundleName = result[index].BundleName;
-                _cachedBundleID.Add(bundleName, index);
+                string bundleName = manifest.BundleList[index].BundleName;
+                _cachedBundleIndexIDs.Add(bundleName, index);
             }
 
-            return result;
+            foreach (var packageAsset in manifest.AssetList)
+            {
+                string bundleName = packageAsset.BundleNameInEditor;
+                packageAsset.BundleID = GetCachedBundleIndexID(bundleName);
+            }
         }
 
         /// <summary>
@@ -176,12 +191,12 @@ namespace YooAsset.Editor
             // 查询引擎生成的资源包依赖关系，然后记录到清单
             foreach (var packageBundle in manifest.BundleList)
             {
-                int mainBundleID = GetCachedBundleID(packageBundle.BundleName);
+                int mainBundleID = GetCachedBundleIndexID(packageBundle.BundleName);
                 var depends = GetBundleDepends(context, packageBundle.BundleName);
                 List<int> dependIDs = new List<int>(depends.Length);
                 foreach (var dependBundleName in depends)
                 {
-                    int bundleID = GetCachedBundleID(dependBundleName);
+                    int bundleID = GetCachedBundleIndexID(dependBundleName);
                     if (bundleID != mainBundleID)
                         dependIDs.Add(bundleID);
                 }
@@ -239,13 +254,13 @@ namespace YooAsset.Editor
         }
 
         /// <summary>
-        /// 获取资源包的索引ID
+        /// 获取缓存的资源包的索引ID
         /// </summary>
-        private int GetCachedBundleID(string bundleName)
+        private int GetCachedBundleIndexID(string bundleName)
         {
-            if (_cachedBundleID.TryGetValue(bundleName, out int value) == false)
+            if (_cachedBundleIndexIDs.TryGetValue(bundleName, out int value) == false)
             {
-                throw new Exception($"Should never get here ! Not found bundle ID : {bundleName}");
+                throw new Exception($"Should never get here ! Not found bundle index ID : {bundleName}");
             }
             return value;
         }

@@ -28,6 +28,7 @@ namespace YooAsset.Editor
                 buildReport.Summary.BuildSeconds = BuildRunner.TotalSeconds;
                 buildReport.Summary.BuildTarget = buildParameters.BuildTarget;
                 buildReport.Summary.BuildPipeline = buildParameters.BuildPipeline;
+                buildReport.Summary.BuildBundleType = buildParameters.BuildBundleType;
                 buildReport.Summary.BuildPackageName = buildParameters.PackageName;
                 buildReport.Summary.BuildPackageVersion = buildParameters.PackageVersion;
                 buildReport.Summary.BuildPackageNote = buildParameters.PackageNote;
@@ -115,7 +116,7 @@ namespace YooAsset.Editor
             buildReport.IndependAssets = new List<ReportIndependAsset>(buildMapContext.IndependAssets);
 
             // 序列化文件
-            string fileName = YooAssetSettingsData.GetReportFileName(buildParameters.PackageName, buildParameters.PackageVersion);
+            string fileName = YooAssetSettingsData.GetBuildReportFileName(buildParameters.PackageName, buildParameters.PackageVersion);
             string filePath = $"{packageOutputDirectory}/{fileName}";
             BuildReport.Serialize(filePath, buildReport);
             BuildLogger.Log($"Create build report file: {filePath}");

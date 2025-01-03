@@ -57,7 +57,7 @@ namespace YooAsset
             if (_steps == ESteps.CheckResult)
             {
                 _steps = ESteps.Done;
-                Result = new VirtualBundle(_fileSystem, _bundle);
+                Result = new VirtualBundleResult(_fileSystem, _bundle);
                 Status = EOperationStatus.Succeed;
             }
         }

@@ -55,9 +55,19 @@ namespace YooAsset
                 // 检查网络错误
                 if (CheckRequestResult())
                 {
-                    _steps = ESteps.Done;
-                    Result = _downloadhandler.assetBundle;
-                    Status = EOperationStatus.Succeed;
+                    var assetBundle = _downloadhandler.assetBundle;
+                    if (assetBundle == null)
+                    {
+                        _steps = ESteps.Done;
+                        Error = "Download handler asset bundle object is null !";
+                        Status = EOperationStatus.Failed;
+                    }
+                    else
+                    {
+                        _steps = ESteps.Done;
+                        Result = assetBundle;
+                        Status = EOperationStatus.Succeed;
+                    }
                 }
                 else
                 {

@@ -47,7 +47,7 @@ namespace YooAsset
                     return;
                 }
 
-                _impl.EditorFileSystem = PlayModeHelper.CreateFileSystem(_impl.PackageName, _parameters.EditorFileSystemParameters);
+                _impl.EditorFileSystem = _parameters.EditorFileSystemParameters.CreateFileSystem(_impl.PackageName);
                 if (_impl.EditorFileSystem == null)
                 {
                     _steps = ESteps.Done;
@@ -127,7 +127,7 @@ namespace YooAsset
                     return;
                 }
 
-                _impl.BuildinFileSystem = PlayModeHelper.CreateFileSystem(_impl.PackageName, _parameters.BuildinFileSystemParameters);
+                _impl.BuildinFileSystem = _parameters.BuildinFileSystemParameters.CreateFileSystem(_impl.PackageName);
                 if (_impl.BuildinFileSystem == null)
                 {
                     _steps = ESteps.Done;
@@ -206,7 +206,7 @@ namespace YooAsset
                     return;
                 }
 
-                _impl.BuildinFileSystem = PlayModeHelper.CreateFileSystem(_impl.PackageName, _parameters.BuildinFileSystemParameters);
+                _impl.BuildinFileSystem = _parameters.BuildinFileSystemParameters.CreateFileSystem(_impl.PackageName);
                 if (_impl.BuildinFileSystem == null)
                 {
                     _steps = ESteps.Done;
@@ -249,7 +249,7 @@ namespace YooAsset
                     return;
                 }
 
-                _impl.CacheFileSystem = PlayModeHelper.CreateFileSystem(_impl.PackageName, _parameters.CacheFileSystemParameters);
+                _impl.CacheFileSystem = _parameters.CacheFileSystemParameters.CreateFileSystem(_impl.PackageName);
                 if (_impl.CacheFileSystem == null)
                 {
                     _steps = ESteps.Done;
@@ -329,7 +329,7 @@ namespace YooAsset
                     return;
                 }
 
-                _impl.WebServerFileSystem = PlayModeHelper.CreateFileSystem(_impl.PackageName, _parameters.WebServerFileSystemParameters);
+                _impl.WebServerFileSystem = _parameters.WebServerFileSystemParameters.CreateFileSystem(_impl.PackageName);
                 if (_impl.WebServerFileSystem == null)
                 {
                     _steps = ESteps.Done;
@@ -370,7 +370,7 @@ namespace YooAsset
                     return;
                 }
 
-                _impl.WebRemoteFileSystem = PlayModeHelper.CreateFileSystem(_impl.PackageName, _parameters.WebRemoteFileSystemParameters);
+                _impl.WebRemoteFileSystem = _parameters.WebRemoteFileSystemParameters.CreateFileSystem(_impl.PackageName);
                 if (_impl.WebRemoteFileSystem == null)
                 {
                     _steps = ESteps.Done;
@@ -385,7 +385,7 @@ namespace YooAsset
             if (_steps == ESteps.InitWebRemoteFileSystem)
             {
                 if (_initWebRemoteFileSystemOp == null)
-                    _initWebRemoteFileSystemOp = _impl.WebServerFileSystem.InitializeFileSystemAsync();
+                    _initWebRemoteFileSystemOp = _impl.WebRemoteFileSystem.InitializeFileSystemAsync();
 
                 Progress = _initWebRemoteFileSystemOp.Progress;
                 if (_initWebRemoteFileSystemOp.IsDone == false)

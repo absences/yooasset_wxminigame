@@ -22,9 +22,14 @@ namespace YooAsset.Editor
         public string BuildinFileRoot;
 
         /// <summary>
-        /// 构建管线
+        /// 构建管线名称
         /// </summary>
         public string BuildPipeline;
+
+        /// <summary>
+        /// 构建资源包类型
+        /// </summary>
+        public int BuildBundleType;
 
         /// <summary>
         /// 构建的平台

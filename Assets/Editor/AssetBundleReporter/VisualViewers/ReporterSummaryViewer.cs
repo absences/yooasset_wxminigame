@@ -62,6 +62,7 @@ namespace YooAsset.Editor
             _items.Add(new ItemWrapper("Build Seconds", ConvertTime(buildReport.Summary.BuildSeconds)));
             _items.Add(new ItemWrapper("Build Target", $"{buildReport.Summary.BuildTarget}"));
             _items.Add(new ItemWrapper("Build Pipeline", $"{buildReport.Summary.BuildPipeline}"));
+            _items.Add(new ItemWrapper("Build Bundle Type", buildReport.Summary.BuildBundleType.ToString()));
             _items.Add(new ItemWrapper("Package Name", buildReport.Summary.BuildPackageName));
             _items.Add(new ItemWrapper("Package Version", buildReport.Summary.BuildPackageVersion));
             _items.Add(new ItemWrapper("Package Note", buildReport.Summary.BuildPackageNote));
