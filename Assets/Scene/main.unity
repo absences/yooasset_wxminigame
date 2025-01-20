@@ -391,7 +391,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1a3a63082d17784f950fc45c65a4fec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CDN: 
+  CDN: https://minigame.wyx.cn:10001/webgl/
 --- !u!4 &1373642963
 Transform:
   m_ObjectHideFlags: 0

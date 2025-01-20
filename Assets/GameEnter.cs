@@ -27,7 +27,7 @@ public class GameEnter : MonoBehaviour
 
         InitializeParameters initializeParameters = null;
 
-#if UNITY_WEBGL
+#if WEIXINMINIGAME
         initializeParameters = new WebPlayModeParameters()
         {
             WebRemoteFileSystemParameters = 

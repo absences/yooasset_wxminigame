@@ -15,7 +15,7 @@ MonoBehaviour:
   ProjectConf:
     projectName: yoogame
     Appid: 
-    CDN: 
+    CDN: https://minigame.wyx.cn:10001/webgl
     assetLoadType: 1
     compressDataPackage: 0
     VideoUrl: 
@@ -65,6 +65,7 @@ MonoBehaviour:
     iOSAutoGCInterval: 10000
     enableIOSPerformancePlus: 0
     brotliMT: 1
+    enableWasm2023: 0
   CompressTexture:
     halfSize: 0
     useDXT5: 0
