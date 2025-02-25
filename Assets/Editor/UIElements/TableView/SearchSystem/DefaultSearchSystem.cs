@@ -100,14 +100,14 @@ namespace YooAsset.Editor
                         continue;
 
                     var cmd = new SearchKeyword();
-                    cmd.HeaderTitle = splits[0];
+                    cmd.SearchTag = splits[0];
                     cmd.Keyword = splits[1];
                     results.Add(cmd);
                 }
                 else
                 {
                     var cmd = new SearchKeyword();
-                    cmd.HeaderTitle = string.Empty;
+                    cmd.SearchTag = string.Empty;
                     cmd.Keyword = command;
                     results.Add(cmd);
                 }
@@ -171,9 +171,9 @@ namespace YooAsset.Editor
                     var searchKeywordCmd = cmd as SearchKeyword;
                     if (tableCell is StringValueCell stringValueCell)
                     {
-                        if (string.IsNullOrEmpty(searchKeywordCmd.HeaderTitle) == false)
+                        if (string.IsNullOrEmpty(searchKeywordCmd.SearchTag) == false)
                         {
-                            if (searchKeywordCmd.HeaderTitle == stringValueCell.HeaderTitle)
+                            if (searchKeywordCmd.SearchTag == stringValueCell.SearchTag)
                             {
                                 if (searchKeywordCmd.CompareTo(stringValueCell.StringValue))
                                     return true;
@@ -204,7 +204,7 @@ namespace YooAsset.Editor
                     var searchCompareCmd = cmd as SearchCompare;
                     if (tableCell is IntegerValueCell integerValueCell)
                     {
-                        if (searchCompareCmd.HeaderTitle == integerValueCell.HeaderTitle)
+                        if (searchCompareCmd.HeaderTitle == integerValueCell.SearchTag)
                         {
                             if (searchCompareCmd.CompareTo(integerValueCell.IntegerValue))
                                 return true;
@@ -212,7 +212,7 @@ namespace YooAsset.Editor
                     }
                     else if (tableCell is SingleValueCell singleValueCell)
                     {
-                        if (searchCompareCmd.HeaderTitle == singleValueCell.HeaderTitle)
+                        if (searchCompareCmd.HeaderTitle == singleValueCell.SearchTag)
                         {
                             if (searchCompareCmd.CompareTo(singleValueCell.SingleValue))
                                 return true;

@@ -21,7 +21,7 @@ namespace YooAsset
         }
 
         protected readonly Dictionary<string, FileWrapper> _wrappers = new Dictionary<string, FileWrapper>(10000);
-        protected readonly Dictionary<string, string> _webFilePaths = new Dictionary<string, string>(10000);
+        protected readonly Dictionary<string, string> _webFilePathMapping = new Dictionary<string, string>(10000);
         protected string _webPackageRoot = string.Empty;
 
         /// <summary>
@@ -56,6 +56,11 @@ namespace YooAsset
         /// 禁用Unity的网络缓存
         /// </summary>
         public bool DisableUnityWebCache { private set; get; } = false;
+
+        /// <summary>
+        ///  自定义参数：解密方法类
+        /// </summary>
+        public IWebDecryptionServices DecryptionServices { private set; get; }
         #endregion
 
 
@@ -113,6 +118,10 @@ namespace YooAsset
             {
                 DisableUnityWebCache = (bool)value;
             }
+            else if (name == FileSystemParametersDefine.DECRYPTION_SERVICES)
+            {
+                DecryptionServices = (IWebDecryptionServices)value;
+            }
             else
             {
                 YooLogger.Warning($"Invalid parameter : {name}");
@@ -168,15 +177,15 @@ namespace YooAsset
         #region 内部方法
         protected string GetDefaultWebPackageRoot(string packageName)
         {
-            string rootDirectory = YooAssetSettingsData.GetYooWebBuildinRoot();
+            string rootDirectory = YooAssetSettingsData.GetYooDefaultBuildinRoot();
             return PathUtility.Combine(rootDirectory, packageName);
         }
         public string GetWebFileLoadPath(PackageBundle bundle)
         {
-            if (_webFilePaths.TryGetValue(bundle.BundleGUID, out string filePath) == false)
+            if (_webFilePathMapping.TryGetValue(bundle.BundleGUID, out string filePath) == false)
             {
                 filePath = PathUtility.Combine(_webPackageRoot, bundle.FileName);
-                _webFilePaths.Add(bundle.BundleGUID, filePath);
+                _webFilePathMapping.Add(bundle.BundleGUID, filePath);
             }
             return filePath;
         }

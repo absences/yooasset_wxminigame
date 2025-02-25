@@ -7,7 +7,7 @@ namespace YooAsset.Editor
     /// </summary>
     public class SearchKeyword : ISearchCommand
     {
-        public string HeaderTitle;
+        public string SearchTag;
         public string Keyword;
 
         public bool CompareTo(string value)

@@ -6,7 +6,7 @@ namespace YooAsset.Editor
     public class SingleValueCell : ITableCell, IComparable
     {
         public object CellValue { set; get; }
-        public string HeaderTitle { private set; get; }
+        public string SearchTag { private set; get; }
         public double SingleValue
         {
             get
@@ -15,9 +15,9 @@ namespace YooAsset.Editor
             }
         }
 
-        public SingleValueCell(string headerTitle, object cellValue)
+        public SingleValueCell(string searchTag, object cellValue)
         {
-            HeaderTitle = headerTitle;
+            SearchTag = searchTag;
             CellValue = cellValue;
         }
         public object GetDisplayObject()
@@ -32,7 +32,7 @@ namespace YooAsset.Editor
             }
             else
             {
-                return 1;
+                return 0;
             }
         }
     }

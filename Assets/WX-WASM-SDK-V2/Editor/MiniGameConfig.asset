@@ -15,11 +15,11 @@ MonoBehaviour:
   ProjectConf:
     projectName: yoogame
     Appid: 
-    CDN: https://minigame.wyx.cn:10001/webgl
+    CDN: http://192.168.1.94
     assetLoadType: 1
     compressDataPackage: 0
     VideoUrl: 
-    DST: C:/Users/x8261/Desktop/wx/Build
+    DST: C:/Users/x8261/Desktop/Yood/Build
     StreamCDN: 
     bundleHashLength: 32
     bundlePathIdentifier: StreamingAssets;

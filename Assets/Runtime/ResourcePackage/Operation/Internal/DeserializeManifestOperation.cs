@@ -112,6 +112,7 @@ namespace YooAsset
                         packageAsset.AssetGUID = _buffer.ReadUTF8();
                         packageAsset.AssetTags = _buffer.ReadUTF8Array();
                         packageAsset.BundleID = _buffer.ReadInt32();
+                        packageAsset.DependBundleIDs = _buffer.ReadInt32Array();
                         ManifestTools.FillAssetCollection(Manifest, packageAsset);
 
                         _packageAssetCount--;
@@ -145,7 +146,7 @@ namespace YooAsset
                         packageBundle.FileSize = _buffer.ReadInt64();
                         packageBundle.Encrypted = _buffer.ReadBool();
                         packageBundle.Tags = _buffer.ReadUTF8Array();
-                        packageBundle.DependIDs = _buffer.ReadInt32Array();
+                        packageBundle.DependBundleIDs = _buffer.ReadInt32Array();
                         ManifestTools.FillBundleCollection(Manifest, packageBundle);
 
                         _packageBundleCount--;

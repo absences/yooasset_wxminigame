@@ -44,8 +44,9 @@ namespace YooAsset
 
         /// <summary>
         /// 依赖的资源包ID集合
+        /// 注意：引擎层构建查询结果
         /// </summary>
-        public int[] DependIDs;
+        public int[] DependBundleIDs;
 
         /// <summary>
         /// 资源包GUID
@@ -58,7 +59,6 @@ namespace YooAsset
         /// <summary>
         /// 资源包类型
         /// </summary>
-        private int _bundleType;
         public int BundleType
         {
             get
@@ -66,11 +66,11 @@ namespace YooAsset
                 return _bundleType;
             }
         }
+        private int _bundleType;
 
         /// <summary>
         /// 文件名称
-        /// </summary>
-        private string _fileName;
+        /// </summary>  
         public string FileName
         {
             get
@@ -80,11 +80,11 @@ namespace YooAsset
                 return _fileName;
             }
         }
+        private string _fileName;
 
         /// <summary>
         /// 文件后缀名
         /// </summary>
-        private string _fileExtension;
         public string FileExtension
         {
             get
@@ -94,12 +94,21 @@ namespace YooAsset
                 return _fileExtension;
             }
         }
+        private string _fileExtension;
 
         /// <summary>
         /// 包含的主资源集合
         /// </summary>
         [NonSerialized]
         public readonly List<PackageAsset> IncludeMainAssets = new List<PackageAsset>(10);
+
+        /// <summary>
+        /// 引用该资源包的资源包列表
+        /// 说明：谁引用了该资源包
+        /// </summary>
+        [NonSerialized]
+        public readonly List<int> ReferenceBundleIDs = new List<int>(10);
+        private readonly HashSet<int> _referenceBundleIDs = new HashSet<int>();
 
 
         public PackageBundle()
@@ -111,9 +120,23 @@ namespace YooAsset
         /// </summary>
         public void InitBundle(PackageManifest manifest)
         {
+            _mainfest = manifest;
             _bundleType = manifest.BuildBundleType;
             _fileExtension = ManifestTools.GetRemoteBundleFileExtension(BundleName);
             _fileName = ManifestTools.GetRemoteBundleFileName(manifest.OutputNameStyle, BundleName, _fileExtension, FileHash);
+        }
+
+        /// <summary>
+        /// 添加引用该资源包的资源包ID
+        /// 说明：谁引用了该资源包
+        /// </summary>
+        public void AddReferenceBundleID(int bundleID)
+        {
+            if (_referenceBundleIDs.Contains(bundleID) == false)
+            {
+                _referenceBundleIDs.Add(bundleID);
+                ReferenceBundleIDs.Add(bundleID);
+            }
         }
 
         /// <summary>
@@ -155,5 +178,23 @@ namespace YooAsset
 
             return false;
         }
+
+        #region 调试信息
+        private PackageManifest _mainfest;
+        private List<string> _debugReferenceBundles;
+        public List<string> GetDebugReferenceBundles()
+        {
+            if (_debugReferenceBundles == null)
+            {
+                _debugReferenceBundles = new List<string>(ReferenceBundleIDs.Count);
+                foreach (int bundleID in ReferenceBundleIDs)
+                {
+                    var packageBundle = _mainfest.BundleList[bundleID];
+                    _debugReferenceBundles.Add(packageBundle.BundleName);
+                }
+            }
+            return _debugReferenceBundles;
+        }
+        #endregion
     }
 }

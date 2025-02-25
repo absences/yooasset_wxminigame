@@ -5,7 +5,7 @@ namespace YooAsset.Editor
 {
     public class AssetPathCell : StringValueCell
     {
-        public AssetPathCell(string headerTitle, object cellValue) : base(headerTitle, cellValue)
+        public AssetPathCell(string searchTag, object cellValue) : base(searchTag, cellValue)
         {
         }
 

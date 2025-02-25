@@ -83,10 +83,13 @@ public class WXTouchInputOverride : BaseInput
 
     private void UnregisterWechatTouchEvents()
     {
-        WX.OffTouchStart(OnWxTouchStart);
-        WX.OffTouchMove(OnWxTouchMove);
-        WX.OffTouchEnd(OnWxTouchEnd);
-        WX.OffTouchCancel(OnWxTouchCancel);
+        if (_isInitWechatSDK)
+        {
+            WX.OffTouchStart(OnWxTouchStart);
+            WX.OffTouchMove(OnWxTouchMove);
+            WX.OffTouchEnd(OnWxTouchEnd);
+            WX.OffTouchCancel(OnWxTouchCancel);
+        }
     }
 
     private void OnWxTouchStart(OnTouchStartListenerResult touchEvent)

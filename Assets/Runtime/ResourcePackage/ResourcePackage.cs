@@ -31,6 +31,19 @@ namespace YooAsset
             get { return _initializeStatus; }
         }
 
+        /// <summary>
+        /// 包裹是否有效
+        /// </summary>
+        public bool PackageValid
+        {
+            get
+            {
+                if (_playModeImpl == null)
+                    return false;
+                return _playModeImpl.ActiveManifest != null;
+            }
+        }
+
 
         internal ResourcePackage(string packageName)
         {
@@ -258,7 +271,7 @@ namespace YooAsset
             DebugCheckInitialize();
             return _playModeImpl.ClearCacheFilesAsync(clearMode.ToString(), clearParam);
         }
-        
+
         /// <summary>
         /// 清理缓存文件
         /// </summary>
@@ -306,8 +319,18 @@ namespace YooAsset
         /// </summary>
         public UnloadAllAssetsOperation UnloadAllAssetsAsync()
         {
+            var options = new UnloadAllAssetsOptions();
+            return UnloadAllAssetsAsync(options);
+        }
+
+        /// <summary>
+        /// 强制回收所有资源
+        /// </summary>
+        /// <param name="options">卸载选项</param>
+        public UnloadAllAssetsOperation UnloadAllAssetsAsync(UnloadAllAssetsOptions options)
+        {
             DebugCheckInitialize();
-            var operation = new UnloadAllAssetsOperation(_resourceManager);
+            var operation = new UnloadAllAssetsOperation(_resourceManager, options);
             OperationSystem.StartOperation(PackageName, operation);
             return operation;
         }
@@ -316,10 +339,11 @@ namespace YooAsset
         /// 回收不再使用的资源
         /// 说明：卸载引用计数为零的资源
         /// </summary>
-        public UnloadUnusedAssetsOperation UnloadUnusedAssetsAsync()
+        /// <param name="loopCount">循环迭代次数</param>
+        public UnloadUnusedAssetsOperation UnloadUnusedAssetsAsync(int loopCount = 10)
         {
             DebugCheckInitialize();
-            var operation = new UnloadUnusedAssetsOperation(_resourceManager);
+            var operation = new UnloadUnusedAssetsOperation(_resourceManager, loopCount);
             OperationSystem.StartOperation(PackageName, operation);
             return operation;
         }
@@ -1123,10 +1147,7 @@ namespace YooAsset
         #region 调试信息
         internal DebugPackageData GetDebugPackageData()
         {
-            DebugPackageData data = new DebugPackageData();
-            data.PackageName = PackageName;
-            data.ProviderInfos = _resourceManager.GetDebugReportInfos();
-            return data;
+            return _resourceManager.GetDebugPackageData();
         }
         #endregion
     }

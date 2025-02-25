@@ -6,7 +6,7 @@ namespace YooAsset.Editor
     public class StringValueCell : ITableCell, IComparable
     {
         public object CellValue { set; get; }
-        public string HeaderTitle { private set; get; }
+        public string SearchTag { private set; get; }
         public string StringValue
         {
             get
@@ -15,9 +15,9 @@ namespace YooAsset.Editor
             }
         }
         
-        public StringValueCell(string headerTitle, object cellValue)
+        public StringValueCell(string searchTag, object cellValue)
         {
-            HeaderTitle = headerTitle;
+            SearchTag = searchTag;
             CellValue = cellValue;
         }
         public object GetDisplayObject()
@@ -32,7 +32,7 @@ namespace YooAsset.Editor
             }
             else
             {
-                return 1;
+                return 0;
             }
         }
     }

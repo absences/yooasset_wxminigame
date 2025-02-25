@@ -155,20 +155,28 @@ namespace YooAsset
         {
             if (AssetDic.TryGetValue(assetPath, out PackageAsset packageAsset))
             {
-                int bundleID = packageAsset.BundleID;
-                if (bundleID >= 0 && bundleID < BundleList.Count)
-                {
-                    var packageBundle = BundleList[bundleID];
-                    return packageBundle;
-                }
-                else
-                {
-                    throw new Exception($"Invalid bundle id : {bundleID} Asset path : {assetPath}");
-                }
+                return GetMainPackageBundle(packageAsset.BundleID);
             }
             else
             {
                 throw new Exception("Should never get here !");
+            }
+        }
+
+        /// <summary>
+        /// 获取主资源包
+        /// 注意：传入的资源包ID一定合法有效！
+        /// </summary>
+        public PackageBundle GetMainPackageBundle(int bundleID)
+        {
+            if (bundleID >= 0 && bundleID < BundleList.Count)
+            {
+                var packageBundle = BundleList[bundleID];
+                return packageBundle;
+            }
+            else
+            {
+                throw new Exception($"Invalid bundle id : {bundleID}");
             }
         }
 
@@ -178,21 +186,20 @@ namespace YooAsset
         /// </summary>
         public PackageBundle[] GetAllDependencies(string assetPath)
         {
-            var packageBundle = GetMainPackageBundle(assetPath);
-            List<PackageBundle> result = new List<PackageBundle>(packageBundle.DependIDs.Length);
-            foreach (var dependID in packageBundle.DependIDs)
+            if (TryGetPackageAsset(assetPath, out PackageAsset packageAsset))
             {
-                if (dependID >= 0 && dependID < BundleList.Count)
+                List<PackageBundle> result = new List<PackageBundle>(packageAsset.DependBundleIDs.Length);
+                foreach (var dependID in packageAsset.DependBundleIDs)
                 {
-                    var dependBundle = BundleList[dependID];
+                    var dependBundle = GetMainPackageBundle(dependID);
                     result.Add(dependBundle);
                 }
-                else
-                {
-                    throw new Exception($"Invalid bundle id : {dependID} Asset path : {assetPath}");
-                }
+                return result.ToArray();
             }
-            return result.ToArray();
+            else
+            {
+                throw new Exception("Should never get here !");
+            }
         }
 
         /// <summary>

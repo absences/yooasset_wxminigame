@@ -6,7 +6,12 @@ namespace YooAsset.Editor
     public class ButtonCell : ITableCell, IComparable
     {
         public object CellValue { set; get; }
+        public string SearchTag { private set; get; }
 
+        public ButtonCell(string searchTag)
+        {
+            SearchTag = searchTag;
+        }
         public object GetDisplayObject()
         {
             return string.Empty;

@@ -29,7 +29,7 @@ MonoBehaviour:
       AssetTags: 
       ActiveRuleName: EnableGroup
       Collectors:
-      - CollectPath: Assets/GameObject.prefab
+      - CollectPath: Assets/Res/GameObject.prefab
         CollectorGUID: 2fde08aa5b94d9e48a1c91b025329e67
         CollectorType: 0
         AddressRuleName: AddressByFileName
@@ -37,8 +37,8 @@ MonoBehaviour:
         FilterRuleName: CollectAll
         AssetTags: 
         UserData: 
-      - CollectPath: Assets/GameObject 1.prefab
-        CollectorGUID: 5acc3cb69428193498b2f03ffdbc5715
+      - CollectPath: Assets/Res/alibaba.asset
+        CollectorGUID: eaabcc5299111824c84b5d972214f706
         CollectorType: 0
         AddressRuleName: AddressByFileName
         PackRuleName: PackDirectory

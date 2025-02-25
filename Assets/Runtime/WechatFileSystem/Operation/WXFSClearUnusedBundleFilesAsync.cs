@@ -4,16 +4,15 @@ using System.IO;
 using UnityEngine;
 using YooAsset;
 using WeChatWASM;
-
+using static UnityEngine.Networking.UnityWebRequest;
 
 internal class WXFSClearUnusedBundleFilesAsync : FSClearCacheFilesOperation
 {
     private enum ESteps
     {
         None,
-        GetAllCacheFiles,
-        WaitResult,
         GetUnusedCacheFiles,
+        WaitingSearch,
         ClearUnusedCacheFiles,
         Done,
     }
@@ -22,7 +21,6 @@ internal class WXFSClearUnusedBundleFilesAsync : FSClearCacheFilesOperation
     private readonly PackageManifest _manifest;
     private List<string> _unusedCacheFiles;
     private int _unusedFileTotalCount = 0;
-    private GetSavedFileListSuccessCallbackResult _result;
     private ESteps _steps = ESteps.None;
 
     internal WXFSClearUnusedBundleFilesAsync(WechatFileSystem fileSystem, PackageManifest manifest)
@@ -32,53 +30,55 @@ internal class WXFSClearUnusedBundleFilesAsync : FSClearCacheFilesOperation
     }
     internal override void InternalOnStart()
     {
-        _steps = ESteps.GetAllCacheFiles;
+        _steps = ESteps.GetUnusedCacheFiles;
     }
     internal override void InternalOnUpdate()
     {
         if (_steps == ESteps.None || _steps == ESteps.Done)
             return;
 
-        if (_steps == ESteps.GetAllCacheFiles)
-        {
-            _steps = ESteps.WaitResult;
-
-            var fileSystemMgr = WX.GetFileSystemManager();
-            var option = new GetSavedFileListOption();
-            fileSystemMgr.GetSavedFileList(option);
-            option.fail += (FileError error) =>
-            {
-                _steps = ESteps.Done;
-                Error = error.errMsg;
-                Status = EOperationStatus.Failed;
-            };
-            option.success += (GetSavedFileListSuccessCallbackResult result) =>
-            {
-                _result = result;
-                _steps = ESteps.GetUnusedCacheFiles;
-            };
-        }
-
-        if (_steps == ESteps.WaitResult)
-        {
-            return;
-        }
-
         if (_steps == ESteps.GetUnusedCacheFiles)
         {
-            _unusedCacheFiles = GetUnusedCacheFiles();
-            _unusedFileTotalCount = _unusedCacheFiles.Count;
-            _steps = ESteps.ClearUnusedCacheFiles;
-            YooLogger.Log($"Found unused cache files count : {_unusedFileTotalCount}");
+            _steps = ESteps.WaitingSearch;
+
+            var fileSystemMgr = _fileSystem.GetFileSystemMgr();
+            var statOption = new WXStatOption();
+            statOption.path = _fileSystem.FileRoot;
+            statOption.recursive = true;
+            statOption.success = (WXStatResponse response) =>
+            {
+                foreach (var fileStat in response.stats)
+                {
+                    // 注意：存储文件必须按照Bundle文件哈希值存储！
+                    string bundleGUID = Path.GetFileNameWithoutExtension(fileStat.path);
+                    if (_manifest.TryGetPackageBundleByBundleGUID(bundleGUID, out PackageBundle value) == false)
+                    {
+                        string fullPath = WX.GetCachePath(fileStat.path);
+                        if (_unusedCacheFiles.Contains(fullPath) == false)
+                            _unusedCacheFiles.Add(fullPath);
+                    }
+                }
+
+                _steps = ESteps.ClearUnusedCacheFiles;
+                _unusedFileTotalCount = _unusedCacheFiles.Count;
+                YooLogger.Log($"Found unused cache files count : {_unusedFileTotalCount}");
+            };
+            statOption.fail = (WXStatResponse response) =>
+            {
+                _steps = ESteps.Done;
+                Status = EOperationStatus.Failed;
+                Error = response.errMsg;
+            };
+            fileSystemMgr.Stat(statOption);
         }
 
         if (_steps == ESteps.ClearUnusedCacheFiles)
         {
             for (int i = _unusedCacheFiles.Count - 1; i >= 0; i--)
             {
-                string cacheFilePath = _unusedCacheFiles[i];
-                WX.RemoveFile(cacheFilePath, null);
+                string filePath = _unusedCacheFiles[i];
                 _unusedCacheFiles.RemoveAt(i);
+                WX.RemoveFile(filePath, null);
 
                 if (OperationSystem.IsBusy)
                     break;
@@ -95,30 +95,6 @@ internal class WXFSClearUnusedBundleFilesAsync : FSClearCacheFilesOperation
                 Status = EOperationStatus.Succeed;
             }
         }
-    }
-
-    private List<string> GetUnusedCacheFiles()
-    {
-        List<string> result = new List<string>(_result.fileList.Length);
-        foreach (var fileInfo in _result.fileList)
-        {
-            // 如果存储文件名是按照Bundle文件哈希值存储
-            string bundleGUID = Path.GetFileNameWithoutExtension(fileInfo.filePath);
-            if (_manifest.TryGetPackageBundleByBundleGUID(bundleGUID, out PackageBundle value) == false)
-            {
-                result.Add(fileInfo.filePath);
-            }
-
-            // 如果存储文件名是按照Bundle文件名称存储
-            /*
-            string bundleName = Path.GetFileNameWithoutExtension(fileInfo.filePath);
-            if (_manifest.TryGetPackageBundleByBundleName(bundleName, out PackageBundle value) == false)
-            {
-                result.Add(fileInfo.filePath);
-            }
-            */
-        }
-        return result;
     }
 }
 #endif

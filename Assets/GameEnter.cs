@@ -1,13 +1,13 @@
-using Cysharp.Threading.Tasks;
-using System.Collections;
-using System.Collections.Generic;
+﻿using Cysharp.Threading.Tasks;
+using TMPro;
 using UnityEngine;
-using UnityEngine.Networking;
-using WeChatWASM;
 using YooAsset;
 
 public class GameEnter : MonoBehaviour
 {
+    public string CDN = "http://192.168.1.94/";
+    public TextMeshProUGUI tip;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +18,7 @@ public class GameEnter : MonoBehaviour
 
     async UniTask InitResource()
     {
+
         YooAssets.Initialize(null);
 
         YooAssets.SetOperationSystemMaxTimeSlice(1000);
@@ -26,34 +27,48 @@ public class GameEnter : MonoBehaviour
         YooAssets.SetDefaultPackage(DefaultPackage);
 
         InitializeParameters initializeParameters = null;
+#if UNITY_EDITOR
+        var buildResult = EditorSimulateModeHelper.SimulateBuild("DefaultPackage");
+        var packageRoot = buildResult.PackageRootDirectory;
 
-#if WEIXINMINIGAME
+        initializeParameters = new EditorSimulateModeParameters()
+        {
+            EditorFileSystemParameters =
+                FileSystemParameters.CreateDefaultEditorFileSystemParameters(packageRoot)
+        };
+
+
+#elif WEIXINMINIGAME
+
+        string packageRoot = $"{WeChatWASM.WX.env.USER_DATA_PATH}/__GAME_FILE_CACHE";
+
         initializeParameters = new WebPlayModeParameters()
         {
-            WebRemoteFileSystemParameters = 
-            WechatFileSystemCreater.CreateWechatFileSystemParameters(new RemoveServer(CDN)),
+            WebRemoteFileSystemParameters =
+            WechatFileSystemCreater.CreateFileSystemParameters(packageRoot, new RemoveServer(CDN)),
         };
 #endif
-        //initializeParameters = new EditorSimulateModeParameters()
-        //{
-        //    EditorFileSystemParameters =
-        //     FileSystemParameters.CreateDefaultEditorFileSystemParameters(
-        //         EditorSimulateModeHelper.SimulateBuild(EDefaultBuildPipeline.BuiltinBuildPipeline, "DefaultPackage"))
-        //};
 
         var init = DefaultPackage.InitializeAsync(initializeParameters);
 
         await init;
 
-
         var version = DefaultPackage.RequestPackageVersionAsync();
 
         await version;
-
         var update = DefaultPackage.UpdatePackageManifestAsync(version.PackageVersion);
 
         await update;
+        //can load assets
+        await InitTmpAsset();
+#if WEIXINMINIGAME
+        
+        //更新字体 事先隐藏的就不需要
+        // tip.UpdateFontAsset();
+        // tip.SetAllDirty();
 
+        tip.text = "1、修改转换工具cdn地址 、appid、设置导出路径\n2、修改GameEnter CDN\n3、添加TMP_SDF-Mobile着色器到内置shaders清单";
+        tip.gameObject.SetActive(true);
         var download = DefaultPackage.CreateResourceDownloader(3, 10);
 
         download.BeginDownload();
@@ -68,19 +83,12 @@ public class GameEnter : MonoBehaviour
 
         await instant;
 
-        var request = UnityWebRequest.Get(CDN + "StreamingAssets/aa.png");
+        var _wxFileSystemMgr = WeChatWASM.WX.GetFileSystemManager();
 
-        await request.SendWebRequest();
-
-        Debug.Log(request.result);
-
-
-        var _wxFileSystemMgr = WX.GetFileSystemManager();
-
-       // UniTaskCompletionSource<byte[]> task = new UniTaskCompletionSource<byte[]>();
-        _wxFileSystemMgr.ReadFile(new ReadFileParam()
+        //测试读取 sa 资源
+        _wxFileSystemMgr.ReadFile(new WeChatWASM.ReadFileParam()
         {
-            filePath = WX.env.USER_DATA_PATH + "/StreamingAssets/aa.png",
+            filePath = WeChatWASM.WX.env.USER_DATA_PATH + "/StreamingAssets/aa.png",
             success = (success) =>
             {
                 Debug.Log("load success");
@@ -90,13 +98,60 @@ public class GameEnter : MonoBehaviour
 
             }
         });
+#else
+        tip.text = "这是编辑器模式";
+        tip.gameObject.SetActive(true);
+#endif
     }
+#if WEIXINMINIGAME
+    async UniTask InitTmpAsset()
+    {
+        var fallbackFont = CDN + "AlibabaPuHuiTi-2-65-Medium.ttf";
 
-    public string CDN = "qq.com/";
+        UniTaskCompletionSource<bool> source = new UniTaskCompletionSource<bool>();
+
+        WeChatWASM.WX.GetWXFont(fallbackFont, (code, font) =>
+        {
+            Debug.Log("get font: code:" + code + " font:" + font);
+
+            if (font != null)
+            {
+                //注意：需要将shader: TMP_SDF-Mobile 添加到editor Graphics included Shaders内置着色器列表
+                var tmp_font = TMP_FontAsset.CreateFontAsset(font);
+
+                TMP_Text.OnFontAssetRequest += (hashcode, asset) =>
+                {
+                    return tmp_font;
+                };
+
+                TMP_Settings.defaultFontAsset = tmp_font;
+
+                Debug.Log("load font success");
+            }
+            source.TrySetResult(font != null);
+        });
+
+        await source.Task;
+    }
+#else
+    async UniTask InitTmpAsset()
+    {
+        var handle = DefaultPackage.LoadAssetAsync<TMP_FontAsset>("alibaba");
+
+        await handle;
+        var tmp_font = handle.AssetObject as TMP_FontAsset;
+        TMP_Text.OnFontAssetRequest += (hashcode, asset) =>
+        {
+            return tmp_font;
+        };
+
+        TMP_Settings.defaultFontAsset = tmp_font;
+    }
+#endif
 
     class RemoveServer : IRemoteServices
     {
-        //ע��CDN��ַ��YooԶ�˼��ص�ַ��һ�£��Żᴥ������
+        //注意微信CDN地址与Yoo远端加载地址需一致，才会触发缓存
         //https://wechat-miniprogram.github.io/minigame-unity-webgl-transform/Design/FileCache.html
 
         string CDN;
@@ -105,17 +160,16 @@ public class GameEnter : MonoBehaviour
             CDN = cdn;
         }
 
-        //�����һ�£���Ҫ�޸Ļ���Ŀ¼��_fileCacheRoot
-
-        //Զ��Ŀ¼�ṹΪ��
+        //远端目录结构为：
         //CDN:
-        //webgl:
-        //      StreamingAssets
-        //      xxwebgl.wasm.code.unityweb.wasm.br
+        //    StreamingAssets
+        //    xxwebgl.wasm.code.unityweb.wasm.br
 
-        //      xxx.version
-        //      xxx.hash
-        //      xx/bundle
+        //    xxx.version
+        //    xxx.hash
+        //    xx/bundle
+
+        //    xx.ttf 备用字体
         public string GetRemoteFallbackURL(string fileName)
         {
             return CDN + fileName;

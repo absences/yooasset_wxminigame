@@ -109,11 +109,13 @@ namespace YooAsset
         /// <summary>
         /// 创建默认的WebServer文件系统参数
         /// </summary>
+        /// <param name="decryptionServices">加密文件解密服务类</param>
         /// <param name="disableUnityWebCache">禁用Unity的网络缓存</param>
-        public static FileSystemParameters CreateDefaultWebServerFileSystemParameters(bool disableUnityWebCache = false)
+        public static FileSystemParameters CreateDefaultWebServerFileSystemParameters(IWebDecryptionServices decryptionServices = null, bool disableUnityWebCache = false)
         {
             string fileSystemClass = typeof(DefaultWebServerFileSystem).FullName;
             var fileSystemParams = new FileSystemParameters(fileSystemClass, null);
+            fileSystemParams.AddParameter(FileSystemParametersDefine.DECRYPTION_SERVICES, decryptionServices);
             fileSystemParams.AddParameter(FileSystemParametersDefine.DISABLE_UNITY_WEB_CACHE, disableUnityWebCache);
             return fileSystemParams;
         }
@@ -122,12 +124,14 @@ namespace YooAsset
         /// 创建默认的WebRemote文件系统参数
         /// </summary>
         /// <param name="remoteServices">远端资源地址查询服务类</param>
+        /// <param name="decryptionServices">加密文件解密服务类</param>
         /// <param name="disableUnityWebCache">禁用Unity的网络缓存</param>
-        public static FileSystemParameters CreateDefaultWebRemoteFileSystemParameters(IRemoteServices remoteServices, bool disableUnityWebCache = false)
+        public static FileSystemParameters CreateDefaultWebRemoteFileSystemParameters(IRemoteServices remoteServices, IWebDecryptionServices decryptionServices = null, bool disableUnityWebCache = false)
         {
             string fileSystemClass = typeof(DefaultWebRemoteFileSystem).FullName;
             var fileSystemParams = new FileSystemParameters(fileSystemClass, null);
             fileSystemParams.AddParameter(FileSystemParametersDefine.REMOTE_SERVICES, remoteServices);
+            fileSystemParams.AddParameter(FileSystemParametersDefine.DECRYPTION_SERVICES, decryptionServices);
             fileSystemParams.AddParameter(FileSystemParametersDefine.DISABLE_UNITY_WEB_CACHE, disableUnityWebCache);
             return fileSystemParams;
         }

@@ -55,6 +55,7 @@ namespace YooAsset
                     buffer.WriteUTF8(packageAsset.AssetGUID);
                     buffer.WriteUTF8Array(packageAsset.AssetTags);
                     buffer.WriteInt32(packageAsset.BundleID);
+                    buffer.WriteInt32Array(packageAsset.DependBundleIDs);
                 }
 
                 // 写入资源包列表
@@ -69,7 +70,7 @@ namespace YooAsset
                     buffer.WriteInt64(packageBundle.FileSize);
                     buffer.WriteBool(packageBundle.Encrypted);
                     buffer.WriteUTF8Array(packageBundle.Tags);
-                    buffer.WriteInt32Array(packageBundle.DependIDs);
+                    buffer.WriteInt32Array(packageBundle.DependBundleIDs);
                 }
 
                 // 写入文件流
@@ -133,6 +134,7 @@ namespace YooAsset
                     packageAsset.AssetGUID = buffer.ReadUTF8();
                     packageAsset.AssetTags = buffer.ReadUTF8Array();
                     packageAsset.BundleID = buffer.ReadInt32();
+                    packageAsset.DependBundleIDs = buffer.ReadInt32Array();
                     FillAssetCollection(manifest, packageAsset);
                 }
 
@@ -149,7 +151,7 @@ namespace YooAsset
                     packageBundle.FileSize = buffer.ReadInt64();
                     packageBundle.Encrypted = buffer.ReadBool();
                     packageBundle.Tags = buffer.ReadUTF8Array();
-                    packageBundle.DependIDs = buffer.ReadInt32Array();
+                    packageBundle.DependBundleIDs = buffer.ReadInt32Array();
                     FillBundleCollection(manifest, packageBundle);
                 }
             }
@@ -175,6 +177,17 @@ namespace YooAsset
                 else
                 {
                     throw new Exception($"Invalid bundle id : {bundleID} Asset path : {packageAsset.AssetPath}");
+                }
+            }
+
+            // 填充资源包引用关系
+            for (int index = 0; index < manifest.BundleList.Count; index++)
+            {
+                var sourceBundle = manifest.BundleList[index];
+                foreach (int dependIndex in sourceBundle.DependBundleIDs)
+                {
+                    var dependBundle = manifest.BundleList[dependIndex];
+                    dependBundle.AddReferenceBundleID(index);
                 }
             }
         }
@@ -318,8 +331,15 @@ namespace YooAsset
             }
             else if (nameStyle == (int)EFileNameStyle.BundleName_HashName)
             {
-                string fileName = bundleName.Remove(bundleName.LastIndexOf('.'));
-                return StringUtility.Format("{0}_{1}{2}", fileName, fileHash, fileExtension);
+                if (string.IsNullOrEmpty(fileExtension))
+                {
+                    return StringUtility.Format("{0}_{1}", bundleName, fileHash);
+                }
+                else
+                {
+                    string fileName = bundleName.Remove(bundleName.LastIndexOf('.'));
+                    return StringUtility.Format("{0}_{1}{2}", fileName, fileHash, fileExtension);
+                }
             }
             else
             {

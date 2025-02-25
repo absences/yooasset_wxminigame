@@ -6,7 +6,7 @@ namespace YooAsset.Editor
     public class IntegerValueCell : ITableCell, IComparable
     {
         public object CellValue { set; get; }
-        public string HeaderTitle { private set; get; }
+        public string SearchTag { private set; get; }
         public long IntegerValue
         {
             get
@@ -15,9 +15,9 @@ namespace YooAsset.Editor
             }
         }
 
-        public IntegerValueCell(string headerTitle, object cellValue)
+        public IntegerValueCell(string searchTag, object cellValue)
         {
-            HeaderTitle = headerTitle;
+            SearchTag = searchTag;
             CellValue = cellValue;
         }
         public object GetDisplayObject()
@@ -32,7 +32,7 @@ namespace YooAsset.Editor
             }
             else
             {
-                return 1;
+                return 0;
             }
         }
     }
