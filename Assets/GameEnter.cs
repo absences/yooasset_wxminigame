@@ -75,7 +75,7 @@ public class GameEnter : MonoBehaviour
 
         await download;
 
-        var loadHandle = DefaultPackage.LoadAssetAsync<GameObject>("Assets/GameObject.prefab");
+        var loadHandle = DefaultPackage.LoadAssetAsync<GameObject>("GameObject");
 
         await loadHandle;
 

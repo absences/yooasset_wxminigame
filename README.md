@@ -8,3 +8,5 @@
 ![img](./img.png)
 真机
 ![img2](./img2.png)
+热更新
+![img3](./img3.png)
