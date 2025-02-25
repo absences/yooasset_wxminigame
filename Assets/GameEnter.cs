@@ -136,6 +136,7 @@ public class GameEnter : MonoBehaviour
 #else
     async UniTask InitTmpAsset()
     {
+        //出小游戏包，可以不打包字体，使用微信字体，减少包体大小
         var handle = DefaultPackage.LoadAssetAsync<TMP_FontAsset>("alibaba");
 
         await handle;
