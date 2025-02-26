@@ -33,7 +33,7 @@ MonoBehaviour:
         CollectorGUID: 2fde08aa5b94d9e48a1c91b025329e67
         CollectorType: 0
         AddressRuleName: AddressByFileName
-        PackRuleName: PackDirectory
+        PackRuleName: PackSeparately
         FilterRuleName: CollectAll
         AssetTags: 
         UserData: 
@@ -41,7 +41,15 @@ MonoBehaviour:
         CollectorGUID: eaabcc5299111824c84b5d972214f706
         CollectorType: 0
         AddressRuleName: AddressByFileName
-        PackRuleName: PackDirectory
+        PackRuleName: PackSeparately
+        FilterRuleName: CollectTMPFont
+        AssetTags: 
+        UserData: 
+      - CollectPath: Assets/Res/Text (TMP).prefab
+        CollectorGUID: 1da91e259a9ac9f4cbd9943277872e95
+        CollectorType: 0
+        AddressRuleName: AddressByFileName
+        PackRuleName: PackSeparately
         FilterRuleName: CollectAll
         AssetTags: 
         UserData: 

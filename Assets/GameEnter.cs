@@ -1,6 +1,7 @@
 ﻿using Cysharp.Threading.Tasks;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 using YooAsset;
 
 public class GameEnter : MonoBehaviour
@@ -8,6 +9,7 @@ public class GameEnter : MonoBehaviour
     public string CDN = "http://192.168.1.94/";
     public TextMeshProUGUI tip;
 
+    public Button clickBtn;
     // Start is called before the first frame update
     void Start()
     {
@@ -70,6 +72,14 @@ public class GameEnter : MonoBehaviour
         tip.text = "1、修改转换工具cdn地址 、appid、设置导出路径\n2、修改GameEnter CDN\n3、添加TMP_SDF-Mobile着色器到内置shaders清单";
         tip.gameObject.SetActive(true);
         var download = DefaultPackage.CreateResourceDownloader(3, 10);
+
+        var a = 0;
+        clickBtn.gameObject.SetActive(true);
+        clickBtn.onClick.AddListener(() =>
+        {
+            a++;
+            tip.text = a.ToString();
+        });
 
         download.BeginDownload();
 

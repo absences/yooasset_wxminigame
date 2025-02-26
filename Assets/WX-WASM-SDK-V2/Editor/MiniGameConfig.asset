@@ -19,7 +19,7 @@ MonoBehaviour:
     assetLoadType: 1
     compressDataPackage: 0
     VideoUrl: 
-    DST: C:/Users/x8261/Desktop/Yood/Build
+    DST: C:/Users/x8261/Desktop/My project/build
     StreamCDN: 
     bundleHashLength: 32
     bundlePathIdentifier: StreamingAssets;

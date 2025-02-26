@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
 using UnityEditor;
+using TMPro;
 
 namespace YooAsset.Editor
 {
@@ -70,6 +71,18 @@ namespace YooAsset.Editor
         public bool IsCollectAsset(FilterRuleData data)
         {
             return Path.GetExtension(data.AssetPath) == ".shadervariants";
+        }
+    }
+    [DisplayName("收集TMP字体")]
+    public class CollectTMPFont : IFilterRule
+    {
+        public bool IsCollectAsset(FilterRuleData data)
+        {
+#if WEIXINMINIGAME
+            return false;
+#endif
+            var mainAssetType = AssetDatabase.GetMainAssetTypeAtPath(data.AssetPath);
+            return mainAssetType == typeof(TMP_FontAsset);
         }
     }
 }

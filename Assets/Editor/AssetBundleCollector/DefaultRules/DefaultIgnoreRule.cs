@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
+using TMPro;
 
 namespace YooAsset.Editor
 {
@@ -54,10 +55,23 @@ namespace YooAsset.Editor
                 return true;
             }
 
+            if (assetInfo.AssetType == typeof(TMP_FontAsset) || assetInfo.AssetType == typeof(Font))
+            {
+#if WEIXINMINIGAME
+                //小游戏忽略引用字体
+                var font = AssetDatabase.LoadAssetAtPath<Object>(assetInfo.AssetPath);
+                font.hideFlags = HideFlags.DontSave;//不参与打包
+                return true;
+#else   
+                var font = AssetDatabase.LoadAssetAtPath<Object>(assetInfo.AssetPath);
+                font.hideFlags = HideFlags.None;//还原
+#endif
+            }
+
             return DefaultIgnoreRule.IgnoreFileExtensions.Contains(assetInfo.FileExtension);
         }
     }
-
+    
     /// <summary>
     /// 适配原生文件构建管线
     /// </summary>
