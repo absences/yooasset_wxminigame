@@ -12,6 +12,8 @@ function realUid(length = 20, char = true) {
     }
     return id.join('');
 }
+// 用于调试js代码
+const isDebug = false;
 const identifierCache = [];
 const clearIdTicker = {};
 const tempCacheObj = {};
@@ -22,7 +24,7 @@ const typeMap = {
     number: 0,
     bool: false,
     object: {},
-};
+}; // 类型默认值映射
 const interfaceTypeMap = {
     array: 'object',
     arrayBuffer: 'object',
@@ -398,4 +400,9 @@ export function getDefaultData(canvas, conf) {
         config.destHeight = canvas.height;
     }
     return config;
+}
+export function debugLog(...args) {
+    if (isDebug) {
+        console.log('[debug]', ...args);
+    }
 }

@@ -33,18 +33,20 @@ public class WXTouchInputOverride : BaseInput
         base.Awake();
         _standaloneInputModule = GetComponent<StandaloneInputModule>();
     }
-#if UNITY_WEBGL && !UNITY_EDITOR
+
     protected override void OnEnable()
     {
         base.OnEnable();
-
+#if UNITY_WEBGL && !UNITY_EDITOR
         if (string.IsNullOrEmpty(WeChatWASM.WX.GetSystemInfoSync().platform)) return;
         InitWechatTouchEvents();
         if (_standaloneInputModule)
         {
             _standaloneInputModule.inputOverride = this;
         }
+#endif
     }
+
     protected override void OnDisable()
     {
         base.OnDisable();
@@ -54,8 +56,8 @@ public class WXTouchInputOverride : BaseInput
             _standaloneInputModule.inputOverride = null;
         }
     }
-#endif
-private void InitWechatTouchEvents()
+
+    private void InitWechatTouchEvents()
     {
         if (!_isInitWechatSDK)
         {
@@ -81,13 +83,10 @@ private void InitWechatTouchEvents()
 
     private void UnregisterWechatTouchEvents()
     {
-        if (_isInitWechatSDK)
-        {
-            WX.OffTouchStart(OnWxTouchStart);
-            WX.OffTouchMove(OnWxTouchMove);
-            WX.OffTouchEnd(OnWxTouchEnd);
-            WX.OffTouchCancel(OnWxTouchCancel);
-        }
+        WX.OffTouchStart(OnWxTouchStart);
+        WX.OffTouchMove(OnWxTouchMove);
+        WX.OffTouchEnd(OnWxTouchEnd);
+        WX.OffTouchCancel(OnWxTouchCancel);
     }
 
     private void OnWxTouchStart(OnTouchStartListenerResult touchEvent)

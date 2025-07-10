@@ -170,6 +170,7 @@ namespace WeChatWASM
                 this.formCheckbox("useFriendRelation", "使用好友关系链");
                 this.formCheckbox("useMiniGameChat", "使用社交组件");
                 this.formCheckbox("preloadWXFont", "预加载微信字体(?)", "在game.js执行开始时预载微信系统字体，运行期间可使用WX.GetWXFont获取微信字体");
+                this.formCheckbox("disableMultiTouch", "禁用多点触控");
 
                 EditorGUILayout.EndVertical();
             }
@@ -186,7 +187,7 @@ namespace WeChatWASM
                 this.formCheckbox("il2CppOptimizeSize", "Il2Cpp Optimize Size(?)", "对应于Il2CppCodeGeneration选项，勾选时使用OptimizeSize(默认推荐)，生成代码小15%左右，取消勾选则使用OptimizeSpeed。游戏中大量泛型集合的高频访问建议OptimizeSpeed，在使用HybridCLR等第三方组件时只能用OptimizeSpeed。(Dotnet Runtime模式下该选项无效)", !UseIL2CPP);
                 this.formCheckbox("profilingFuncs", "Profiling Funcs");
                 this.formCheckbox("profilingMemory", "Profiling Memory");
-                this.formCheckbox("webgl2", "WebGL2.0(beta)");
+                this.formCheckbox("webgl2", "WebGL2.0");
                 this.formCheckbox("iOSPerformancePlus", "iOSPerformancePlus(?)", "是否使用iOS高性能+渲染方案，有助于提升渲染兼容性、降低WebContent进程内存");
                 this.formCheckbox("deleteStreamingAssets", "Clear Streaming Assets");
                 this.formCheckbox("cleanBuild", "Clean WebGL Build");
@@ -455,6 +456,7 @@ namespace WeChatWASM
             this.setData("useFriendRelation", config.SDKOptions.UseFriendRelation);
             this.setData("useMiniGameChat", config.SDKOptions.UseMiniGameChat);
             this.setData("preloadWXFont", config.SDKOptions.PreloadWXFont);
+            this.setData("disableMultiTouch", config.SDKOptions.disableMultiTouch);
             this.setData("bgImageSrc", config.ProjectConf.bgImageSrc);
             tex = AssetDatabase.LoadAssetAtPath<Texture>(config.ProjectConf.bgImageSrc);
             this.setData("memorySize", config.ProjectConf.MemorySize.ToString());
@@ -474,7 +476,9 @@ namespace WeChatWASM
             this.setData("enableProfileStats", config.CompileOptions.enableProfileStats);
             this.setData("enableRenderAnalysis", config.CompileOptions.enableRenderAnalysis);
             this.setData("brotliMT", config.CompileOptions.brotliMT);
+#if UNITY_6000_0_OR_NEWER
             this.setData("enableWasm2023", config.CompileOptions.enableWasm2023);
+#endif      
             this.setData("enablePerfAnalysis", config.CompileOptions.enablePerfAnalysis);
             this.setData("autoUploadFirstBundle", true);
 
@@ -530,6 +534,7 @@ namespace WeChatWASM
             config.SDKOptions.UseFriendRelation = this.getDataCheckbox("useFriendRelation");
             config.SDKOptions.UseMiniGameChat = this.getDataCheckbox("useMiniGameChat");
             config.SDKOptions.PreloadWXFont = this.getDataCheckbox("preloadWXFont");
+            config.SDKOptions.disableMultiTouch = this.getDataCheckbox("disableMultiTouch");
             config.ProjectConf.bgImageSrc = this.getDataInput("bgImageSrc");
             config.ProjectConf.MemorySize = int.Parse(this.getDataInput("memorySize"));
             config.ProjectConf.HideAfterCallMain = this.getDataCheckbox("hideAfterCallMain");
@@ -729,15 +734,15 @@ namespace WeChatWASM
             const string MACRO_ENABLE_WX_PERF_FEATURE = "ENABLE_WX_PERF_FEATURE";
             string defineSymbols = PlayerSettings.GetScriptingDefineSymbolsForGroup(EditorUserBuildSettings.selectedBuildTargetGroup);
 
-            bool shouldAddSymbol = this.getDataCheckbox("enablePerfAnalysis") && this.getDataCheckbox("developBuild"); 
+            bool shouldAddSymbol = this.getDataCheckbox("enablePerfAnalysis") && this.getDataCheckbox("developBuild");
 
 #if !UNITY_2021_2_OR_NEWER || UNITY_2023_2_OR_NEWER
-            if(shouldAddSymbol)
+            if (shouldAddSymbol)
             {
                 shouldAddSymbol = false;
                 EditorUtility.DisplayDialog("警告", $"当前Unity版本({Application.unityVersion})不在性能分析工具适配范围内(2021.2-2023.1), 性能分析工具将被禁用。", "确定");
-                config.CompileOptions.enablePerfAnalysis = false; 
-                this.setData("enablePerfAnalysis", false); 
+                config.CompileOptions.enablePerfAnalysis = false;
+                this.setData("enablePerfAnalysis", false);
             }
 #endif
 

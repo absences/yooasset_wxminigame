@@ -1,7 +1,7 @@
 import response from './response';
 import moduleHelper from './module-helper';
-import { getDefaultData } from './utils';
-import { isDebug, isSupportSharedCanvasMode } from '../check-version';
+import { getDefaultData, debugLog } from './utils';
+import { isSupportSharedCanvasMode } from '../check-version';
 
 let cachedOpenDataContext;
 let cachedSharedCanvas;
@@ -21,6 +21,9 @@ function getOpenDataContext(mode) {
     }
     
     if (!isSupportSharedCanvasMode) {
+        if (mode === 'ScreenCanvas') {
+            console.warn('[unity-sdk]: 当前环境不支持 ScreenCanvas 模式');
+        }
         sharedCanvasMode = SharedCanvasMode.OffScreenCanvas;
     }
     
@@ -32,6 +35,7 @@ function getOpenDataContext(mode) {
             sharedCanvasMode = SharedCanvasMode.OffScreenCanvas;
         }
     }
+    console.log(`[unity-sdk]: 当前开放数据域为 ${sharedCanvasMode} 模式`);
     // @ts-ignore
     cachedOpenDataContext = wx.getOpenDataContext({
         sharedCanvasMode,
@@ -99,25 +103,30 @@ function stopHookUnityRender() {
     gl.deleteTexture(textureObject);
     textureObject = null;
 }
+wx.onShow(() => {
+    if (cachedOpenDataContext) {
+        getOpenDataContext().postMessage({
+            type: 'WXShow',
+        });
+    }
+});
 export default {
     WXGetOpenDataContext(mode) {
-        if (isDebug) {
-            console.warn('WXGetOpenDataContext:', mode);
-        }
+        debugLog('WXGetOpenDataContext:', mode);
         getOpenDataContext(mode);
     },
     WXDataContextPostMessage(msg) {
-        if (isDebug) {
-            console.warn('WXDataContextPostMessage:', msg);
-        }
+        debugLog('WXDataContextPostMessage:', msg);
         getOpenDataContext().postMessage(msg);
     },
     WXShowOpenData(id, x, y, width, height) {
-        if (isDebug) {
-            console.warn('WXShowOpenData:', id, x, y, width, height);
-        }
+        debugLog('WXShowOpenData:', id, x, y, width, height);
         if (width <= 0 || height <= 0) {
             console.error('[unity-sdk]: WXShowOpenData要求 width 和 height 参数必须大于0');
+        }
+        
+        if (!cachedOpenDataContext) {
+            console.warn('[unity-sdk]: 请先调用 WXGetOpenDataContext');
         }
         
         const openDataContext = getOpenDataContext();
@@ -144,8 +153,10 @@ export default {
         }
     },
     WXHideOpenData() {
-        if (isDebug) {
-            console.warn('WXHideOpenData');
+        debugLog('WXHideOpenData');
+        if (!cachedOpenDataContext) {
+            console.warn('[unity-sdk]: 请先调用 WXGetOpenDataContext');
+            return;
         }
         getOpenDataContext().postMessage({
             type: 'WXDestroy',
@@ -161,9 +172,7 @@ export default {
         }
     },
     WXOpenDataToTempFilePathSync(conf) {
-        if (isDebug) {
-            console.warn('WXOpenDataToTempFilePathSync', conf);
-        }
+        debugLog('WXOpenDataToTempFilePathSync', conf);
         const sharedCanvas = getSharedCanvas();
         if (!sharedCanvas) {
             return 'Please use WX.GetOpenDataContext() first';
@@ -171,9 +180,7 @@ export default {
         return sharedCanvas.toTempFilePathSync(getDefaultData(sharedCanvas, conf));
     },
     WXOpenDataToTempFilePath(conf, s, f, c) {
-        if (isDebug) {
-            console.warn('WXOpenDataToTempFilePath', conf);
-        }
+        debugLog('WXOpenDataToTempFilePath', conf);
         if (conf) {
             const sharedCanvas = getSharedCanvas();
             if (!sharedCanvas) {

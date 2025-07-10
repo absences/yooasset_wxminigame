@@ -5,10 +5,11 @@ import { isAndroid, isPc, webAudioNeedResume, isSupportBufferURL, isSupportPlayB
 import { WEBAudio, unityAudioVolume } from './store';
 import { TEMP_DIR_PATH } from './const';
 import { createInnerAudio, destroyInnerAudio, printErrMsg, resumeWebAudio } from './utils';
+import { debugLog } from '../utils';
 
 const defaultSoundLength = 441000;
 
-const needGetLength = false;
+const needGetLength = true;
 function jsAudioCreateUncompressedSoundClip(buffer, error, length) {
     const soundClip = {
         buffer,
@@ -69,6 +70,25 @@ function jsAudioCreateUncompressedSoundClipFromCompressedAudio(audioData, ptr, l
     });
     return soundClip;
 }
+function getSoundLength(getAudio, retryCount = 3) {
+    return new Promise((resolve, reject) => {
+        const { duration } = getAudio;
+        if (duration > 0) {
+            resolve(duration);
+        }
+        else {
+            if (retryCount > 0) {
+                
+                setTimeout(() => {
+                    resolve(getSoundLength(getAudio, retryCount - 1));
+                }, 100);
+            }
+            else {
+                reject('getAudio.duration is 0');
+            }
+        }
+    });
+}
 function jsAudioCreateCompressedSoundClip(audioData, ptr, length) {
     const soundClip = {
         error: false,
@@ -102,12 +122,14 @@ function jsAudioCreateCompressedSoundClip(audioData, ptr, length) {
     if (isSupportBufferURL) {
         const url = wx.createBufferURL(audioData);
         soundClip.url = url;
+        setSoundLength();
         WEBAudio.audioBufferLength += length;
     }
     else {
         const tempFilePath = `${TEMP_DIR_PATH}/temp-audio${ptr + length}.mp3`;
         if (GameGlobal.manager.getCachePath(tempFilePath)) {
             soundClip.url = tempFilePath;
+            setSoundLength();
             WEBAudio.audioBufferLength += length;
         }
         else {
@@ -115,6 +137,7 @@ function jsAudioCreateCompressedSoundClip(audioData, ptr, length) {
                 .writeFile(tempFilePath, audioData)
                 .then(() => {
                 soundClip.url = tempFilePath;
+                setSoundLength();
                 WEBAudio.audioBufferLength += length;
             })
                 .catch((res) => {
@@ -123,16 +146,24 @@ function jsAudioCreateCompressedSoundClip(audioData, ptr, length) {
             });
         }
     }
-    if (needGetLength && soundClip.url) {
-        const { audio: getAudio } = createInnerAudio();
-        getAudio.src = soundClip.url;
-        getAudio.onCanplay(() => {
-            soundClip.length = getAudio.duration * 44100;
-            setTimeout(() => {
-                soundClip.length = getAudio.duration * 44100;
-                getAudio.destroy();
-            }, 0);
-        });
+    function setSoundLength() {
+        if (needGetLength && soundClip.url) {
+            const { audio: getAudio } = createInnerAudio();
+            getAudio.src = soundClip.url;
+            getAudio.onCanplay(() => {
+                getSoundLength(getAudio).then((duration) => {
+                    soundClip.length = duration * 44100;
+                    getAudio.destroy();
+                })
+                    .catch((e) => {
+                    if (soundClip.length === 0) {
+                        soundClip.error = true;
+                        printErrMsg(e);
+                    }
+                    getAudio.destroy();
+                });
+            });
+        }
     }
     return soundClip;
 }
@@ -205,6 +236,7 @@ export class AudioChannelInstance {
         }
     }
     playUrl(startTime, url, startOffset, volume, soundClip) {
+        debugLog('playUrl: ', url, startTime, startOffset, volume, soundClip);
         try {
             this.setup(url);
             if (!this.source || !this.source.mediaElement) {
@@ -217,6 +249,7 @@ export class AudioChannelInstance {
                 this.source.mediaElement.volume = 0;
             }
             this.source.mediaElement.onPlay(() => {
+                debugLog('this.source.mediaElement.onPlay');
                 if (typeof this.source !== 'undefined') {
                     this.source.isPlaying = true;
                     if (!this.source.loop && this.source.mediaElement) {
@@ -238,6 +271,7 @@ export class AudioChannelInstance {
                 }
             });
             this.source.mediaElement.onPause(() => {
+                debugLog('this.source.mediaElement.onPause');
                 if (typeof this.source !== 'undefined') {
                     this.source.isPlaying = false;
                     if (this.source.stopTicker) {
@@ -247,6 +281,7 @@ export class AudioChannelInstance {
                 }
             });
             this.source.mediaElement.onStop(() => {
+                debugLog('this.source.mediaElement.onStop');
                 if (typeof this.source !== 'undefined') {
                     if (this.source.playAfterStop) {
                         this.source._reset();
@@ -263,6 +298,7 @@ export class AudioChannelInstance {
                 }
             });
             this.source.mediaElement.onEnded(() => {
+                debugLog('this.source.mediaElement.onEnded');
                 if (typeof this.source !== 'undefined') {
                     this.source._reset();
                     this.disconnectSource();
@@ -272,6 +308,7 @@ export class AudioChannelInstance {
                 }
             });
             this.source.mediaElement.onError((e) => {
+                debugLog('this.source.mediaElement.onError', e);
                 printErrMsg(e);
                 const { errMsg } = e;
                 
@@ -285,15 +322,17 @@ export class AudioChannelInstance {
                 }
             });
             const fn = () => {
+                debugLog('this.source.mediaElement.onCanplay');
                 if (typeof this.source !== 'undefined' && this.source.mediaElement) {
-                    // @ts-ignore
-                    // eslint-disable-next-line @typescript-eslint/no-unused-vars
-                    const { duration } = this.source.mediaElement;
-                    setTimeout(() => {
-                        if (soundClip && this.source && this.source.mediaElement) {
-                            soundClip.length = Math.round(Math.max(this.source.mediaElement.duration, 0) * 44100);
+                    getSoundLength(this.source.mediaElement).then((duration) => {
+                        soundClip.length = duration * 44100;
+                    })
+                        .catch((e) => {
+                        if (soundClip.length === 0) {
+                            soundClip.error = true;
+                            printErrMsg(e);
                         }
-                    }, 0);
+                    });
                 }
             };
             if (!this.source.canPlayFnList) {
@@ -350,6 +389,10 @@ export class AudioChannelInstance {
     disconnectSource() {
         if (this.source) {
             if (this.source.mediaElement) {
+                if (this.source.stopTimeout) {
+                    clearTimeout(this.source.stopTimeout);
+                    delete this.source.stopTimeout;
+                }
                 destroyInnerAudio(this.source.instanceId, false);
                 delete this.source.mediaElement;
                 delete this.source;
@@ -669,6 +712,7 @@ export class AudioChannelInstance {
                 if (startDelayMS > startDelayThresholdMS) {
                     if (this.source.playTimeout) {
                         clearTimeout(this.source.playTimeout);
+                        delete this.source.playTimeout;
                     }
                     this.source.playTimeout = setTimeout(() => {
                         if (typeof this.source !== 'undefined') {
@@ -691,7 +735,11 @@ export class AudioChannelInstance {
                 const stopDelayThresholdMS = 4;
                 const stopDelayMS = stopTime * 1e3;
                 if (stopDelayMS > stopDelayThresholdMS) {
-                    setTimeout(() => {
+                    if (this.source.stopTimeout) {
+                        clearTimeout(this.source.stopTimeout);
+                        delete this.source.stopTimeout;
+                    }
+                    this.source.stopTimeout = setTimeout(() => {
                         if (this.source && this.source.mediaElement) {
                             this.source.stopCache = true;
                             this.source.mediaElement.stop();
@@ -895,7 +943,7 @@ export default {
                 if (isIOS175) {
                     WEBAudio.audioContext?.close();
                     WEBAudio.audioContext = wx.createWebAudioContext();
-                    Object.values(WEBAudio.audioInstances).forEach(it => it.resetGain());
+                    Object.values(WEBAudio.audioInstances).forEach((it) => it.resetGain());
                 }
                 else {
                     WEBAudio.audioContext?.resume();
@@ -964,6 +1012,7 @@ export default {
         if (!WEBAudio.audioContext || WEBAudio.audioWebEnabled === 0) {
             return;
         }
+        debugLog('_JS_Sound_Play', bufferInstance, channelInstance, offset, delay);
         WXWASMSDK._JS_Sound_Stop(channelInstance, 0);
         const soundClip = WEBAudio.audioInstances[bufferInstance];
         const channel = WEBAudio.audioInstances[channelInstance];
@@ -1110,6 +1159,7 @@ export default {
         if (WEBAudio.audioWebEnabled === 0) {
             return;
         }
+        debugLog('_JS_Sound_SetPaused', channelInstance, paused);
         const channel = WEBAudio.audioInstances[channelInstance];
         if (!!paused !== channel.isPaused()) {
             if (paused) {
@@ -1160,6 +1210,7 @@ export default {
         if (WEBAudio.audioWebEnabled === 0) {
             return;
         }
+        debugLog('_JS_Sound_Stop', channelInstance, delay);
         const channel = WEBAudio.audioInstances[channelInstance];
         channel.stop(delay);
     },
@@ -1213,5 +1264,19 @@ export default {
             return WEBAudio.FAKEMOD_SAMPLERATE;
         }
         return WEBAudio.audioContext.sampleRate;
+    },
+    _JS_Sound_GetPosition(channelInstance) {
+        if (WEBAudio.audioWebEnabled == 0) {
+            return 0;
+        }
+        const channel = WEBAudio.audioInstances[channelInstance];
+        if (!channel) {
+            return 0;
+        }
+        const { source } = channel;
+        if (!source) {
+            return 0;
+        }
+        return source.estimatePlaybackPosition ? source.estimatePlaybackPosition() : 0;
     },
 };

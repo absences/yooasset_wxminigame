@@ -854,7 +854,7 @@ namespace WeChatWASM
         /// <param name="fallbackUrl">系统字体不可用时，游戏自己提供的ttf文件地址</param>
         /// <param name="callback">字体资源回调</param>
         /// <returns></returns>
-        public static void GetWXFont(string fallbackUrl, Action<int,Font> callback)
+        public static void GetWXFont(string fallbackUrl, Action<Font> callback)
         {
             WeChatWASM.WXFont.GetFontData(new GetFontParam
             {
@@ -878,33 +878,31 @@ namespace WeChatWASM
                             if (fonts.Length != 0)
                             {
                                 WriteLog($"Load font from ab. abBytes:{abBytes.Length}");
-                                callback.Invoke(0,fonts[0]);
+                                callback.Invoke(fonts[0]);
                             }
                             else
                             {
                                 WriteWarn($"LoadAllAssets failed, abBytes:{abBytes.Length}, fonts: {fonts.Length}");
-                                callback.Invoke(1,null);
+                                callback.Invoke(null);
                             }
                             ab.Unload(false);
                         }
                         else
                         {
                             WriteWarn($"LoadFromMemory failed, Length: {abBytes.Length}");
-                            callback.Invoke(2,null);
+                            callback.Invoke(null);
                         }
                     }
                     catch (Exception ex)
                     {
                         WriteWarn($"GetWXFont Exception, ex:{ex.ToString()}");
-
-                        Debug.Log(ex.ToString());
-                        callback.Invoke(3,null);
+                        callback.Invoke(null);
                     }
                 },
                 fail = (fail) =>
                 {
                     WriteWarn($"GetFontData fail {fail.errMsg}");
-                    callback.Invoke(4,null);
+                    callback.Invoke(null);
                 },
             });
         }
@@ -1119,6 +1117,16 @@ namespace WeChatWASM
         {
             WXSDKManagerHandler.Instance.ReserveChannelsLive(option);
         }
+#region 试玩特有接口
+        /// <summary>
+        /// 通知试玩结束
+        /// </summary>
+        /// <param name="option"></param>
+        public static void NotifyMiniProgramPlayableStatus(NotifyMiniProgramPlayableStatusOption option)
+        {
+            WXSDKManagerHandler.Instance.NotifyMiniProgramPlayableStatus(option);
+        }
+#endregion
     }
 }
 #endif
