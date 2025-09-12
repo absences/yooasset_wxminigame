@@ -113,6 +113,7 @@ public class AutoBuild
             EditorSceneManager.SaveScene(scene);
         }
         WXConvertCore.config.ProjectConf.Appid = "xxxx";
+        WXConvertCore.config.ProjectConf.bundleExcludeExtensions = "json;version;";
 
         var path = string.Format("{0}/../AutoBuild/wx_export", Application.dataPath);
 
