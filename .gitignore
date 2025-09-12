@@ -7,3 +7,5 @@ UserSettings/*
 .vs/*
 AutoBuild/*
 Logs/*
+BUndles/*
+obj/*
