@@ -1,0 +1,906 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.62f1 (4af31df58517) revision 4911901'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.26100) 64bit Professional' Language: 'zh' Physical Memory: 32627 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2022.3.62f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker7
+-projectPath
+F:/absences/yooasset_wxminigame
+-logFile
+Logs/AssetImportWorker7.log
+-srvPort
+60487
+Successfully changed project path to: F:/absences/yooasset_wxminigame
+F:/absences/yooasset_wxminigame
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [5500]  Target information:
+
+Player connection [5500]  * "[IP] 172.16.1.43 [Port] 0 [Flags] 2 [Guid] 4241082523 [EditorId] 4241082523 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-QFG1LN0) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [5500]  * "[IP] 26.26.26.1 [Port] 0 [Flags] 2 [Guid] 4241082523 [EditorId] 4241082523 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-QFG1LN0) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [5500] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [5500] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Input System module state changed to: Initialized.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+Refreshing native plugins compatible for Editor in 10.81 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.62f1 (4af31df58517)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.62f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path F:/absences/yooasset_wxminigame/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3070 Ti (ID=0x2482)
+    Vendor:   NVIDIA
+    VRAM:     8018 MB
+    Driver:   32.0.15.8129
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.62f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.62f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.62f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56900
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.62f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.62f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.62f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.62f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.006021 seconds.
+- Loaded All Assemblies, in  0.275 seconds
+Native extension for WindowsStandalone target not found
+[usbmuxd] Start listen thread
+[usbmuxd] Listen thread started
+Native extension for iOS target not found
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 123 ms
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.336 seconds
+Domain Reload Profiling: 610ms
+	BeginReloadAssembly (82ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (24ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (41ms)
+	LoadAllAssembliesAndSetupDomain (120ms)
+		LoadAssemblies (81ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (118ms)
+			TypeCache.Refresh (116ms)
+				TypeCache.ScanAssembly (106ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (336ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (305ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (186ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (2ms)
+			ProcessInitializeOnLoadAttributes (83ms)
+			ProcessInitializeOnLoadMethodAttributes (31ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.344 seconds
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.299 seconds
+Domain Reload Profiling: 642ms
+	BeginReloadAssembly (106ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (16ms)
+	RebuildCommonClasses (24ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (19ms)
+	LoadAllAssembliesAndSetupDomain (185ms)
+		LoadAssemblies (192ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (54ms)
+			TypeCache.Refresh (43ms)
+				TypeCache.ScanAssembly (35ms)
+			ScanForSourceGeneratedMonoScriptInfo (7ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (300ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (196ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (22ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (44ms)
+			ProcessInitializeOnLoadAttributes (101ms)
+			ProcessInitializeOnLoadMethodAttributes (22ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (5ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 3.65 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1459 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 13 unused Assets / (50.9 KB). Loaded Objects now: 1946.
+Memory consumption went from 86.4 MB to 86.4 MB.
+Total: 1.925800 ms (FindLiveObjects: 0.098000 ms CreateObjectMapping: 0.022800 ms MarkObjects: 1.742800 ms  DeleteObjects: 0.061600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/Common.cs: 2a55f4e6a208f7dfa6238550471e740e -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/ResponseInfo.cs: 2ba3a6b650411fc059755a08410281ce -> 
+  custom:scripting/monoscript/fileName/MaxAdContentRating.cs: 4bb74d86196ad798ce7bb9550ea2dd45 -> 
+  custom:scripting/monoscript/fileName/ProjectOpenEvent.cs: b04d140b4e94532f18809ef6233a6649 -> 
+  custom:scripting/monoscript/fileName/InitializationStatusDummyClient.cs: 58650c8aa5d55da4b4a4a0897b60f0bb -> 
+  custom:scripting/monoscript/fileName/AdValue.cs: 1540f7c89e7d88fb395c669a5e811d7c -> 
+  custom:scripting/monoscript/fileName/Splash.cs: 7b3de2670cf3ec70815f984f801a6c92 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/BannerClient.cs: 4836dc166d2944e73b41d60cfbe81e92 -> 
+  custom:scripting/monoscript/fileName/GoogleMobileAdsSettings.cs: e2534ff78c3bb1a55dd687cf960a1daf -> 
+  custom:scripting/monoscript/fileName/Utils.cs: 7292d05bdafbd1385c8d746a055f0951 -> ae500ad142831e5f468cc8f21384757f
+  custom:scripting/monoscript/fileName/MobileAdsEventExecutor.cs: 51536efd5ffd632a2975c0879852e058 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:scripting/monoscript/fileName/InitializationStatusClient.cs: e7aff1dec4f311f00570efc5840fa776 -> 
+  custom:scripting/monoscript/fileName/DisplayMetrics.cs: 24c35d804f55344f6f89aa87e5246f9b -> 
+  custom:scripting/monoscript/fileName/RewardBasedVideoAdClient.cs: 109f445b4916ffca23ecaa5151b642f4 -> 
+  custom:scripting/monoscript/fileName/InterstitialAd.cs: efd6b2a2249355dc45825b64098a27f2 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/CustomNativeEventArgs.cs: b5dd4eaca999c8d434aa9efe55026fe1 -> 
+  custom:scripting/monoscript/fileName/DummyClient.cs: 6b4a8f94a097f2621702c85b7538a3b3 -> 
+  custom:scripting/monoscript/fileName/IBannerClient.cs: a104759dfdec1d0cd0552a67e775d155 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/IResponseInfoClient.cs: 16f52130b13b0fbf6c967cc827f3e85a -> 
+  custom:scripting/monoscript/fileName/DemoInventory.cs: f71d1292fbd40b240d2acdc8385d9388 -> 
+  custom:scripting/monoscript/fileName/GoogleMobileAdsClientFactory.cs: cc9a3c18d716e25ee181e5e2a1e8d1b7 -> 
+  custom:scripting/monoscript/fileName/Reward.cs: 03165aa73fad385e62f3e2d2c4e4a2cd -> 
+  custom:scripting/monoscript/fileName/RewardedAd.cs: 902918de76d2c44c10635ed8f96aaa40 -> 
+  custom:scripting/monoscript/fileName/AdLoaderClientArgs.cs: 64006176aec713933b794af6ff1de3a4 -> 
+  custom:scripting/monoscript/fileName/RequestConfiguration.cs: 10a66135c340740bf376c6a850450e36 -> 
+  custom:scripting/monoscript/fileName/MediationExtras.cs: 48fab59140f7b4237d78b3ac8989eb63 -> 
+  custom:scripting/monoscript/fileName/IInitializationStatusClient.cs: 93d48b3d8eade97066f51bc59437bb18 -> 
+  custom:scripting/monoscript/fileName/IMobileAdsClient.cs: d41cce53daad1499c9d4f5f7c6110422 -> 
+  custom:scripting/monoscript/fileName/MobileAds.cs: 44d9e321f8879dcf0b834c5ad7f1b13b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/AppStoreSettingsEditor.cs: 0dd897e8be2349d02f4a68e683ed09d8 -> 
+  custom:scripting/monoscript/fileName/IRewardBasedVideoAdClient.cs: 6036c005579cd636e6fac03dc9cd7ae7 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:scripting/monoscript/fileName/IAdLoaderClient.cs: ade2b4ed1594082a878e5b4d9932994e -> 
+  custom:scripting/monoscript/fileName/AdErrorEventArgs.cs: 6d52f9a4639b4c10872fa43593054429 -> 
+  custom:scripting/monoscript/fileName/RequestConfigurationClient.cs: 09c914c37bb6e6c45dd5584fadb64c30 -> 
+  custom:scripting/monoscript/fileName/ResponseInfoClient.cs: 91ca4b2c3a44ccf84d98c274b85827e6 -> 
+  custom:scripting/monoscript/fileName/InterstitialClient.cs: 64d57c3fa9051a985ff391308ec8df89 -> 
+  custom:scripting/monoscript/fileName/ServerSideVerificationOptions.cs: 51d338eec3883193422e2b09c16f6a04 -> 
+  custom:scripting/monoscript/fileName/RewardedAdClient.cs: 1c67f6e9e83207867c22d357ce1b9730 -> 
+  custom:scripting/monoscript/fileName/RewardBasedVideoAd.cs: c3251d7e4697663bbc51af94d8486ca2 -> 
+  custom:scripting/monoscript/fileName/AppStoreModel.cs: e77672e4a572820a68f4759e3af8c578 -> 
+  custom:scripting/monoscript/fileName/CustomNativeClientEventArgs.cs: a5469769f268e9e27729a46f3227ab8b -> 
+  custom:scripting/monoscript/fileName/AdLoader.cs: 7abd621fa4703074ec13a08faf65e124 -> 
+  custom:scripting/monoscript/fileName/AdapterStatus.cs: 65a4a4262ba2b99b058bdeeea54c30b3 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/BannerView.cs: f38eb77ad33d883bdeb41653095d70fa -> 
+  custom:scripting/monoscript/fileName/InitializationStatus.cs: 9f61f7d146c186240c4227c8101cf33a -> 
+  custom:scripting/monoscript/fileName/WebRequestQueue.cs: 3be2c921f21805ba794f8d81195ee853 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/GoogleMobileAdsSettingsEditor.cs: dfaa4a8dc2405381fed6bed6c0f52e1e -> 
+  custom:scripting/monoscript/fileName/IClientFactory.cs: d40589efa87cae1b79a47d362bdf1885 -> 
+  custom:scripting/monoscript/fileName/CustomNativeTemplateAd.cs: 43302dcfcc4db6b07b942007cf6f4331 -> 
+  custom:scripting/monoscript/fileName/IRewardedAdClient.cs: 46b1b82865b6e2817a1e09191ae18e28 -> 
+  custom:scripting/monoscript/fileName/AppStoreStyles.cs: a0f43996a4478faf74f77ffc63d7a531 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/RewardedAdDummyClient.cs: a420d1a75ccb67e0ce633e66dbd005f8 -> 
+  custom:scripting/monoscript/fileName/AdLoaderClient.cs: f3fc61d292cef27cc2dbc996157b0334 -> 
+  custom:scripting/monoscript/fileName/MobileAdsClient.cs: 49d806c7cc7f881b8ba41abc8d8f9d5d -> 
+  custom:scripting/monoscript/fileName/AdRequest.cs: 138efafbb2f6a1367cafdbb21094c4ec -> 
+  custom:scripting/monoscript/fileName/EditorAnalytcisApi.cs: c5314dfd63b4ebac20e75b67fe31fea6 -> 
+  custom:scripting/monoscript/fileName/CustomNativeTemplateClient.cs: 8b276cdf9d055427cc05fa744adc3e6a -> 
+  custom:scripting/monoscript/fileName/AdValueEventArgs.cs: 67022ac99443797157586ed9cb34e3fe -> 
+  custom:scripting/monoscript/fileName/ICustomNativeTemplateClient.cs: d041933678e2b2c43cdb2bbbf056e14f -> 
+  custom:scripting/monoscript/fileName/AdFailedToLoadEventArgs.cs: 40434a1d0720bf89d290516a6d90b315 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/monoscript/fileName/SdkImportEvent.cs: b8fd4b57dddcc3d4eb63f0179c338918 -> 
+  custom:scripting/monoscript/fileName/IInterstitialClient.cs: 77932e80b5367e71f94e9f8961860aa4 -> 
+  custom:scripting/monoscript/fileName/AdSize.cs: b5faf1e81e1c9b81ffcc57d4c0c572af -> 
+  custom:scripting/monoscript/fileName/ProjectBuildEvent.cs: 3e4d2123babd116250dff76a50b60d9e -> 
+  custom:scripting/monoscript/fileName/AppStoreOnboardApi.cs: 17dae5c4b3b4784428b58f3d870f0100 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 68557.674749 seconds.
+  path: Assets/Demo/Animation/UI Anims
+  artifactKey: Guid(e89274671d1dd6a4bb310c84e2fe71d2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Demo/Animation/UI Anims using Guid(e89274671d1dd6a4bb310c84e2fe71d2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '25f893f61d278378b33d21ff5c9739ba') in 0.047633 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Demo/Scripts/SocialService.cs
+  artifactKey: Guid(334cd48060d524546864a5612ad9444e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Demo/Scripts/SocialService.cs using Guid(334cd48060d524546864a5612ad9444e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '8bf6821ad9330c454c498e3f13321ca9') in 0.042051 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.019388 seconds.
+  path: Assets/Demo/Scripts/WaitUntilEvent.cs
+  artifactKey: Guid(40a0aaa307483204dbca97e6545077a7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Demo/Scripts/WaitUntilEvent.cs using Guid(40a0aaa307483204dbca97e6545077a7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '02342fc7daacef2b694bd72a1c434d61') in 0.014472 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Demo/Sounds/wrong_clip.mp3
+  artifactKey: Guid(5be47419171150148b6338105372383a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Demo/Sounds/wrong_clip.mp3 using Guid(5be47419171150148b6338105372383a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'af6f7a40c77498aacb7d7ffa991f8e1b') in 0.048967 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Demo/Sprites/rating_icon.png
+  artifactKey: Guid(903d741f220b8704a8b3d3c314ee2a71) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Demo/Sprites/rating_icon.png using Guid(903d741f220b8704a8b3d3c314ee2a71) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '66c780a6f995efc03b55ecc5bdaf435c') in 0.064304 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000858 seconds.
+  path: Assets/Demo/Scripts/Menu/LevelsPanel.cs
+  artifactKey: Guid(c8797c860950429aa03896ea5589ea70) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Demo/Scripts/Menu/LevelsPanel.cs using Guid(c8797c860950429aa03896ea5589ea70) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'ed11fac98f1f17c06e5f5fc949d1536c') in 0.009661 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Demo/Fonts/Roboto/Roboto-Medium.ttf
+  artifactKey: Guid(42231dba28a8ae449b108036fc8941e0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Demo/Fonts/Roboto/Roboto-Medium.ttf using Guid(42231dba28a8ae449b108036fc8941e0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '4d834eccea787c60d1fc942bf174d213') in 0.022287 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Demo/Scripts/Menu/CategoriesPanel.cs
+  artifactKey: Guid(03748fde4774457ea811e0ee93701753) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Demo/Scripts/Menu/CategoriesPanel.cs using Guid(03748fde4774457ea811e0ee93701753) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '635d5daed7c508e72293ca9a41d914a4') in 0.015374 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000475 seconds.
+  path: Assets/Demo/Animations
+  artifactKey: Guid(9b27f895e0de1e34bbc0c443026dec89) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Demo/Animations using Guid(9b27f895e0de1e34bbc0c443026dec89) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '195ef6db8181bd19e3ea86cc971986db') in 0.014808 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.003383 seconds.
+  path: Assets/Demo/Animation/UI Anims/level_completed_effect.anim
+  artifactKey: Guid(a67790f00718aeb40823d1e62ac275e1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Demo/Animation/UI Anims/level_completed_effect.anim using Guid(a67790f00718aeb40823d1e62ac275e1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '8c05102f2e80c7fdcb278d710f66aadd') in 0.018476 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Demo/Fonts/Roboto/Roboto-Black.ttf
+  artifactKey: Guid(55e104f951287314783de24dd25319d8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Demo/Fonts/Roboto/Roboto-Black.ttf using Guid(55e104f951287314783de24dd25319d8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'b9bae97fd74fabcc888fcfe565de536a') in 0.015618 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000984 seconds.
+  path: Assets/Demo/Scripts/Tutorial.cs
+  artifactKey: Guid(80d6f0131a3a41ab9f276ae26d8adfb3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Demo/Scripts/Tutorial.cs using Guid(80d6f0131a3a41ab9f276ae26d8adfb3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '30f3c70b705f29a817bedf77d67f2108') in 0.012818 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000530 seconds.
+  path: Assets/Demo/Editor/SerializePropertyExtensions.cs
+  artifactKey: Guid(d020d31e03a9793408baed1f73a15695) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Demo/Editor/SerializePropertyExtensions.cs using Guid(d020d31e03a9793408baed1f73a15695) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'd8e8c14c31ae19e74ed9bec8080f90ec') in 0.011917 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Demo/Sprites/corner_box_ui_shadow.psd
+  artifactKey: Guid(c92842978abf9d74eb4bc8f28c50ebb5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Demo/Sprites/corner_box_ui_shadow.psd using Guid(c92842978abf9d74eb4bc8f28c50ebb5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'f5a41b61593f24b1ac30f7b14c2d8625') in 0.019523 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000986 seconds.
+  path: Assets/Demo/Scripts/Tile.cs
+  artifactKey: Guid(94a5e8dd99814d3cbcab127743ce92e6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Demo/Scripts/Tile.cs using Guid(94a5e8dd99814d3cbcab127743ce92e6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '98892b7ce0a07f771aa6c53ddddccf11') in 0.012022 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.007106 seconds.
+  path: Assets/Demo/Scripts/GamePlayEditorManager.cs
+  artifactKey: Guid(deae4e3922834b669993ae06987ddedc) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Demo/Scripts/GamePlayEditorManager.cs using Guid(deae4e3922834b669993ae06987ddedc) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '97ff6a1d99eb4b678436467493be498a') in 0.012793 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.003288 seconds.
+  path: Assets/Demo/Scripts/ScreenShotManager.cs
+  artifactKey: Guid(17dbd2ca3852f074c9bbef41b9618342) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Demo/Scripts/ScreenShotManager.cs using Guid(17dbd2ca3852f074c9bbef41b9618342) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '7560b48e78fed9d60b78d5ff7d85aab6') in 0.012289 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001088 seconds.
+  path: Assets/Demo/Animations/symmetric_down.anim
+  artifactKey: Guid(42e7544a51803ba4ba84ebae3095bc85) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Demo/Animations/symmetric_down.anim using Guid(42e7544a51803ba4ba84ebae3095bc85) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '29e5bc29895458d506c812fc97120808') in 0.012467 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Demo/Fonts/Roboto/Roboto-LightItalic.ttf
+  artifactKey: Guid(b52eeb20539d4c04ebb31c6ee1566859) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Demo/Fonts/Roboto/Roboto-LightItalic.ttf using Guid(b52eeb20539d4c04ebb31c6ee1566859) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'e8b11cf7b77e8bb076f608da7474b5c8') in 0.013402 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000860 seconds.
+  path: Assets/Demo/Scripts/FavoriteButton.cs
+  artifactKey: Guid(e923d519bb4f0a14e9cd2d72d187fa0c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Demo/Scripts/FavoriteButton.cs using Guid(e923d519bb4f0a14e9cd2d72d187fa0c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'd33a18df551014e89f5a79e5b40db5da') in 0.011992 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001045 seconds.
+  path: Assets/Demo/Resources/Categories.asset
+  artifactKey: Guid(da837b591193ecc489ccd85d741b055c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Demo/Resources/Categories.asset using Guid(da837b591193ecc489ccd85d741b055c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'fed3fbe7a01e6551e1782c6cf291bd56') in 0.012064 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.107007 seconds.
+  path: Assets/Demo/Scripts/ResourceManager.cs
+  artifactKey: Guid(b180e5265980476b88fc954736daafda) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Demo/Scripts/ResourceManager.cs using Guid(b180e5265980476b88fc954736daafda) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '3b405644cc6ca7e76849b622cc43ffd7') in 0.012853 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.002109 seconds.
+  path: Assets/Demo/Scripts/PopUpPanel.cs
+  artifactKey: Guid(1a973f62b06a63a4686b47a45bd990a4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Demo/Scripts/PopUpPanel.cs using Guid(1a973f62b06a63a4686b47a45bd990a4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'e49917f392682c690eb652eee4bc4ac5') in 0.023357 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001510 seconds.
+  path: Assets/Demo/Sprites/Untitled.png
+  artifactKey: Guid(4a3156157d94d1843a3ac4b5ceb8c932) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Demo/Sprites/Untitled.png using Guid(4a3156157d94d1843a3ac4b5ceb8c932) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '2cc697b52d1b3b3dc1886dcd6de2fb7a') in 0.040172 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.009615 seconds.
+  path: Assets/Demo/Scripts/Menu/LetterTileUI.cs
+  artifactKey: Guid(b3a32bcfb4e248d5ae6c42b30d827753) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Demo/Scripts/Menu/LetterTileUI.cs using Guid(b3a32bcfb4e248d5ae6c42b30d827753) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '5d92f3fc425dee3af683afc64b3f7419') in 0.012813 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Demo/Resources/Levels.asset
+  artifactKey: Guid(ba08994d394d3864c8309121f8af3f17) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Demo/Resources/Levels.asset using Guid(ba08994d394d3864c8309121f8af3f17) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '57bc52b427d5dcea64cd65495ab4f553') in 0.017801 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.291 seconds
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.326 seconds
+Domain Reload Profiling: 616ms
+	BeginReloadAssembly (107ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (23ms)
+	RebuildCommonClasses (23ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (19ms)
+	LoadAllAssembliesAndSetupDomain (135ms)
+		LoadAssemblies (180ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (15ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (4ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (326ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (188ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (19ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (41ms)
+			ProcessInitializeOnLoadAttributes (105ms)
+			ProcessInitializeOnLoadMethodAttributes (18ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (4ms)
+Refreshing native plugins compatible for Editor in 4.40 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1441 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 9 unused Assets / (24.4 KB). Loaded Objects now: 1953.
+Memory consumption went from 81.5 MB to 81.5 MB.
+Total: 1.563000 ms (FindLiveObjects: 0.079300 ms CreateObjectMapping: 0.024300 ms MarkObjects: 1.436500 ms  DeleteObjects: 0.022300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/Common.cs: 2a55f4e6a208f7dfa6238550471e740e -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/ResponseInfo.cs: 2ba3a6b650411fc059755a08410281ce -> 
+  custom:scripting/monoscript/fileName/MaxAdContentRating.cs: 4bb74d86196ad798ce7bb9550ea2dd45 -> 
+  custom:scripting/monoscript/fileName/ProjectOpenEvent.cs: b04d140b4e94532f18809ef6233a6649 -> 
+  custom:scripting/monoscript/fileName/InitializationStatusDummyClient.cs: 58650c8aa5d55da4b4a4a0897b60f0bb -> 
+  custom:scripting/monoscript/fileName/AdValue.cs: 1540f7c89e7d88fb395c669a5e811d7c -> 
+  custom:scripting/monoscript/fileName/Splash.cs: 7b3de2670cf3ec70815f984f801a6c92 -> 
+  custom:scripting/monoscript/fileName/ReferenceFinderData.cs: 685d17683a74e02ab3a283ee9ed20b49 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/BannerClient.cs: 4836dc166d2944e73b41d60cfbe81e92 -> 
+  custom:scripting/monoscript/fileName/GoogleMobileAdsSettings.cs: e2534ff78c3bb1a55dd687cf960a1daf -> 
+  custom:scripting/monoscript/fileName/Utils.cs: 7292d05bdafbd1385c8d746a055f0951 -> ae500ad142831e5f468cc8f21384757f
+  custom:scripting/monoscript/fileName/MobileAdsEventExecutor.cs: 51536efd5ffd632a2975c0879852e058 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:scripting/monoscript/fileName/InitializationStatusClient.cs: e7aff1dec4f311f00570efc5840fa776 -> 
+  custom:scripting/monoscript/fileName/DisplayMetrics.cs: 24c35d804f55344f6f89aa87e5246f9b -> 
+  custom:scripting/monoscript/fileName/RewardBasedVideoAdClient.cs: 109f445b4916ffca23ecaa5151b642f4 -> 
+  custom:scripting/monoscript/fileName/InterstitialAd.cs: efd6b2a2249355dc45825b64098a27f2 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/CustomNativeEventArgs.cs: b5dd4eaca999c8d434aa9efe55026fe1 -> 
+  custom:scripting/monoscript/fileName/DummyClient.cs: 6b4a8f94a097f2621702c85b7538a3b3 -> 
+  custom:scripting/monoscript/fileName/IBannerClient.cs: a104759dfdec1d0cd0552a67e775d155 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/IResponseInfoClient.cs: 16f52130b13b0fbf6c967cc827f3e85a -> 
+  custom:scripting/monoscript/fileName/DemoInventory.cs: f71d1292fbd40b240d2acdc8385d9388 -> 
+  custom:scripting/monoscript/fileName/GoogleMobileAdsClientFactory.cs: cc9a3c18d716e25ee181e5e2a1e8d1b7 -> 
+  custom:scripting/monoscript/fileName/ReferenceFinderWindow.cs: de9094975d7d4a34873e8b286fc2834b -> 
+  custom:scripting/monoscript/fileName/Reward.cs: 03165aa73fad385e62f3e2d2c4e4a2cd -> 
+  custom:scripting/monoscript/fileName/RewardedAd.cs: 902918de76d2c44c10635ed8f96aaa40 -> 
+  custom:scripting/monoscript/fileName/AdLoaderClientArgs.cs: 64006176aec713933b794af6ff1de3a4 -> 
+  custom:scripting/monoscript/fileName/RequestConfiguration.cs: 10a66135c340740bf376c6a850450e36 -> 
+  custom:scripting/monoscript/fileName/MediationExtras.cs: 48fab59140f7b4237d78b3ac8989eb63 -> 
+  custom:scripting/monoscript/fileName/IInitializationStatusClient.cs: 93d48b3d8eade97066f51bc59437bb18 -> 
+  custom:scripting/monoscript/fileName/IMobileAdsClient.cs: d41cce53daad1499c9d4f5f7c6110422 -> 
+  custom:scripting/monoscript/fileName/MobileAds.cs: 44d9e321f8879dcf0b834c5ad7f1b13b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/AppStoreSettingsEditor.cs: 0dd897e8be2349d02f4a68e683ed09d8 -> 
+  custom:scripting/monoscript/fileName/IRewardBasedVideoAdClient.cs: 6036c005579cd636e6fac03dc9cd7ae7 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:scripting/monoscript/fileName/IAdLoaderClient.cs: ade2b4ed1594082a878e5b4d9932994e -> 
+  custom:scripting/monoscript/fileName/AdErrorEventArgs.cs: 6d52f9a4639b4c10872fa43593054429 -> 
+  custom:scripting/monoscript/fileName/RequestConfigurationClient.cs: 09c914c37bb6e6c45dd5584fadb64c30 -> 
+  custom:scripting/monoscript/fileName/ResponseInfoClient.cs: 91ca4b2c3a44ccf84d98c274b85827e6 -> 
+  custom:scripting/monoscript/fileName/InterstitialClient.cs: 64d57c3fa9051a985ff391308ec8df89 -> 
+  custom:scripting/monoscript/fileName/ServerSideVerificationOptions.cs: 51d338eec3883193422e2b09c16f6a04 -> 
+  custom:scripting/monoscript/fileName/RewardedAdClient.cs: 1c67f6e9e83207867c22d357ce1b9730 -> 
+  custom:scripting/monoscript/fileName/RewardBasedVideoAd.cs: c3251d7e4697663bbc51af94d8486ca2 -> 
+  custom:scripting/monoscript/fileName/AppStoreModel.cs: e77672e4a572820a68f4759e3af8c578 -> 
+  custom:scripting/monoscript/fileName/CustomNativeClientEventArgs.cs: a5469769f268e9e27729a46f3227ab8b -> 
+  custom:scripting/monoscript/fileName/AdLoader.cs: 7abd621fa4703074ec13a08faf65e124 -> 
+  custom:scripting/monoscript/fileName/AdapterStatus.cs: 65a4a4262ba2b99b058bdeeea54c30b3 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/BannerView.cs: f38eb77ad33d883bdeb41653095d70fa -> 
+  custom:scripting/monoscript/fileName/AssetTreeView.cs: cc45f069f7cc6f790f6072aa09378f97 -> 
+  custom:scripting/monoscript/fileName/InitializationStatus.cs: 9f61f7d146c186240c4227c8101cf33a -> 
+  custom:scripting/monoscript/fileName/WebRequestQueue.cs: 3be2c921f21805ba794f8d81195ee853 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/GoogleMobileAdsSettingsEditor.cs: dfaa4a8dc2405381fed6bed6c0f52e1e -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp-Editor: 2f60984338d1835817407a63afbc78f0 -> e64e6b4b51fdf1a2984cf5d386eddc7f
+  custom:scripting/monoscript/fileName/IClientFactory.cs: d40589efa87cae1b79a47d362bdf1885 -> 
+  custom:scripting/monoscript/fileName/CustomNativeTemplateAd.cs: 43302dcfcc4db6b07b942007cf6f4331 -> 
+  custom:scripting/monoscript/fileName/IRewardedAdClient.cs: 46b1b82865b6e2817a1e09191ae18e28 -> 
+  custom:scripting/monoscript/fileName/AppStoreStyles.cs: a0f43996a4478faf74f77ffc63d7a531 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/RewardedAdDummyClient.cs: a420d1a75ccb67e0ce633e66dbd005f8 -> 
+  custom:scripting/monoscript/fileName/AdLoaderClient.cs: f3fc61d292cef27cc2dbc996157b0334 -> 
+  custom:scripting/monoscript/fileName/MobileAdsClient.cs: 49d806c7cc7f881b8ba41abc8d8f9d5d -> 
+  custom:scripting/monoscript/fileName/AdRequest.cs: 138efafbb2f6a1367cafdbb21094c4ec -> 
+  custom:scripting/monoscript/fileName/EditorAnalytcisApi.cs: c5314dfd63b4ebac20e75b67fe31fea6 -> 
+  custom:scripting/monoscript/fileName/CustomNativeTemplateClient.cs: 8b276cdf9d055427cc05fa744adc3e6a -> 
+  custom:scripting/monoscript/fileName/AdValueEventArgs.cs: 67022ac99443797157586ed9cb34e3fe -> 
+  custom:scripting/monoscript/fileName/ICustomNativeTemplateClient.cs: d041933678e2b2c43cdb2bbbf056e14f -> 
+  custom:scripting/monoscript/fileName/AdFailedToLoadEventArgs.cs: 40434a1d0720bf89d290516a6d90b315 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/monoscript/fileName/SdkImportEvent.cs: b8fd4b57dddcc3d4eb63f0179c338918 -> 
+  custom:scripting/monoscript/fileName/IInterstitialClient.cs: 77932e80b5367e71f94e9f8961860aa4 -> 
+  custom:scripting/monoscript/fileName/AdSize.cs: b5faf1e81e1c9b81ffcc57d4c0c572af -> 
+  custom:scripting/monoscript/fileName/ProjectBuildEvent.cs: 3e4d2123babd116250dff76a50b60d9e -> 
+  custom:scripting/monoscript/fileName/AppStoreOnboardApi.cs: 17dae5c4b3b4784428b58f3d870f0100 -> 
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.284 seconds
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.328 seconds
+Domain Reload Profiling: 611ms
+	BeginReloadAssembly (96ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (14ms)
+	RebuildCommonClasses (22ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (19ms)
+	LoadAllAssembliesAndSetupDomain (140ms)
+		LoadAssemblies (184ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (13ms)
+			TypeCache.Refresh (7ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (2ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (328ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (199ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (20ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (41ms)
+			ProcessInitializeOnLoadAttributes (109ms)
+			ProcessInitializeOnLoadMethodAttributes (23ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (5ms)
+Refreshing native plugins compatible for Editor in 5.22 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1443 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 9 unused Assets / (24.3 KB). Loaded Objects now: 1957.
+Memory consumption went from 81.8 MB to 81.8 MB.
+Total: 2.000500 ms (FindLiveObjects: 0.079100 ms CreateObjectMapping: 0.021900 ms MarkObjects: 1.877500 ms  DeleteObjects: 0.021100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/Common.cs: 2a55f4e6a208f7dfa6238550471e740e -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/RightClickEditor.cs: f15a84c91dcd22372aeddf5032222567 -> 
+  custom:scripting/monoscript/fileName/ResponseInfo.cs: 2ba3a6b650411fc059755a08410281ce -> 
+  custom:scripting/monoscript/fileName/MaxAdContentRating.cs: 4bb74d86196ad798ce7bb9550ea2dd45 -> 
+  custom:scripting/monoscript/fileName/ProjectOpenEvent.cs: b04d140b4e94532f18809ef6233a6649 -> 
+  custom:scripting/monoscript/fileName/InitializationStatusDummyClient.cs: 58650c8aa5d55da4b4a4a0897b60f0bb -> 
+  custom:scripting/monoscript/fileName/AdValue.cs: 1540f7c89e7d88fb395c669a5e811d7c -> 
+  custom:scripting/monoscript/fileName/Splash.cs: 7b3de2670cf3ec70815f984f801a6c92 -> 
+  custom:scripting/monoscript/fileName/ReferenceFinderData.cs: 685d17683a74e02ab3a283ee9ed20b49 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/BannerClient.cs: 4836dc166d2944e73b41d60cfbe81e92 -> 
+  custom:scripting/monoscript/fileName/GoogleMobileAdsSettings.cs: e2534ff78c3bb1a55dd687cf960a1daf -> 
+  custom:scripting/monoscript/fileName/Utils.cs: 7292d05bdafbd1385c8d746a055f0951 -> ae500ad142831e5f468cc8f21384757f
+  custom:scripting/monoscript/fileName/MobileAdsEventExecutor.cs: 51536efd5ffd632a2975c0879852e058 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:scripting/monoscript/fileName/InitializationStatusClient.cs: e7aff1dec4f311f00570efc5840fa776 -> 
+  custom:scripting/monoscript/fileName/DisplayMetrics.cs: 24c35d804f55344f6f89aa87e5246f9b -> 
+  custom:scripting/monoscript/fileName/RewardBasedVideoAdClient.cs: 109f445b4916ffca23ecaa5151b642f4 -> 
+  custom:scripting/monoscript/fileName/InterstitialAd.cs: efd6b2a2249355dc45825b64098a27f2 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/CustomNativeEventArgs.cs: b5dd4eaca999c8d434aa9efe55026fe1 -> 
+  custom:scripting/monoscript/fileName/DummyClient.cs: 6b4a8f94a097f2621702c85b7538a3b3 -> 
+  custom:scripting/monoscript/fileName/IBannerClient.cs: a104759dfdec1d0cd0552a67e775d155 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/IResponseInfoClient.cs: 16f52130b13b0fbf6c967cc827f3e85a -> 
+  custom:scripting/monoscript/fileName/DemoInventory.cs: f71d1292fbd40b240d2acdc8385d9388 -> 
+  custom:scripting/monoscript/fileName/GoogleMobileAdsClientFactory.cs: cc9a3c18d716e25ee181e5e2a1e8d1b7 -> 
+  custom:scripting/monoscript/fileName/ReferenceFinderWindow.cs: de9094975d7d4a34873e8b286fc2834b -> 
+  custom:scripting/monoscript/fileName/Reward.cs: 03165aa73fad385e62f3e2d2c4e4a2cd -> 
+  custom:scripting/monoscript/fileName/RewardedAd.cs: 902918de76d2c44c10635ed8f96aaa40 -> 
+  custom:scripting/monoscript/fileName/AdLoaderClientArgs.cs: 64006176aec713933b794af6ff1de3a4 -> 
+  custom:scripting/monoscript/fileName/RequestConfiguration.cs: 10a66135c340740bf376c6a850450e36 -> 
+  custom:scripting/monoscript/fileName/MediationExtras.cs: 48fab59140f7b4237d78b3ac8989eb63 -> 
+  custom:scripting/monoscript/fileName/IInitializationStatusClient.cs: 93d48b3d8eade97066f51bc59437bb18 -> 
+  custom:scripting/monoscript/fileName/IMobileAdsClient.cs: d41cce53daad1499c9d4f5f7c6110422 -> 
+  custom:scripting/monoscript/fileName/MobileAds.cs: 44d9e321f8879dcf0b834c5ad7f1b13b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/AppStoreSettingsEditor.cs: 0dd897e8be2349d02f4a68e683ed09d8 -> 
+  custom:scripting/monoscript/fileName/IRewardBasedVideoAdClient.cs: 6036c005579cd636e6fac03dc9cd7ae7 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:scripting/monoscript/fileName/IAdLoaderClient.cs: ade2b4ed1594082a878e5b4d9932994e -> 
+  custom:scripting/monoscript/fileName/AdErrorEventArgs.cs: 6d52f9a4639b4c10872fa43593054429 -> 
+  custom:scripting/monoscript/fileName/RequestConfigurationClient.cs: 09c914c37bb6e6c45dd5584fadb64c30 -> 
+  custom:scripting/monoscript/fileName/ResponseInfoClient.cs: 91ca4b2c3a44ccf84d98c274b85827e6 -> 
+  custom:scripting/monoscript/fileName/InterstitialClient.cs: 64d57c3fa9051a985ff391308ec8df89 -> 
+  custom:scripting/monoscript/fileName/ServerSideVerificationOptions.cs: 51d338eec3883193422e2b09c16f6a04 -> 
+  custom:scripting/monoscript/fileName/RewardedAdClient.cs: 1c67f6e9e83207867c22d357ce1b9730 -> 
+  custom:scripting/monoscript/fileName/RewardBasedVideoAd.cs: c3251d7e4697663bbc51af94d8486ca2 -> 
+  custom:scripting/monoscript/fileName/AppStoreModel.cs: e77672e4a572820a68f4759e3af8c578 -> 
+  custom:scripting/monoscript/fileName/CustomNativeClientEventArgs.cs: a5469769f268e9e27729a46f3227ab8b -> 
+  custom:scripting/monoscript/fileName/AdLoader.cs: 7abd621fa4703074ec13a08faf65e124 -> 
+  custom:scripting/monoscript/fileName/AdapterStatus.cs: 65a4a4262ba2b99b058bdeeea54c30b3 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/BannerView.cs: f38eb77ad33d883bdeb41653095d70fa -> 
+  custom:scripting/monoscript/fileName/AssetTreeView.cs: cc45f069f7cc6f790f6072aa09378f97 -> 
+  custom:scripting/monoscript/fileName/InitializationStatus.cs: 9f61f7d146c186240c4227c8101cf33a -> 
+  custom:scripting/monoscript/fileName/WebRequestQueue.cs: 3be2c921f21805ba794f8d81195ee853 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/GoogleMobileAdsSettingsEditor.cs: dfaa4a8dc2405381fed6bed6c0f52e1e -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp-Editor: d3621205cd14d331f6a5a7f401e58e23 -> e64e6b4b51fdf1a2984cf5d386eddc7f
+  custom:scripting/monoscript/fileName/IClientFactory.cs: d40589efa87cae1b79a47d362bdf1885 -> 
+  custom:scripting/monoscript/fileName/CustomNativeTemplateAd.cs: 43302dcfcc4db6b07b942007cf6f4331 -> 
+  custom:scripting/monoscript/fileName/IRewardedAdClient.cs: 46b1b82865b6e2817a1e09191ae18e28 -> 
+  custom:scripting/monoscript/fileName/AppStoreStyles.cs: a0f43996a4478faf74f77ffc63d7a531 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/RewardedAdDummyClient.cs: a420d1a75ccb67e0ce633e66dbd005f8 -> 
+  custom:scripting/monoscript/fileName/AdLoaderClient.cs: f3fc61d292cef27cc2dbc996157b0334 -> 
+  custom:scripting/monoscript/fileName/MobileAdsClient.cs: 49d806c7cc7f881b8ba41abc8d8f9d5d -> 
+  custom:scripting/monoscript/fileName/AdRequest.cs: 138efafbb2f6a1367cafdbb21094c4ec -> 
+  custom:scripting/monoscript/fileName/EditorAnalytcisApi.cs: c5314dfd63b4ebac20e75b67fe31fea6 -> 
+  custom:scripting/monoscript/fileName/CustomNativeTemplateClient.cs: 8b276cdf9d055427cc05fa744adc3e6a -> 
+  custom:scripting/monoscript/fileName/AdValueEventArgs.cs: 67022ac99443797157586ed9cb34e3fe -> 
+  custom:scripting/monoscript/fileName/ICustomNativeTemplateClient.cs: d041933678e2b2c43cdb2bbbf056e14f -> 
+  custom:scripting/monoscript/fileName/AdFailedToLoadEventArgs.cs: 40434a1d0720bf89d290516a6d90b315 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/monoscript/fileName/SdkImportEvent.cs: b8fd4b57dddcc3d4eb63f0179c338918 -> 
+  custom:scripting/monoscript/fileName/IInterstitialClient.cs: 77932e80b5367e71f94e9f8961860aa4 -> 
+  custom:scripting/monoscript/fileName/AdSize.cs: b5faf1e81e1c9b81ffcc57d4c0c572af -> 
+  custom:scripting/monoscript/fileName/ProjectBuildEvent.cs: 3e4d2123babd116250dff76a50b60d9e -> 
+  custom:scripting/monoscript/fileName/AppStoreOnboardApi.cs: 17dae5c4b3b4784428b58f3d870f0100 -> 
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.307 seconds
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.367 seconds
+Domain Reload Profiling: 673ms
+	BeginReloadAssembly (109ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (16ms)
+	RebuildCommonClasses (28ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (22ms)
+	LoadAllAssembliesAndSetupDomain (139ms)
+		LoadAssemblies (194ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (10ms)
+			TypeCache.Refresh (5ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (2ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (367ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (219ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (27ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (41ms)
+			ProcessInitializeOnLoadAttributes (123ms)
+			ProcessInitializeOnLoadMethodAttributes (20ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (4ms)
+Refreshing native plugins compatible for Editor in 4.51 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1443 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 9 unused Assets / (24.3 KB). Loaded Objects now: 1960.
+Memory consumption went from 81.8 MB to 81.8 MB.
+Total: 1.626900 ms (FindLiveObjects: 0.077100 ms CreateObjectMapping: 0.021500 ms MarkObjects: 1.508400 ms  DeleteObjects: 0.019400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/Common.cs: 2a55f4e6a208f7dfa6238550471e740e -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/RightClickEditor.cs: f15a84c91dcd22372aeddf5032222567 -> 
+  custom:scripting/monoscript/fileName/ResponseInfo.cs: 2ba3a6b650411fc059755a08410281ce -> 
+  custom:scripting/monoscript/fileName/MaxAdContentRating.cs: 4bb74d86196ad798ce7bb9550ea2dd45 -> 
+  custom:scripting/monoscript/fileName/ProjectOpenEvent.cs: b04d140b4e94532f18809ef6233a6649 -> 
+  custom:scripting/monoscript/fileName/InitializationStatusDummyClient.cs: 58650c8aa5d55da4b4a4a0897b60f0bb -> 
+  custom:scripting/monoscript/fileName/AdValue.cs: 1540f7c89e7d88fb395c669a5e811d7c -> 
+  custom:scripting/monoscript/fileName/Splash.cs: 7b3de2670cf3ec70815f984f801a6c92 -> 
+  custom:scripting/monoscript/fileName/ReferenceFinderData.cs: 685d17683a74e02ab3a283ee9ed20b49 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/BannerClient.cs: 4836dc166d2944e73b41d60cfbe81e92 -> 
+  custom:scripting/monoscript/fileName/GoogleMobileAdsSettings.cs: e2534ff78c3bb1a55dd687cf960a1daf -> 
+  custom:scripting/monoscript/fileName/Utils.cs: 7292d05bdafbd1385c8d746a055f0951 -> ae500ad142831e5f468cc8f21384757f
+  custom:scripting/monoscript/fileName/MobileAdsEventExecutor.cs: 51536efd5ffd632a2975c0879852e058 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:scripting/monoscript/fileName/InitializationStatusClient.cs: e7aff1dec4f311f00570efc5840fa776 -> 
+  custom:scripting/monoscript/fileName/DisplayMetrics.cs: 24c35d804f55344f6f89aa87e5246f9b -> 
+  custom:scripting/monoscript/fileName/RewardBasedVideoAdClient.cs: 109f445b4916ffca23ecaa5151b642f4 -> 
+  custom:scripting/monoscript/fileName/InterstitialAd.cs: efd6b2a2249355dc45825b64098a27f2 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/CustomNativeEventArgs.cs: b5dd4eaca999c8d434aa9efe55026fe1 -> 
+  custom:scripting/monoscript/fileName/DummyClient.cs: 6b4a8f94a097f2621702c85b7538a3b3 -> 
+  custom:scripting/monoscript/fileName/IBannerClient.cs: a104759dfdec1d0cd0552a67e775d155 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/IResponseInfoClient.cs: 16f52130b13b0fbf6c967cc827f3e85a -> 
+  custom:scripting/monoscript/fileName/DemoInventory.cs: f71d1292fbd40b240d2acdc8385d9388 -> 
+  custom:scripting/monoscript/fileName/GoogleMobileAdsClientFactory.cs: cc9a3c18d716e25ee181e5e2a1e8d1b7 -> 
+  custom:scripting/monoscript/fileName/ReferenceFinderWindow.cs: de9094975d7d4a34873e8b286fc2834b -> 
+  custom:scripting/monoscript/fileName/Reward.cs: 03165aa73fad385e62f3e2d2c4e4a2cd -> 
+  custom:scripting/monoscript/fileName/RewardedAd.cs: 902918de76d2c44c10635ed8f96aaa40 -> 
+  custom:scripting/monoscript/fileName/AdLoaderClientArgs.cs: 64006176aec713933b794af6ff1de3a4 -> 
+  custom:scripting/monoscript/fileName/RequestConfiguration.cs: 10a66135c340740bf376c6a850450e36 -> 
+  custom:scripting/monoscript/fileName/MediationExtras.cs: 48fab59140f7b4237d78b3ac8989eb63 -> 
+  custom:scripting/monoscript/fileName/IInitializationStatusClient.cs: 93d48b3d8eade97066f51bc59437bb18 -> 
+  custom:scripting/monoscript/fileName/IMobileAdsClient.cs: d41cce53daad1499c9d4f5f7c6110422 -> 
+  custom:scripting/monoscript/fileName/MobileAds.cs: 44d9e321f8879dcf0b834c5ad7f1b13b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/AppStoreSettingsEditor.cs: 0dd897e8be2349d02f4a68e683ed09d8 -> 
+  custom:scripting/monoscript/fileName/IRewardBasedVideoAdClient.cs: 6036c005579cd636e6fac03dc9cd7ae7 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:scripting/monoscript/fileName/IAdLoaderClient.cs: ade2b4ed1594082a878e5b4d9932994e -> 
+  custom:scripting/monoscript/fileName/AdErrorEventArgs.cs: 6d52f9a4639b4c10872fa43593054429 -> 
+  custom:scripting/monoscript/fileName/RequestConfigurationClient.cs: 09c914c37bb6e6c45dd5584fadb64c30 -> 
+  custom:scripting/monoscript/fileName/ResponseInfoClient.cs: 91ca4b2c3a44ccf84d98c274b85827e6 -> 
+  custom:scripting/monoscript/fileName/InterstitialClient.cs: 64d57c3fa9051a985ff391308ec8df89 -> 
+  custom:scripting/monoscript/fileName/ServerSideVerificationOptions.cs: 51d338eec3883193422e2b09c16f6a04 -> 
+  custom:scripting/monoscript/fileName/RewardedAdClient.cs: 1c67f6e9e83207867c22d357ce1b9730 -> 
+  custom:scripting/monoscript/fileName/RewardBasedVideoAd.cs: c3251d7e4697663bbc51af94d8486ca2 -> 
+  custom:scripting/monoscript/fileName/AppStoreModel.cs: e77672e4a572820a68f4759e3af8c578 -> 
+  custom:scripting/monoscript/fileName/CustomNativeClientEventArgs.cs: a5469769f268e9e27729a46f3227ab8b -> 
+  custom:scripting/monoscript/fileName/AdLoader.cs: 7abd621fa4703074ec13a08faf65e124 -> 
+  custom:scripting/monoscript/fileName/AdapterStatus.cs: 65a4a4262ba2b99b058bdeeea54c30b3 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/BannerView.cs: f38eb77ad33d883bdeb41653095d70fa -> 
+  custom:scripting/monoscript/fileName/AssetTreeView.cs: cc45f069f7cc6f790f6072aa09378f97 -> 
+  custom:scripting/monoscript/fileName/InitializationStatus.cs: 9f61f7d146c186240c4227c8101cf33a -> 
+  custom:scripting/monoscript/fileName/WebRequestQueue.cs: 3be2c921f21805ba794f8d81195ee853 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/GoogleMobileAdsSettingsEditor.cs: dfaa4a8dc2405381fed6bed6c0f52e1e -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp-Editor: d3621205cd14d331f6a5a7f401e58e23 -> e64e6b4b51fdf1a2984cf5d386eddc7f
+  custom:scripting/monoscript/fileName/IClientFactory.cs: d40589efa87cae1b79a47d362bdf1885 -> 
+  custom:scripting/monoscript/fileName/CustomNativeTemplateAd.cs: 43302dcfcc4db6b07b942007cf6f4331 -> 
+  custom:scripting/monoscript/fileName/IRewardedAdClient.cs: 46b1b82865b6e2817a1e09191ae18e28 -> 
+  custom:scripting/monoscript/fileName/AppStoreStyles.cs: a0f43996a4478faf74f77ffc63d7a531 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/RewardedAdDummyClient.cs: a420d1a75ccb67e0ce633e66dbd005f8 -> 
+  custom:scripting/monoscript/fileName/AdLoaderClient.cs: f3fc61d292cef27cc2dbc996157b0334 -> 
+  custom:scripting/monoscript/fileName/MobileAdsClient.cs: 49d806c7cc7f881b8ba41abc8d8f9d5d -> 
+  custom:scripting/monoscript/fileName/AdRequest.cs: 138efafbb2f6a1367cafdbb21094c4ec -> 
+  custom:scripting/monoscript/fileName/EditorAnalytcisApi.cs: c5314dfd63b4ebac20e75b67fe31fea6 -> 
+  custom:scripting/monoscript/fileName/CustomNativeTemplateClient.cs: 8b276cdf9d055427cc05fa744adc3e6a -> 
+  custom:scripting/monoscript/fileName/AdValueEventArgs.cs: 67022ac99443797157586ed9cb34e3fe -> 
+  custom:scripting/monoscript/fileName/ICustomNativeTemplateClient.cs: d041933678e2b2c43cdb2bbbf056e14f -> 
+  custom:scripting/monoscript/fileName/AdFailedToLoadEventArgs.cs: 40434a1d0720bf89d290516a6d90b315 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/monoscript/fileName/SdkImportEvent.cs: b8fd4b57dddcc3d4eb63f0179c338918 -> 
+  custom:scripting/monoscript/fileName/IInterstitialClient.cs: 77932e80b5367e71f94e9f8961860aa4 -> 
+  custom:scripting/monoscript/fileName/AdSize.cs: b5faf1e81e1c9b81ffcc57d4c0c572af -> 
+  custom:scripting/monoscript/fileName/ProjectBuildEvent.cs: 3e4d2123babd116250dff76a50b60d9e -> 
+  custom:scripting/monoscript/fileName/AppStoreOnboardApi.cs: 17dae5c4b3b4784428b58f3d870f0100 -> 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

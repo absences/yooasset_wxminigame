@@ -1,0 +1,2328 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c7fd2f1f85c54a499ff29d0dba3371d, type: 3}
+  m_Name: Levels
+  m_EditorClassIdentifier: 
+  _levels:
+  - _shapeDatas:
+    - id: 637220308549540563
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 1, y: 0}
+      color: 3
+      coordinate: {x: -1, y: 3}
+      baseInverted: 0
+    - id: 637220308549540562
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 0, y: -1}
+      - coordinate: {x: 1, y: 0}
+      color: 0
+      coordinate: {x: 1, y: 3}
+      baseInverted: 0
+    - id: 637220308549540564
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 1, y: 0}
+      - coordinate: {x: -1, y: 0}
+      color: 4
+      coordinate: {x: -1, y: 2}
+      baseInverted: 1
+    _levelNo: 1
+    _boardData:
+      tiles:
+      - {x: -1, y: 3}
+      - {x: 0, y: 3}
+      - {x: 1, y: 3}
+      - {x: 1, y: 2}
+      - {x: -1, y: 2}
+      - {x: 0, y: 2}
+      - {x: -2, y: 2}
+      - {x: 2, y: 3}
+  - _shapeDatas:
+    - id: 637145416024629927
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 1, y: -1}
+      - coordinate: {x: 0, y: -1}
+      - coordinate: {x: -1, y: -1}
+      color: 1
+      coordinate: {x: -1, y: 3}
+      baseInverted: 0
+    - id: 637145416024629926
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 1, y: 0}
+      - coordinate: {x: 1, y: -1}
+      color: 2
+      coordinate: {x: 0, y: 3}
+      baseInverted: 1
+    - id: 637145416024629928
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 1, y: 0}
+      - coordinate: {x: 2, y: 0}
+      - coordinate: {x: -1, y: 0}
+      color: 0
+      coordinate: {x: -1, y: 1}
+      baseInverted: 0
+    - id: 637145416024629929
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 0, y: 1}
+      color: 3
+      coordinate: {x: 2, y: 1}
+      baseInverted: 1
+    _levelNo: 2
+    _boardData:
+      tiles:
+      - {x: -1, y: 3}
+      - {x: 0, y: 3}
+      - {x: 1, y: 3}
+      - {x: 1, y: 2}
+      - {x: 0, y: 2}
+      - {x: -1, y: 2}
+      - {x: -2, y: 2}
+      - {x: -1, y: 1}
+      - {x: 0, y: 1}
+      - {x: 1, y: 1}
+      - {x: 2, y: 1}
+      - {x: -2, y: 1}
+      - {x: 2, y: 2}
+  - _shapeDatas:
+    - id: 637220308549540492
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 1, y: 0}
+      color: 0
+      coordinate: {x: -1, y: 3}
+      baseInverted: 0
+    - id: 637220308549540491
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 0, y: -1}
+      - coordinate: {x: 1, y: -1}
+      color: 4
+      coordinate: {x: 1, y: 3}
+      baseInverted: 0
+    - id: 637220308549540493
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: -1, y: 0}
+      - coordinate: {x: -2, y: 0}
+      color: 2
+      coordinate: {x: 0, y: 2}
+      baseInverted: 0
+    _levelNo: 3
+    _boardData:
+      tiles:
+      - {x: -1, y: 3}
+      - {x: 0, y: 3}
+      - {x: 1, y: 3}
+      - {x: 1, y: 2}
+      - {x: 2, y: 2}
+      - {x: 0, y: 2}
+      - {x: -1, y: 2}
+      - {x: -2, y: 2}
+  - _shapeDatas:
+    - id: 637220308549540498
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 1, y: 0}
+      - coordinate: {x: -1, y: 0}
+      color: 5
+      coordinate: {x: -1, y: 3}
+      baseInverted: 0
+    - id: 637220308549540499
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 1, y: -1}
+      - coordinate: {x: 0, y: -1}
+      - coordinate: {x: -1, y: -1}
+      color: 4
+      coordinate: {x: 1, y: 3}
+      baseInverted: 0
+    - id: 637220308549540500
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      color: 1
+      coordinate: {x: -1, y: 2}
+      baseInverted: 1
+    _levelNo: 4
+    _boardData:
+      tiles:
+      - {x: -1, y: 3}
+      - {x: 0, y: 3}
+      - {x: 1, y: 3}
+      - {x: 2, y: 2}
+      - {x: 1, y: 2}
+      - {x: 0, y: 2}
+      - {x: -1, y: 2}
+      - {x: -2, y: 3}
+  - _shapeDatas:
+    - id: 637220308549540503
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 1, y: 0}
+      - coordinate: {x: 2, y: 0}
+      color: 5
+      coordinate: {x: -2, y: 2}
+      baseInverted: 0
+    - id: 637220308549540501
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 0, y: 1}
+      - coordinate: {x: -1, y: 1}
+      color: 0
+      coordinate: {x: 1, y: 2}
+      baseInverted: 1
+    - id: 637220308549540502
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: -1, y: 0}
+      color: 2
+      coordinate: {x: -1, y: 3}
+      baseInverted: 0
+    _levelNo: 5
+    _boardData:
+      tiles:
+      - {x: -2, y: 2}
+      - {x: -1, y: 2}
+      - {x: 0, y: 2}
+      - {x: 1, y: 2}
+      - {x: 1, y: 3}
+      - {x: 0, y: 3}
+      - {x: -1, y: 3}
+      - {x: -2, y: 3}
+  - _shapeDatas:
+    - id: 637220308549540504
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 1, y: 0}
+      color: 1
+      coordinate: {x: -2, y: 3}
+      baseInverted: 1
+    - id: 637220308549540506
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 1, y: 0}
+      - coordinate: {x: 2, y: 0}
+      - coordinate: {x: 3, y: 0}
+      color: 4
+      coordinate: {x: -1, y: 2}
+      baseInverted: 1
+    - id: 637220308549540507
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      color: 3
+      coordinate: {x: -2, y: 2}
+      baseInverted: 0
+    - id: 637220308549540505
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: -1, y: 0}
+      - coordinate: {x: 1, y: 0}
+      color: 5
+      coordinate: {x: 1, y: 3}
+      baseInverted: 0
+    _levelNo: 6
+    _boardData:
+      tiles:
+      - {x: -2, y: 3}
+      - {x: -1, y: 3}
+      - {x: -1, y: 2}
+      - {x: -2, y: 2}
+      - {x: 0, y: 2}
+      - {x: 1, y: 2}
+      - {x: 1, y: 3}
+      - {x: 0, y: 3}
+      - {x: 2, y: 3}
+      - {x: 2, y: 2}
+  - _shapeDatas:
+    - id: 637220308549540508
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 0, y: -1}
+      - coordinate: {x: 1, y: -1}
+      - coordinate: {x: 2, y: -1}
+      color: 4
+      coordinate: {x: -1, y: 3}
+      baseInverted: 0
+    - id: 637220308549540510
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: -1, y: 0}
+      - coordinate: {x: 1, y: 0}
+      color: 2
+      coordinate: {x: 0, y: 1}
+      baseInverted: 1
+    - id: 637220308549540509
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 0, y: 1}
+      color: 0
+      coordinate: {x: -2, y: 1}
+      baseInverted: 1
+    _levelNo: 7
+    _boardData:
+      tiles:
+      - {x: -1, y: 3}
+      - {x: -1, y: 2}
+      - {x: 0, y: 2}
+      - {x: 1, y: 2}
+      - {x: 0, y: 1}
+      - {x: -1, y: 1}
+      - {x: -2, y: 1}
+      - {x: -2, y: 2}
+      - {x: 1, y: 1}
+  - _shapeDatas:
+    - id: 637220308549540514
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: -1, y: 0}
+      color: 1
+      coordinate: {x: -1, y: 2}
+      baseInverted: 1
+    - id: 637220308549540513
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 0, y: -1}
+      color: 0
+      coordinate: {x: 0, y: 2}
+      baseInverted: 0
+    - id: 637220308549540512
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 0, y: 1}
+      - coordinate: {x: 1, y: 0}
+      - coordinate: {x: 1, y: 1}
+      color: 2
+      coordinate: {x: 1, y: 2}
+      baseInverted: 1
+    - id: 637220308549540511
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: -1, y: 0}
+      - coordinate: {x: -2, y: 0}
+      color: 5
+      coordinate: {x: 0, y: 3}
+      baseInverted: 1
+    _levelNo: 8
+    _boardData:
+      tiles:
+      - {x: -1, y: 2}
+      - {x: 0, y: 2}
+      - {x: 1, y: 2}
+      - {x: 1, y: 3}
+      - {x: 0, y: 3}
+      - {x: -1, y: 3}
+      - {x: -2, y: 2}
+      - {x: 0, y: 1}
+      - {x: 2, y: 2}
+      - {x: 2, y: 3}
+      - {x: -2, y: 3}
+  - _shapeDatas:
+    - id: 637220308549540516
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: -1, y: 0}
+      - coordinate: {x: 1, y: 1}
+      - coordinate: {x: 0, y: 1}
+      color: 2
+      coordinate: {x: -1, y: 2}
+      baseInverted: 1
+    - id: 637220308549540517
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 0, y: -1}
+      - coordinate: {x: -1, y: -1}
+      color: 0
+      coordinate: {x: 0, y: 2}
+      baseInverted: 0
+    - id: 637220308549540515
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 1, y: 0}
+      - coordinate: {x: 0, y: 1}
+      color: 1
+      coordinate: {x: 1, y: 2}
+      baseInverted: 1
+    - id: 637220308549540518
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      color: 3
+      coordinate: {x: 1, y: 1}
+      baseInverted: 0
+    _levelNo: 9
+    _boardData:
+      tiles:
+      - {x: -1, y: 2}
+      - {x: 0, y: 2}
+      - {x: 1, y: 2}
+      - {x: 1, y: 1}
+      - {x: 0, y: 1}
+      - {x: -1, y: 1}
+      - {x: -2, y: 2}
+      - {x: 2, y: 2}
+      - {x: 1, y: 3}
+      - {x: 0, y: 3}
+      - {x: -1, y: 3}
+  - _shapeDatas:
+    - id: 637220308549540520
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 2, y: 0}
+      - coordinate: {x: 1, y: 0}
+      color: 4
+      coordinate: {x: -1, y: 3}
+      baseInverted: 0
+    - id: 637220308549540519
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 1, y: 0}
+      - coordinate: {x: 0, y: -1}
+      color: 1
+      coordinate: {x: -2, y: 2}
+      baseInverted: 0
+    - id: 637220308549540521
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 1, y: 0}
+      - coordinate: {x: 2, y: 0}
+      - coordinate: {x: 2, y: -1}
+      color: 3
+      coordinate: {x: 0, y: 2}
+      baseInverted: 0
+    _levelNo: 10
+    _boardData:
+      tiles:
+      - {x: -1, y: 3}
+      - {x: -2, y: 2}
+      - {x: -1, y: 2}
+      - {x: 0, y: 2}
+      - {x: 1, y: 2}
+      - {x: 1, y: 3}
+      - {x: 0, y: 3}
+      - {x: 2, y: 2}
+      - {x: 2, y: 1}
+      - {x: -2, y: 1}
+  - _shapeDatas:
+    - id: 637220308549540525
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      color: 4
+      coordinate: {x: -2, y: 2}
+      baseInverted: 0
+    - id: 637220308549540524
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 1, y: 1}
+      - coordinate: {x: 0, y: 1}
+      color: 0
+      coordinate: {x: -1, y: 2}
+      baseInverted: 1
+    - id: 637220308549540523
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 1, y: 0}
+      - coordinate: {x: 1, y: 1}
+      color: 1
+      coordinate: {x: 0, y: 2}
+      baseInverted: 0
+    - id: 637220308549540522
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 1, y: 0}
+      - coordinate: {x: 2, y: 0}
+      color: 2
+      coordinate: {x: 0, y: 1}
+      baseInverted: 1
+    _levelNo: 11
+    _boardData:
+      tiles:
+      - {x: -2, y: 2}
+      - {x: -1, y: 2}
+      - {x: 0, y: 2}
+      - {x: 1, y: 2}
+      - {x: 1, y: 3}
+      - {x: 0, y: 3}
+      - {x: -1, y: 3}
+      - {x: 0, y: 1}
+      - {x: 1, y: 1}
+      - {x: 2, y: 1}
+  - _shapeDatas:
+    - id: 637220308549540526
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 1, y: 0}
+      - coordinate: {x: 2, y: 0}
+      color: 0
+      coordinate: {x: -1, y: 2}
+      baseInverted: 1
+    - id: 637220308549540529
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 0, y: -1}
+      color: 3
+      coordinate: {x: -2, y: 2}
+      baseInverted: 0
+    - id: 637220308549540527
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 0, y: -1}
+      color: 1
+      coordinate: {x: 2, y: 2}
+      baseInverted: 0
+    - id: 637220308549540528
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: -1, y: 0}
+      - coordinate: {x: -2, y: 0}
+      color: 2
+      coordinate: {x: 1, y: 1}
+      baseInverted: 0
+    _levelNo: 12
+    _boardData:
+      tiles:
+      - {x: -1, y: 2}
+      - {x: -2, y: 2}
+      - {x: 0, y: 2}
+      - {x: 1, y: 2}
+      - {x: 2, y: 2}
+      - {x: 2, y: 1}
+      - {x: 1, y: 1}
+      - {x: 0, y: 1}
+      - {x: -1, y: 1}
+      - {x: -2, y: 1}
+  - _shapeDatas:
+    - id: 637220308549540532
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 0, y: -1}
+      - coordinate: {x: -1, y: 0}
+      color: 0
+      coordinate: {x: -1, y: 3}
+      baseInverted: 0
+    - id: 637220308549540530
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 1, y: 0}
+      - coordinate: {x: 0, y: 1}
+      color: 1
+      coordinate: {x: 0, y: 3}
+      baseInverted: 1
+    - id: 637220308549540531
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 1, y: 0}
+      color: 3
+      coordinate: {x: 1, y: 2}
+      baseInverted: 1
+    - id: 637220308549540533
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 0, y: -1}
+      color: 2
+      coordinate: {x: 0, y: 2}
+      baseInverted: 0
+    _levelNo: 13
+    _boardData:
+      tiles:
+      - {x: -1, y: 3}
+      - {x: 0, y: 3}
+      - {x: 1, y: 3}
+      - {x: 1, y: 2}
+      - {x: 0, y: 2}
+      - {x: -1, y: 2}
+      - {x: 0, y: 1}
+      - {x: 2, y: 2}
+      - {x: -2, y: 3}
+      - {x: 0, y: 4}
+  - _shapeDatas:
+    - id: 637220308549540536
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 1, y: 0}
+      - coordinate: {x: 1, y: -1}
+      - coordinate: {x: 0, y: 1}
+      color: 4
+      coordinate: {x: -1, y: 2}
+      baseInverted: 1
+    - id: 637220308549540534
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: -1, y: 1}
+      - coordinate: {x: 0, y: 1}
+      color: 2
+      coordinate: {x: 1, y: 2}
+      baseInverted: 1
+    - id: 637220308549540535
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 0, y: -1}
+      - coordinate: {x: -1, y: -1}
+      color: 3
+      coordinate: {x: 2, y: 2}
+      baseInverted: 0
+    - id: 637220308549540537
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: -1, y: 0}
+      - coordinate: {x: -1, y: 1}
+      color: 0
+      coordinate: {x: -1, y: 1}
+      baseInverted: 0
+    _levelNo: 14
+    _boardData:
+      tiles:
+      - {x: -1, y: 2}
+      - {x: 0, y: 2}
+      - {x: 1, y: 2}
+      - {x: 2, y: 2}
+      - {x: 2, y: 1}
+      - {x: 1, y: 1}
+      - {x: 0, y: 1}
+      - {x: -1, y: 1}
+      - {x: -2, y: 1}
+      - {x: -2, y: 2}
+      - {x: -1, y: 3}
+      - {x: 0, y: 3}
+      - {x: 1, y: 3}
+  - _shapeDatas:
+    - id: 637220308549540541
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: -1, y: 0}
+      color: 0
+      coordinate: {x: -1, y: 2}
+      baseInverted: 1
+    - id: 637220308549540540
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 1, y: 0}
+      - coordinate: {x: 1, y: 1}
+      color: 5
+      coordinate: {x: 0, y: 2}
+      baseInverted: 0
+    - id: 637220308549540538
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 1, y: 0}
+      - coordinate: {x: -1, y: 0}
+      color: 2
+      coordinate: {x: -1, y: 3}
+      baseInverted: 0
+    - id: 637220308549540539
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 1, y: 0}
+      - coordinate: {x: 1, y: 1}
+      - coordinate: {x: 0, y: 1}
+      color: 4
+      coordinate: {x: 2, y: 2}
+      baseInverted: 0
+    _levelNo: 15
+    _boardData:
+      tiles:
+      - {x: -1, y: 2}
+      - {x: 0, y: 2}
+      - {x: 1, y: 2}
+      - {x: 1, y: 3}
+      - {x: -1, y: 3}
+      - {x: 0, y: 3}
+      - {x: -2, y: 3}
+      - {x: -2, y: 2}
+      - {x: 2, y: 2}
+      - {x: 3, y: 2}
+      - {x: 3, y: 3}
+      - {x: 2, y: 3}
+  - _shapeDatas:
+    - id: 637220308549540545
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: -1, y: 0}
+      color: 3
+      coordinate: {x: -1, y: 2}
+      baseInverted: 1
+    - id: 637220308549540544
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 0, y: -1}
+      color: 0
+      coordinate: {x: 0, y: 2}
+      baseInverted: 0
+    - id: 637220308549540543
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 0, y: 1}
+      - coordinate: {x: 1, y: 0}
+      - coordinate: {x: 1, y: 1}
+      color: 4
+      coordinate: {x: 1, y: 2}
+      baseInverted: 1
+    - id: 637220308549540542
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 1, y: 0}
+      - coordinate: {x: -1, y: 0}
+      color: 5
+      coordinate: {x: -1, y: 3}
+      baseInverted: 0
+    _levelNo: 16
+    _boardData:
+      tiles:
+      - {x: -1, y: 2}
+      - {x: 0, y: 2}
+      - {x: 1, y: 2}
+      - {x: 1, y: 3}
+      - {x: -1, y: 3}
+      - {x: 0, y: 3}
+      - {x: -2, y: 3}
+      - {x: -2, y: 2}
+      - {x: 2, y: 2}
+      - {x: 2, y: 3}
+      - {x: 0, y: 1}
+  - _shapeDatas:
+    - id: 637220308549540547
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 2, y: 0}
+      - coordinate: {x: 1, y: 0}
+      - coordinate: {x: 2, y: 1}
+      color: 2
+      coordinate: {x: -2, y: 3}
+      baseInverted: 1
+    - id: 637220308549540546
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: -1, y: 0}
+      - coordinate: {x: -1, y: -1}
+      color: 4
+      coordinate: {x: -1, y: 2}
+      baseInverted: 1
+    - id: 637220308549540548
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 0, y: -1}
+      - coordinate: {x: 1, y: 0}
+      color: 1
+      coordinate: {x: 1, y: 3}
+      baseInverted: 0
+    - id: 637220308549540549
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 0, y: -1}
+      color: 0
+      coordinate: {x: 2, y: 2}
+      baseInverted: 0
+    _levelNo: 17
+    _boardData:
+      tiles:
+      - {x: -2, y: 3}
+      - {x: -1, y: 2}
+      - {x: 0, y: 3}
+      - {x: -1, y: 3}
+      - {x: 1, y: 3}
+      - {x: 1, y: 2}
+      - {x: 2, y: 2}
+      - {x: 2, y: 3}
+      - {x: -2, y: 2}
+      - {x: 2, y: 1}
+      - {x: -2, y: 1}
+      - {x: 0, y: 4}
+  - _shapeDatas:
+    - id: 637220308549540550
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 1, y: 0}
+      - coordinate: {x: 0, y: 1}
+      - coordinate: {x: 2, y: 0}
+      color: 5
+      coordinate: {x: 0, y: 3}
+      baseInverted: 1
+    - id: 637220308549540552
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 1, y: -1}
+      - coordinate: {x: 1, y: 0}
+      color: 0
+      coordinate: {x: 1, y: 2}
+      baseInverted: 1
+    - id: 637220308549540553
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 0, y: -1}
+      - coordinate: {x: 1, y: -1}
+      color: 3
+      coordinate: {x: 0, y: 2}
+      baseInverted: 0
+    - id: 637220308549540551
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 0, y: 1}
+      - coordinate: {x: -1, y: 1}
+      - coordinate: {x: -1, y: 0}
+      color: 4
+      coordinate: {x: -1, y: 2}
+      baseInverted: 1
+    _levelNo: 18
+    _boardData:
+      tiles:
+      - {x: 0, y: 3}
+      - {x: 1, y: 3}
+      - {x: 1, y: 2}
+      - {x: 0, y: 2}
+      - {x: 0, y: 4}
+      - {x: -1, y: 2}
+      - {x: -1, y: 3}
+      - {x: -2, y: 3}
+      - {x: 0, y: 1}
+      - {x: 1, y: 1}
+      - {x: 2, y: 1}
+      - {x: 2, y: 2}
+      - {x: 2, y: 3}
+      - {x: -2, y: 2}
+  - _shapeDatas:
+    - id: 637220308549540556
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 1, y: 0}
+      color: 0
+      coordinate: {x: -1, y: 2}
+      baseInverted: 1
+    - id: 637220308549540555
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 0, y: 1}
+      - coordinate: {x: -1, y: 1}
+      - coordinate: {x: 1, y: 1}
+      color: 1
+      coordinate: {x: 1, y: 2}
+      baseInverted: 1
+    - id: 637220308549540554
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: -1, y: 0}
+      - coordinate: {x: -2, y: 0}
+      color: 2
+      coordinate: {x: -1, y: 3}
+      baseInverted: 0
+    - id: 637220308549540557
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 0, y: -1}
+      color: 3
+      coordinate: {x: 2, y: 2}
+      baseInverted: 0
+    _levelNo: 19
+    _boardData:
+      tiles:
+      - {x: -1, y: 2}
+      - {x: 0, y: 2}
+      - {x: 1, y: 2}
+      - {x: 1, y: 3}
+      - {x: 0, y: 3}
+      - {x: -1, y: 3}
+      - {x: -2, y: 3}
+      - {x: -3, y: 3}
+      - {x: 2, y: 2}
+      - {x: 2, y: 3}
+      - {x: 2, y: 1}
+  - _shapeDatas:
+    - id: 637220308549540560
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: -1, y: 0}
+      color: 1
+      coordinate: {x: -1, y: 3}
+      baseInverted: 0
+    - id: 637220308549540558
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 1, y: 0}
+      - coordinate: {x: 0, y: 1}
+      color: 2
+      coordinate: {x: 0, y: 3}
+      baseInverted: 1
+    - id: 637220308549540559
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: -1, y: 0}
+      - coordinate: {x: -1, y: -1}
+      color: 5
+      coordinate: {x: 1, y: 2}
+      baseInverted: 1
+    - id: 637220308549540561
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: -1, y: 0}
+      color: 4
+      coordinate: {x: -1, y: 2}
+      baseInverted: 1
+    _levelNo: 20
+    _boardData:
+      tiles:
+      - {x: -1, y: 3}
+      - {x: 0, y: 3}
+      - {x: 1, y: 3}
+      - {x: 1, y: 2}
+      - {x: 0, y: 2}
+      - {x: -1, y: 2}
+      - {x: -2, y: 3}
+      - {x: 0, y: 4}
+      - {x: -2, y: 2}
+      - {x: 0, y: 1}
+  - _shapeDatas:
+    - id: 637220308549540567
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: -1, y: 0}
+      - coordinate: {x: 0, y: -1}
+      color: 5
+      coordinate: {x: 0, y: 2}
+      baseInverted: 0
+    - id: 637220308549540566
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 0, y: 1}
+      - coordinate: {x: -1, y: 1}
+      - coordinate: {x: -2, y: 1}
+      color: 2
+      coordinate: {x: 1, y: 2}
+      baseInverted: 1
+    - id: 637220308549540568
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 1, y: 0}
+      - coordinate: {x: 1, y: -1}
+      color: 3
+      coordinate: {x: 2, y: 3}
+      baseInverted: 1
+    - id: 637220308549540565
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 0, y: 1}
+      - coordinate: {x: 1, y: 1}
+      color: 0
+      coordinate: {x: -3, y: 2}
+      baseInverted: 1
+    _levelNo: 21
+    _boardData:
+      tiles:
+      - {x: 0, y: 2}
+      - {x: 1, y: 2}
+      - {x: 1, y: 3}
+      - {x: 0, y: 3}
+      - {x: -1, y: 3}
+      - {x: -1, y: 2}
+      - {x: 2, y: 3}
+      - {x: 3, y: 3}
+      - {x: 3, y: 2}
+      - {x: -3, y: 2}
+      - {x: -3, y: 3}
+      - {x: -2, y: 3}
+      - {x: 0, y: 1}
+  - _shapeDatas:
+    - id: 637220308549540570
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 1, y: 0}
+      - coordinate: {x: 1, y: -1}
+      - coordinate: {x: 0, y: -1}
+      color: 0
+      coordinate: {x: -1, y: 3}
+      baseInverted: 0
+    - id: 637220308549540569
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 2, y: -1}
+      - coordinate: {x: 2, y: 0}
+      - coordinate: {x: 1, y: 0}
+      color: 2
+      coordinate: {x: 1, y: 3}
+      baseInverted: 0
+    - id: 637220308549540571
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 0, y: -1}
+      - coordinate: {x: 1, y: -1}
+      - coordinate: {x: 1, y: 0}
+      color: 3
+      coordinate: {x: 1, y: 2}
+      baseInverted: 1
+    - id: 637220308549540572
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: -2, y: 1}
+      - coordinate: {x: -2, y: 0}
+      - coordinate: {x: -1, y: 0}
+      color: 4
+      coordinate: {x: 0, y: 1}
+      baseInverted: 1
+    _levelNo: 22
+    _boardData:
+      tiles:
+      - {x: -1, y: 3}
+      - {x: 0, y: 3}
+      - {x: 1, y: 3}
+      - {x: 1, y: 2}
+      - {x: 0, y: 2}
+      - {x: -1, y: 2}
+      - {x: 0, y: 1}
+      - {x: 1, y: 1}
+      - {x: 2, y: 1}
+      - {x: 2, y: 2}
+      - {x: -2, y: 2}
+      - {x: -2, y: 1}
+      - {x: -1, y: 1}
+      - {x: 3, y: 2}
+      - {x: 3, y: 3}
+      - {x: 2, y: 3}
+  - _shapeDatas:
+    - id: 637220308549540573
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 0, y: 1}
+      - coordinate: {x: 1, y: 0}
+      - coordinate: {x: 2, y: 0}
+      color: 4
+      coordinate: {x: 0, y: 3}
+      baseInverted: 1
+    - id: 637220308549540575
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: -1, y: 0}
+      - coordinate: {x: -2, y: 0}
+      color: 2
+      coordinate: {x: 1, y: 2}
+      baseInverted: 1
+    - id: 637220308549540576
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: -1, y: 0}
+      - coordinate: {x: -1, y: 1}
+      color: 3
+      coordinate: {x: -2, y: 2}
+      baseInverted: 0
+    - id: 637220308549540574
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 1, y: 1}
+      - coordinate: {x: 1, y: 0}
+      color: 0
+      coordinate: {x: 2, y: 2}
+      baseInverted: 0
+    _levelNo: 23
+    _boardData:
+      tiles:
+      - {x: 0, y: 3}
+      - {x: 1, y: 2}
+      - {x: 0, y: 2}
+      - {x: -1, y: 2}
+      - {x: -2, y: 2}
+      - {x: 2, y: 2}
+      - {x: 0, y: 4}
+      - {x: 1, y: 3}
+      - {x: 2, y: 3}
+      - {x: 3, y: 3}
+      - {x: 3, y: 2}
+      - {x: -3, y: 2}
+      - {x: -3, y: 3}
+  - _shapeDatas:
+    - id: 637220308549540577
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 1, y: 0}
+      - coordinate: {x: 1, y: 1}
+      - coordinate: {x: -1, y: 0}
+      color: 3
+      coordinate: {x: -1, y: 3}
+      baseInverted: 0
+    - id: 637220308549540579
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 1, y: 0}
+      - coordinate: {x: 0, y: -1}
+      color: 4
+      coordinate: {x: 0, y: 2}
+      baseInverted: 0
+    - id: 637220308549540578
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 1, y: 0}
+      - coordinate: {x: 2, y: 0}
+      color: 2
+      coordinate: {x: 1, y: 3}
+      baseInverted: 0
+    _levelNo: 24
+    _boardData:
+      tiles:
+      - {x: -1, y: 3}
+      - {x: 0, y: 2}
+      - {x: 1, y: 2}
+      - {x: 1, y: 3}
+      - {x: 2, y: 3}
+      - {x: 3, y: 3}
+      - {x: 0, y: 3}
+      - {x: 0, y: 1}
+      - {x: 0, y: 4}
+      - {x: -2, y: 3}
+  - _shapeDatas:
+    - id: 637220308549540583
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: -1, y: 0}
+      - coordinate: {x: 0, y: 1}
+      color: 2
+      coordinate: {x: -1, y: 2}
+      baseInverted: 1
+    - id: 637220308549540581
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 1, y: 0}
+      - coordinate: {x: 3, y: 0}
+      - coordinate: {x: 2, y: 0}
+      color: 0
+      coordinate: {x: 0, y: 2}
+      baseInverted: 0
+    - id: 637220308549540582
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: -1, y: 0}
+      - coordinate: {x: -2, y: 0}
+      color: 5
+      coordinate: {x: 0, y: 1}
+      baseInverted: 1
+    - id: 637220308549540580
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: -1, y: 0}
+      - coordinate: {x: 1, y: 0}
+      - coordinate: {x: 2, y: 0}
+      color: 4
+      coordinate: {x: 1, y: 3}
+      baseInverted: 0
+    _levelNo: 25
+    _boardData:
+      tiles:
+      - {x: -1, y: 2}
+      - {x: 0, y: 2}
+      - {x: 0, y: 1}
+      - {x: -1, y: 1}
+      - {x: -2, y: 1}
+      - {x: -2, y: 2}
+      - {x: 1, y: 2}
+      - {x: 1, y: 3}
+      - {x: 0, y: 3}
+      - {x: -1, y: 3}
+      - {x: 2, y: 3}
+      - {x: 3, y: 3}
+      - {x: 3, y: 2}
+      - {x: 2, y: 2}
+  - _shapeDatas:
+    - id: 637220308549540584
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 1, y: 0}
+      - coordinate: {x: -1, y: 0}
+      color: 3
+      coordinate: {x: -1, y: 3}
+      baseInverted: 0
+    - id: 637220308549540585
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 0, y: -1}
+      - coordinate: {x: 1, y: 0}
+      color: 2
+      coordinate: {x: 1, y: 3}
+      baseInverted: 0
+    - id: 637220308549540587
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: -1, y: 0}
+      - coordinate: {x: -2, y: 0}
+      - coordinate: {x: -2, y: -1}
+      color: 1
+      coordinate: {x: 0, y: 2}
+      baseInverted: 0
+    - id: 637220308549540586
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 0, y: -1}
+      color: 0
+      coordinate: {x: 2, y: 2}
+      baseInverted: 0
+    _levelNo: 26
+    _boardData:
+      tiles:
+      - {x: -1, y: 3}
+      - {x: 0, y: 3}
+      - {x: 1, y: 3}
+      - {x: 1, y: 2}
+      - {x: 0, y: 2}
+      - {x: -1, y: 2}
+      - {x: 2, y: 2}
+      - {x: -2, y: 2}
+      - {x: 2, y: 3}
+      - {x: -2, y: 3}
+      - {x: 2, y: 1}
+      - {x: -2, y: 1}
+  - _shapeDatas:
+    - id: 637220308549540588
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: -1, y: 0}
+      color: 5
+      coordinate: {x: 0, y: 3}
+      baseInverted: 1
+    - id: 637220308549540589
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 1, y: 0}
+      - coordinate: {x: 1, y: -1}
+      - coordinate: {x: 0, y: -1}
+      color: 1
+      coordinate: {x: 1, y: 3}
+      baseInverted: 0
+    - id: 637220308549540591
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 0, y: -1}
+      color: 4
+      coordinate: {x: 0, y: 2}
+      baseInverted: 0
+    - id: 637220308549540590
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 1, y: 0}
+      color: 3
+      coordinate: {x: 1, y: 1}
+      baseInverted: 0
+    _levelNo: 27
+    _boardData:
+      tiles:
+      - {x: 0, y: 3}
+      - {x: 1, y: 3}
+      - {x: 2, y: 3}
+      - {x: 2, y: 2}
+      - {x: 1, y: 2}
+      - {x: 0, y: 2}
+      - {x: 0, y: 1}
+      - {x: 1, y: 1}
+      - {x: 2, y: 1}
+      - {x: -1, y: 3}
+  - _shapeDatas:
+    - id: 637220308549540592
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 1, y: 0}
+      - coordinate: {x: 2, y: 0}
+      color: 3
+      coordinate: {x: -1, y: 3}
+      baseInverted: 0
+    - id: 637220308549540593
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 1, y: 0}
+      - coordinate: {x: 1, y: -1}
+      color: 5
+      coordinate: {x: 1, y: 2}
+      baseInverted: 1
+    - id: 637220308549540594
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 1, y: -1}
+      - coordinate: {x: 0, y: -1}
+      color: 1
+      coordinate: {x: 0, y: 2}
+      baseInverted: 0
+    _levelNo: 28
+    _boardData:
+      tiles:
+      - {x: -1, y: 3}
+      - {x: 0, y: 3}
+      - {x: 1, y: 3}
+      - {x: 1, y: 2}
+      - {x: 0, y: 2}
+      - {x: 2, y: 2}
+      - {x: 2, y: 1}
+      - {x: 1, y: 1}
+      - {x: 0, y: 1}
+  - _shapeDatas:
+    - id: 637220308549540598
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 0, y: -1}
+      - coordinate: {x: -1, y: -1}
+      color: 3
+      coordinate: {x: -1, y: 3}
+      baseInverted: 0
+    - id: 637220308549540597
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 0, y: -1}
+      color: 5
+      coordinate: {x: 0, y: 2}
+      baseInverted: 0
+    - id: 637220308549540596
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 1, y: 0}
+      - coordinate: {x: 1, y: -1}
+      - coordinate: {x: 0, y: -1}
+      color: 2
+      coordinate: {x: 1, y: 2}
+      baseInverted: 1
+    - id: 637220308549540595
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: -1, y: 0}
+      - coordinate: {x: 1, y: 0}
+      color: 4
+      coordinate: {x: 1, y: 3}
+      baseInverted: 0
+    _levelNo: 29
+    _boardData:
+      tiles:
+      - {x: -1, y: 3}
+      - {x: -1, y: 2}
+      - {x: -2, y: 2}
+      - {x: 0, y: 2}
+      - {x: 1, y: 2}
+      - {x: 1, y: 3}
+      - {x: 0, y: 3}
+      - {x: 2, y: 3}
+      - {x: 2, y: 2}
+      - {x: 0, y: 1}
+      - {x: 2, y: 1}
+      - {x: 1, y: 1}
+  - _shapeDatas:
+    - id: 637220308549540599
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 1, y: 0}
+      - coordinate: {x: -1, y: 0}
+      color: 2
+      coordinate: {x: -1, y: 3}
+      baseInverted: 0
+    - id: 637220308549540600
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 1, y: 0}
+      color: 5
+      coordinate: {x: 1, y: 3}
+      baseInverted: 0
+    - id: 637220308549540601
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 1, y: 0}
+      color: 0
+      coordinate: {x: 1, y: 2}
+      baseInverted: 1
+    - id: 637220308549540602
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 0, y: -1}
+      - coordinate: {x: 1, y: -1}
+      color: 4
+      coordinate: {x: 0, y: 2}
+      baseInverted: 0
+    _levelNo: 30
+    _boardData:
+      tiles:
+      - {x: -1, y: 3}
+      - {x: 0, y: 3}
+      - {x: 1, y: 3}
+      - {x: 1, y: 2}
+      - {x: 0, y: 2}
+      - {x: 2, y: 2}
+      - {x: 0, y: 1}
+      - {x: 1, y: 1}
+      - {x: -2, y: 3}
+      - {x: 2, y: 3}
+  - _shapeDatas:
+    - id: 637220308549540603
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 0, y: -1}
+      - coordinate: {x: 1, y: -1}
+      color: 4
+      coordinate: {x: -1, y: 3}
+      baseInverted: 0
+    - id: 637220308549540604
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 1, y: 0}
+      - coordinate: {x: 0, y: -1}
+      - coordinate: {x: 1, y: -1}
+      color: 0
+      coordinate: {x: 1, y: 2}
+      baseInverted: 1
+    - id: 637220308549540605
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: -1, y: 0}
+      color: 1
+      coordinate: {x: 0, y: 1}
+      baseInverted: 1
+    - id: 637220308549540606
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 0, y: -1}
+      color: 5
+      coordinate: {x: -2, y: 2}
+      baseInverted: 0
+    _levelNo: 31
+    _boardData:
+      tiles:
+      - {x: -1, y: 3}
+      - {x: -1, y: 2}
+      - {x: 0, y: 2}
+      - {x: 1, y: 2}
+      - {x: 2, y: 2}
+      - {x: 1, y: 1}
+      - {x: 0, y: 1}
+      - {x: 2, y: 1}
+      - {x: -2, y: 2}
+      - {x: -2, y: 1}
+      - {x: -1, y: 1}
+  - _shapeDatas:
+    - id: 637220308549540607
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 1, y: 0}
+      - coordinate: {x: 0, y: 1}
+      color: 4
+      coordinate: {x: 1, y: 2}
+      baseInverted: 1
+    - id: 637220308549540609
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: -1, y: 0}
+      - coordinate: {x: 0, y: 1}
+      color: 5
+      coordinate: {x: -1, y: 2}
+      baseInverted: 1
+    - id: 637220308549540608
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: -1, y: 0}
+      - coordinate: {x: -2, y: 0}
+      color: 0
+      coordinate: {x: 2, y: 1}
+      baseInverted: 1
+    - id: 637220308549540610
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 1, y: 0}
+      color: 1
+      coordinate: {x: -2, y: 1}
+      baseInverted: 1
+    - id: 637220308549540611
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      color: 2
+      coordinate: {x: 0, y: 2}
+      baseInverted: 0
+    _levelNo: 32
+    _boardData:
+      tiles:
+      - {x: 1, y: 2}
+      - {x: -1, y: 2}
+      - {x: 2, y: 2}
+      - {x: 2, y: 1}
+      - {x: 1, y: 1}
+      - {x: -2, y: 1}
+      - {x: -2, y: 2}
+      - {x: -1, y: 1}
+      - {x: 0, y: 1}
+      - {x: 0, y: 2}
+      - {x: 1, y: 3}
+      - {x: -1, y: 3}
+  - _shapeDatas:
+    - id: 637220308549540618
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: -1, y: 0}
+      color: 5
+      coordinate: {x: -1, y: 3}
+      baseInverted: 0
+    - id: 637220308549540614
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: -1, y: 0}
+      - coordinate: {x: -1, y: -1}
+      color: 2
+      coordinate: {x: -1, y: 2}
+      baseInverted: 1
+    - id: 637220308549540616
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 1, y: 0}
+      - coordinate: {x: 1, y: -1}
+      color: 1
+      coordinate: {x: 1, y: 2}
+      baseInverted: 1
+    - id: 637220308549540617
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: -1, y: 0}
+      - coordinate: {x: 1, y: 0}
+      color: 4
+      coordinate: {x: 1, y: 3}
+      baseInverted: 0
+    - id: 637220308549540615
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 0, y: -1}
+      color: 0
+      coordinate: {x: 0, y: 2}
+      baseInverted: 0
+    _levelNo: 33
+    _boardData:
+      tiles:
+      - {x: -1, y: 3}
+      - {x: -1, y: 2}
+      - {x: 1, y: 2}
+      - {x: -2, y: 2}
+      - {x: 1, y: 3}
+      - {x: 0, y: 3}
+      - {x: -2, y: 1}
+      - {x: 2, y: 2}
+      - {x: 0, y: 2}
+      - {x: 2, y: 1}
+      - {x: 0, y: 1}
+      - {x: 2, y: 3}
+      - {x: -2, y: 3}
+  - _shapeDatas:
+    - id: 637220308549540619
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 1, y: 0}
+      - coordinate: {x: 2, y: 0}
+      color: 5
+      coordinate: {x: -1, y: 3}
+      baseInverted: 0
+    - id: 637220308549540622
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: -1, y: 0}
+      color: 4
+      coordinate: {x: -1, y: 2}
+      baseInverted: 1
+    - id: 637220308549540621
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 0, y: -1}
+      - coordinate: {x: 1, y: -1}
+      - coordinate: {x: 1, y: -2}
+      color: 3
+      coordinate: {x: 0, y: 2}
+      baseInverted: 0
+    - id: 637220308549540620
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 0, y: -1}
+      - coordinate: {x: -1, y: 0}
+      - coordinate: {x: 1, y: 0}
+      color: 0
+      coordinate: {x: 2, y: 2}
+      baseInverted: 0
+    _levelNo: 34
+    _boardData:
+      tiles:
+      - {x: -1, y: 3}
+      - {x: -1, y: 2}
+      - {x: -2, y: 2}
+      - {x: 0, y: 2}
+      - {x: 0, y: 1}
+      - {x: 1, y: 1}
+      - {x: 2, y: 2}
+      - {x: 2, y: 1}
+      - {x: 1, y: 2}
+      - {x: 1, y: 0}
+      - {x: 3, y: 2}
+      - {x: 0, y: 3}
+      - {x: 1, y: 3}
+  - _shapeDatas:
+    - id: 637220308549540625
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 0, y: -1}
+      color: 4
+      coordinate: {x: -1, y: 3}
+      baseInverted: 0
+    - id: 637220308549540626
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: -1, y: 0}
+      color: 2
+      coordinate: {x: -2, y: 2}
+      baseInverted: 0
+    - id: 637220308549540624
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 1, y: 0}
+      - coordinate: {x: 0, y: -1}
+      - coordinate: {x: 2, y: 0}
+      color: 1
+      coordinate: {x: 0, y: 2}
+      baseInverted: 0
+    - id: 637220308549540623
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 1, y: 0}
+      - coordinate: {x: 2, y: 0}
+      color: 5
+      coordinate: {x: 0, y: 3}
+      baseInverted: 1
+    _levelNo: 35
+    _boardData:
+      tiles:
+      - {x: -1, y: 3}
+      - {x: -1, y: 2}
+      - {x: -2, y: 2}
+      - {x: 0, y: 2}
+      - {x: 1, y: 2}
+      - {x: 0, y: 3}
+      - {x: 1, y: 3}
+      - {x: 2, y: 3}
+      - {x: 0, y: 1}
+      - {x: 2, y: 2}
+      - {x: -3, y: 2}
+  - _shapeDatas:
+    - id: 637220308549540628
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 1, y: 0}
+      - coordinate: {x: 3, y: -1}
+      - coordinate: {x: 1, y: -1}
+      - coordinate: {x: 2, y: -1}
+      color: 0
+      coordinate: {x: -2, y: 3}
+      baseInverted: 1
+    - id: 637220308549540627
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 1, y: 0}
+      - coordinate: {x: 2, y: 0}
+      - coordinate: {x: 0, y: 1}
+      color: 3
+      coordinate: {x: 0, y: 3}
+      baseInverted: 1
+    - id: 637220308549540629
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      color: 5
+      coordinate: {x: 2, y: 2}
+      baseInverted: 0
+    - id: 637220308549540630
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: -1, y: 0}
+      - coordinate: {x: -2, y: 0}
+      color: 2
+      coordinate: {x: 0, y: 1}
+      baseInverted: 1
+    _levelNo: 36
+    _boardData:
+      tiles:
+      - {x: -2, y: 3}
+      - {x: -1, y: 3}
+      - {x: 0, y: 3}
+      - {x: 1, y: 3}
+      - {x: 1, y: 2}
+      - {x: -1, y: 2}
+      - {x: 0, y: 2}
+      - {x: 2, y: 2}
+      - {x: 2, y: 3}
+      - {x: 0, y: 4}
+      - {x: 0, y: 1}
+      - {x: -1, y: 1}
+      - {x: -2, y: 1}
+  - _shapeDatas:
+    - id: 637220308549540631
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 1, y: 0}
+      - coordinate: {x: 1, y: -1}
+      color: 5
+      coordinate: {x: -2, y: 3}
+      baseInverted: 1
+    - id: 637220308549540632
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: -1, y: 0}
+      - coordinate: {x: -1, y: -1}
+      - coordinate: {x: -2, y: -1}
+      color: 4
+      coordinate: {x: 2, y: 3}
+      baseInverted: 1
+    - id: 637220308549540634
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 0, y: -1}
+      color: 1
+      coordinate: {x: -2, y: 2}
+      baseInverted: 0
+    - id: 637220308549540633
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 0, y: -1}
+      color: 3
+      coordinate: {x: 2, y: 2}
+      baseInverted: 0
+    _levelNo: 37
+    _boardData:
+      tiles:
+      - {x: -2, y: 3}
+      - {x: -1, y: 3}
+      - {x: 2, y: 3}
+      - {x: 1, y: 3}
+      - {x: 1, y: 2}
+      - {x: -1, y: 2}
+      - {x: -2, y: 2}
+      - {x: -2, y: 1}
+      - {x: 2, y: 2}
+      - {x: 2, y: 1}
+      - {x: 0, y: 2}
+  - _shapeDatas:
+    - id: 637220308549540637
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 1, y: 0}
+      - coordinate: {x: -1, y: 0}
+      - coordinate: {x: -2, y: 0}
+      color: 5
+      coordinate: {x: -1, y: 2}
+      baseInverted: 1
+    - id: 637220308549540636
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: -1, y: 0}
+      - coordinate: {x: 0, y: -1}
+      - coordinate: {x: 1, y: 0}
+      color: 3
+      coordinate: {x: 2, y: 2}
+      baseInverted: 0
+    - id: 637220308549540635
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: -1, y: 0}
+      - coordinate: {x: -2, y: 0}
+      color: 4
+      coordinate: {x: 1, y: 3}
+      baseInverted: 0
+    - id: 637220308549540638
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      color: 1
+      coordinate: {x: -2, y: 1}
+      baseInverted: 1
+    _levelNo: 38
+    _boardData:
+      tiles:
+      - {x: -1, y: 2}
+      - {x: 0, y: 2}
+      - {x: 2, y: 2}
+      - {x: 1, y: 2}
+      - {x: 1, y: 3}
+      - {x: 0, y: 3}
+      - {x: -1, y: 3}
+      - {x: -2, y: 2}
+      - {x: 2, y: 1}
+      - {x: -2, y: 1}
+      - {x: 3, y: 2}
+      - {x: -3, y: 2}
+  - _shapeDatas:
+    - id: 637220308549540639
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: -1, y: 0}
+      color: 3
+      coordinate: {x: 0, y: 3}
+      baseInverted: 1
+    - id: 637220308549540640
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 1, y: 0}
+      - coordinate: {x: 0, y: 1}
+      color: 5
+      coordinate: {x: 1, y: 2}
+      baseInverted: 1
+    - id: 637220308549540641
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 0, y: -1}
+      color: 1
+      coordinate: {x: 0, y: 2}
+      baseInverted: 0
+    - id: 637220308549540642
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: -1, y: 0}
+      color: 0
+      coordinate: {x: -1, y: 2}
+      baseInverted: 1
+    _levelNo: 39
+    _boardData:
+      tiles:
+      - {x: 0, y: 3}
+      - {x: 1, y: 2}
+      - {x: 0, y: 2}
+      - {x: -1, y: 2}
+      - {x: -2, y: 2}
+      - {x: 0, y: 1}
+      - {x: 2, y: 2}
+      - {x: 1, y: 3}
+      - {x: -1, y: 3}
+  - _shapeDatas:
+    - id: 637220308549540643
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 1, y: 0}
+      color: 3
+      coordinate: {x: -2, y: 3}
+      baseInverted: 1
+    - id: 637220308549540644
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 1, y: 0}
+      - coordinate: {x: 0, y: -1}
+      - coordinate: {x: 1, y: -1}
+      color: 1
+      coordinate: {x: 1, y: 3}
+      baseInverted: 0
+    - id: 637220308549540645
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: -1, y: 0}
+      - coordinate: {x: -2, y: 0}
+      - coordinate: {x: 0, y: -1}
+      color: 0
+      coordinate: {x: 0, y: 2}
+      baseInverted: 0
+    _levelNo: 40
+    _boardData:
+      tiles:
+      - {x: -2, y: 3}
+      - {x: -1, y: 3}
+      - {x: 1, y: 3}
+      - {x: 2, y: 3}
+      - {x: 1, y: 2}
+      - {x: 0, y: 2}
+      - {x: -1, y: 2}
+      - {x: 2, y: 2}
+      - {x: -2, y: 2}
+      - {x: 0, y: 1}
+  - _shapeDatas:
+    - id: 637220308549540647
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 0, y: -1}
+      - coordinate: {x: -1, y: -1}
+      - coordinate: {x: -1, y: 0}
+      color: 1
+      coordinate: {x: -1, y: 3}
+      baseInverted: 0
+    - id: 637220308549540646
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 1, y: 0}
+      - coordinate: {x: 2, y: 0}
+      - coordinate: {x: 0, y: 1}
+      color: 3
+      coordinate: {x: 0, y: 3}
+      baseInverted: 1
+    - id: 637220308549540648
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: -1, y: 0}
+      - coordinate: {x: 1, y: 0}
+      color: 5
+      coordinate: {x: 1, y: 2}
+      baseInverted: 1
+    - id: 637220308549540649
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 1, y: 0}
+      - coordinate: {x: 1, y: -1}
+      - coordinate: {x: 0, y: -1}
+      color: 4
+      coordinate: {x: 0, y: 1}
+      baseInverted: 1
+    - id: 637220308549540650
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 0, y: 1}
+      color: 2
+      coordinate: {x: -1, y: 0}
+      baseInverted: 1
+    _levelNo: 41
+    _boardData:
+      tiles:
+      - {x: -1, y: 3}
+      - {x: 0, y: 3}
+      - {x: 1, y: 3}
+      - {x: 1, y: 2}
+      - {x: 0, y: 2}
+      - {x: -1, y: 2}
+      - {x: -2, y: 2}
+      - {x: 0, y: 1}
+      - {x: 1, y: 1}
+      - {x: 1, y: 0}
+      - {x: 0, y: 0}
+      - {x: -1, y: 0}
+      - {x: -1, y: 1}
+      - {x: -2, y: 3}
+      - {x: 2, y: 2}
+      - {x: 2, y: 3}
+      - {x: 0, y: 4}
+  - _shapeDatas:
+    - id: 637220308549540651
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 1, y: 0}
+      - coordinate: {x: 2, y: 0}
+      - coordinate: {x: 3, y: 0}
+      - coordinate: {x: -1, y: 0}
+      color: 4
+      coordinate: {x: -2, y: 3}
+      baseInverted: 1
+    - id: 637220308549540654
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 1, y: 0}
+      color: 0
+      coordinate: {x: 2, y: 3}
+      baseInverted: 1
+    - id: 637220308549540652
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: -1, y: 0}
+      - coordinate: {x: 1, y: 0}
+      color: 2
+      coordinate: {x: 1, y: 2}
+      baseInverted: 1
+    - id: 637220308549540653
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: -1, y: 0}
+      color: 5
+      coordinate: {x: -1, y: 2}
+      baseInverted: 1
+    - id: 637220308549540655
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: -1, y: 0}
+      - coordinate: {x: -2, y: 0}
+      color: 3
+      coordinate: {x: 1, y: 1}
+      baseInverted: 0
+    _levelNo: 42
+    _boardData:
+      tiles:
+      - {x: -2, y: 3}
+      - {x: -1, y: 3}
+      - {x: 0, y: 3}
+      - {x: 1, y: 3}
+      - {x: 2, y: 3}
+      - {x: 1, y: 2}
+      - {x: 0, y: 2}
+      - {x: -1, y: 2}
+      - {x: 2, y: 2}
+      - {x: -2, y: 2}
+      - {x: 3, y: 3}
+      - {x: -3, y: 3}
+      - {x: 1, y: 1}
+      - {x: 0, y: 1}
+      - {x: -1, y: 1}
+  - _shapeDatas:
+    - id: 637220308549540656
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 1, y: 0}
+      - coordinate: {x: 2, y: 0}
+      - coordinate: {x: 0, y: 1}
+      color: 5
+      coordinate: {x: 0, y: 3}
+      baseInverted: 1
+    - id: 637220308549540658
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 1, y: 0}
+      color: 0
+      coordinate: {x: 1, y: 2}
+      baseInverted: 1
+    - id: 637220308549540657
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 0, y: -1}
+      - coordinate: {x: 1, y: -1}
+      - coordinate: {x: -1, y: -1}
+      color: 2
+      coordinate: {x: 0, y: 2}
+      baseInverted: 0
+    - id: 637220308549540659
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: -1, y: 0}
+      - coordinate: {x: 0, y: 1}
+      - coordinate: {x: -1, y: 1}
+      color: 1
+      coordinate: {x: -1, y: 2}
+      baseInverted: 1
+    _levelNo: 43
+    _boardData:
+      tiles:
+      - {x: 0, y: 3}
+      - {x: 1, y: 3}
+      - {x: 2, y: 3}
+      - {x: 1, y: 2}
+      - {x: 0, y: 2}
+      - {x: 2, y: 2}
+      - {x: -1, y: 2}
+      - {x: -2, y: 2}
+      - {x: -1, y: 3}
+      - {x: -2, y: 3}
+      - {x: 0, y: 1}
+      - {x: 1, y: 1}
+      - {x: -1, y: 1}
+      - {x: 0, y: 4}
+  - _shapeDatas:
+    - id: 637220308549540663
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 0, y: -1}
+      - coordinate: {x: -1, y: 0}
+      color: 4
+      coordinate: {x: -1, y: 3}
+      baseInverted: 0
+    - id: 637220308549540660
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 1, y: 0}
+      - coordinate: {x: 0, y: 1}
+      color: 5
+      coordinate: {x: 0, y: 3}
+      baseInverted: 1
+    - id: 637220308549540662
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: -1, y: 0}
+      - coordinate: {x: -1, y: -1}
+      color: 2
+      coordinate: {x: 1, y: 2}
+      baseInverted: 1
+    - id: 637220308549540661
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 1, y: 0}
+      - coordinate: {x: 1, y: 1}
+      - coordinate: {x: 0, y: 1}
+      color: 0
+      coordinate: {x: 2, y: 2}
+      baseInverted: 0
+    - id: 637220308549540664
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 1, y: -1}
+      - coordinate: {x: 0, y: -1}
+      color: 1
+      coordinate: {x: -2, y: 2}
+      baseInverted: 0
+    _levelNo: 44
+    _boardData:
+      tiles:
+      - {x: -1, y: 3}
+      - {x: 0, y: 3}
+      - {x: 1, y: 3}
+      - {x: 1, y: 2}
+      - {x: 0, y: 2}
+      - {x: 2, y: 2}
+      - {x: -2, y: 2}
+      - {x: -1, y: 2}
+      - {x: 0, y: 1}
+      - {x: -1, y: 1}
+      - {x: -2, y: 1}
+      - {x: 3, y: 2}
+      - {x: 3, y: 3}
+      - {x: 2, y: 3}
+      - {x: -2, y: 3}
+      - {x: 0, y: 4}
+  - _shapeDatas:
+    - id: 637220308549540667
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 0, y: -1}
+      - coordinate: {x: 1, y: -1}
+      color: 2
+      coordinate: {x: -1, y: 3}
+      baseInverted: 0
+    - id: 637220308549540665
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 1, y: 0}
+      - coordinate: {x: 0, y: 1}
+      - coordinate: {x: 2, y: 0}
+      color: 3
+      coordinate: {x: 1, y: 2}
+      baseInverted: 1
+    - id: 637220308549540668
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 0, y: -1}
+      - coordinate: {x: -1, y: 0}
+      color: 5
+      coordinate: {x: -2, y: 2}
+      baseInverted: 0
+    - id: 637220308549540666
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 2, y: 0}
+      - coordinate: {x: -1, y: 0}
+      - coordinate: {x: 1, y: 0}
+      color: 1
+      coordinate: {x: 0, y: 1}
+      baseInverted: 1
+    _levelNo: 45
+    _boardData:
+      tiles:
+      - {x: -1, y: 3}
+      - {x: -1, y: 2}
+      - {x: 0, y: 2}
+      - {x: 1, y: 2}
+      - {x: 2, y: 2}
+      - {x: -2, y: 2}
+      - {x: 1, y: 3}
+      - {x: 0, y: 1}
+      - {x: 2, y: 1}
+      - {x: -2, y: 1}
+      - {x: -1, y: 1}
+      - {x: 1, y: 1}
+      - {x: 3, y: 2}
+      - {x: -3, y: 2}
+  - _shapeDatas:
+    - id: 637220308549540669
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 1, y: 0}
+      - coordinate: {x: 2, y: 0}
+      - coordinate: {x: 0, y: 1}
+      color: 0
+      coordinate: {x: 0, y: 3}
+      baseInverted: 1
+    - id: 637220308549540671
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: -1, y: 0}
+      color: 5
+      coordinate: {x: -1, y: 3}
+      baseInverted: 0
+    - id: 637220308549540670
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 1, y: 0}
+      - coordinate: {x: 2, y: 0}
+      - coordinate: {x: 0, y: -1}
+      color: 1
+      coordinate: {x: 0, y: 2}
+      baseInverted: 0
+    - id: 637220308549540672
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: -1, y: 0}
+      color: 4
+      coordinate: {x: -1, y: 2}
+      baseInverted: 1
+    _levelNo: 46
+    _boardData:
+      tiles:
+      - {x: 0, y: 3}
+      - {x: -1, y: 3}
+      - {x: 0, y: 2}
+      - {x: 1, y: 2}
+      - {x: 1, y: 3}
+      - {x: 2, y: 3}
+      - {x: 2, y: 2}
+      - {x: -1, y: 2}
+      - {x: -2, y: 2}
+      - {x: 0, y: 1}
+      - {x: -2, y: 3}
+      - {x: 0, y: 4}
+  - _shapeDatas:
+    - id: 637220308549540674
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 0, y: -1}
+      - coordinate: {x: -1, y: -1}
+      - coordinate: {x: -1, y: -2}
+      color: 3
+      coordinate: {x: -1, y: 3}
+      baseInverted: 0
+    - id: 637220308549540673
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: -1, y: 0}
+      - coordinate: {x: 0, y: 1}
+      color: 2
+      coordinate: {x: 1, y: 2}
+      baseInverted: 1
+    - id: 637220308549540675
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 1, y: 0}
+      - coordinate: {x: 2, y: 0}
+      color: 4
+      coordinate: {x: 0, y: 1}
+      baseInverted: 1
+    - id: 637220308549540676
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      color: 1
+      coordinate: {x: -1, y: 1}
+      baseInverted: 0
+    _levelNo: 47
+    _boardData:
+      tiles:
+      - {x: -1, y: 3}
+      - {x: -1, y: 2}
+      - {x: 1, y: 2}
+      - {x: 0, y: 2}
+      - {x: -2, y: 2}
+      - {x: -2, y: 1}
+      - {x: 0, y: 1}
+      - {x: -1, y: 1}
+      - {x: 1, y: 1}
+      - {x: 2, y: 1}
+      - {x: 1, y: 3}
+  - _shapeDatas:
+    - id: 637220308549540684
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: -1, y: 0}
+      - coordinate: {x: -2, y: 1}
+      - coordinate: {x: -2, y: 0}
+      - coordinate: {x: -1, y: 1}
+      color: 3
+      coordinate: {x: -1, y: 2}
+      baseInverted: 1
+    - id: 637220308549540683
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 0, y: -1}
+      - coordinate: {x: -1, y: -1}
+      - coordinate: {x: -2, y: -1}
+      color: 1
+      coordinate: {x: 0, y: 2}
+      baseInverted: 0
+    - id: 637220308549540682
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 0, y: 1}
+      - coordinate: {x: -2, y: 1}
+      - coordinate: {x: -1, y: 1}
+      color: 2
+      coordinate: {x: 1, y: 2}
+      baseInverted: 1
+    - id: 637220308549540681
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 1, y: 0}
+      - coordinate: {x: 0, y: 1}
+      - coordinate: {x: 1, y: 1}
+      color: 5
+      coordinate: {x: 2, y: 2}
+      baseInverted: 0
+    _levelNo: 49
+    _boardData:
+      tiles:
+      - {x: -1, y: 2}
+      - {x: 0, y: 2}
+      - {x: 1, y: 2}
+      - {x: 2, y: 2}
+      - {x: 1, y: 3}
+      - {x: 3, y: 2}
+      - {x: -2, y: 2}
+      - {x: -3, y: 3}
+      - {x: -3, y: 2}
+      - {x: -1, y: 3}
+      - {x: 2, y: 3}
+      - {x: 0, y: 3}
+      - {x: -2, y: 3}
+      - {x: 0, y: 1}
+      - {x: -1, y: 1}
+      - {x: -2, y: 1}
+      - {x: 3, y: 3}
+  - _shapeDatas:
+    - id: 637220308549540689
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: -1, y: 0}
+      color: 2
+      coordinate: {x: -1, y: 3}
+      baseInverted: 0
+    - id: 637220308549540685
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 1, y: 0}
+      - coordinate: {x: 0, y: 1}
+      - coordinate: {x: 2, y: 0}
+      color: 1
+      coordinate: {x: 0, y: 3}
+      baseInverted: 1
+    - id: 637220308549540686
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 1, y: 0}
+      - coordinate: {x: 2, y: 0}
+      - coordinate: {x: 2, y: 1}
+      color: 0
+      coordinate: {x: 1, y: 2}
+      baseInverted: 1
+    - id: 637220308549540688
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: -1, y: 0}
+      - coordinate: {x: -2, y: 0}
+      color: 4
+      coordinate: {x: 0, y: 2}
+      baseInverted: 0
+    - id: 637220308549540687
+      pieces:
+      - coordinate: {x: 0, y: 0}
+      - coordinate: {x: 1, y: 0}
+      - coordinate: {x: 2, y: 0}
+      - coordinate: {x: -1, y: 0}
+      color: 5
+      coordinate: {x: 0, y: 1}
+      baseInverted: 1
+    _levelNo: 50
+    _boardData:
+      tiles:
+      - {x: -1, y: 3}
+      - {x: 0, y: 3}
+      - {x: 1, y: 3}
+      - {x: 1, y: 2}
+      - {x: 0, y: 2}
+      - {x: -1, y: 2}
+      - {x: -2, y: 2}
+      - {x: -2, y: 3}
+      - {x: 0, y: 4}
+      - {x: 0, y: 1}
+      - {x: 1, y: 1}
+      - {x: 2, y: 1}
+      - {x: -1, y: 1}
+      - {x: 2, y: 2}
+      - {x: 3, y: 2}
+      - {x: 3, y: 3}
+      - {x: 2, y: 3}

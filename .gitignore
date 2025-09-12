@@ -1,0 +1,8 @@
+Library/*
+*.csproj
+*.sln
+.vsconfig
+Temp/*
+UserSettings/*
+.vs/*
+AutoBuild/*

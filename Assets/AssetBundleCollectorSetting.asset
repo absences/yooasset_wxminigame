@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 185f6993d5150494d98da50e26cb1c25, type: 3}
+  m_Script: {fileID: 11500000, guid: 02bf1b64da3ce9640b782b3bf4c1a6ec, type: 3}
   m_Name: AssetBundleCollectorSetting
   m_EditorClassIdentifier: 
   ShowPackageView: 1
@@ -19,37 +19,43 @@ MonoBehaviour:
   - PackageName: DefaultPackage
     PackageDesc: 
     EnableAddressable: 1
+    SupportExtensionless: 1
     LocationToLower: 0
     IncludeAssetGUID: 0
     AutoCollectShaders: 1
     IgnoreRuleName: NormalIgnoreRule
     Groups:
-    - GroupName: Default Group
+    - GroupName: TMP
       GroupDesc: 
       AssetTags: 
       ActiveRuleName: EnableGroup
       Collectors:
-      - CollectPath: Assets/Res/GameObject.prefab
-        CollectorGUID: 2fde08aa5b94d9e48a1c91b025329e67
+      - CollectPath: Assets/Res/Font
+        CollectorGUID: 34c61745a3c691848a6066ec33cedbbc
         CollectorType: 0
         AddressRuleName: AddressByFileName
-        PackRuleName: PackSeparately
-        FilterRuleName: CollectAll
-        AssetTags: 
-        UserData: 
-      - CollectPath: Assets/Res/alibaba.asset
-        CollectorGUID: eaabcc5299111824c84b5d972214f706
-        CollectorType: 0
-        AddressRuleName: AddressByFileName
-        PackRuleName: PackSeparately
+        PackRuleName: PackDirectory
         FilterRuleName: CollectTMPFont
         AssetTags: 
         UserData: 
-      - CollectPath: Assets/Res/Text (TMP).prefab
-        CollectorGUID: 1da91e259a9ac9f4cbd9943277872e95
+    - GroupName: Scene
+      GroupDesc: 
+      AssetTags: 
+      ActiveRuleName: EnableGroup
+      Collectors:
+      - CollectPath: Assets/Demo/Scenes/MainMenu.unity
+        CollectorGUID: 1adddfdb7a0a6fb4d9bf6bc73a8dace6
         CollectorType: 0
         AddressRuleName: AddressByFileName
-        PackRuleName: PackSeparately
+        PackRuleName: PackDirectory
+        FilterRuleName: CollectAll
+        AssetTags: 
+        UserData: 
+      - CollectPath: Assets/Demo/Scenes/Main.unity
+        CollectorGUID: efb4a72d58a019f459793a21e9205d44
+        CollectorType: 0
+        AddressRuleName: AddressByFileName
+        PackRuleName: PackDirectory
         FilterRuleName: CollectAll
         AssetTags: 
         UserData: 

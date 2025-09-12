@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 187e5349f911b0c4c8e12bf7a42e9fc0, type: 3}
+  m_Name: Store
+  m_EditorClassIdentifier: 
+  _hints:
+  - id: 1
+    value: 15
+    isUnlimited: 0
+    priceDetails:
+      type: 0
+      productId: hexa.hint1
+      price: 0.99
+  - id: 2
+    value: 40
+    isUnlimited: 0
+    priceDetails:
+      type: 0
+      productId: hexa.hint2
+      price: 1.99
+  - id: 3
+    value: 100
+    isUnlimited: 0
+    priceDetails:
+      type: 0
+      productId: hexa.hint3
+      price: 3.99
+  - id: 4
+    value: 15
+    isUnlimited: 1
+    priceDetails:
+      type: 0
+      productId: hexa.unlimited
+      price: 10.99
+  - id: 5
+    value: 2
+    isUnlimited: 0
+    priceDetails:
+      type: 2
+      productId: 0
+      price: 0

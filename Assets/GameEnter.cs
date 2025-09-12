@@ -1,4 +1,5 @@
 ﻿using Cysharp.Threading.Tasks;
+using MyGame;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -7,9 +8,7 @@ using YooAsset;
 public class GameEnter : MonoBehaviour
 {
     public string CDN = "http://192.168.1.94/";
-    public TextMeshProUGUI tip;
 
-    public Button clickBtn;
     // Start is called before the first frame update
     void Start()
     {
@@ -69,48 +68,29 @@ public class GameEnter : MonoBehaviour
         // tip.UpdateFontAsset();
         // tip.SetAllDirty();
 
-        tip.text = "1、修改转换工具cdn地址 、appid、设置导出路径\n2、修改GameEnter CDN\n3、添加TMP_SDF-Mobile着色器到内置shaders清单";
-        tip.gameObject.SetActive(true);
         var download = DefaultPackage.CreateResourceDownloader(3, 10);
-
-        var a = 0;
-        clickBtn.gameObject.SetActive(true);
-        clickBtn.onClick.AddListener(() =>
-        {
-            a++;
-            tip.text = a.ToString();
-        });
 
         download.BeginDownload();
 
         await download;
 
-        var loadHandle = DefaultPackage.LoadAssetAsync<GameObject>("GameObject");
+        GameManager.LoadScene("MainMenu");
 
-        await loadHandle;
+        //var _wxFileSystemMgr = WeChatWASM.WX.GetFileSystemManager();
 
-        var instant = loadHandle.InstantiateAsync();
+        ////测试读取 sa 资源
+        //_wxFileSystemMgr.ReadFile(new WeChatWASM.ReadFileParam()
+        //{
+        //    filePath = WeChatWASM.WX.env.USER_DATA_PATH + "/StreamingAssets/aa.png",
+        //    success = (success) =>
+        //    {
+        //        Debug.Log("load success");
+        //    },
+        //    fail = (fail) =>
+        //    {
 
-        await instant;
-
-        var _wxFileSystemMgr = WeChatWASM.WX.GetFileSystemManager();
-
-        //测试读取 sa 资源
-        _wxFileSystemMgr.ReadFile(new WeChatWASM.ReadFileParam()
-        {
-            filePath = WeChatWASM.WX.env.USER_DATA_PATH + "/StreamingAssets/aa.png",
-            success = (success) =>
-            {
-                Debug.Log("load success");
-            },
-            fail = (fail) =>
-            {
-
-            }
-        });
-#else
-        tip.text = "这是编辑器模式";
-        tip.gameObject.SetActive(true);
+        //    }
+        //});
 #endif
     }
 #if WEIXINMINIGAME
@@ -120,10 +100,8 @@ public class GameEnter : MonoBehaviour
 
         UniTaskCompletionSource<bool> source = new UniTaskCompletionSource<bool>();
 
-        WeChatWASM.WX.GetWXFont(fallbackFont, (code, font) =>
+        WeChatWASM.WX.GetWXFont(fallbackFont, (font) =>
         {
-            Debug.Log("get font: code:" + code + " font:" + font);
-
             if (font != null)
             {
                 //注意：需要将shader: TMP_SDF-Mobile 添加到editor Graphics included Shaders内置着色器列表

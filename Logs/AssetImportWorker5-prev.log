@@ -1,0 +1,839 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.62f1 (4af31df58517) revision 4911901'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.26100) 64bit Professional' Language: 'zh' Physical Memory: 32627 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2022.3.62f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker5
+-projectPath
+F:/absences/yooasset_wxminigame
+-logFile
+Logs/AssetImportWorker5.log
+-srvPort
+60487
+Successfully changed project path to: F:/absences/yooasset_wxminigame
+F:/absences/yooasset_wxminigame
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [35328]  Target information:
+
+Player connection [35328]  * "[IP] 172.16.1.43 [Port] 0 [Flags] 2 [Guid] 2311459938 [EditorId] 2311459938 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-QFG1LN0) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [35328]  * "[IP] 26.26.26.1 [Port] 0 [Flags] 2 [Guid] 2311459938 [EditorId] 2311459938 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-QFG1LN0) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [35328] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [35328] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Input System module state changed to: Initialized.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+Refreshing native plugins compatible for Editor in 12.77 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.62f1 (4af31df58517)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.62f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path F:/absences/yooasset_wxminigame/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3070 Ti (ID=0x2482)
+    Vendor:   NVIDIA
+    VRAM:     8018 MB
+    Driver:   32.0.15.8129
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.62f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.62f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.62f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56196
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.62f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.62f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.62f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.62f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.005335 seconds.
+- Loaded All Assemblies, in  0.267 seconds
+Native extension for WindowsStandalone target not found
+[usbmuxd] Start listen thread
+[usbmuxd] Listen thread started
+Native extension for iOS target not found
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 116 ms
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.371 seconds
+Domain Reload Profiling: 638ms
+	BeginReloadAssembly (82ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (0ms)
+	RebuildCommonClasses (25ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (38ms)
+	LoadAllAssembliesAndSetupDomain (114ms)
+		LoadAssemblies (82ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (111ms)
+			TypeCache.Refresh (110ms)
+				TypeCache.ScanAssembly (100ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (372ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (330ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (181ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (2ms)
+			ProcessInitializeOnLoadAttributes (86ms)
+			ProcessInitializeOnLoadMethodAttributes (57ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.363 seconds
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.278 seconds
+Domain Reload Profiling: 640ms
+	BeginReloadAssembly (117ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (19ms)
+	RebuildCommonClasses (22ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (21ms)
+	LoadAllAssembliesAndSetupDomain (193ms)
+		LoadAssemblies (205ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (57ms)
+			TypeCache.Refresh (47ms)
+				TypeCache.ScanAssembly (36ms)
+			ScanForSourceGeneratedMonoScriptInfo (8ms)
+			ResolveRequiredComponents (2ms)
+	FinalizeReload (278ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (188ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (20ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (38ms)
+			ProcessInitializeOnLoadAttributes (102ms)
+			ProcessInitializeOnLoadMethodAttributes (20ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (4ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 4.16 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1370 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 13 unused Assets / (50.9 KB). Loaded Objects now: 1855.
+Memory consumption went from 84.0 MB to 83.9 MB.
+Total: 2.091600 ms (FindLiveObjects: 0.085500 ms CreateObjectMapping: 0.021600 ms MarkObjects: 1.915200 ms  DeleteObjects: 0.068700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+========================================================================
+Received Import Request.
+  Time since last request: 60827.910545 seconds.
+  path: Assets/WX-WASM-SDK-V2/Runtime/Plugins/SDK-Call-JS-Old.jslib
+  artifactKey: Guid(63afc2a12fd6d404092ed133a0c10433) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/WX-WASM-SDK-V2/Runtime/Plugins/SDK-Call-JS-Old.jslib using Guid(63afc2a12fd6d404092ed133a0c10433) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '6db5101023edc73dba2f1f5ac4e572ea') in 0.071927 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/WX-WASM-SDK-V2/Runtime/Plugins/TCPSocket.jslib
+  artifactKey: Guid(afe54ec7e25b9433f9a6da5d41540ddc) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/WX-WASM-SDK-V2/Runtime/Plugins/TCPSocket.jslib using Guid(afe54ec7e25b9433f9a6da5d41540ddc) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '16ddc1cd915f324c7433e868a16c4bfa') in 0.016018 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.002599 seconds.
+  path: Assets/WX-WASM-SDK-V2/Editor/Playable/WXPlayableEditorSettingHelper.cs
+  artifactKey: Guid(1cc549c674e5b4efe964933831f56e80) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/WX-WASM-SDK-V2/Editor/Playable/WXPlayableEditorSettingHelper.cs using Guid(1cc549c674e5b4efe964933831f56e80) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'c70f3d0e69c43f24d18dca388a1cb801') in 0.017957 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001343 seconds.
+  path: Assets/WebGLTemplates/WXTemplate2022/TemplateData/progress-bar-full-dark.png
+  artifactKey: Guid(2a6db010c81f04079be2d39f9f4f36a7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/WebGLTemplates/WXTemplate2022/TemplateData/progress-bar-full-dark.png using Guid(2a6db010c81f04079be2d39f9f4f36a7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '5960067993675bbb72861d57f3c60c5e') in 0.009643 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.002040 seconds.
+  path: Assets/WebGLTemplates/WXTemplate2022TJ/TemplateData/favicon.ico
+  artifactKey: Guid(d1860b3edef0c5943a47043154a73226) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/WebGLTemplates/WXTemplate2022TJ/TemplateData/favicon.ico using Guid(d1860b3edef0c5943a47043154a73226) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'ddd7b80c17b45494eadcb7030f24b206') in 0.009921 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001081 seconds.
+  path: Assets/TextMesh Pro/Resources/Sprite Assets/EmojiOne.asset
+  artifactKey: Guid(c41005c129ba4d66911b75229fd70b45) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Resources/Sprite Assets/EmojiOne.asset using Guid(c41005c129ba4d66911b75229fd70b45) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '2b583b56992a6ec9c0a860867fd1b5f8') in 0.025874 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.003415 seconds.
+  path: Assets/WX-WASM-SDK-V2/Runtime/playable-default/weapp-adapter.js
+  artifactKey: Guid(e51d77a88b580eccf0a725440c69526f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/WX-WASM-SDK-V2/Runtime/playable-default/weapp-adapter.js using Guid(e51d77a88b580eccf0a725440c69526f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '0ee6ccb006c0ad565e118df220718256') in 0.010064 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.002803 seconds.
+  path: Assets/WX-WASM-SDK-V2/Runtime/Plugins/libemscriptenglx.a
+  artifactKey: Guid(cccbd1d680cfe34fa1fef9e4875e5f23) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/WX-WASM-SDK-V2/Runtime/Plugins/libemscriptenglx.a using Guid(cccbd1d680cfe34fa1fef9e4875e5f23) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '0baff1e9b3879a96443ab8ba2d6c689a') in 0.011556 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001470 seconds.
+  path: Assets/Plugins/UniTask/Runtime/UniTaskCompletionSource.cs
+  artifactKey: Guid(ed03524d09e7eb24a9fb9137198feb84) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Plugins/UniTask/Runtime/UniTaskCompletionSource.cs using Guid(ed03524d09e7eb24a9fb9137198feb84) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '3f3999816aa3b371be366a0e528b0a35') in 0.009446 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 1.387187 seconds.
+  path: Assets/Plugins/UniTask/Runtime/CompilerServices/AsyncUniTaskMethodBuilder.cs
+  artifactKey: Guid(68d72a45afdec574ebc26e7de2c38330) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Plugins/UniTask/Runtime/CompilerServices/AsyncUniTaskMethodBuilder.cs using Guid(68d72a45afdec574ebc26e7de2c38330) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'af972f38f117781077d3e1ca9c321f3f') in 0.011944 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.010420 seconds.
+  path: Assets/Plugins/UniTask/Runtime/Linq/Single.cs
+  artifactKey: Guid(1bcd3928b90472e43a3a92c3ba708967) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Plugins/UniTask/Runtime/Linq/Single.cs using Guid(1bcd3928b90472e43a3a92c3ba708967) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'b6ea168d8ddb22e930f046e364a84b4b') in 0.013104 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000687 seconds.
+  path: Assets/Plugins/UniTask/Runtime/Internal/ArrayPoolUtil.cs
+  artifactKey: Guid(424cc208fb61d4e448b08fcfa0eee25e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Plugins/UniTask/Runtime/Internal/ArrayPoolUtil.cs using Guid(424cc208fb61d4e448b08fcfa0eee25e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'f4d0428a26ae0e1b1658d2cc1b3f8a5b') in 0.011995 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001736 seconds.
+  path: Assets/Plugins/UniTask/Runtime/Linq/SelectMany.cs
+  artifactKey: Guid(d81862f0eb12680479ccaaf2ac319d24) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Plugins/UniTask/Runtime/Linq/SelectMany.cs using Guid(d81862f0eb12680479ccaaf2ac319d24) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '244feebdea4edd8d2d1039f68232e4d6') in 0.010599 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000565 seconds.
+  path: Assets/Plugins/UniTask/Runtime/Linq/Merge.cs
+  artifactKey: Guid(ca56812f160c45d0bacb4339819edf1a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Plugins/UniTask/Runtime/Linq/Merge.cs using Guid(ca56812f160c45d0bacb4339819edf1a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '04ff44c65db5abd92b7e4de1fb4ba299') in 0.011872 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000827 seconds.
+  path: Assets/Plugins/UniTask/Runtime/Internal/ValueStopwatch.cs
+  artifactKey: Guid(f16fb466974ad034c8732c79c7fd67ea) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Plugins/UniTask/Runtime/Internal/ValueStopwatch.cs using Guid(f16fb466974ad034c8732c79c7fd67ea) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '83df478054672f02fa7b4807c0af20b5') in 0.009092 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/WX-WASM-SDK-V2/Runtime/wechat-default/unity-namespace.js
+  artifactKey: Guid(598ae24ae6c2f845fbf2909720ae9129) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/WX-WASM-SDK-V2/Runtime/wechat-default/unity-namespace.js using Guid(598ae24ae6c2f845fbf2909720ae9129) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '00bdafb796dc1ac8ad2924b804aabb66') in 0.011929 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000272 seconds.
+  path: Assets/WX-WASM-SDK-V2/Runtime/wechat-default/game.json
+  artifactKey: Guid(858db00e5a3382679bff8283d3df5490) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/WX-WASM-SDK-V2/Runtime/wechat-default/game.json using Guid(858db00e5a3382679bff8283d3df5490) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'faf93c93199c3d80af6ecf7d9bab3e2e') in 0.008361 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001520 seconds.
+  path: Assets/WX-WASM-SDK-V2/Runtime/Plugins/Touch.jslib
+  artifactKey: Guid(444bec77765d04ba4b9651e697c210de) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/WX-WASM-SDK-V2/Runtime/Plugins/Touch.jslib using Guid(444bec77765d04ba4b9651e697c210de) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '5d82edd98ca76d4acc0a904e0240cc68') in 0.011655 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000461 seconds.
+  path: Assets/Plugins/UniTask/Runtime/Internal/PooledDelegate.cs
+  artifactKey: Guid(8932579438742fa40b010edd412dbfba) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Plugins/UniTask/Runtime/Internal/PooledDelegate.cs using Guid(8932579438742fa40b010edd412dbfba) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '070e90689c3af982f96b10edac4583d1') in 0.011579 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.003004 seconds.
+  path: Assets/Plugins/UniTask/Runtime/Linq/AsyncEnumeratorBase.cs
+  artifactKey: Guid(01ba1d3b17e13fb4c95740131c7e6e19) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Plugins/UniTask/Runtime/Linq/AsyncEnumeratorBase.cs using Guid(01ba1d3b17e13fb4c95740131c7e6e19) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '7a965d7acadc8c9e92c6625001aae1e3') in 0.010716 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001166 seconds.
+  path: Assets/Plugins/UniTask/Runtime/Linq/AsUniTaskAsyncEnumerable.cs
+  artifactKey: Guid(69866e262589ea643bbc62a1d696077a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Plugins/UniTask/Runtime/Linq/AsUniTaskAsyncEnumerable.cs using Guid(69866e262589ea643bbc62a1d696077a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '911cbba0132c993d13237909109c221d') in 0.011532 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000981 seconds.
+  path: Assets/WX-WASM-SDK-V2/Runtime/Plugins/UDPSocket.jslib
+  artifactKey: Guid(1be2e6c9f9cdc42e68ecb97007669776) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/WX-WASM-SDK-V2/Runtime/Plugins/UDPSocket.jslib using Guid(1be2e6c9f9cdc42e68ecb97007669776) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'd590341f24640df306bb0552038153d6') in 0.009977 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000263 seconds.
+  path: Assets/Plugins/UniTask/Runtime/Linq/Last.cs
+  artifactKey: Guid(a0ccc93be1387fa4a975f06310127c11) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Plugins/UniTask/Runtime/Linq/Last.cs using Guid(a0ccc93be1387fa4a975f06310127c11) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'cded32cb01e2892218ab74fd3f830df9') in 0.007845 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.003991 seconds.
+  path: Assets/Plugins/UniTask/Runtime/Linq/SkipUntil.cs
+  artifactKey: Guid(de932d79c8d9f3841a066d05ff29edc9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Plugins/UniTask/Runtime/Linq/SkipUntil.cs using Guid(de932d79c8d9f3841a066d05ff29edc9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '5abc4d814b483a8f96127a45bb41190a') in 0.011448 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.004595 seconds.
+  path: Assets/Plugins/UniTask/Runtime/Linq/OfType.cs
+  artifactKey: Guid(111ffe87a7d700442a9ef5af554b252c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Plugins/UniTask/Runtime/Linq/OfType.cs using Guid(111ffe87a7d700442a9ef5af554b252c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '3e9593a98d8faebee7af67d67c549851') in 0.009735 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000908 seconds.
+  path: Assets/Plugins/UniTask/Runtime/Linq/ForEach.cs
+  artifactKey: Guid(ca8d7f8177ba16140920af405aea3fd4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Plugins/UniTask/Runtime/Linq/ForEach.cs using Guid(ca8d7f8177ba16140920af405aea3fd4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'a3e80ec6aa39e9a234a5eafcf8b201f2') in 0.010131 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.008238 seconds.
+  path: Assets/Plugins/UniTask/Runtime/Linq/Take.cs
+  artifactKey: Guid(42f02cb84e5875b488304755d0e1383d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Plugins/UniTask/Runtime/Linq/Take.cs using Guid(42f02cb84e5875b488304755d0e1383d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'e28416b78107e3fccab0091c11ac29d2') in 0.011623 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001091 seconds.
+  path: Assets/Plugins/UniTask/Runtime/Linq/GroupJoin.cs
+  artifactKey: Guid(7bf7759d03bf3f64190d3ae83b182c2c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Plugins/UniTask/Runtime/Linq/GroupJoin.cs using Guid(7bf7759d03bf3f64190d3ae83b182c2c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'c22cf9681d13fe587b6d7e9c215b77a9') in 0.013603 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000879 seconds.
+  path: Assets/WX-WASM-SDK-V2/Runtime/Plugins/WXTouch.jslib
+  artifactKey: Guid(181a2b83a01be4385986be06d6f06c7c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/WX-WASM-SDK-V2/Runtime/Plugins/WXTouch.jslib using Guid(181a2b83a01be4385986be06d6f06c7c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'f8e6f67fbee97f3b1cffb5fd4d2e526c') in 0.012191 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.231347 seconds.
+  path: Assets/WX-WASM-SDK-V2/Runtime/playable-default/unity-sdk/texture.js
+  artifactKey: Guid(4e29129015362849f201c10db6e8bbd4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/WX-WASM-SDK-V2/Runtime/playable-default/unity-sdk/texture.js using Guid(4e29129015362849f201c10db6e8bbd4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '947e7c308047ba922566b000f4747e7e') in 0.011539 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000116 seconds.
+  path: Assets/Plugins/UniTask/Runtime/Linq/ToHashSet.cs
+  artifactKey: Guid(7a3e552113af96e4986805ec3c4fc80a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Plugins/UniTask/Runtime/Linq/ToHashSet.cs using Guid(7a3e552113af96e4986805ec3c4fc80a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'a3b9a7954e5784e66fefe33a416578f1') in 0.012447 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001789 seconds.
+  path: Assets/WX-WASM-SDK-V2/Runtime/playable-default/plugins/check-update.js
+  artifactKey: Guid(6814ea36c47fac91f52cbe5b814bf695) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/WX-WASM-SDK-V2/Runtime/playable-default/plugins/check-update.js using Guid(6814ea36c47fac91f52cbe5b814bf695) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'f6406f0206ce190d5f52ec40364e1b27') in 0.008390 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.003316 seconds.
+  path: Assets/Plugins/UniTask/Runtime/Linq/ToObservable.cs
+  artifactKey: Guid(b4f6f48a532188e4c80b7ebe69aea3a8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Plugins/UniTask/Runtime/Linq/ToObservable.cs using Guid(b4f6f48a532188e4c80b7ebe69aea3a8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'ff0031d11a8c76975bbf084fb1f8d02e') in 0.014478 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000357 seconds.
+  path: Assets/WX-WASM-SDK-V2/Runtime/wechat-default/unity-sdk/utils.js
+  artifactKey: Guid(88b68a386815e109dbcfb7a656d68ce2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/WX-WASM-SDK-V2/Runtime/wechat-default/unity-sdk/utils.js using Guid(88b68a386815e109dbcfb7a656d68ce2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '7c1bc424509ad25d58c7d3c8e3432e6f') in 0.009652 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000276 seconds.
+  path: Assets/Plugins/UniTask/Runtime/Linq/UnityExtensions/EveryUpdate.cs
+  artifactKey: Guid(00520eb52e49b5b4e8d9870d6ff1aced) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Plugins/UniTask/Runtime/Linq/UnityExtensions/EveryUpdate.cs using Guid(00520eb52e49b5b4e8d9870d6ff1aced) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '0a2cf1b9280dfae4f7e78dfcb9edd32f') in 0.008496 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001444 seconds.
+  path: Assets/WX-WASM-SDK-V2/Runtime/wechat-default/unity-sdk/camera.js
+  artifactKey: Guid(a02945552d212e4e0dd63e2a06f3650f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/WX-WASM-SDK-V2/Runtime/wechat-default/unity-sdk/camera.js using Guid(a02945552d212e4e0dd63e2a06f3650f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '949ea87332585d72d14d6631250b4548') in 0.010499 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000318 seconds.
+  path: Assets/Plugins/UniTask/Runtime/Linq/TakeLast.cs
+  artifactKey: Guid(510aa9fd35b45fc40bcdb7e59f01fd1b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Plugins/UniTask/Runtime/Linq/TakeLast.cs using Guid(510aa9fd35b45fc40bcdb7e59f01fd1b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '38b9f526e8bd9da28eafd40905530c03') in 0.008843 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000113 seconds.
+  path: Assets/Plugins/UniTask/Runtime/Triggers/AsyncDestroyTrigger.cs
+  artifactKey: Guid(f4afdcb1cbadf954ba8b1cf465429e17) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Plugins/UniTask/Runtime/Triggers/AsyncDestroyTrigger.cs using Guid(f4afdcb1cbadf954ba8b1cf465429e17) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'f5a2e4da12b850ef3f25bc0d63f9a2ec') in 0.011995 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001193 seconds.
+  path: Assets/WX-WASM-SDK-V2/Editor/TextureEditor/Node/astcenc-neon
+  artifactKey: Guid(b8d17f3584abd400cb2a7b53d6cb59cf) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/WX-WASM-SDK-V2/Editor/TextureEditor/Node/astcenc-neon using Guid(b8d17f3584abd400cb2a7b53d6cb59cf) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '4d15c052e19c8df99e72054c6086983e') in 0.009673 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.003149 seconds.
+  path: Assets/WX-WASM-SDK-V2/Editor/LuaHooker/win/ucrtbased.dll
+  artifactKey: Guid(be799b1631d688242995c11c94a5b318) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/WX-WASM-SDK-V2/Editor/LuaHooker/win/ucrtbased.dll using Guid(be799b1631d688242995c11c94a5b318) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '238b3ff70aa8735af7f9997fb97fc720') in 0.011076 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001974 seconds.
+  path: Assets/WX-WASM-SDK-V2/Runtime/playable-default/unity-sdk/resTypeOther.js
+  artifactKey: Guid(7c5ca399dd12cc83f345a92066912bd7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/WX-WASM-SDK-V2/Runtime/playable-default/unity-sdk/resTypeOther.js using Guid(7c5ca399dd12cc83f345a92066912bd7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '78a417c2d1ff9c444b1af0fd6e412291') in 0.007972 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.002612 seconds.
+  path: Assets/Plugins/UniTask/Runtime/Linq/Throw.cs
+  artifactKey: Guid(9d05a7d4f4161e549b4789e1022baae8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Plugins/UniTask/Runtime/Linq/Throw.cs using Guid(9d05a7d4f4161e549b4789e1022baae8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '21c53efe757a3ff7f816211021b1ce19') in 0.011526 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.005979 seconds.
+  path: Assets/WX-WASM-SDK-V2/Runtime/playable-default/unity-sdk/canvas.js
+  artifactKey: Guid(0539375c4fd2817bbfa446a37f5d0818) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/WX-WASM-SDK-V2/Runtime/playable-default/unity-sdk/canvas.js using Guid(0539375c4fd2817bbfa446a37f5d0818) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '343dda6c16d215a766e68559e48a34e1') in 0.008494 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.007385 seconds.
+  path: Assets/WX-WASM-SDK-V2/Editor/TextureEditor/Node/astcenc-sse4.1.exe
+  artifactKey: Guid(e0d60c769ddf340d8bd8197a3cd3dc5c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/WX-WASM-SDK-V2/Editor/TextureEditor/Node/astcenc-sse4.1.exe using Guid(e0d60c769ddf340d8bd8197a3cd3dc5c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'e01c12b6e5ce2d1da8e4f2d3f9c1a298') in 0.010419 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000755 seconds.
+  path: Assets/WX-WASM-SDK-V2/Runtime/playable-default/unity-sdk/special-callbacks.js
+  artifactKey: Guid(f18b254479d621ea9fdd3e6ec67a015a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/WX-WASM-SDK-V2/Runtime/playable-default/unity-sdk/special-callbacks.js using Guid(f18b254479d621ea9fdd3e6ec67a015a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '067ec3807c69327e3a8535b92542d733') in 0.008193 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.002871 seconds.
+  path: Assets/WX-WASM-SDK-V2/Editor/TextureEditor/Node/PVRTexToolCLI
+  artifactKey: Guid(6d497916b78134c669342228f6836ff0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/WX-WASM-SDK-V2/Editor/TextureEditor/Node/PVRTexToolCLI using Guid(6d497916b78134c669342228f6836ff0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '0ec01e03697e3c5202d2af27bb841ec6') in 0.009051 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001962 seconds.
+  path: Assets/WX-WASM-SDK-V2/Editor/LuaHooker/mac/newstatehooker.dylib
+  artifactKey: Guid(8b2ed2be1f98c46c69f29eb343d66213) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/WX-WASM-SDK-V2/Editor/LuaHooker/mac/newstatehooker.dylib using Guid(8b2ed2be1f98c46c69f29eb343d66213) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '1b09a76b96d43556045dc4341a6ef908') in 0.008912 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001076 seconds.
+  path: Assets/WX-WASM-SDK-V2/Runtime/playable-default/unity-sdk/util.js
+  artifactKey: Guid(f2c843855ea8bf6faab0f739cccc8125) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/WX-WASM-SDK-V2/Runtime/playable-default/unity-sdk/util.js using Guid(f2c843855ea8bf6faab0f739cccc8125) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'a710103aea646fa6bae0b79d2901df2d') in 0.007024 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.002046 seconds.
+  path: Assets/Plugins/UniTask/Runtime/External/TextMeshPro/UniTask.TextMeshPro.asmdef
+  artifactKey: Guid(dc47925d1a5fa2946bdd37746b2b5d48) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Plugins/UniTask/Runtime/External/TextMeshPro/UniTask.TextMeshPro.asmdef using Guid(dc47925d1a5fa2946bdd37746b2b5d48) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'a70e49839425597e6bd39ca8db6ad3dc') in 0.009733 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001891 seconds.
+  path: Assets/Plugins/UniTask/Runtime/External/YooAsset/OperationHandleBaseExtensions.cs
+  artifactKey: Guid(e1c9a3a6de2246bf88547a6b59b99b9f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Plugins/UniTask/Runtime/External/YooAsset/OperationHandleBaseExtensions.cs using Guid(e1c9a3a6de2246bf88547a6b59b99b9f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '1d4ae592bd891c78bba15bf3b1a1dea7') in 0.009367 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001596 seconds.
+  path: Assets/WX-WASM-SDK-V2/Editor/TextureEditor/Release/System.Text.Encoding.CodePages.dll
+  artifactKey: Guid(7d05ed4878f734a40a9f377b7f0f03b3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/WX-WASM-SDK-V2/Editor/TextureEditor/Release/System.Text.Encoding.CodePages.dll using Guid(7d05ed4878f734a40a9f377b7f0f03b3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '18117b555e130e6dd1e044d03fb0f87c') in 0.012613 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001182 seconds.
+  path: Assets/WX-WASM-SDK-V2/Editor/Brotli/linux_x86_64/libbrotlienc.so
+  artifactKey: Guid(84106878858c34f4495d07c9caf95b2b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/WX-WASM-SDK-V2/Editor/Brotli/linux_x86_64/libbrotlienc.so using Guid(84106878858c34f4495d07c9caf95b2b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'bf8cfe78b9b7154d9dcf40842fd928fb') in 0.007966 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001893 seconds.
+  path: Assets/WX-WASM-SDK-V2/Editor/TextureEditor/Release/WXTextureTools.exe.config
+  artifactKey: Guid(052e6c0044ac84706b48255eb83cc5d1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/WX-WASM-SDK-V2/Editor/TextureEditor/Release/WXTextureTools.exe.config using Guid(052e6c0044ac84706b48255eb83cc5d1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '5ab1eddff890a16b1418d113670df66b') in 0.011322 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.004671 seconds.
+  path: Assets/WX-WASM-SDK-V2/Editor/TextureEditor/Release/System.Memory.xml
+  artifactKey: Guid(0e296d06f7b4c4b75868a6002dde35e3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/WX-WASM-SDK-V2/Editor/TextureEditor/Release/System.Memory.xml using Guid(0e296d06f7b4c4b75868a6002dde35e3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '03537e3673260de258ed4a70b991ad73') in 0.008480 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001133 seconds.
+  path: Assets/Plugins/UniTask/Runtime/External/Addressables/AddressablesAsyncExtensions.cs
+  artifactKey: Guid(3dc6441f9094f354b931dc3c79fb99e5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Plugins/UniTask/Runtime/External/Addressables/AddressablesAsyncExtensions.cs using Guid(3dc6441f9094f354b931dc3c79fb99e5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'bf596f82ef3744267b2feff318fb4ff0') in 0.009473 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000916 seconds.
+  path: Assets/WX-WASM-SDK-V2/Editor/TextureEditor/Release/wxlog.dll
+  artifactKey: Guid(9925d197d84944670867d1ce5152a1d1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/WX-WASM-SDK-V2/Editor/TextureEditor/Release/wxlog.dll using Guid(9925d197d84944670867d1ce5152a1d1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '291e006a93d9e3cdcecb40101c32d1cd') in 0.009442 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.004755 seconds.
+  path: Assets/WX-WASM-SDK-V2/Runtime/Plugins/LuaAdaptor/lua_adaptor_import.h
+  artifactKey: Guid(169ebbbcd2d6ffd4180f421d0ae2bd33) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/WX-WASM-SDK-V2/Runtime/Plugins/LuaAdaptor/lua_adaptor_import.h using Guid(169ebbbcd2d6ffd4180f421d0ae2bd33) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '13efd4b638284a9d4dd7c486eda1e675') in 0.009208 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000602 seconds.
+  path: Assets/WX-WASM-SDK-V2/Editor/Brotli/linux_x86_64/brotli
+  artifactKey: Guid(c7d34b53fefa24bf5b0ce2914fc60ad8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/WX-WASM-SDK-V2/Editor/Brotli/linux_x86_64/brotli using Guid(c7d34b53fefa24bf5b0ce2914fc60ad8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '875c375d4c19a5445b5ebb4cc2464a86') in 0.010043 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000762 seconds.
+  path: Assets/WX-WASM-SDK-V2/Runtime/wechat-default/unity-sdk/storage.js
+  artifactKey: Guid(a239bca0a089e3e6d284e47df2817fb4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/WX-WASM-SDK-V2/Runtime/wechat-default/unity-sdk/storage.js using Guid(a239bca0a089e3e6d284e47df2817fb4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'dcb67c9762ba008b1bdf2353a1d9709b') in 0.010482 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001277 seconds.
+  path: Assets/WX-WASM-SDK-V2/Editor/TextureEditor/Release/System.Half.dll
+  artifactKey: Guid(859e4896a97d94a17b7da75fb59d4ede) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/WX-WASM-SDK-V2/Editor/TextureEditor/Release/System.Half.dll using Guid(859e4896a97d94a17b7da75fb59d4ede) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'c3de39254b5f405175f293b8c9fc47f9') in 0.010615 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.069896 seconds.
+  path: Assets/WX-WASM-SDK-V2/Runtime/wechat-default/open-data/render/styles/tips.js
+  artifactKey: Guid(1350799920b49c8c95c7dbdf07db6eb8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/WX-WASM-SDK-V2/Runtime/wechat-default/open-data/render/styles/tips.js using Guid(1350799920b49c8c95c7dbdf07db6eb8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'c0c236195163a40082edf97ad5d4fe33') in 0.008970 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001396 seconds.
+  path: Assets/WX-WASM-SDK-V2/Runtime/wechat-default/unity-sdk/audio/unity-audio.js
+  artifactKey: Guid(70b73e8e8605d18d9b73b7910718695b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/WX-WASM-SDK-V2/Runtime/wechat-default/unity-sdk/audio/unity-audio.js using Guid(70b73e8e8605d18d9b73b7910718695b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '8d5f36cedf8ffb6dc4689a1fe6942277') in 0.012177 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.002883 seconds.
+  path: Assets/WX-WASM-SDK-V2/Runtime/wechat-default/unity-sdk/font/read-metrics.js
+  artifactKey: Guid(a1be32af1701400956df3cb87d9b2475) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/WX-WASM-SDK-V2/Runtime/wechat-default/unity-sdk/font/read-metrics.js using Guid(a1be32af1701400956df3cb87d9b2475) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '2baa0bc093b5ffb80d5bd2ea36a5b852') in 0.011010 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.005425 seconds.
+  path: Assets/WX-WASM-SDK-V2/Runtime/wechat-default/unity-sdk/font/index.js
+  artifactKey: Guid(6669152e826276d7115e4a6e65015f76) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/WX-WASM-SDK-V2/Runtime/wechat-default/unity-sdk/font/index.js using Guid(6669152e826276d7115e4a6e65015f76) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'c9738e7b9cf92079317e9163293ecff2') in 0.008288 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000147 seconds.
+  path: Assets/WX-WASM-SDK-V2/Runtime/wechat-default/unity-sdk/touch/index.js
+  artifactKey: Guid(d2305c4806df4fb4b26509dc39643231) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/WX-WASM-SDK-V2/Runtime/wechat-default/unity-sdk/touch/index.js using Guid(d2305c4806df4fb4b26509dc39643231) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '9a127460536fb3ffeaec4b7eb754c71e') in 0.011291 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001169 seconds.
+  path: Assets/WX-WASM-SDK-V2/Runtime/wechat-default/open-data/render/image/shareBg2.png
+  artifactKey: Guid(f551f5b9da848c0e2357eeb62b59d4ac) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/WX-WASM-SDK-V2/Runtime/wechat-default/open-data/render/image/shareBg2.png using Guid(f551f5b9da848c0e2357eeb62b59d4ac) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'c9d21266bc27b408925d7bb891bd01f2') in 0.037139 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001040 seconds.
+  path: Assets/WX-WASM-SDK-V2/Runtime/wechat-default/open-data/render/image/avatar.png
+  artifactKey: Guid(241e98a505df0487e1522ad9e7e6295b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/WX-WASM-SDK-V2/Runtime/wechat-default/open-data/render/image/avatar.png using Guid(241e98a505df0487e1522ad9e7e6295b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '3e0d1afe7d83743d6b5c16ff4ea61b13') in 0.016294 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001621 seconds.
+  path: Assets/WX-WASM-SDK-V2/Runtime/wechat-default/open-data/render/tpls/tips.js
+  artifactKey: Guid(280454fc386eca55d7ea5fcda810c802) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/WX-WASM-SDK-V2/Runtime/wechat-default/open-data/render/tpls/tips.js using Guid(280454fc386eca55d7ea5fcda810c802) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '5c74d157d39aeac0774ea1dc441f4da5') in 0.007876 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001485 seconds.
+  path: Assets/WX-WASM-SDK-V2/Runtime/wechat-default/open-data/data/utils.js
+  artifactKey: Guid(9b8660ec67b826cccdc650ed0afe2497) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/WX-WASM-SDK-V2/Runtime/wechat-default/open-data/data/utils.js using Guid(9b8660ec67b826cccdc650ed0afe2497) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'c555c85014f4bf0238a44e7acf0ac672') in 0.010715 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000712 seconds.
+  path: Assets/WX-WASM-SDK-V2/Runtime/playable-default/unity-sdk/audio/inner-audio.js
+  artifactKey: Guid(2101869460814395b507254146d512aa) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/WX-WASM-SDK-V2/Runtime/playable-default/unity-sdk/audio/inner-audio.js using Guid(2101869460814395b507254146d512aa) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '422084c922febba1f3443f2265f8283d') in 0.009980 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.003017 seconds.
+  path: Assets/WX-WASM-SDK-V2/Runtime/playable-default/unity-sdk/touch/index.js
+  artifactKey: Guid(88a3b5556849a92b54362c3169c49a65) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/WX-WASM-SDK-V2/Runtime/playable-default/unity-sdk/touch/index.js using Guid(88a3b5556849a92b54362c3169c49a65) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '9ab7892999e12480975bb0c23985100c') in 0.008174 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

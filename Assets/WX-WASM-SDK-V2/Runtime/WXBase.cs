@@ -535,7 +535,7 @@ namespace WeChatWASM
         /// </summary>
         /// <param name="param"></param>
         /// <returns></returns>
-        public static WXVideo CreateVideo(WXCreateVideoParam param)
+        public static WXVideo CreateVideo(CreateVideoOption param)
         {
             return WXSDKManagerHandler.Instance.CreateVideo(param);
         }
@@ -764,6 +764,16 @@ namespace WeChatWASM
         public static string GetCachePath(string url)
         {
             return WXSDKManagerHandler.Instance.GetCachePath(url);
+        }
+
+        /// <summary>
+        /// 临时修复安卓在主线程繁忙时，异步读缓存耗时高，但需关注同步读文件可能导致掉帧
+        /// 仅在有需要的情况下主动开启，需要同步读的场景完成后再主动关闭
+        /// </summary>
+        /// <param name="enabled"></param>
+        public static void SetSyncReadCacheEnabled(bool enabled)
+        {
+            WXSDKManagerHandler.Instance.SetSyncReadCacheEnabled(enabled);
         }
 
 #endregion
@@ -1127,6 +1137,41 @@ namespace WeChatWASM
             WXSDKManagerHandler.Instance.NotifyMiniProgramPlayableStatus(option);
         }
 #endregion
+#region 虚拟支付
+        /// <summary>
+        /// 请求虚拟支付
+        /// </summary>
+        public static void RequestVirtualPayment(RequestVirtualPaymentOption option)
+        {
+            WXSDKManagerHandler.Instance.RequestVirtualPayment(option);
+        }
+#endregion
+
+        /// <summary>
+        /// [[PageManager](https://developers.weixin.qq.com/minigame/dev/api/open-api/openlink/PageManager.html) wx.createPageManager()](https://developers.weixin.qq.com/minigame/dev/api/open-api/openlink/wx.createPageManager.html)
+        /// 需要基础库： `3.6.7`
+        /// 小游戏开放页面管理器，用于启动微信内置的各种小游戏活动、功能页面。具体OPENLINK值由不同的能力渠道获得。
+        /// **示例代码**
+        /// ```js
+        /// const pageManager = wx.createPageManager();
+        /// pageManager.load({
+        /// openlink: 'xxxxxxx-xxxxxx', // 由不同渠道获得的OPENLINK值
+        /// }).then((res) => {
+        /// // 加载成功，res 可能携带不同活动、功能返回的特殊回包信息（具体请参阅渠道说明）
+        /// console.log(res);
+        /// // 加载成功后按需显示
+        /// pageManager.show();
+        /// }).catch((err) => {
+        /// // 加载失败，请查阅 err 给出的错误信息
+        /// console.error(err);
+        /// })
+        /// ```
+        /// </summary>
+        /// <returns></returns>
+        public static WXPageManager CreatePageManager()
+        {
+            return WXSDKManagerHandler.Instance.CreatePageManager();
+        }
     }
 }
 #endif

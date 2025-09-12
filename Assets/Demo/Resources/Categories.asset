@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39149e6a58a64922a040ed303a38e67d, type: 3}
+  m_Name: Categories
+  m_EditorClassIdentifier: 
+  _category:
+  - _id: ant
+    _name: ANT
+    _image: {fileID: 21300000, guid: 21b5855da27954d46b82383d847fc9cf, type: 3}
+    _quizData: {fileID: 4900000, guid: 21c1086695c44244fbf57290437ab92f, type: 3}
+    _unlockBrain: 0
+  - _id: spider
+    _name: SPIDER
+    _image: {fileID: 21300000, guid: f651e0ae97316f0449158c822368f816, type: 3}
+    _quizData: {fileID: 4900000, guid: c8f0448cb180c484d85717ee77d3463f, type: 3}
+    _unlockBrain: 0
+  - _id: snail
+    _name: SNAIL
+    _image: {fileID: 21300000, guid: e3c388ca9167c5d47b85dbeadfdfef06, type: 3}
+    _quizData: {fileID: 4900000, guid: 809533cb4dd6ff14685d76b4bfe6f169, type: 3}
+    _unlockBrain: 0
+  - _id: crab
+    _name: CRAB
+    _image: {fileID: 21300000, guid: f32da4028d6de6242a5a1bc88f6bb7bb, type: 3}
+    _quizData: {fileID: 4900000, guid: 09d85b4bece39d34ba4ff40e4e6551a7, type: 3}
+    _unlockBrain: 0

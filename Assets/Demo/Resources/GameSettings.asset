@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45f0a1f0458419a41860f39d4fdc8e79, type: 3}
+  m_Name: GameSettings
+  m_EditorClassIdentifier: 
+  _iosAppId: 
+  _inAppSetting:
+    enable: 0
+    removeAdsId: brain.noads
+  _adsSettings:
+    iosAdmobSetting:
+      enable: 1
+      interstitialId: ca-app-pub-3940256099942544/4411468910
+      admobRewardedId: ca-app-pub-3940256099942544/1712485313
+    androidAdmobSetting:
+      enable: 1
+      interstitialId: ca-app-pub-3940256099942544/1033173712
+      admobRewardedId: ca-app-pub-3940256099942544/5224354917
+    minAndMaxGameOversBetweenInterstitialAds: {x: 0, y: 1}
+  _privatePolicySetting:
+    enable: 0
+    url: https://www.google.com

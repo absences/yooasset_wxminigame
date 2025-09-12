@@ -2,8 +2,8 @@
     "name": "Unitask.YooAsset",
     "rootNamespace": "",
     "references": [
-        "GUID:e34a5702dd353724aa315fb8011f08c3",
-        "GUID:f51ebe6a0ceec4240a699833d6309b23"
+        "GUID:f51ebe6a0ceec4240a699833d6309b23",
+        "GUID:4898ce34d0745204ea3b362f879cf3ec"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
