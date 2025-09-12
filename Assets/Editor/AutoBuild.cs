@@ -105,14 +105,14 @@ public class AutoBuild
 
         var gameEnter = GameObject.Find("GameEnter");
 
-        const string CDN = "https://oss.landmark.lerjin.com/unity-assets-dev/webgl/";
+        const string CDN = "https://xxxx/webgl/";
         if (gameEnter != null)
         {
             var enter = gameEnter.GetComponent<GameEnter>();
             enter.CDN = CDN;
             EditorSceneManager.SaveScene(scene);
         }
-        WXConvertCore.config.ProjectConf.Appid = "wx7edf42878b7dd24a";
+        WXConvertCore.config.ProjectConf.Appid = "xxxx";
 
         var path = string.Format("{0}/../AutoBuild/wx_export", Application.dataPath);
 
