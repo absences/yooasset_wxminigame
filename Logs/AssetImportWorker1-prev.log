@@ -15,7 +15,7 @@ F:/absences/yooasset_wxminigame
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-60487
+56636
 Successfully changed project path to: F:/absences/yooasset_wxminigame
 F:/absences/yooasset_wxminigame
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,17 +49,17 @@ F:/absences/yooasset_wxminigame
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [24664]  Target information:
+Player connection [27512]  Target information:
 
-Player connection [24664]  * "[IP] 172.16.1.43 [Port] 0 [Flags] 2 [Guid] 355879746 [EditorId] 355879746 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-QFG1LN0) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [27512]  * "[IP] 172.16.1.43 [Port] 0 [Flags] 2 [Guid] 2398072584 [EditorId] 2398072584 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-QFG1LN0) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [24664]  * "[IP] 26.26.26.1 [Port] 0 [Flags] 2 [Guid] 355879746 [EditorId] 355879746 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-QFG1LN0) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [27512]  * "[IP] 26.26.26.1 [Port] 0 [Flags] 2 [Guid] 2398072584 [EditorId] 2398072584 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-QFG1LN0) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [24664] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [24664] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [27512] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [27512] Host joined alternative multi-casting on [225.0.0.222:34997]...
 Input System module state changed to: Initialized.
 [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-Refreshing native plugins compatible for Editor in 11.70 ms, found 9 plugins.
+Refreshing native plugins compatible for Editor in 10.34 ms, found 9 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.62f1 (4af31df58517)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.62f1/Editor/Data/Resources/UnitySubsystems
@@ -75,48 +75,48 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.62f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.62f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.62f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56408
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56584
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.62f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.62f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.62f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.62f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.004654 seconds.
-- Loaded All Assemblies, in  0.229 seconds
+Registered in 0.005164 seconds.
+- Loaded All Assemblies, in  0.219 seconds
 Native extension for WindowsStandalone target not found
 [usbmuxd] Start listen thread
 [usbmuxd] Listen thread started
 Native extension for iOS target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 93 ms
+Android Extension - Scanning For ADB Devices 100 ms
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
 - Finished resetting the current domain, in  0.294 seconds
-Domain Reload Profiling: 523ms
-	BeginReloadAssembly (69ms)
+Domain Reload Profiling: 513ms
+	BeginReloadAssembly (64ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (0ms)
-	RebuildCommonClasses (22ms)
+	RebuildCommonClasses (21ms)
 	RebuildNativeTypeToScriptingClass (6ms)
-	initialDomainReloadingComplete (35ms)
-	LoadAllAssembliesAndSetupDomain (96ms)
-		LoadAssemblies (69ms)
+	initialDomainReloadingComplete (34ms)
+	LoadAllAssembliesAndSetupDomain (93ms)
+		LoadAssemblies (64ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (94ms)
-			TypeCache.Refresh (93ms)
-				TypeCache.ScanAssembly (84ms)
+		AnalyzeDomain (91ms)
+			TypeCache.Refresh (90ms)
+				TypeCache.ScanAssembly (81ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (294ms)
+	FinalizeReload (295ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (263ms)
+		SetupLoadedEditorAssemblies (266ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (152ms)
+			InitializePlatformSupportModulesInManaged (155ms)
 			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (2ms)
@@ -130,53 +130,53 @@ Domain Reload Profiling: 523ms
 Worker process is ready to serve import requests
 Caller must complete domain reload
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.300 seconds
+- Loaded All Assemblies, in  0.285 seconds
 Native extension for WindowsStandalone target not found
 Native extension for iOS target not found
 Native extension for Android target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.270 seconds
-Domain Reload Profiling: 569ms
-	BeginReloadAssembly (90ms)
+- Finished resetting the current domain, in  0.254 seconds
+Domain Reload Profiling: 539ms
+	BeginReloadAssembly (87ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (3ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (14ms)
-	RebuildCommonClasses (23ms)
+	RebuildCommonClasses (20ms)
 	RebuildNativeTypeToScriptingClass (6ms)
 	initialDomainReloadingComplete (17ms)
-	LoadAllAssembliesAndSetupDomain (163ms)
-		LoadAssemblies (165ms)
+	LoadAllAssembliesAndSetupDomain (153ms)
+		LoadAssemblies (155ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (49ms)
-			TypeCache.Refresh (40ms)
-				TypeCache.ScanAssembly (33ms)
+		AnalyzeDomain (48ms)
+			TypeCache.Refresh (39ms)
+				TypeCache.ScanAssembly (32ms)
 			ScanForSourceGeneratedMonoScriptInfo (6ms)
-			ResolveRequiredComponents (2ms)
-	FinalizeReload (270ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (255ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (183ms)
+		SetupLoadedEditorAssemblies (174ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (19ms)
 			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (37ms)
-			ProcessInitializeOnLoadAttributes (101ms)
-			ProcessInitializeOnLoadMethodAttributes (20ms)
+			ProcessInitializeOnLoadAttributes (94ms)
+			ProcessInitializeOnLoadMethodAttributes (18ms)
 			AfterProcessingInitializeOnLoad (3ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (4ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 3.35 ms, found 9 plugins.
+		AwakeInstancesAfterBackupRestoration (5ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
+Refreshing native plugins compatible for Editor in 3.41 ms, found 9 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1370 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 13 unused Assets / (50.4 KB). Loaded Objects now: 1855.
-Memory consumption went from 83.9 MB to 83.9 MB.
-Total: 1.608400 ms (FindLiveObjects: 0.071100 ms CreateObjectMapping: 0.019200 ms MarkObjects: 1.466300 ms  DeleteObjects: 0.051200 ms)
+Unloading 1473 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 13 unused Assets / (50.5 KB). Loaded Objects now: 1958.
+Memory consumption went from 86.5 MB to 86.4 MB.
+Total: 1.624400 ms (FindLiveObjects: 0.077200 ms CreateObjectMapping: 0.022300 ms MarkObjects: 1.474700 ms  DeleteObjects: 0.049600 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
@@ -193,13 +193,23 @@ AssetImportParameters requested are different than current active one (requested
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
 ========================================================================
+Received Import Request.
+  Time since last request: 72736.179755 seconds.
+  path: Assets/Demo/Sounds/sweep.mp3
+  artifactKey: Guid(89ff69363b976894fabc86fd5e4f84dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Demo/Sounds/sweep.mp3 using Guid(89ff69363b976894fabc86fd5e4f84dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '668d72e949638d459a139ab973a612f7') in 0.072523 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
 Received Prepare
-Refreshing native plugins compatible for Editor in 3.80 ms, found 9 plugins.
+Refreshing native plugins compatible for Editor in 3.75 ms, found 9 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 1 unused Assets / (3.1 KB). Loaded Objects now: 1855.
-Memory consumption went from 59.2 MB to 59.2 MB.
-Total: 2.303400 ms (FindLiveObjects: 0.086600 ms CreateObjectMapping: 0.020600 ms MarkObjects: 2.182800 ms  DeleteObjects: 0.012900 ms)
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 1 unused Assets / (0.9 KB). Loaded Objects now: 1969.
+Memory consumption went from 63.1 MB to 63.1 MB.
+Total: 1.748900 ms (FindLiveObjects: 0.080400 ms CreateObjectMapping: 0.023700 ms MarkObjects: 1.632700 ms  DeleteObjects: 0.011600 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -218,12 +228,84 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
 ========================================================================
 Received Prepare
-Refreshing native plugins compatible for Editor in 3.29 ms, found 9 plugins.
+Refreshing native plugins compatible for Editor in 4.17 ms, found 9 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 1 unused Assets / (3.1 KB). Loaded Objects now: 1855.
-Memory consumption went from 59.1 MB to 59.1 MB.
-Total: 1.477500 ms (FindLiveObjects: 0.075600 ms CreateObjectMapping: 0.020100 ms MarkObjects: 1.373200 ms  DeleteObjects: 0.008300 ms)
+Unloading 1 unused Assets / (3.1 KB). Loaded Objects now: 1969.
+Memory consumption went from 63.3 MB to 63.3 MB.
+Total: 1.722900 ms (FindLiveObjects: 0.078900 ms CreateObjectMapping: 0.021000 ms MarkObjects: 1.610500 ms  DeleteObjects: 0.011900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 3.76 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 1 unused Assets / (3.1 KB). Loaded Objects now: 1969.
+Memory consumption went from 63.3 MB to 63.3 MB.
+Total: 1.976000 ms (FindLiveObjects: 0.085800 ms CreateObjectMapping: 0.034600 ms MarkObjects: 1.841900 ms  DeleteObjects: 0.013000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 3.55 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 1 unused Assets / (3.1 KB). Loaded Objects now: 1969.
+Memory consumption went from 63.3 MB to 63.3 MB.
+Total: 2.001300 ms (FindLiveObjects: 0.083900 ms CreateObjectMapping: 0.022800 ms MarkObjects: 1.871000 ms  DeleteObjects: 0.022600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 4.37 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 1 unused Assets / (3.1 KB). Loaded Objects now: 1969.
+Memory consumption went from 63.3 MB to 63.3 MB.
+Total: 1.742600 ms (FindLiveObjects: 0.083000 ms CreateObjectMapping: 0.022200 ms MarkObjects: 1.620700 ms  DeleteObjects: 0.015900 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -244,205 +326,1569 @@ AssetImportParameters requested are different than current active one (requested
 Received Prepare
 Caller must complete domain reload
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.276 seconds
+- Loaded All Assemblies, in  0.270 seconds
 Native extension for WindowsStandalone target not found
 Native extension for iOS target not found
 Native extension for Android target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.296 seconds
-Domain Reload Profiling: 572ms
+- Finished resetting the current domain, in  0.275 seconds
+Domain Reload Profiling: 545ms
 	BeginReloadAssembly (91ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (3ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (15ms)
+		CreateAndSetChildDomain (16ms)
 	RebuildCommonClasses (20ms)
-	RebuildNativeTypeToScriptingClass (7ms)
+	RebuildNativeTypeToScriptingClass (6ms)
 	initialDomainReloadingComplete (17ms)
-	LoadAllAssembliesAndSetupDomain (140ms)
-		LoadAssemblies (155ms)
+	LoadAllAssembliesAndSetupDomain (135ms)
+		LoadAssemblies (151ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (36ms)
-			TypeCache.Refresh (28ms)
-				TypeCache.ScanAssembly (24ms)
+		AnalyzeDomain (34ms)
+			TypeCache.Refresh (26ms)
+				TypeCache.ScanAssembly (21ms)
 			ScanForSourceGeneratedMonoScriptInfo (5ms)
-			ResolveRequiredComponents (2ms)
-	FinalizeReload (296ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (276ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (178ms)
+		SetupLoadedEditorAssemblies (174ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (19ms)
+			InitializePlatformSupportModulesInManaged (20ms)
 			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (38ms)
+			BeforeProcessingInitializeOnLoad (37ms)
 			ProcessInitializeOnLoadAttributes (94ms)
-			ProcessInitializeOnLoadMethodAttributes (20ms)
+			ProcessInitializeOnLoadMethodAttributes (16ms)
 			AfterProcessingInitializeOnLoad (3ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (5ms)
-Refreshing native plugins compatible for Editor in 3.85 ms, found 9 plugins.
+		AwakeInstancesAfterBackupRestoration (4ms)
+Refreshing native plugins compatible for Editor in 3.32 ms, found 9 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1351 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 9 unused Assets / (24.4 KB). Loaded Objects now: 1858.
-Memory consumption went from 80.1 MB to 80.1 MB.
-Total: 1.565100 ms (FindLiveObjects: 0.078400 ms CreateObjectMapping: 0.021800 ms MarkObjects: 1.446000 ms  DeleteObjects: 0.018200 ms)
+Unloading 1453 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 9 unused Assets / (24.4 KB). Loaded Objects now: 1971.
+Memory consumption went from 85.8 MB to 85.7 MB.
+Total: 1.506900 ms (FindLiveObjects: 0.072500 ms CreateObjectMapping: 0.021400 ms MarkObjects: 1.394500 ms  DeleteObjects: 0.018100 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/WXFSLoadBundleOperation.cs: 5203f2fca525dae83d1c2e37e165d738 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/WXFSLoadPackageManifestOperation.cs: 8b8b69cc4662810e2795f9e9ff3748aa -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
   custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/WXAssetBundleResult.cs: 0f8ee81536e88b0d5791823f7e8ffcad -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/UnityWechatAssetBundleRequestOperation.cs: 87f93f33ff72272522ecd6397c10fea7 -> 
   custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:scripting/monoscript/fileName/WXFSClearUnusedBundleFilesAsync.cs: 4202e71826b44387032b6c68d29bb911 -> 
+  custom:scripting/monoscript/fileName/WXFSDownloadFileOperation.cs: 9f5d0fe8d5b846fdec07b8f26cafbd90 -> 
+  custom:scripting/monoscript/fileName/LoadWechatAssetBundleOperation.cs: 4eb533cb9c11ebe491341888003d8f44 -> 
+  custom:scripting/monoscript/fileName/WXFSClearAllBundleFilesOperation.cs: d23acad3e8411b7500fbe5406a8a9faa -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/WXFSRequestPackageVersionOperation.cs: 4e765694426380ca42d2134fe61e2d9b -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:scripting/precompiled-assembly-types:Assembly-CSharp: 4c8638e4cb2e8863289b973079225746 -> a5f20d76c671c90795a648786e0c2591
+  custom:scripting/monoscript/fileName/WechatFileSystem.cs: 3b9a8b988a0299b4db8e2e521c31d712 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: 5f9539f7fd93eb7b185544937307ab6a -> e5b227be8a052466cd3fe1e9123bfe3a
+  custom:scripting/monoscript/fileName/WXFSInitializeOperation.cs: 820d5d4604fc60c237c947a2695df511 -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/precompiled-assembly-types:YooAsset: 5fcbd11b142fa8c53821d3d802ae9691 -> feb410c14e14d546a0ea254f7aae3c71
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 3.52 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 1 unused Assets / (3.1 KB). Loaded Objects now: 1971.
+Memory consumption went from 63.3 MB to 63.3 MB.
+Total: 1.688700 ms (FindLiveObjects: 0.080100 ms CreateObjectMapping: 0.023000 ms MarkObjects: 1.572600 ms  DeleteObjects: 0.012500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/WXFSLoadBundleOperation.cs: 5203f2fca525dae83d1c2e37e165d738 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/WXFSLoadPackageManifestOperation.cs: 8b8b69cc4662810e2795f9e9ff3748aa -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/WXAssetBundleResult.cs: 0f8ee81536e88b0d5791823f7e8ffcad -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/UnityWechatAssetBundleRequestOperation.cs: 87f93f33ff72272522ecd6397c10fea7 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:scripting/monoscript/fileName/WXFSClearUnusedBundleFilesAsync.cs: 4202e71826b44387032b6c68d29bb911 -> 
+  custom:scripting/monoscript/fileName/WXFSDownloadFileOperation.cs: 9f5d0fe8d5b846fdec07b8f26cafbd90 -> 
+  custom:scripting/monoscript/fileName/LoadWechatAssetBundleOperation.cs: 4eb533cb9c11ebe491341888003d8f44 -> 
+  custom:scripting/monoscript/fileName/WXFSClearAllBundleFilesOperation.cs: d23acad3e8411b7500fbe5406a8a9faa -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/WXFSRequestPackageVersionOperation.cs: 4e765694426380ca42d2134fe61e2d9b -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/WechatFileSystem.cs: 3b9a8b988a0299b4db8e2e521c31d712 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: 5f9539f7fd93eb7b185544937307ab6a -> e5b227be8a052466cd3fe1e9123bfe3a
+  custom:scripting/monoscript/fileName/WXFSInitializeOperation.cs: 820d5d4604fc60c237c947a2695df511 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/precompiled-assembly-types:YooAsset: 5fcbd11b142fa8c53821d3d802ae9691 -> feb410c14e14d546a0ea254f7aae3c71
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 3.38 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 1 unused Assets / (3.1 KB). Loaded Objects now: 1971.
+Memory consumption went from 63.1 MB to 63.1 MB.
+Total: 1.512600 ms (FindLiveObjects: 0.078900 ms CreateObjectMapping: 0.022100 ms MarkObjects: 1.396800 ms  DeleteObjects: 0.014400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/WXFSLoadBundleOperation.cs: 5203f2fca525dae83d1c2e37e165d738 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/WXFSLoadPackageManifestOperation.cs: 8b8b69cc4662810e2795f9e9ff3748aa -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/WXAssetBundleResult.cs: 0f8ee81536e88b0d5791823f7e8ffcad -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/UnityWechatAssetBundleRequestOperation.cs: 87f93f33ff72272522ecd6397c10fea7 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:scripting/monoscript/fileName/WXFSClearUnusedBundleFilesAsync.cs: 4202e71826b44387032b6c68d29bb911 -> 
+  custom:scripting/monoscript/fileName/WXFSDownloadFileOperation.cs: 9f5d0fe8d5b846fdec07b8f26cafbd90 -> 
+  custom:scripting/monoscript/fileName/LoadWechatAssetBundleOperation.cs: 4eb533cb9c11ebe491341888003d8f44 -> 
+  custom:scripting/monoscript/fileName/WXFSClearAllBundleFilesOperation.cs: d23acad3e8411b7500fbe5406a8a9faa -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/WXFSRequestPackageVersionOperation.cs: 4e765694426380ca42d2134fe61e2d9b -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/WechatFileSystem.cs: 3b9a8b988a0299b4db8e2e521c31d712 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: 5f9539f7fd93eb7b185544937307ab6a -> e5b227be8a052466cd3fe1e9123bfe3a
+  custom:scripting/monoscript/fileName/WXFSInitializeOperation.cs: 820d5d4604fc60c237c947a2695df511 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/precompiled-assembly-types:YooAsset: 5fcbd11b142fa8c53821d3d802ae9691 -> feb410c14e14d546a0ea254f7aae3c71
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 3.75 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 1 unused Assets / (3.1 KB). Loaded Objects now: 1971.
+Memory consumption went from 63.1 MB to 63.1 MB.
+Total: 1.661700 ms (FindLiveObjects: 0.076100 ms CreateObjectMapping: 0.021500 ms MarkObjects: 1.552300 ms  DeleteObjects: 0.011300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/WXFSLoadBundleOperation.cs: 5203f2fca525dae83d1c2e37e165d738 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/WXFSLoadPackageManifestOperation.cs: 8b8b69cc4662810e2795f9e9ff3748aa -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/WXAssetBundleResult.cs: 0f8ee81536e88b0d5791823f7e8ffcad -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/UnityWechatAssetBundleRequestOperation.cs: 87f93f33ff72272522ecd6397c10fea7 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:scripting/monoscript/fileName/WXFSClearUnusedBundleFilesAsync.cs: 4202e71826b44387032b6c68d29bb911 -> 
+  custom:scripting/monoscript/fileName/WXFSDownloadFileOperation.cs: 9f5d0fe8d5b846fdec07b8f26cafbd90 -> 
+  custom:scripting/monoscript/fileName/LoadWechatAssetBundleOperation.cs: 4eb533cb9c11ebe491341888003d8f44 -> 
+  custom:scripting/monoscript/fileName/WXFSClearAllBundleFilesOperation.cs: d23acad3e8411b7500fbe5406a8a9faa -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/WXFSRequestPackageVersionOperation.cs: 4e765694426380ca42d2134fe61e2d9b -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/WechatFileSystem.cs: 3b9a8b988a0299b4db8e2e521c31d712 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: 5f9539f7fd93eb7b185544937307ab6a -> e5b227be8a052466cd3fe1e9123bfe3a
+  custom:scripting/monoscript/fileName/WXFSInitializeOperation.cs: 820d5d4604fc60c237c947a2695df511 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/precompiled-assembly-types:YooAsset: 5fcbd11b142fa8c53821d3d802ae9691 -> feb410c14e14d546a0ea254f7aae3c71
 ========================================================================
 Received Prepare
 Caller must complete domain reload
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.238 seconds
+- Loaded All Assemblies, in  0.234 seconds
 Native extension for WindowsStandalone target not found
 Native extension for iOS target not found
 Native extension for Android target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.291 seconds
-Domain Reload Profiling: 529ms
+- Finished resetting the current domain, in  0.276 seconds
+Domain Reload Profiling: 509ms
+	BeginReloadAssembly (85ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (13ms)
+	RebuildCommonClasses (19ms)
+	RebuildNativeTypeToScriptingClass (6ms)
+	initialDomainReloadingComplete (16ms)
+	LoadAllAssembliesAndSetupDomain (107ms)
+		LoadAssemblies (145ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (10ms)
+			TypeCache.Refresh (4ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (2ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (276ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (167ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (17ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (37ms)
+			ProcessInitializeOnLoadAttributes (92ms)
+			ProcessInitializeOnLoadMethodAttributes (16ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (4ms)
+Refreshing native plugins compatible for Editor in 3.78 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1453 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 9 unused Assets / (24.4 KB). Loaded Objects now: 1974.
+Memory consumption went from 85.8 MB to 85.7 MB.
+Total: 1.501900 ms (FindLiveObjects: 0.072000 ms CreateObjectMapping: 0.020500 ms MarkObjects: 1.391400 ms  DeleteObjects: 0.017500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/WXFSLoadBundleOperation.cs: 5203f2fca525dae83d1c2e37e165d738 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/WXFSLoadPackageManifestOperation.cs: 8b8b69cc4662810e2795f9e9ff3748aa -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/WXAssetBundleResult.cs: 0f8ee81536e88b0d5791823f7e8ffcad -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/UnityWechatAssetBundleRequestOperation.cs: 87f93f33ff72272522ecd6397c10fea7 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:scripting/monoscript/fileName/WXFSClearUnusedBundleFilesAsync.cs: 4202e71826b44387032b6c68d29bb911 -> 
+  custom:scripting/monoscript/fileName/WXFSDownloadFileOperation.cs: 9f5d0fe8d5b846fdec07b8f26cafbd90 -> 
+  custom:scripting/monoscript/fileName/LoadWechatAssetBundleOperation.cs: 4eb533cb9c11ebe491341888003d8f44 -> 
+  custom:scripting/monoscript/fileName/WXFSClearAllBundleFilesOperation.cs: d23acad3e8411b7500fbe5406a8a9faa -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/WXFSRequestPackageVersionOperation.cs: 4e765694426380ca42d2134fe61e2d9b -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/WechatFileSystem.cs: 3b9a8b988a0299b4db8e2e521c31d712 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: 5f9539f7fd93eb7b185544937307ab6a -> e5b227be8a052466cd3fe1e9123bfe3a
+  custom:scripting/monoscript/fileName/WXFSInitializeOperation.cs: 820d5d4604fc60c237c947a2695df511 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/precompiled-assembly-types:YooAsset: 5fcbd11b142fa8c53821d3d802ae9691 -> feb410c14e14d546a0ea254f7aae3c71
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 3.77 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 1 unused Assets / (3.1 KB). Loaded Objects now: 1974.
+Memory consumption went from 63.3 MB to 63.3 MB.
+Total: 1.620600 ms (FindLiveObjects: 0.082100 ms CreateObjectMapping: 0.024400 ms MarkObjects: 1.501500 ms  DeleteObjects: 0.011900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/WXFSLoadBundleOperation.cs: 5203f2fca525dae83d1c2e37e165d738 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/WXFSLoadPackageManifestOperation.cs: 8b8b69cc4662810e2795f9e9ff3748aa -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/WXAssetBundleResult.cs: 0f8ee81536e88b0d5791823f7e8ffcad -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/UnityWechatAssetBundleRequestOperation.cs: 87f93f33ff72272522ecd6397c10fea7 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:scripting/monoscript/fileName/WXFSClearUnusedBundleFilesAsync.cs: 4202e71826b44387032b6c68d29bb911 -> 
+  custom:scripting/monoscript/fileName/WXFSDownloadFileOperation.cs: 9f5d0fe8d5b846fdec07b8f26cafbd90 -> 
+  custom:scripting/monoscript/fileName/LoadWechatAssetBundleOperation.cs: 4eb533cb9c11ebe491341888003d8f44 -> 
+  custom:scripting/monoscript/fileName/WXFSClearAllBundleFilesOperation.cs: d23acad3e8411b7500fbe5406a8a9faa -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/WXFSRequestPackageVersionOperation.cs: 4e765694426380ca42d2134fe61e2d9b -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/WechatFileSystem.cs: 3b9a8b988a0299b4db8e2e521c31d712 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: 5f9539f7fd93eb7b185544937307ab6a -> e5b227be8a052466cd3fe1e9123bfe3a
+  custom:scripting/monoscript/fileName/WXFSInitializeOperation.cs: 820d5d4604fc60c237c947a2695df511 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/precompiled-assembly-types:YooAsset: 5fcbd11b142fa8c53821d3d802ae9691 -> feb410c14e14d546a0ea254f7aae3c71
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 3.59 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 1 unused Assets / (3.1 KB). Loaded Objects now: 1974.
+Memory consumption went from 63.1 MB to 63.1 MB.
+Total: 1.496100 ms (FindLiveObjects: 0.077100 ms CreateObjectMapping: 0.022300 ms MarkObjects: 1.384000 ms  DeleteObjects: 0.012100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/WXFSLoadBundleOperation.cs: 5203f2fca525dae83d1c2e37e165d738 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/WXFSLoadPackageManifestOperation.cs: 8b8b69cc4662810e2795f9e9ff3748aa -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/WXAssetBundleResult.cs: 0f8ee81536e88b0d5791823f7e8ffcad -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/UnityWechatAssetBundleRequestOperation.cs: 87f93f33ff72272522ecd6397c10fea7 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:scripting/monoscript/fileName/WXFSClearUnusedBundleFilesAsync.cs: 4202e71826b44387032b6c68d29bb911 -> 
+  custom:scripting/monoscript/fileName/WXFSDownloadFileOperation.cs: 9f5d0fe8d5b846fdec07b8f26cafbd90 -> 
+  custom:scripting/monoscript/fileName/LoadWechatAssetBundleOperation.cs: 4eb533cb9c11ebe491341888003d8f44 -> 
+  custom:scripting/monoscript/fileName/WXFSClearAllBundleFilesOperation.cs: d23acad3e8411b7500fbe5406a8a9faa -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/WXFSRequestPackageVersionOperation.cs: 4e765694426380ca42d2134fe61e2d9b -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/WechatFileSystem.cs: 3b9a8b988a0299b4db8e2e521c31d712 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: 5f9539f7fd93eb7b185544937307ab6a -> e5b227be8a052466cd3fe1e9123bfe3a
+  custom:scripting/monoscript/fileName/WXFSInitializeOperation.cs: 820d5d4604fc60c237c947a2695df511 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/precompiled-assembly-types:YooAsset: 5fcbd11b142fa8c53821d3d802ae9691 -> feb410c14e14d546a0ea254f7aae3c71
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 4.17 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 1 unused Assets / (3.1 KB). Loaded Objects now: 1974.
+Memory consumption went from 63.1 MB to 63.1 MB.
+Total: 1.819800 ms (FindLiveObjects: 0.085800 ms CreateObjectMapping: 0.024000 ms MarkObjects: 1.694000 ms  DeleteObjects: 0.015100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/WXFSLoadBundleOperation.cs: 5203f2fca525dae83d1c2e37e165d738 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/WXFSLoadPackageManifestOperation.cs: 8b8b69cc4662810e2795f9e9ff3748aa -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/WXAssetBundleResult.cs: 0f8ee81536e88b0d5791823f7e8ffcad -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/UnityWechatAssetBundleRequestOperation.cs: 87f93f33ff72272522ecd6397c10fea7 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:scripting/monoscript/fileName/WXFSClearUnusedBundleFilesAsync.cs: 4202e71826b44387032b6c68d29bb911 -> 
+  custom:scripting/monoscript/fileName/WXFSDownloadFileOperation.cs: 9f5d0fe8d5b846fdec07b8f26cafbd90 -> 
+  custom:scripting/monoscript/fileName/LoadWechatAssetBundleOperation.cs: 4eb533cb9c11ebe491341888003d8f44 -> 
+  custom:scripting/monoscript/fileName/WXFSClearAllBundleFilesOperation.cs: d23acad3e8411b7500fbe5406a8a9faa -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/WXFSRequestPackageVersionOperation.cs: 4e765694426380ca42d2134fe61e2d9b -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/WechatFileSystem.cs: 3b9a8b988a0299b4db8e2e521c31d712 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: 5f9539f7fd93eb7b185544937307ab6a -> e5b227be8a052466cd3fe1e9123bfe3a
+  custom:scripting/monoscript/fileName/WXFSInitializeOperation.cs: 820d5d4604fc60c237c947a2695df511 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/precompiled-assembly-types:YooAsset: 5fcbd11b142fa8c53821d3d802ae9691 -> feb410c14e14d546a0ea254f7aae3c71
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.451 seconds
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.597 seconds
+Domain Reload Profiling: 1047ms
+	BeginReloadAssembly (147ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (7ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (21ms)
+	RebuildCommonClasses (33ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (33ms)
+	LoadAllAssembliesAndSetupDomain (223ms)
+		LoadAssemblies (296ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (16ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (3ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (597ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (322ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (42ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (81ms)
+			ProcessInitializeOnLoadAttributes (158ms)
+			ProcessInitializeOnLoadMethodAttributes (31ms)
+			AfterProcessingInitializeOnLoad (6ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (7ms)
+Refreshing native plugins compatible for Editor in 12.86 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1453 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 9 unused Assets / (24.4 KB). Loaded Objects now: 1977.
+Memory consumption went from 85.8 MB to 85.7 MB.
+Total: 2.758800 ms (FindLiveObjects: 0.226900 ms CreateObjectMapping: 0.054300 ms MarkObjects: 2.416600 ms  DeleteObjects: 0.026000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/WXFSLoadBundleOperation.cs: 5203f2fca525dae83d1c2e37e165d738 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/WXFSLoadPackageManifestOperation.cs: 8b8b69cc4662810e2795f9e9ff3748aa -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/WXAssetBundleResult.cs: 0f8ee81536e88b0d5791823f7e8ffcad -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/UnityWechatAssetBundleRequestOperation.cs: 87f93f33ff72272522ecd6397c10fea7 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:scripting/monoscript/fileName/WXFSClearUnusedBundleFilesAsync.cs: 4202e71826b44387032b6c68d29bb911 -> 
+  custom:scripting/monoscript/fileName/WXFSDownloadFileOperation.cs: 9f5d0fe8d5b846fdec07b8f26cafbd90 -> 
+  custom:scripting/monoscript/fileName/LoadWechatAssetBundleOperation.cs: 4eb533cb9c11ebe491341888003d8f44 -> 
+  custom:scripting/monoscript/fileName/WXFSClearAllBundleFilesOperation.cs: d23acad3e8411b7500fbe5406a8a9faa -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/WXFSRequestPackageVersionOperation.cs: 4e765694426380ca42d2134fe61e2d9b -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/WechatFileSystem.cs: 3b9a8b988a0299b4db8e2e521c31d712 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: 5f9539f7fd93eb7b185544937307ab6a -> e5b227be8a052466cd3fe1e9123bfe3a
+  custom:scripting/monoscript/fileName/WXFSInitializeOperation.cs: 820d5d4604fc60c237c947a2695df511 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/precompiled-assembly-types:YooAsset: 5fcbd11b142fa8c53821d3d802ae9691 -> feb410c14e14d546a0ea254f7aae3c71
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 3.55 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 1 unused Assets / (3.1 KB). Loaded Objects now: 1977.
+Memory consumption went from 63.3 MB to 63.3 MB.
+Total: 1.703300 ms (FindLiveObjects: 0.076700 ms CreateObjectMapping: 0.022800 ms MarkObjects: 1.588600 ms  DeleteObjects: 0.014600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/WXFSLoadBundleOperation.cs: 5203f2fca525dae83d1c2e37e165d738 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/WXFSLoadPackageManifestOperation.cs: 8b8b69cc4662810e2795f9e9ff3748aa -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/WXAssetBundleResult.cs: 0f8ee81536e88b0d5791823f7e8ffcad -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/UnityWechatAssetBundleRequestOperation.cs: 87f93f33ff72272522ecd6397c10fea7 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:scripting/monoscript/fileName/WXFSClearUnusedBundleFilesAsync.cs: 4202e71826b44387032b6c68d29bb911 -> 
+  custom:scripting/monoscript/fileName/WXFSDownloadFileOperation.cs: 9f5d0fe8d5b846fdec07b8f26cafbd90 -> 
+  custom:scripting/monoscript/fileName/LoadWechatAssetBundleOperation.cs: 4eb533cb9c11ebe491341888003d8f44 -> 
+  custom:scripting/monoscript/fileName/WXFSClearAllBundleFilesOperation.cs: d23acad3e8411b7500fbe5406a8a9faa -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/WXFSRequestPackageVersionOperation.cs: 4e765694426380ca42d2134fe61e2d9b -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/WechatFileSystem.cs: 3b9a8b988a0299b4db8e2e521c31d712 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: 5f9539f7fd93eb7b185544937307ab6a -> e5b227be8a052466cd3fe1e9123bfe3a
+  custom:scripting/monoscript/fileName/WXFSInitializeOperation.cs: 820d5d4604fc60c237c947a2695df511 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/precompiled-assembly-types:YooAsset: 5fcbd11b142fa8c53821d3d802ae9691 -> feb410c14e14d546a0ea254f7aae3c71
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 3.63 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 1 unused Assets / (3.1 KB). Loaded Objects now: 1977.
+Memory consumption went from 63.1 MB to 63.1 MB.
+Total: 1.548900 ms (FindLiveObjects: 0.078300 ms CreateObjectMapping: 0.021500 ms MarkObjects: 1.435800 ms  DeleteObjects: 0.012700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/WXFSLoadBundleOperation.cs: 5203f2fca525dae83d1c2e37e165d738 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/WXFSLoadPackageManifestOperation.cs: 8b8b69cc4662810e2795f9e9ff3748aa -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/WXAssetBundleResult.cs: 0f8ee81536e88b0d5791823f7e8ffcad -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/UnityWechatAssetBundleRequestOperation.cs: 87f93f33ff72272522ecd6397c10fea7 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:scripting/monoscript/fileName/WXFSClearUnusedBundleFilesAsync.cs: 4202e71826b44387032b6c68d29bb911 -> 
+  custom:scripting/monoscript/fileName/WXFSDownloadFileOperation.cs: 9f5d0fe8d5b846fdec07b8f26cafbd90 -> 
+  custom:scripting/monoscript/fileName/LoadWechatAssetBundleOperation.cs: 4eb533cb9c11ebe491341888003d8f44 -> 
+  custom:scripting/monoscript/fileName/WXFSClearAllBundleFilesOperation.cs: d23acad3e8411b7500fbe5406a8a9faa -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/WXFSRequestPackageVersionOperation.cs: 4e765694426380ca42d2134fe61e2d9b -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/WechatFileSystem.cs: 3b9a8b988a0299b4db8e2e521c31d712 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: 5f9539f7fd93eb7b185544937307ab6a -> e5b227be8a052466cd3fe1e9123bfe3a
+  custom:scripting/monoscript/fileName/WXFSInitializeOperation.cs: 820d5d4604fc60c237c947a2695df511 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/precompiled-assembly-types:YooAsset: 5fcbd11b142fa8c53821d3d802ae9691 -> feb410c14e14d546a0ea254f7aae3c71
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 3.51 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 1 unused Assets / (3.1 KB). Loaded Objects now: 1977.
+Memory consumption went from 63.1 MB to 63.1 MB.
+Total: 1.520900 ms (FindLiveObjects: 0.082500 ms CreateObjectMapping: 0.021300 ms MarkObjects: 1.403700 ms  DeleteObjects: 0.012800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/WXFSLoadBundleOperation.cs: 5203f2fca525dae83d1c2e37e165d738 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/WXFSLoadPackageManifestOperation.cs: 8b8b69cc4662810e2795f9e9ff3748aa -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/WXAssetBundleResult.cs: 0f8ee81536e88b0d5791823f7e8ffcad -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/UnityWechatAssetBundleRequestOperation.cs: 87f93f33ff72272522ecd6397c10fea7 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:scripting/monoscript/fileName/WXFSClearUnusedBundleFilesAsync.cs: 4202e71826b44387032b6c68d29bb911 -> 
+  custom:scripting/monoscript/fileName/WXFSDownloadFileOperation.cs: 9f5d0fe8d5b846fdec07b8f26cafbd90 -> 
+  custom:scripting/monoscript/fileName/LoadWechatAssetBundleOperation.cs: 4eb533cb9c11ebe491341888003d8f44 -> 
+  custom:scripting/monoscript/fileName/WXFSClearAllBundleFilesOperation.cs: d23acad3e8411b7500fbe5406a8a9faa -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/WXFSRequestPackageVersionOperation.cs: 4e765694426380ca42d2134fe61e2d9b -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/WechatFileSystem.cs: 3b9a8b988a0299b4db8e2e521c31d712 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: 5f9539f7fd93eb7b185544937307ab6a -> e5b227be8a052466cd3fe1e9123bfe3a
+  custom:scripting/monoscript/fileName/WXFSInitializeOperation.cs: 820d5d4604fc60c237c947a2695df511 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/precompiled-assembly-types:YooAsset: 5fcbd11b142fa8c53821d3d802ae9691 -> feb410c14e14d546a0ea254f7aae3c71
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 3.55 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 1 unused Assets / (3.1 KB). Loaded Objects now: 1977.
+Memory consumption went from 63.1 MB to 63.1 MB.
+Total: 1.544300 ms (FindLiveObjects: 0.081900 ms CreateObjectMapping: 0.023700 ms MarkObjects: 1.424800 ms  DeleteObjects: 0.013300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/WXFSLoadBundleOperation.cs: 5203f2fca525dae83d1c2e37e165d738 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/WXFSLoadPackageManifestOperation.cs: 8b8b69cc4662810e2795f9e9ff3748aa -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/WXAssetBundleResult.cs: 0f8ee81536e88b0d5791823f7e8ffcad -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/UnityWechatAssetBundleRequestOperation.cs: 87f93f33ff72272522ecd6397c10fea7 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:scripting/monoscript/fileName/WXFSClearUnusedBundleFilesAsync.cs: 4202e71826b44387032b6c68d29bb911 -> 
+  custom:scripting/monoscript/fileName/WXFSDownloadFileOperation.cs: 9f5d0fe8d5b846fdec07b8f26cafbd90 -> 
+  custom:scripting/monoscript/fileName/LoadWechatAssetBundleOperation.cs: 4eb533cb9c11ebe491341888003d8f44 -> 
+  custom:scripting/monoscript/fileName/WXFSClearAllBundleFilesOperation.cs: d23acad3e8411b7500fbe5406a8a9faa -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/WXFSRequestPackageVersionOperation.cs: 4e765694426380ca42d2134fe61e2d9b -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/WechatFileSystem.cs: 3b9a8b988a0299b4db8e2e521c31d712 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: 5f9539f7fd93eb7b185544937307ab6a -> e5b227be8a052466cd3fe1e9123bfe3a
+  custom:scripting/monoscript/fileName/WXFSInitializeOperation.cs: 820d5d4604fc60c237c947a2695df511 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/precompiled-assembly-types:YooAsset: 5fcbd11b142fa8c53821d3d802ae9691 -> feb410c14e14d546a0ea254f7aae3c71
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 3.76 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 1 unused Assets / (3.1 KB). Loaded Objects now: 1977.
+Memory consumption went from 63.1 MB to 63.1 MB.
+Total: 1.569900 ms (FindLiveObjects: 0.077700 ms CreateObjectMapping: 0.022400 ms MarkObjects: 1.456800 ms  DeleteObjects: 0.012500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/WXFSLoadBundleOperation.cs: 5203f2fca525dae83d1c2e37e165d738 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/WXFSLoadPackageManifestOperation.cs: 8b8b69cc4662810e2795f9e9ff3748aa -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/WXAssetBundleResult.cs: 0f8ee81536e88b0d5791823f7e8ffcad -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/UnityWechatAssetBundleRequestOperation.cs: 87f93f33ff72272522ecd6397c10fea7 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:scripting/monoscript/fileName/WXFSClearUnusedBundleFilesAsync.cs: 4202e71826b44387032b6c68d29bb911 -> 
+  custom:scripting/monoscript/fileName/WXFSDownloadFileOperation.cs: 9f5d0fe8d5b846fdec07b8f26cafbd90 -> 
+  custom:scripting/monoscript/fileName/LoadWechatAssetBundleOperation.cs: 4eb533cb9c11ebe491341888003d8f44 -> 
+  custom:scripting/monoscript/fileName/WXFSClearAllBundleFilesOperation.cs: d23acad3e8411b7500fbe5406a8a9faa -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/WXFSRequestPackageVersionOperation.cs: 4e765694426380ca42d2134fe61e2d9b -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/WechatFileSystem.cs: 3b9a8b988a0299b4db8e2e521c31d712 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: 5f9539f7fd93eb7b185544937307ab6a -> e5b227be8a052466cd3fe1e9123bfe3a
+  custom:scripting/monoscript/fileName/WXFSInitializeOperation.cs: 820d5d4604fc60c237c947a2695df511 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/precompiled-assembly-types:YooAsset: 5fcbd11b142fa8c53821d3d802ae9691 -> feb410c14e14d546a0ea254f7aae3c71
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 4.04 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 1 unused Assets / (3.1 KB). Loaded Objects now: 1977.
+Memory consumption went from 63.1 MB to 63.1 MB.
+Total: 1.574700 ms (FindLiveObjects: 0.080800 ms CreateObjectMapping: 0.021700 ms MarkObjects: 1.457000 ms  DeleteObjects: 0.014700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/WXFSLoadBundleOperation.cs: 5203f2fca525dae83d1c2e37e165d738 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/WXFSLoadPackageManifestOperation.cs: 8b8b69cc4662810e2795f9e9ff3748aa -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/WXAssetBundleResult.cs: 0f8ee81536e88b0d5791823f7e8ffcad -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/UnityWechatAssetBundleRequestOperation.cs: 87f93f33ff72272522ecd6397c10fea7 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:scripting/monoscript/fileName/WXFSClearUnusedBundleFilesAsync.cs: 4202e71826b44387032b6c68d29bb911 -> 
+  custom:scripting/monoscript/fileName/WXFSDownloadFileOperation.cs: 9f5d0fe8d5b846fdec07b8f26cafbd90 -> 
+  custom:scripting/monoscript/fileName/LoadWechatAssetBundleOperation.cs: 4eb533cb9c11ebe491341888003d8f44 -> 
+  custom:scripting/monoscript/fileName/WXFSClearAllBundleFilesOperation.cs: d23acad3e8411b7500fbe5406a8a9faa -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/WXFSRequestPackageVersionOperation.cs: 4e765694426380ca42d2134fe61e2d9b -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/WechatFileSystem.cs: 3b9a8b988a0299b4db8e2e521c31d712 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: 5f9539f7fd93eb7b185544937307ab6a -> e5b227be8a052466cd3fe1e9123bfe3a
+  custom:scripting/monoscript/fileName/WXFSInitializeOperation.cs: 820d5d4604fc60c237c947a2695df511 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/precompiled-assembly-types:YooAsset: 5fcbd11b142fa8c53821d3d802ae9691 -> feb410c14e14d546a0ea254f7aae3c71
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.237 seconds
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.283 seconds
+Domain Reload Profiling: 519ms
+	BeginReloadAssembly (86ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (14ms)
+	RebuildCommonClasses (19ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (16ms)
+	LoadAllAssembliesAndSetupDomain (107ms)
+		LoadAssemblies (149ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (7ms)
+			TypeCache.Refresh (3ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (283ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (166ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (17ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (36ms)
+			ProcessInitializeOnLoadAttributes (92ms)
+			ProcessInitializeOnLoadMethodAttributes (16ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (4ms)
+Refreshing native plugins compatible for Editor in 3.40 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1453 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 9 unused Assets / (24.3 KB). Loaded Objects now: 1980.
+Memory consumption went from 85.8 MB to 85.7 MB.
+Total: 1.841700 ms (FindLiveObjects: 0.088000 ms CreateObjectMapping: 0.025400 ms MarkObjects: 1.709000 ms  DeleteObjects: 0.017800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/WXFSLoadBundleOperation.cs: 5203f2fca525dae83d1c2e37e165d738 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/WXFSLoadPackageManifestOperation.cs: 8b8b69cc4662810e2795f9e9ff3748aa -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/WXAssetBundleResult.cs: 0f8ee81536e88b0d5791823f7e8ffcad -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/UnityWechatAssetBundleRequestOperation.cs: 87f93f33ff72272522ecd6397c10fea7 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:scripting/monoscript/fileName/WXFSClearUnusedBundleFilesAsync.cs: 4202e71826b44387032b6c68d29bb911 -> 
+  custom:scripting/monoscript/fileName/WXFSDownloadFileOperation.cs: 9f5d0fe8d5b846fdec07b8f26cafbd90 -> 
+  custom:scripting/monoscript/fileName/LoadWechatAssetBundleOperation.cs: 4eb533cb9c11ebe491341888003d8f44 -> 
+  custom:scripting/monoscript/fileName/WXFSClearAllBundleFilesOperation.cs: d23acad3e8411b7500fbe5406a8a9faa -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/WXFSRequestPackageVersionOperation.cs: 4e765694426380ca42d2134fe61e2d9b -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/WechatFileSystem.cs: 3b9a8b988a0299b4db8e2e521c31d712 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: 5f9539f7fd93eb7b185544937307ab6a -> e5b227be8a052466cd3fe1e9123bfe3a
+  custom:scripting/monoscript/fileName/WXFSInitializeOperation.cs: 820d5d4604fc60c237c947a2695df511 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/precompiled-assembly-types:YooAsset: 5fcbd11b142fa8c53821d3d802ae9691 -> feb410c14e14d546a0ea254f7aae3c71
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.271 seconds
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.527 seconds
+Domain Reload Profiling: 798ms
+	BeginReloadAssembly (96ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (16ms)
+	RebuildCommonClasses (25ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (19ms)
+	LoadAllAssembliesAndSetupDomain (122ms)
+		LoadAssemblies (164ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (11ms)
+			TypeCache.Refresh (4ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (2ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (528ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (348ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (42ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (78ms)
+			ProcessInitializeOnLoadAttributes (182ms)
+			ProcessInitializeOnLoadMethodAttributes (38ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (6ms)
+Refreshing native plugins compatible for Editor in 3.28 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1454 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 9 unused Assets / (24.4 KB). Loaded Objects now: 1984.
+Memory consumption went from 85.8 MB to 85.8 MB.
+Total: 1.535700 ms (FindLiveObjects: 0.080400 ms CreateObjectMapping: 0.022700 ms MarkObjects: 1.410400 ms  DeleteObjects: 0.021700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/WXFSLoadBundleOperation.cs: 5203f2fca525dae83d1c2e37e165d738 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/RightClickEditor.cs: f15a84c91dcd22372aeddf5032222567 -> 
+  custom:scripting/monoscript/fileName/WXFSLoadPackageManifestOperation.cs: 8b8b69cc4662810e2795f9e9ff3748aa -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/WXAssetBundleResult.cs: 0f8ee81536e88b0d5791823f7e8ffcad -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/UnityWechatAssetBundleRequestOperation.cs: 87f93f33ff72272522ecd6397c10fea7 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:scripting/monoscript/fileName/WXFSClearUnusedBundleFilesAsync.cs: 4202e71826b44387032b6c68d29bb911 -> 
+  custom:scripting/monoscript/fileName/WXFSDownloadFileOperation.cs: 9f5d0fe8d5b846fdec07b8f26cafbd90 -> 
+  custom:scripting/monoscript/fileName/LoadWechatAssetBundleOperation.cs: 4eb533cb9c11ebe491341888003d8f44 -> 
+  custom:scripting/monoscript/fileName/WXFSClearAllBundleFilesOperation.cs: d23acad3e8411b7500fbe5406a8a9faa -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/WXFSRequestPackageVersionOperation.cs: 4e765694426380ca42d2134fe61e2d9b -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp-Editor: d3621205cd14d331f6a5a7f401e58e23 -> 2f60984338d1835817407a63afbc78f0
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/WechatFileSystem.cs: 3b9a8b988a0299b4db8e2e521c31d712 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: 5f9539f7fd93eb7b185544937307ab6a -> e5b227be8a052466cd3fe1e9123bfe3a
+  custom:scripting/monoscript/fileName/WXFSInitializeOperation.cs: 820d5d4604fc60c237c947a2695df511 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/precompiled-assembly-types:YooAsset: 5fcbd11b142fa8c53821d3d802ae9691 -> feb410c14e14d546a0ea254f7aae3c71
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.243 seconds
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.276 seconds
+Domain Reload Profiling: 518ms
+	BeginReloadAssembly (86ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (14ms)
+	RebuildCommonClasses (20ms)
+	RebuildNativeTypeToScriptingClass (6ms)
+	initialDomainReloadingComplete (18ms)
+	LoadAllAssembliesAndSetupDomain (112ms)
+		LoadAssemblies (150ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (10ms)
+			TypeCache.Refresh (4ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (2ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (277ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (167ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (18ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (37ms)
+			ProcessInitializeOnLoadAttributes (90ms)
+			ProcessInitializeOnLoadMethodAttributes (16ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (4ms)
+Refreshing native plugins compatible for Editor in 3.44 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1454 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 9 unused Assets / (24.3 KB). Loaded Objects now: 1987.
+Memory consumption went from 85.8 MB to 85.8 MB.
+Total: 2.089100 ms (FindLiveObjects: 0.102500 ms CreateObjectMapping: 0.054000 ms MarkObjects: 1.912700 ms  DeleteObjects: 0.019500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/WXFSLoadBundleOperation.cs: 5203f2fca525dae83d1c2e37e165d738 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/RightClickEditor.cs: f15a84c91dcd22372aeddf5032222567 -> 
+  custom:scripting/monoscript/fileName/WXFSLoadPackageManifestOperation.cs: 8b8b69cc4662810e2795f9e9ff3748aa -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/WXAssetBundleResult.cs: 0f8ee81536e88b0d5791823f7e8ffcad -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/UnityWechatAssetBundleRequestOperation.cs: 87f93f33ff72272522ecd6397c10fea7 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:scripting/monoscript/fileName/WXFSClearUnusedBundleFilesAsync.cs: 4202e71826b44387032b6c68d29bb911 -> 
+  custom:scripting/monoscript/fileName/WXFSDownloadFileOperation.cs: 9f5d0fe8d5b846fdec07b8f26cafbd90 -> 
+  custom:scripting/monoscript/fileName/LoadWechatAssetBundleOperation.cs: 4eb533cb9c11ebe491341888003d8f44 -> 
+  custom:scripting/monoscript/fileName/WXFSClearAllBundleFilesOperation.cs: d23acad3e8411b7500fbe5406a8a9faa -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/WXFSRequestPackageVersionOperation.cs: 4e765694426380ca42d2134fe61e2d9b -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp-Editor: d3621205cd14d331f6a5a7f401e58e23 -> 2f60984338d1835817407a63afbc78f0
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/WechatFileSystem.cs: 3b9a8b988a0299b4db8e2e521c31d712 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: 5f9539f7fd93eb7b185544937307ab6a -> e5b227be8a052466cd3fe1e9123bfe3a
+  custom:scripting/monoscript/fileName/WXFSInitializeOperation.cs: 820d5d4604fc60c237c947a2695df511 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/precompiled-assembly-types:YooAsset: 5fcbd11b142fa8c53821d3d802ae9691 -> feb410c14e14d546a0ea254f7aae3c71
+========================================================================
+Received Import Request.
+  Time since last request: 1288.237285 seconds.
+  path: Assets/Editor/RightClickEditor.cs
+  artifactKey: Guid(082541d9e35150242b035d4327150af6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Editor/RightClickEditor.cs using Guid(082541d9e35150242b035d4327150af6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '7ec9ac45758d712fbd40797f1a434ba3') in 0.015243 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.241 seconds
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.276 seconds
+Domain Reload Profiling: 517ms
+	BeginReloadAssembly (89ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (16ms)
+	RebuildCommonClasses (19ms)
+	RebuildNativeTypeToScriptingClass (6ms)
+	initialDomainReloadingComplete (17ms)
+	LoadAllAssembliesAndSetupDomain (109ms)
+		LoadAssemblies (147ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (10ms)
+			TypeCache.Refresh (4ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (2ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (277ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (167ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (19ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (37ms)
+			ProcessInitializeOnLoadAttributes (89ms)
+			ProcessInitializeOnLoadMethodAttributes (16ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (4ms)
+Refreshing native plugins compatible for Editor in 3.56 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1453 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 9 unused Assets / (24.3 KB). Loaded Objects now: 1990.
+Memory consumption went from 85.5 MB to 85.5 MB.
+Total: 1.526700 ms (FindLiveObjects: 0.077400 ms CreateObjectMapping: 0.019500 ms MarkObjects: 1.410100 ms  DeleteObjects: 0.019300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/WXFSLoadBundleOperation.cs: 5203f2fca525dae83d1c2e37e165d738 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/RightClickEditor.cs: f15a84c91dcd22372aeddf5032222567 -> 
+  custom:scripting/monoscript/fileName/WXFSLoadPackageManifestOperation.cs: 8b8b69cc4662810e2795f9e9ff3748aa -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/WXAssetBundleResult.cs: 0f8ee81536e88b0d5791823f7e8ffcad -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/UnityWechatAssetBundleRequestOperation.cs: 87f93f33ff72272522ecd6397c10fea7 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:scripting/monoscript/fileName/WXFSClearUnusedBundleFilesAsync.cs: 4202e71826b44387032b6c68d29bb911 -> 
+  custom:scripting/monoscript/fileName/WXFSDownloadFileOperation.cs: 9f5d0fe8d5b846fdec07b8f26cafbd90 -> 
+  custom:scripting/monoscript/fileName/LoadWechatAssetBundleOperation.cs: 4eb533cb9c11ebe491341888003d8f44 -> 
+  custom:scripting/monoscript/fileName/WXFSClearAllBundleFilesOperation.cs: d23acad3e8411b7500fbe5406a8a9faa -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/WXFSRequestPackageVersionOperation.cs: 4e765694426380ca42d2134fe61e2d9b -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp-Editor: d3621205cd14d331f6a5a7f401e58e23 -> 2f60984338d1835817407a63afbc78f0
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/WechatFileSystem.cs: 3b9a8b988a0299b4db8e2e521c31d712 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: 5f9539f7fd93eb7b185544937307ab6a -> e5b227be8a052466cd3fe1e9123bfe3a
+  custom:scripting/monoscript/fileName/WXFSInitializeOperation.cs: 820d5d4604fc60c237c947a2695df511 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/precompiled-assembly-types:YooAsset: 5fcbd11b142fa8c53821d3d802ae9691 -> feb410c14e14d546a0ea254f7aae3c71
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 3.62 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 1 unused Assets / (3.1 KB). Loaded Objects now: 1990.
+Memory consumption went from 63.3 MB to 63.3 MB.
+Total: 1.556200 ms (FindLiveObjects: 0.081000 ms CreateObjectMapping: 0.022400 ms MarkObjects: 1.442200 ms  DeleteObjects: 0.010100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/WXFSLoadBundleOperation.cs: 5203f2fca525dae83d1c2e37e165d738 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/RightClickEditor.cs: f15a84c91dcd22372aeddf5032222567 -> 
+  custom:scripting/monoscript/fileName/WXFSLoadPackageManifestOperation.cs: 8b8b69cc4662810e2795f9e9ff3748aa -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/WXAssetBundleResult.cs: 0f8ee81536e88b0d5791823f7e8ffcad -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/UnityWechatAssetBundleRequestOperation.cs: 87f93f33ff72272522ecd6397c10fea7 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:scripting/monoscript/fileName/WXFSClearUnusedBundleFilesAsync.cs: 4202e71826b44387032b6c68d29bb911 -> 
+  custom:scripting/monoscript/fileName/WXFSDownloadFileOperation.cs: 9f5d0fe8d5b846fdec07b8f26cafbd90 -> 
+  custom:scripting/monoscript/fileName/LoadWechatAssetBundleOperation.cs: 4eb533cb9c11ebe491341888003d8f44 -> 
+  custom:scripting/monoscript/fileName/WXFSClearAllBundleFilesOperation.cs: d23acad3e8411b7500fbe5406a8a9faa -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/WXFSRequestPackageVersionOperation.cs: 4e765694426380ca42d2134fe61e2d9b -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp-Editor: d3621205cd14d331f6a5a7f401e58e23 -> 2f60984338d1835817407a63afbc78f0
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/WechatFileSystem.cs: 3b9a8b988a0299b4db8e2e521c31d712 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: 5f9539f7fd93eb7b185544937307ab6a -> e5b227be8a052466cd3fe1e9123bfe3a
+  custom:scripting/monoscript/fileName/WXFSInitializeOperation.cs: 820d5d4604fc60c237c947a2695df511 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/precompiled-assembly-types:YooAsset: 5fcbd11b142fa8c53821d3d802ae9691 -> feb410c14e14d546a0ea254f7aae3c71
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 3.93 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 1 unused Assets / (3.1 KB). Loaded Objects now: 1990.
+Memory consumption went from 63.2 MB to 63.1 MB.
+Total: 1.566200 ms (FindLiveObjects: 0.085200 ms CreateObjectMapping: 0.026300 ms MarkObjects: 1.439800 ms  DeleteObjects: 0.014300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/WXFSLoadBundleOperation.cs: 5203f2fca525dae83d1c2e37e165d738 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/RightClickEditor.cs: f15a84c91dcd22372aeddf5032222567 -> 
+  custom:scripting/monoscript/fileName/WXFSLoadPackageManifestOperation.cs: 8b8b69cc4662810e2795f9e9ff3748aa -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/WXAssetBundleResult.cs: 0f8ee81536e88b0d5791823f7e8ffcad -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/UnityWechatAssetBundleRequestOperation.cs: 87f93f33ff72272522ecd6397c10fea7 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:scripting/monoscript/fileName/WXFSClearUnusedBundleFilesAsync.cs: 4202e71826b44387032b6c68d29bb911 -> 
+  custom:scripting/monoscript/fileName/WXFSDownloadFileOperation.cs: 9f5d0fe8d5b846fdec07b8f26cafbd90 -> 
+  custom:scripting/monoscript/fileName/LoadWechatAssetBundleOperation.cs: 4eb533cb9c11ebe491341888003d8f44 -> 
+  custom:scripting/monoscript/fileName/WXFSClearAllBundleFilesOperation.cs: d23acad3e8411b7500fbe5406a8a9faa -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/WXFSRequestPackageVersionOperation.cs: 4e765694426380ca42d2134fe61e2d9b -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp-Editor: d3621205cd14d331f6a5a7f401e58e23 -> 2f60984338d1835817407a63afbc78f0
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/WechatFileSystem.cs: 3b9a8b988a0299b4db8e2e521c31d712 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: 5f9539f7fd93eb7b185544937307ab6a -> e5b227be8a052466cd3fe1e9123bfe3a
+  custom:scripting/monoscript/fileName/WXFSInitializeOperation.cs: 820d5d4604fc60c237c947a2695df511 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/precompiled-assembly-types:YooAsset: 5fcbd11b142fa8c53821d3d802ae9691 -> feb410c14e14d546a0ea254f7aae3c71
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 3.60 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 1 unused Assets / (3.1 KB). Loaded Objects now: 1990.
+Memory consumption went from 63.2 MB to 63.1 MB.
+Total: 1.546800 ms (FindLiveObjects: 0.078300 ms CreateObjectMapping: 0.022300 ms MarkObjects: 1.433900 ms  DeleteObjects: 0.011700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/WXFSLoadBundleOperation.cs: 5203f2fca525dae83d1c2e37e165d738 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/RightClickEditor.cs: f15a84c91dcd22372aeddf5032222567 -> 
+  custom:scripting/monoscript/fileName/WXFSLoadPackageManifestOperation.cs: 8b8b69cc4662810e2795f9e9ff3748aa -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/WXAssetBundleResult.cs: 0f8ee81536e88b0d5791823f7e8ffcad -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/UnityWechatAssetBundleRequestOperation.cs: 87f93f33ff72272522ecd6397c10fea7 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:scripting/monoscript/fileName/WXFSClearUnusedBundleFilesAsync.cs: 4202e71826b44387032b6c68d29bb911 -> 
+  custom:scripting/monoscript/fileName/WXFSDownloadFileOperation.cs: 9f5d0fe8d5b846fdec07b8f26cafbd90 -> 
+  custom:scripting/monoscript/fileName/LoadWechatAssetBundleOperation.cs: 4eb533cb9c11ebe491341888003d8f44 -> 
+  custom:scripting/monoscript/fileName/WXFSClearAllBundleFilesOperation.cs: d23acad3e8411b7500fbe5406a8a9faa -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/WXFSRequestPackageVersionOperation.cs: 4e765694426380ca42d2134fe61e2d9b -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp-Editor: d3621205cd14d331f6a5a7f401e58e23 -> 2f60984338d1835817407a63afbc78f0
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/WechatFileSystem.cs: 3b9a8b988a0299b4db8e2e521c31d712 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: 5f9539f7fd93eb7b185544937307ab6a -> e5b227be8a052466cd3fe1e9123bfe3a
+  custom:scripting/monoscript/fileName/WXFSInitializeOperation.cs: 820d5d4604fc60c237c947a2695df511 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/precompiled-assembly-types:YooAsset: 5fcbd11b142fa8c53821d3d802ae9691 -> feb410c14e14d546a0ea254f7aae3c71
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.241 seconds
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.286 seconds
+Domain Reload Profiling: 526ms
 	BeginReloadAssembly (88ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (3ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (15ms)
-	RebuildCommonClasses (21ms)
+		CreateAndSetChildDomain (13ms)
+	RebuildCommonClasses (20ms)
 	RebuildNativeTypeToScriptingClass (7ms)
-	initialDomainReloadingComplete (17ms)
-	LoadAllAssembliesAndSetupDomain (104ms)
-		LoadAssemblies (146ms)
+	initialDomainReloadingComplete (18ms)
+	LoadAllAssembliesAndSetupDomain (108ms)
+		LoadAssemblies (149ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (8ms)
-			TypeCache.Refresh (4ms)
-				TypeCache.ScanAssembly (0ms)
+		AnalyzeDomain (10ms)
+			TypeCache.Refresh (5ms)
+				TypeCache.ScanAssembly (1ms)
 			ScanForSourceGeneratedMonoScriptInfo (1ms)
-			ResolveRequiredComponents (2ms)
-	FinalizeReload (292ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (286ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (181ms)
+		SetupLoadedEditorAssemblies (173ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (18ms)
-			SetLoadedEditorAssemblies (2ms)
+			InitializePlatformSupportModulesInManaged (19ms)
+			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (36ms)
-			ProcessInitializeOnLoadAttributes (102ms)
-			ProcessInitializeOnLoadMethodAttributes (19ms)
+			BeforeProcessingInitializeOnLoad (38ms)
+			ProcessInitializeOnLoadAttributes (95ms)
+			ProcessInitializeOnLoadMethodAttributes (16ms)
 			AfterProcessingInitializeOnLoad (3ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (4ms)
-Refreshing native plugins compatible for Editor in 3.77 ms, found 9 plugins.
+Refreshing native plugins compatible for Editor in 3.76 ms, found 9 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1351 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 9 unused Assets / (24.4 KB). Loaded Objects now: 1861.
-Memory consumption went from 80.1 MB to 80.1 MB.
-Total: 1.643400 ms (FindLiveObjects: 0.077100 ms CreateObjectMapping: 0.018800 ms MarkObjects: 1.525800 ms  DeleteObjects: 0.021000 ms)
+Unloading 1454 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 9 unused Assets / (24.3 KB). Loaded Objects now: 1993.
+Memory consumption went from 85.8 MB to 85.8 MB.
+Total: 1.524600 ms (FindLiveObjects: 0.074400 ms CreateObjectMapping: 0.020300 ms MarkObjects: 1.410400 ms  DeleteObjects: 0.018600 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/WXFSLoadBundleOperation.cs: 5203f2fca525dae83d1c2e37e165d738 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/RightClickEditor.cs: f15a84c91dcd22372aeddf5032222567 -> 
+  custom:scripting/monoscript/fileName/WXFSLoadPackageManifestOperation.cs: 8b8b69cc4662810e2795f9e9ff3748aa -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
   custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/WXAssetBundleResult.cs: 0f8ee81536e88b0d5791823f7e8ffcad -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/UnityWechatAssetBundleRequestOperation.cs: 87f93f33ff72272522ecd6397c10fea7 -> 
   custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:scripting/monoscript/fileName/WXFSClearUnusedBundleFilesAsync.cs: 4202e71826b44387032b6c68d29bb911 -> 
+  custom:scripting/monoscript/fileName/WXFSDownloadFileOperation.cs: 9f5d0fe8d5b846fdec07b8f26cafbd90 -> 
+  custom:scripting/monoscript/fileName/LoadWechatAssetBundleOperation.cs: 4eb533cb9c11ebe491341888003d8f44 -> 
+  custom:scripting/monoscript/fileName/WXFSClearAllBundleFilesOperation.cs: d23acad3e8411b7500fbe5406a8a9faa -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/WXFSRequestPackageVersionOperation.cs: 4e765694426380ca42d2134fe61e2d9b -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp-Editor: d3621205cd14d331f6a5a7f401e58e23 -> 2f60984338d1835817407a63afbc78f0
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:scripting/precompiled-assembly-types:Assembly-CSharp: 61c8bacf8abbd9334ef7c158a884a089 -> a5f20d76c671c90795a648786e0c2591
+  custom:scripting/monoscript/fileName/WechatFileSystem.cs: 3b9a8b988a0299b4db8e2e521c31d712 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: 5f9539f7fd93eb7b185544937307ab6a -> e5b227be8a052466cd3fe1e9123bfe3a
+  custom:scripting/monoscript/fileName/WXFSInitializeOperation.cs: 820d5d4604fc60c237c947a2695df511 -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/precompiled-assembly-types:YooAsset: 5fcbd11b142fa8c53821d3d802ae9691 -> feb410c14e14d546a0ea254f7aae3c71
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 3.70 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 1 unused Assets / (3.1 KB). Loaded Objects now: 1993.
+Memory consumption went from 63.3 MB to 63.3 MB.
+Total: 1.727800 ms (FindLiveObjects: 0.079300 ms CreateObjectMapping: 0.025200 ms MarkObjects: 1.610800 ms  DeleteObjects: 0.011900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/WXFSLoadBundleOperation.cs: 5203f2fca525dae83d1c2e37e165d738 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/RightClickEditor.cs: f15a84c91dcd22372aeddf5032222567 -> 
+  custom:scripting/monoscript/fileName/WXFSLoadPackageManifestOperation.cs: 8b8b69cc4662810e2795f9e9ff3748aa -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/WXAssetBundleResult.cs: 0f8ee81536e88b0d5791823f7e8ffcad -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/UnityWechatAssetBundleRequestOperation.cs: 87f93f33ff72272522ecd6397c10fea7 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:scripting/monoscript/fileName/WXFSClearUnusedBundleFilesAsync.cs: 4202e71826b44387032b6c68d29bb911 -> 
+  custom:scripting/monoscript/fileName/WXFSDownloadFileOperation.cs: 9f5d0fe8d5b846fdec07b8f26cafbd90 -> 
+  custom:scripting/monoscript/fileName/LoadWechatAssetBundleOperation.cs: 4eb533cb9c11ebe491341888003d8f44 -> 
+  custom:scripting/monoscript/fileName/WXFSClearAllBundleFilesOperation.cs: d23acad3e8411b7500fbe5406a8a9faa -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/WXFSRequestPackageVersionOperation.cs: 4e765694426380ca42d2134fe61e2d9b -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp-Editor: d3621205cd14d331f6a5a7f401e58e23 -> 2f60984338d1835817407a63afbc78f0
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/WechatFileSystem.cs: 3b9a8b988a0299b4db8e2e521c31d712 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: 5f9539f7fd93eb7b185544937307ab6a -> e5b227be8a052466cd3fe1e9123bfe3a
+  custom:scripting/monoscript/fileName/WXFSInitializeOperation.cs: 820d5d4604fc60c237c947a2695df511 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/precompiled-assembly-types:YooAsset: 5fcbd11b142fa8c53821d3d802ae9691 -> feb410c14e14d546a0ea254f7aae3c71
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 4.42 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 1 unused Assets / (3.1 KB). Loaded Objects now: 1993.
+Memory consumption went from 63.2 MB to 63.2 MB.
+Total: 1.560400 ms (FindLiveObjects: 0.081200 ms CreateObjectMapping: 0.023000 ms MarkObjects: 1.440800 ms  DeleteObjects: 0.014800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/WXFSLoadBundleOperation.cs: 5203f2fca525dae83d1c2e37e165d738 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/RightClickEditor.cs: f15a84c91dcd22372aeddf5032222567 -> 
+  custom:scripting/monoscript/fileName/WXFSLoadPackageManifestOperation.cs: 8b8b69cc4662810e2795f9e9ff3748aa -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/WXAssetBundleResult.cs: 0f8ee81536e88b0d5791823f7e8ffcad -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/UnityWechatAssetBundleRequestOperation.cs: 87f93f33ff72272522ecd6397c10fea7 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:scripting/monoscript/fileName/WXFSClearUnusedBundleFilesAsync.cs: 4202e71826b44387032b6c68d29bb911 -> 
+  custom:scripting/monoscript/fileName/WXFSDownloadFileOperation.cs: 9f5d0fe8d5b846fdec07b8f26cafbd90 -> 
+  custom:scripting/monoscript/fileName/LoadWechatAssetBundleOperation.cs: 4eb533cb9c11ebe491341888003d8f44 -> 
+  custom:scripting/monoscript/fileName/WXFSClearAllBundleFilesOperation.cs: d23acad3e8411b7500fbe5406a8a9faa -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/WXFSRequestPackageVersionOperation.cs: 4e765694426380ca42d2134fe61e2d9b -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp-Editor: d3621205cd14d331f6a5a7f401e58e23 -> 2f60984338d1835817407a63afbc78f0
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/WechatFileSystem.cs: 3b9a8b988a0299b4db8e2e521c31d712 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: 5f9539f7fd93eb7b185544937307ab6a -> e5b227be8a052466cd3fe1e9123bfe3a
+  custom:scripting/monoscript/fileName/WXFSInitializeOperation.cs: 820d5d4604fc60c237c947a2695df511 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/precompiled-assembly-types:YooAsset: 5fcbd11b142fa8c53821d3d802ae9691 -> feb410c14e14d546a0ea254f7aae3c71
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 3.39 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 1 unused Assets / (3.1 KB). Loaded Objects now: 1993.
+Memory consumption went from 63.2 MB to 63.2 MB.
+Total: 1.530100 ms (FindLiveObjects: 0.082400 ms CreateObjectMapping: 0.023500 ms MarkObjects: 1.412000 ms  DeleteObjects: 0.011600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/WXFSLoadBundleOperation.cs: 5203f2fca525dae83d1c2e37e165d738 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/RightClickEditor.cs: f15a84c91dcd22372aeddf5032222567 -> 
+  custom:scripting/monoscript/fileName/WXFSLoadPackageManifestOperation.cs: 8b8b69cc4662810e2795f9e9ff3748aa -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/WXAssetBundleResult.cs: 0f8ee81536e88b0d5791823f7e8ffcad -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/UnityWechatAssetBundleRequestOperation.cs: 87f93f33ff72272522ecd6397c10fea7 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:scripting/monoscript/fileName/WXFSClearUnusedBundleFilesAsync.cs: 4202e71826b44387032b6c68d29bb911 -> 
+  custom:scripting/monoscript/fileName/WXFSDownloadFileOperation.cs: 9f5d0fe8d5b846fdec07b8f26cafbd90 -> 
+  custom:scripting/monoscript/fileName/LoadWechatAssetBundleOperation.cs: 4eb533cb9c11ebe491341888003d8f44 -> 
+  custom:scripting/monoscript/fileName/WXFSClearAllBundleFilesOperation.cs: d23acad3e8411b7500fbe5406a8a9faa -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/WXFSRequestPackageVersionOperation.cs: 4e765694426380ca42d2134fe61e2d9b -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp-Editor: d3621205cd14d331f6a5a7f401e58e23 -> 2f60984338d1835817407a63afbc78f0
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/WechatFileSystem.cs: 3b9a8b988a0299b4db8e2e521c31d712 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: 5f9539f7fd93eb7b185544937307ab6a -> e5b227be8a052466cd3fe1e9123bfe3a
+  custom:scripting/monoscript/fileName/WXFSInitializeOperation.cs: 820d5d4604fc60c237c947a2695df511 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/precompiled-assembly-types:YooAsset: 5fcbd11b142fa8c53821d3d802ae9691 -> feb410c14e14d546a0ea254f7aae3c71
 ========================================================================
 Received Prepare
 Caller must complete domain reload
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.229 seconds
+- Loaded All Assemblies, in  0.241 seconds
 Native extension for WindowsStandalone target not found
 Native extension for iOS target not found
 Native extension for Android target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.300 seconds
-Domain Reload Profiling: 529ms
-	BeginReloadAssembly (83ms)
+- Finished resetting the current domain, in  0.301 seconds
+Domain Reload Profiling: 542ms
+	BeginReloadAssembly (88ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (3ms)
+		DisableScriptedObjects (5ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (12ms)
+		CreateAndSetChildDomain (14ms)
 	RebuildCommonClasses (20ms)
-	RebuildNativeTypeToScriptingClass (7ms)
-	initialDomainReloadingComplete (17ms)
-	LoadAllAssembliesAndSetupDomain (102ms)
-		LoadAssemblies (141ms)
+	RebuildNativeTypeToScriptingClass (6ms)
+	initialDomainReloadingComplete (16ms)
+	LoadAllAssembliesAndSetupDomain (111ms)
+		LoadAssemblies (152ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (9ms)
-			TypeCache.Refresh (4ms)
+		AnalyzeDomain (7ms)
+			TypeCache.Refresh (3ms)
 				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (1ms)
-			ResolveRequiredComponents (2ms)
-	FinalizeReload (300ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (301ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (186ms)
+		SetupLoadedEditorAssemblies (173ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (18ms)
+			InitializePlatformSupportModulesInManaged (19ms)
 			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (36ms)
-			ProcessInitializeOnLoadAttributes (100ms)
-			ProcessInitializeOnLoadMethodAttributes (24ms)
-			AfterProcessingInitializeOnLoad (5ms)
+			BeforeProcessingInitializeOnLoad (38ms)
+			ProcessInitializeOnLoadAttributes (92ms)
+			ProcessInitializeOnLoadMethodAttributes (18ms)
+			AfterProcessingInitializeOnLoad (3ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (6ms)
-Refreshing native plugins compatible for Editor in 3.89 ms, found 9 plugins.
+		AwakeInstancesAfterBackupRestoration (5ms)
+Refreshing native plugins compatible for Editor in 3.69 ms, found 9 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1351 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 9 unused Assets / (24.4 KB). Loaded Objects now: 1864.
-Memory consumption went from 80.2 MB to 80.1 MB.
-Total: 2.681100 ms (FindLiveObjects: 0.228400 ms CreateObjectMapping: 0.048200 ms MarkObjects: 2.372300 ms  DeleteObjects: 0.031200 ms)
+Unloading 1454 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 9 unused Assets / (24.4 KB). Loaded Objects now: 1996.
+Memory consumption went from 85.8 MB to 85.8 MB.
+Total: 1.753000 ms (FindLiveObjects: 0.073600 ms CreateObjectMapping: 0.022600 ms MarkObjects: 1.637900 ms  DeleteObjects: 0.018100 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/WXFSLoadBundleOperation.cs: 5203f2fca525dae83d1c2e37e165d738 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/RightClickEditor.cs: f15a84c91dcd22372aeddf5032222567 -> 
+  custom:scripting/monoscript/fileName/WXFSLoadPackageManifestOperation.cs: 8b8b69cc4662810e2795f9e9ff3748aa -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
   custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/WXAssetBundleResult.cs: 0f8ee81536e88b0d5791823f7e8ffcad -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/UnityWechatAssetBundleRequestOperation.cs: 87f93f33ff72272522ecd6397c10fea7 -> 
   custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:scripting/monoscript/fileName/WXFSClearUnusedBundleFilesAsync.cs: 4202e71826b44387032b6c68d29bb911 -> 
+  custom:scripting/monoscript/fileName/WXFSDownloadFileOperation.cs: 9f5d0fe8d5b846fdec07b8f26cafbd90 -> 
+  custom:scripting/monoscript/fileName/LoadWechatAssetBundleOperation.cs: 4eb533cb9c11ebe491341888003d8f44 -> 
+  custom:scripting/monoscript/fileName/WXFSClearAllBundleFilesOperation.cs: d23acad3e8411b7500fbe5406a8a9faa -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/WXFSRequestPackageVersionOperation.cs: 4e765694426380ca42d2134fe61e2d9b -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp-Editor: d3621205cd14d331f6a5a7f401e58e23 -> 2f60984338d1835817407a63afbc78f0
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:scripting/precompiled-assembly-types:Assembly-CSharp: 61c8bacf8abbd9334ef7c158a884a089 -> a5f20d76c671c90795a648786e0c2591
+  custom:scripting/monoscript/fileName/WechatFileSystem.cs: 3b9a8b988a0299b4db8e2e521c31d712 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: 5f9539f7fd93eb7b185544937307ab6a -> e5b227be8a052466cd3fe1e9123bfe3a
+  custom:scripting/monoscript/fileName/WXFSInitializeOperation.cs: 820d5d4604fc60c237c947a2695df511 -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: 由于线程退出或应用程序请求，已中止 I/O 操作。
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0
+  custom:scripting/precompiled-assembly-types:YooAsset: 5fcbd11b142fa8c53821d3d802ae9691 -> feb410c14e14d546a0ea254f7aae3c71
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.234 seconds
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.276 seconds
+Domain Reload Profiling: 510ms
+	BeginReloadAssembly (87ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (14ms)
+	RebuildCommonClasses (20ms)
+	RebuildNativeTypeToScriptingClass (6ms)
+	initialDomainReloadingComplete (17ms)
+	LoadAllAssembliesAndSetupDomain (103ms)
+		LoadAssemblies (146ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (7ms)
+			TypeCache.Refresh (3ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (277ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (167ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (18ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (38ms)
+			ProcessInitializeOnLoadAttributes (89ms)
+			ProcessInitializeOnLoadMethodAttributes (17ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (4ms)
+Refreshing native plugins compatible for Editor in 3.41 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1454 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 9 unused Assets / (24.4 KB). Loaded Objects now: 1999.
+Memory consumption went from 85.8 MB to 85.8 MB.
+Total: 1.632300 ms (FindLiveObjects: 0.074500 ms CreateObjectMapping: 0.021800 ms MarkObjects: 1.518000 ms  DeleteObjects: 0.017700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/WXFSLoadBundleOperation.cs: 5203f2fca525dae83d1c2e37e165d738 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/RightClickEditor.cs: f15a84c91dcd22372aeddf5032222567 -> 
+  custom:scripting/monoscript/fileName/WXFSLoadPackageManifestOperation.cs: 8b8b69cc4662810e2795f9e9ff3748aa -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/WXAssetBundleResult.cs: 0f8ee81536e88b0d5791823f7e8ffcad -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/UnityWechatAssetBundleRequestOperation.cs: 87f93f33ff72272522ecd6397c10fea7 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:scripting/monoscript/fileName/WXFSClearUnusedBundleFilesAsync.cs: 4202e71826b44387032b6c68d29bb911 -> 
+  custom:scripting/monoscript/fileName/WXFSDownloadFileOperation.cs: 9f5d0fe8d5b846fdec07b8f26cafbd90 -> 
+  custom:scripting/monoscript/fileName/LoadWechatAssetBundleOperation.cs: 4eb533cb9c11ebe491341888003d8f44 -> 
+  custom:scripting/monoscript/fileName/WXFSClearAllBundleFilesOperation.cs: d23acad3e8411b7500fbe5406a8a9faa -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/WXFSRequestPackageVersionOperation.cs: 4e765694426380ca42d2134fe61e2d9b -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp-Editor: d3621205cd14d331f6a5a7f401e58e23 -> 2f60984338d1835817407a63afbc78f0
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/WechatFileSystem.cs: 3b9a8b988a0299b4db8e2e521c31d712 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: 5f9539f7fd93eb7b185544937307ab6a -> e5b227be8a052466cd3fe1e9123bfe3a
+  custom:scripting/monoscript/fileName/WXFSInitializeOperation.cs: 820d5d4604fc60c237c947a2695df511 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/precompiled-assembly-types:YooAsset: 5fcbd11b142fa8c53821d3d802ae9691 -> feb410c14e14d546a0ea254f7aae3c71
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.231 seconds
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.269 seconds
+Domain Reload Profiling: 500ms
+	BeginReloadAssembly (86ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (14ms)
+	RebuildCommonClasses (19ms)
+	RebuildNativeTypeToScriptingClass (6ms)
+	initialDomainReloadingComplete (16ms)
+	LoadAllAssembliesAndSetupDomain (103ms)
+		LoadAssemblies (144ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (7ms)
+			TypeCache.Refresh (3ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (270ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (164ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (18ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (36ms)
+			ProcessInitializeOnLoadAttributes (88ms)
+			ProcessInitializeOnLoadMethodAttributes (17ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (4ms)
+Refreshing native plugins compatible for Editor in 3.52 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1454 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 9 unused Assets / (24.4 KB). Loaded Objects now: 2002.
+Memory consumption went from 85.8 MB to 85.8 MB.
+Total: 1.488300 ms (FindLiveObjects: 0.073900 ms CreateObjectMapping: 0.020600 ms MarkObjects: 1.376300 ms  DeleteObjects: 0.016800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/WXFSLoadBundleOperation.cs: 5203f2fca525dae83d1c2e37e165d738 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/RightClickEditor.cs: f15a84c91dcd22372aeddf5032222567 -> 
+  custom:scripting/monoscript/fileName/WXFSLoadPackageManifestOperation.cs: 8b8b69cc4662810e2795f9e9ff3748aa -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/WXAssetBundleResult.cs: 0f8ee81536e88b0d5791823f7e8ffcad -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/UnityWechatAssetBundleRequestOperation.cs: 87f93f33ff72272522ecd6397c10fea7 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:scripting/monoscript/fileName/WXFSClearUnusedBundleFilesAsync.cs: 4202e71826b44387032b6c68d29bb911 -> 
+  custom:scripting/monoscript/fileName/WXFSDownloadFileOperation.cs: 9f5d0fe8d5b846fdec07b8f26cafbd90 -> 
+  custom:scripting/monoscript/fileName/LoadWechatAssetBundleOperation.cs: 4eb533cb9c11ebe491341888003d8f44 -> 
+  custom:scripting/monoscript/fileName/WXFSClearAllBundleFilesOperation.cs: d23acad3e8411b7500fbe5406a8a9faa -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/WXFSRequestPackageVersionOperation.cs: 4e765694426380ca42d2134fe61e2d9b -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp-Editor: d3621205cd14d331f6a5a7f401e58e23 -> 2f60984338d1835817407a63afbc78f0
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/WechatFileSystem.cs: 3b9a8b988a0299b4db8e2e521c31d712 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: 5f9539f7fd93eb7b185544937307ab6a -> e5b227be8a052466cd3fe1e9123bfe3a
+  custom:scripting/monoscript/fileName/WXFSInitializeOperation.cs: 820d5d4604fc60c237c947a2695df511 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/precompiled-assembly-types:YooAsset: 5fcbd11b142fa8c53821d3d802ae9691 -> feb410c14e14d546a0ea254f7aae3c71
